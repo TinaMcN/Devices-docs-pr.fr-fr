@@ -15,19 +15,19 @@ ms.topic: article
 ms.date: 09/26/2019
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 98de32213861aa53ac00a565d4f81f0199995077
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 88c7029c99d69818e9f0b8fddef5fc193581963a
+ms.sourcegitcommit: 608226b64ef92743b1a3361877d4c49228e3ea5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832225"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "10868748"
 ---
 # Meilleures solutions de support pour les appareils Surface
 
 > [!Note]
-> **Utilisateurs à domicile**: cet article est destiné uniquement aux professionnels de l’informatique et aux agents de support technique, et ne s’applique qu’aux appareils surface. Si vous cherchez de l’aide pour résoudre un problème avec votre appareil personnel, voir [aide sur les appareils surface](https://support.microsoft.com/products/surface-devices).
+> **Utilisateurs à domicile**: cet article est destiné uniquement aux professionnels de l’informatique et aux agents de support technique, et ne s’applique qu’aux appareils surface. Si vous cherchez de l’aide pour résoudre un problème avec votre appareil personnel, voir [prise en charge de surface](contact-surface-support.md?tabs=online).
 
-Voici les solutions de support technique de Microsoft pour les problèmes courants que vous pouvez être amené à utiliser sur les appareils surface d’une entreprise. Si votre problème n’est pas répertorié ici, [Contactez le support technique de Microsoft](https://support.microsoft.com/supportforbusiness/productselection).
+Voici les solutions de support technique de Microsoft pour les problèmes courants que vous pouvez être amené à utiliser sur les appareils surface d’une entreprise. Si votre problème n’est pas répertorié ici, [Contactez le support surface](contact-surface-support.md?tabs=online).
 
 ## Pilotes de surface et microprogramme
 
@@ -54,7 +54,7 @@ Microsoft publie régulièrement des mises à jour et des solutions concernant l
 
 ## Problèmes d'écran fissuré ou rayé
 
-- [Contacter le Support Microsoft](https://support.microsoft.com/supportforbusiness/productselection)
+- [Contactez le support Surface](contact-surface-support.md?tabs=online)
 
 ## Problèmes d’alimentation ou de batterie en surface
 
