@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 7/07/2020
+ms.date: 7/20/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 35794e36f37041754ee722c286554437c6dd7be2
-ms.sourcegitcommit: 36bac9da2f7b0815fbceb008f869b497380c55db
+ms.openlocfilehash: 3bfdcf1d95b058270b741b7959d9161c66652b4c
+ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "10860644"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10893086"
 ---
 # Vue d’ensemble technique de Surface Book 3 Quadro RTX 3000
 
@@ -116,7 +116,8 @@ Comme indiqué dans le tableau 3, surface Book 3 avec Quadro RTX 3000 est testé
 | **Esri ArcGIS**                                     | -Résultats en temps réel tirés de ce qui a duré les jours et les semaines, grâce à la fonction d’inférence de DL tirant parti de Tensors.                                                                                                                                                                                                                                                                                                                                                                                        |
 | **KeyShot Luxion**                                  | -Traceur de rayon interactif tiers utilisé par SolidWorks, Creo et Rhino. Accélérée par RT, OptiX™ denoising.                                                                                                                                                                                                                                                                                                                                                        |
 | **McNeel & Associates**<br>**Rhino 3D**             | **Rhino-testés et approuvés pour le livre surface 3 avec Quadro RTX 3000**<br><br>-Fenêtre d’affichage accélérée par GPU pour un mode de conception et de conception fluides et interactifs.<br><br>-Prise en charge de cycles pour le rendu 3D accéléré par GPU.                                                                                                                                                                                                                                                         |
-| **PTC Creo**                                        | L’outil de simulation d’ingénierie en temps réel de Creo (Creo de simulation en temps réel) basé sur CUDA.<br><br>-Il est plus rapide de plus de 15% par rapport au livre surface 2 15».                                                                                                                                                                                                                                                                                                                                |
+| **PTC Creo**                                        | L’outil de simulation d’ingénierie en temps réel de Creo (Creo de simulation en temps réel) basé sur CUDA.<br><br>-Il est plus rapide de plus de 15% par rapport au livre surface 2 15».                                                                                                                                                                                        |
+| **Siemens SolidEdge 2020**                                        |  **Siemens-testé et approuvé pour le livre surface 3 avec Quadro RTX 3000**                                                                                                                                                                                 |
 | **Siemens NX**                                      | -Siemens NX interactive ray tracer (Ray traced Studio) accélérée par RT.<br><br>-Exécute plus de 10 fois plus rapide par rapport au livre surface 2 15».                                                                                                                                                                                                                                                                                                                                    |
 
 
@@ -128,7 +129,7 @@ Comme indiqué dans le tableau 3, surface Book 3 avec Quadro RTX 3000 est testé
 
 **Tableau4. Surface Book 3 avec des références SKU Quadro RTX 3000**
 
-| **Affichage** | **Processeur**                     | **Processeur graphique**                                                                                          | **Mémoire vive (RAM)**    | **Stockage** |
+| **Écran** | **Processeur**                     | **Processeur graphique**                                                                                          | **Mémoire vive (RAM)**    | **Stockage** |
 | ----------- | --------------------------------- | ------------------------------------------------------------------------------------------------ | ---------- | ----------- |
 | 15 pouces | Quadruple cœur 10e GEN i7-1065G7 | Graphismes Intel IRIS™ plus<br>NVIDIA Quadro RTX 3000. Conception Max-Q avec 6 Go de mémoire graphique GDDR6 | 32 LPDDR4x | 512 GO      |
 | 15 pouces | Quadruple cœur 10e GEN i7-1065G7 | Graphismes Intel IRIS™ plus<br>NVIDIA Quadro RTX 3000. Conception Max-Q avec 6 Go de mémoire graphique GDDR6 | 32 LPDDR4x | 1To        |

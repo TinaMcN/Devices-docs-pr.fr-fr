@@ -15,17 +15,17 @@ ms.topic: article
 ms.date: 09/26/2019
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 88c7029c99d69818e9f0b8fddef5fc193581963a
-ms.sourcegitcommit: 608226b64ef92743b1a3361877d4c49228e3ea5d
+ms.openlocfilehash: 661d84adbff40ff6cd89fb0c71c60fa795f4236c
+ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "10868748"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10893076"
 ---
 # Meilleures solutions de support pour les appareils Surface
 
 > [!Note]
-> **Utilisateurs à domicile**: cet article est destiné uniquement aux professionnels de l’informatique et aux agents de support technique, et ne s’applique qu’aux appareils surface. Si vous cherchez de l’aide pour résoudre un problème avec votre appareil personnel, voir [prise en charge de surface](contact-surface-support.md?tabs=online).
+> **Utilisateurs à domicile**: cet article est destiné uniquement aux professionnels de l’informatique et aux agents de support technique, et ne s’applique qu’aux appareils surface. Si vous cherchez de l’aide pour résoudre un problème avec votre appareil personnel, voir [aide sur les appareils surface](https://support.microsoft.com/products/surface-devices).
 
 Voici les solutions de support technique de Microsoft pour les problèmes courants que vous pouvez être amené à utiliser sur les appareils surface d’une entreprise. Si votre problème n’est pas répertorié ici, [Contactez le support surface](contact-surface-support.md?tabs=online).
 
@@ -43,9 +43,7 @@ Microsoft publie régulièrement des mises à jour et des solutions concernant l
 ## Problèmes de dock surface
 
 - [Résoudre les problèmes de la station Surface et des stations d’accueil](https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations)
-
 - [Résoudre les problèmes de connexion de surface à un deuxième écran](https://support.microsoft.com/help/4023496)
-
 - [Mise à jour du microprogramme du Dock Microsoft surface](https://docs.microsoft.com/surface/surface-dock-updater)
 
 ## Problèmes liés au couvercle ou au clavier de l'appareil
@@ -59,25 +57,19 @@ Microsoft publie régulièrement des mises à jour et des solutions concernant l
 ## Problèmes d’alimentation ou de batterie en surface
 
 - [Comment débiter surface (informations sur le PSU de surface)](https://support.microsoft.com/help/4023496)
-
 - [La batterie de surface ne sera pas débitée ou la surface ne fonctionnera pas sur batterie.](https://support.microsoft.com/help/4023536)
-
 - [La tablette Surface ne s’allume pas ou ne sort pas du mode veille](https://support.microsoft.com/help/4023537)
-
 - [Optimiser l’autonomie de la batterie de votre Surface](https://support.microsoft.com/help/4483194)
 
 ## Réinitialiser l’appareil
 
 - [Création et utilisation d’un lecteur de récupération USB pour surface](https://support.microsoft.com/help/4023512)
-
 - [FAQ: protection de vos données si vous envoyez votre surface pour service](https://support.microsoft.com/help/4023508)
-
 - [Microsoft Surface Data Eraser](https://docs.microsoft.com/surface/microsoft-surface-data-eraser)
 
 ## Problèmes de déploiement
 
 - [DISK0 introuvable lors du déploiement de Windows sur surface Pro modèle 1796 ou surface Laptop](https://support.microsoft.com/help/4046108)
-
 - [Les modèles surface Pro 1796 et surface Laptop 1 1 to apparaissent sur deux lecteurs](https://support.microsoft.com/help/4046105)
-
 - [Référence SKU système](https://docs.microsoft.com/surface/surface-system-sku-reference)
+
