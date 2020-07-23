@@ -67,6 +67,7 @@
 ### [Protection d’accès direct à la mémoire (DMA) surface](dma-protect.md)
 
 ## Résoudre les problèmes
+### [Contactez le support Surface](contact-surface-support.md)
 ### [Meilleures solutions de support pour les appareils Surface](support-solutions-surface.md)
 ### [Résoudre les problèmes courants de Surface à l’aide du Kit de ressources de diagnostic pour Surface Entreprise](surface-diagnostic-toolkit-for-business-intro.md)
 #### [Déploiement du Kit de ressources de diagnostic pour Surface Entreprise](surface-diagnostic-toolkit-business.md)
