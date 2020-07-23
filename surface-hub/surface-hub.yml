@@ -2,8 +2,7 @@
 documentType: LandingData
 title: SurfaceHub
 metadata:
-  document_id: null
-  title: SurfaceHub
+  title: Surface Hub
   description: 'Recherchez des outils et des ressources pour vous aider à installer, configurer et gérer un Surface Hub dans votre organisation.'
   keywords: 'Surface Hub, Windows 10'
   ms.localizationpriority: medium
