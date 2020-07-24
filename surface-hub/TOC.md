@@ -19,7 +19,7 @@
 #### [Vue d’ensemble des ports et du clavier SurfaceHub2S](surface-hub-2s-port-keypad-overview.md)
 #### [Brancher des appareils à SurfaceHub2S](surface-hub-2s-connect.md)
 ### [Préparer votre environnement pour MicrosoftSurfaceHub2S](surface-hub-2s-prepare-environment.md)
-### [Configurer l’authentification facile pour les plateformes SurfaceHub2S](surface-hub-2s-phone-authenticate.md)
+
 
 ## Déployer
 ### [Adoption de Surface Hub2S et formation](surface-hub-2s-adoption-kit.md)
@@ -35,6 +35,8 @@
 ### [Application Teams Surface Hub](hub-teams-app.md)
 
 ## Manage
+### [Installer la version d'évaluation de mise à jour Windows10 Collaboration2020](surface-hub-install-2020preview.md)  
+### [Installer et configurer le nouveau Microsoft Edge sur SurfaceHub](surface-hub-install-chromium-edge.md)        
 ### [Gérer SurfaceHub2S avec Microsoft Intune](surface-hub-2s-manage-intune.md)
 ### [Gestion locale des paramètres de SurfaceHub2S](local-management-surface-hub-settings.md)
 ### [Gérer la rotation du mot de passe du compte d’appareil](surface-hub-2s-manage-passwords.md)
@@ -45,9 +47,12 @@
 ### [Appliquer des stratégies ActiveSync à des comptes d’appareil](apply-activesync-policies-for-surface-hub-device-accounts.md)
 ### [Mise à jour du microprogramme du stylet sur Surface Hub 2S](surface-hub-2s-pen-firmware.md)
 
+
 ## Sécuriser
 ### [Vue d’ensemble de la sécurité Surface Hub](surface-hub-security.md)
 ### [Sécuriser et gérer les SurfaceHub2S avec SEMM et UEFI](surface-hub-2s-secure-with-uefi-semm.md)
+### [Authentification moderne sur SurfaceHub](surface-hub-modern-auth.md) 
+### [Configurer la connexion sans mot de passe sur SurfaceHub](surface-hub-2s-phone-authenticate.md) 
 ### [Comment Surface Hub résout les problèmes de sécurité de Wi-Fi Direct](surface-hub-wifi-direct.md)
 
 ## Résoudre les problèmes
@@ -87,7 +92,9 @@
 #### [Programme de première utilisation](first-run-program-surface-hub.md)
 
 ## Gérer
-### [Gérer Microsoft SurfaceHub](manage-surface-hub.md)
+### [Gérer Microsoft Surface Hub](manage-surface-hub.md)
+### [Installer la version d'évaluation de mise à jour Windows10 Collaboration2020](surface-hub-install-2020preview.md)  
+### [Installer et configurer le nouveau Microsoft Edge sur SurfaceHub](surface-hub-install-chromium-edge.md)    
 ### [PowerShell pour SurfaceHub](appendix-a-powershell-scripts-for-surface-hub.md)
 ### [Gestion à distance du SurfaceHub](remote-surface-hub-management.md)
 #### [Gérer les paramètres avec un fournisseur GPM](manage-settings-with-mdm-for-surface-hub.md)
@@ -113,6 +120,8 @@
 ## Sécuriser
 ### [Se connecter à Surface Hub avec MicrosoftAuthenticator](surface-hub-authenticator-app.md)
 ### [Enregistrer la clé BitLocker](save-bitlocker-key-surface-hub.md)
+### [Authentification moderne sur SurfaceHub](surface-hub-modern-auth.md) 
+### [Configurer la connexion sans mot de passe sur SurfaceHub](surface-hub-2s-phone-authenticate.md) 
 ### [Comment Surface Hub résout les problèmes de sécurité de Wi-Fi Direct](surface-hub-wifi-direct.md)
 
 ## Résoudre les problèmes
