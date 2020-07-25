@@ -14,23 +14,23 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: 975115cc4f7baea18bcd9ad119ce448d59772515
-  ms.sourcegitcommit: 63607aa9b65687bf597916f548f5a3416ef87fe8
+  ms.openlocfilehash: 9bbf8ae97aedde4c14670fd2a72f1286371a8a41
+  ms.sourcegitcommit: 819498edd5c7cf0eae038a561b2efd6c2903dee5
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/10/2020
-  ms.locfileid: "10861716"
+  ms.lasthandoff: 07/23/2020
+  ms.locfileid: "10895145"
 landingContent:
 - title: Se préparer pour le Surface Hub 2S
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Nouveautés de Surface Hub 2S
-      url: surface-hub-2s-whats-new.md
-    - text: Commander Surface Hub 2S
-      url: https://www.microsoft.com/p/surface-hub-2S/8P62MW6BN9G4?activetab=pivot:overviewtab
-    - text: Préparer votre environnement pour SurfaceHub 2S
-      url: surface-hub-2s-prepare-environment.md
+    - text: Publication d’une nouvelle mise à jour du système d’exploitation des appareils Surface Hub (préversion publique)
+      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/new-surface-hub-os-update-released-for-public-preview/ba-p/1534823
+    - text: Installer la version d'évaluation de mise à jour Windows10 Collaboration2020
+      url: surface-hub-install-2020preview.md
+    - text: Installer et configurer le nouveau Microsoft Edge sur SurfaceHub
+      url: surface-hub-install-chromium-edge.md
     - text: Historique des mises à jour du SurfaceHub
       url: surface-hub-update-history.md
   - linkListType: video
@@ -45,14 +45,14 @@ landingContent:
   linkLists:
   - linkListType: get-started
     links:
+    - text: Commander Surface Hub 2S
+      url: https://www.microsoft.com/p/surface-hub-2S/8P62MW6BN9G4?activetab=pivot:overviewtab
     - text: Principales caractéristiques du système d’exploitation
       url: differences-between-surface-hub-and-windows-10-enterprise.md
     - text: Guide de préparation du site pour SurfaceHub2S
       url: surface-hub-2s-site-readiness-guide.md
-    - text: Personnaliser l’installation de Surface Hub2S
-      url: surface-hub-2s-custom-install.md
-    - url: https://support.office.com/article/Enable-Microsoft-Whiteboard-on-Surface-Hub-b5df4539-f735-42ff-b22a-0f5e21be7627
-      text: Activer le tableau blanc collaboratif Microsoft sur le Surface Hub
+    - text: Activer le tableau blanc collaboratif Microsoft sur le Surface Hub
+      url: https://support.office.com/article/Enable-Microsoft-Whiteboard-on-Surface-Hub-b5df4539-f735-42ff-b22a-0f5e21be7627
   - linkListType: deploy
     links:
     - url: surface-hub-2s-adoption-kit.md
