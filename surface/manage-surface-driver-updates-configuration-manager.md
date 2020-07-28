@@ -1,5 +1,5 @@
 ---
-title: Gérer les mises à jour de pilote surface dans Configuration Manager
+title: Gérer les mises à jour de pilotes Surface dans Configuration Manager
 description: Cet article décrit les options disponibles pour gérer et déployer des mises à jour de microprogramme et de pilote pour les appareils surface.
 ms.assetid: b64879c4-37eb-4fcf-a000-e05cbb3d26ea
 ms.reviewer: ''
@@ -14,14 +14,14 @@ ms.sitesec: library
 ms.author: daclark
 ms.topic: article
 audience: itpro
-ms.openlocfilehash: 1a9c8c64bd524de58696c73a28795b69cc70a7b2
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: be32309b26ff6a873c36927cc39595022c4dbb90
+ms.sourcegitcommit: ed4478dd3c6116a25b1e01a3a0f5ff6c1f940013
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833419"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "10897072"
 ---
-# Gérer les mises à jour de pilote surface dans Configuration Manager
+# Gérer les mises à jour de pilotes Surface dans Configuration Manager
 
 ## Résumé
 
@@ -119,7 +119,7 @@ Pour vérifier que le SUP est configuré correctement, procédez comme suit:
 
    Si vous ne trouvez pas les produits sélectionnés à l’étape 6 de la section précédente, vérifiez si les paramètres SUP sont enregistrés.
 
-   Vous pouvez également attendre la fin de la synchronisation suivante, puis vérifier si les mises à jour de pilote de surface et de microprogramme apparaissent dans les mises à jour logicielles dans la console Configuration Manager. Par exemple, la console peut afficher les informations suivantes:
+   Vous pouvez également attendre la fin de la synchronisation suivante, puis vérifier si les mises à jour de pilote de surface et de microprogramme apparaissent dans les mises à jour logicielles dans la console Configuration Manager. Par exemple, la console peut afficher les informations suivantes.
 
    ![Tous les résultats de la recherche mises à jour logicielles](images/manage-surface-driver-updates-4.png)
 
@@ -162,24 +162,23 @@ Pour plus d’informations sur le déploiement, voir [System Center 2012 Configu
 
 Si vous effectuez une synchronisation à partir d’un serveur Windows Server Update Services (WSUS) en amont au lieu de Microsoft Update, assurez-vous que le serveur WSUS en amont est configuré pour prendre en charge et synchroniser les mises à jour de pilote surface. Tous les serveurs en aval sont limités aux mises à jour présentes dans la base de données du serveur WSUS en amont.
 
-Il existe plusieurs mises à jour de 68 000 classées comme pilotes dans WSUS. Pour empêcher les pilotes non liés à la surface d’être synchronisés avec la Configuration Manager, Microsoft filtre la synchronisation du pilote sur une liste verte. Une fois la nouvelle liste verte publiée et incorporée dans Configuration Manager, les nouveaux pilotes sont ajoutés à la console à la suite de la synchronisation suivante. Microsoft a pour but de faire en sorte que les pilotes de surface ajoutés à la liste verte chaque mois en ligne avec le correctif Tuesday soient disponibles pour la synchronisation avec Configuration Manager.
+Il existe plusieurs mises à jour de 68 000 classées comme pilotes dans WSUS. Pour empêcher les pilotes non liés à la surface d’être synchronisés avec la Configuration Manager, Microsoft filtre la synchronisation du pilote sur une liste verte. Une fois la nouvelle liste verte publiée et incorporée dans Configuration Manager, les nouveaux pilotes sont ajoutés à la console à la suite de la synchronisation suivante. Microsoft a pour but de télécharger les pilotes de surface ajoutés à la liste verte chaque mois en fonction de leurs mises à jour mensuelles, afin de les rendre disponibles pour la synchronisation avec Configuration Manager.
 
 Si votre environnement Configuration Manager est hors connexion, une nouvelle liste verte est importée chaque fois que vous importez des [mises à jour de maintenance](https://docs.microsoft.com/mem/configmgr/core/servers/manage/use-the-service-connection-tool) dans Configuration Manager. Vous devrez également importer un [nouveau catalogue WSUS](https://docs.microsoft.com/mem/configmgr/sum/get-started/synchronize-software-updates-disconnected) qui contient les pilotes avant que les mises à jour ne soient affichées dans la console Configuration Manager. Dans la mesure où un environnement WSUS autonome comporte plus de pilotes qu’un SUP Configuration Manager, nous vous recommandons de créer un environnement Configuration Manager doté de fonctionnalités en ligne et de le configurer pour synchroniser les pilotes de surface. Cela fournit une plus petite exportation WSUS qui ressemble étroitement à l’environnement hors connexion.
 
-Si votre environnement Configuration Manager est connecté et en mesure de détecter de nouvelles mises à jour, vous recevrez automatiquement les mises à jour de la liste. Si vous ne voyez pas les pilotes attendus, consultez le fichier WCM. log et WsyncMgr. log pour les échecs de synchronisation.
+Si votre environnement Configuration Manager est connecté et en mesure de détecter de nouvelles mises à jour, vous recevrez automatiquement les mises à jour de la liste. Si vous ne voyez pas les pilotes attendus, consultez les fichiers WCM. log et WsyncMgr. log pour les échecs de synchronisation.
 
-**Mon environnement Configuration Manager est hors connexion, puis-je importer manuellement des pilotes de surface dans WSUS?**
+**Mon environnement Configuration Manager est hors connexion. Puis-je importer manuellement des pilotes de surface dans WSUS?**
 
 Non. Même si la mise à jour est importée dans WSUS, la mise à jour ne sera pas importée dans la console Configuration Manager à des fins de déploiement, si elle ne figure pas dans la liste verte. Vous devez utiliser l' [outil de connexion de service](https://docs.microsoft.com/mem/configmgr/core/servers/manage/use-the-service-connection-tool) pour importer les mises à jour de maintenance dans Configuration Manager afin de mettre à jour la liste verte.
 
 **Quelles sont les méthodes qui s’offrent à vous pour déployer les mises à jour de pilote et de microprogramme de surface?**
 
-Pour plus d’informations sur le déploiement des mises à jour de pilote de surface et de microprogramme par le biais de canaux secondaires, voir [gérer les mises à jour de pilote de surface et de microprogramme](https://docs.microsoft.com/surface/manage-surface-driver-and-firmware-updates). Pour télécharger le fichier. msi ou. exe et le déployer par le biais de canaux de déploiement de logiciels traditionnels, voir [maintenir le microprogramme de surface mis à jour avec Configuration Manager](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager).
+Pour plus d’informations sur le déploiement des mises à jour de pilote de surface et de microprogramme par le biais de canaux secondaires, voir [gérer les mises à jour de pilote de surface et de microprogramme](manage-surface-driver-and-firmware-updates.md). Pour télécharger le fichier. msi ou. exe et le déployer par le biais de canaux de déploiement de logiciels traditionnels, voir [maintenir le microprogramme de surface mis à jour avec Configuration Manager](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager).
 
 ## Informations supplémentaires
 
 Pour plus d’informations sur les mises à jour de pilote surface et de microprogramme, voir les articles suivants:
 
-- [Télécharger le microprogramme et les pilotes récents pourSurface](https://docs.microsoft.com/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices)
-- [Gérer les mises à jour du microprogramme et des pilotesSurface](https://docs.microsoft.com/surface/manage-surface-pro-3-firmware-updates)
-- [Considérations relatives à Surface et à System Center Configuration Manager](https://docs.microsoft.com/surface/considerations-for-surface-and-system-center-configuration-manager)
+- [Gérer les mises à jour du microprogramme et des pilotesSurface](manage-surface-driver-and-firmware-updates.md)
+- [Considérations relatives à Surface et à System Center Configuration Manager](considerations-for-surface-and-system-center-configuration-manager.md)
