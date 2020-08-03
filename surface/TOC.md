@@ -52,6 +52,7 @@
 ### [Paramètre de limite de la batterie](battery-limit.md)
 ### [Contrôle de luminosité Surface](microsoft-surface-brightness-control.md)
 ### [Étiquette d’inventaire Surface](assettag.md)
+### [Wake on Power pour les appareils Surface](wake-on-power-for-surface.md)
 
 ## Sécuriser
 
