@@ -1,6 +1,6 @@
 ---
 title: Utiliser le Kit de ressources de diagnostic pour Surface Entreprise en mode bureau
-description: Comment utiliser SDT pour aider les utilisateurs de votre organisation à exécuter l’outil d’identification et de diagnostic des problèmes avec le périphérique surface.
+description: Comment utiliser le SDT pour aider les utilisateurs de votre organisation à exécuter l’outil d’identification et de diagnostic des problèmes liés à l’appareil surface, ainsi que l’envoi des demandes de support directement à partir de l’outil.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,16 +11,19 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 9e6b34a8d34081fc12cab4851104f0b67c3dfea4
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 7/31/2020
+ms.openlocfilehash: ec4a90d0d72956eaa4f98e928d128dca70d49c59
+ms.sourcegitcommit: f875a45961ff5f3c04006afc8690b5e5965e4d80
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832219"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902955"
 ---
 # Utiliser le Kit de ressources de diagnostic pour Surface Entreprise en mode bureau
 
-Cette rubrique explique comment utiliser le kit de ressources de diagnostic de surface (SDT) pour aider les utilisateurs de votre organisation à exécuter l’outil d’identification et de diagnostic des problèmes liés à l’appareil surface. L’exécution réussie de SDT peut déterminer rapidement si un problème signalé est lié à un problème de matériel ou d’erreur d’utilisateur. Pour obtenir la liste des appareils surface pris en charge dans le SDT, voir [déploiement de surface diagnostic Toolkit pour les entreprises](surface-diagnostic-toolkit-business.md).
+Cette rubrique explique comment utiliser le kit de ressources de diagnostic de surface (SDT) pour aider les utilisateurs au sein de votre organisation à exécuter l’outil d’identification et de diagnostic des problèmes liés à leur appareil surface, ainsi que l’envoi de demandes de support technique directement à partir de l’outil. 
+
+L’exécution réussie de SDT peut déterminer rapidement si un problème signalé est lié à un problème de matériel ou d’erreur d’utilisateur. Pour obtenir la liste des appareils surface pris en charge dans le SDT, voir [déploiement de surface diagnostic Toolkit pour les entreprises](surface-diagnostic-toolkit-business.md).
 
 
 1. Demandez à l’utilisateur d’installer [le package SDT](surface-diagnostic-toolkit-business.md#create-custom-sdt) à partir d’un point de distribution de logiciels ou d’un partage réseau. Une fois l’installation terminée, vous pouvez guider l’utilisateur dans le cadre d’une série de tests. 
@@ -32,12 +35,12 @@ Cette rubrique explique comment utiliser le kit de ressources de diagnostic de s
 
 3. Lorsque le SDT indique que l’appareil comporte les mises à jour les plus récentes, cliquez sur **Continuer** pour accéder au catalogue de tests disponibles, comme illustré dans la figure 2.
 
-    ![Sélectionnez à partir des options SDT ](images/sdt-desk-2.png)
+    ![Sélectionnez à partir des options SDT ](images/sdt1.png)
  *figure 2. Sélectionner à partir des options SDT*
 
 4. Vous pouvez choisir d’exécuter tous les tests de diagnostic. Ou, si vous soupçonnez un problème particulier tel qu’un affichage défectueux ou un problème d’alimentation électrique, cliquez sur **Sélectionner** pour effectuer votre choix parmi les tests disponibles, puis cliquez sur **exécuter la sélection**, comme illustré dans la figure 3. Pour plus d’informations sur chaque test, consultez le tableau suivant. 
 
-    ![Sélectionnez tests matériels ](images/sdt-desk-3.png)
+    ![Sélectionnez tests matériels ](images/sdt2.png)
  *figure 3. Sélectionner tests matériels*
 
     Test du matériel | Description
@@ -52,9 +55,15 @@ Cette rubrique explique comment utiliser le kit de ressources de diagnostic de s
     Capteurs | Vérifie le fonctionnement de différents capteurs dans l’appareil.
     Matériel |  Vérifie les problèmes liés à différents composants matériels tels que la carte graphique et l’appareil photo
 
+5. Lorsque tous les tests sont terminés, l’outil vous demande de confirmer que le problème est résolu. 
 
+ ![Votre problème est-il résolu? ](images/sdt3.png)
+ *Figure 3A. Votre problème est-il résolu?*
 
-
+6. Si le problème n’est pas résolu ou que vous ne le connaissez pas, vous pouvez lui envoyer un ticket de support en sélectionnant **Contactez-nous** pour **obtenir de l’aide.**
+ 
+ ![Envoyez un ticket d’assistance ](images/sdt4.png)
+ *figure 3b. Envoi d’un ticket de support*
 
 <span id="multiple" />
 

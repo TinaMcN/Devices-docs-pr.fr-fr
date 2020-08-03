@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 05/11/2020
+ms.date: 07/31/2020
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 9233ca1f7e32e2017424e9fb6ceb0556de9d37bd
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 9c250cef63b760f3faab9172aa950c305e4e47e5
+ms.sourcegitcommit: f875a45961ff5f3c04006afc8690b5e5965e4d80
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832243"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902982"
 ---
 # Déploiement du Kit de ressources de diagnostic pour Surface Entreprise
 
@@ -107,7 +107,7 @@ Si vous le souhaitez, vous pouvez installer le SDT à l’invite de commandes et
     ```
     msiexec.exe /i <the path of installer> ADMINMODE=1. 
     ```
-    **Exemple :**
+    **Exemple:**
 
     ```
     C:\Users\Administrator> msiexec.exe/I"C:\Users\Administrator\Desktop\Microsoft_Surface_Diagnostic_Toolkit_for_Business_Installer.msi" ADMINMODE=1
@@ -179,6 +179,14 @@ Vous pouvez choisir d’exécuter une large gamme de journaux entre les applicat
 - [Utiliser les commandes de la trousse à outils de diagnostic de surface pour les entreprises](surface-diagnostic-toolkit-command-line.md)
 
 ## Modifications et mises à jour
+
+
+### Version 2.121.139
+*Date de publication: 31 2020 juillet*<br>
+Cette version du kit de diagnostics de surface pour les entreprises ajoute une prise en charge pour les éléments suivants:
+
+- Une prise en charge transparente
+- Correction de bogues
 
 ### Version 2.94.139.0
 *Date de publication: 11 2020*<br>
