@@ -74,5 +74,11 @@
 #### [Déploiement du Kit de ressources de diagnostic pour Surface Entreprise](surface-diagnostic-toolkit-business.md)
 #### [Utiliser le Kit de ressources de diagnostic pour Surface Entreprise en mode bureau](surface-diagnostic-toolkit-desktop-mode.md)
 #### [Exécuter le Kit de ressources de diagnostic pour Surface Entreprise à l’aide de commandes](surface-diagnostic-toolkit-command-line.md)
-
 ### [Historique des modifications de la documentationSurface](change-history-for-surface.md)
+### [Aide pour les utilisateurs finaux](https://support.microsoft.com/products/surface-devices)
+
+## Garantie et plans de service étendus
+### [Garantie et plans étendus pour Surface pour les entreprises](https://www.microsoft.com/surface/business/warranty-service-offerings-and-support)
+### [Conditions générales](https://support.microsoft.com/help/4493926/warranties-extended-service-plans-and-terms-conditions-for-your-device)
+### [Vérifier le statut de la garantie des appareils](https://mybusinessservice.surface.com/)
+### [Protection des données lors de l’envoi de Surface pour un service](https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service)
