@@ -13,13 +13,13 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 audience: itpro
-ms.date: 05/26/2020
-ms.openlocfilehash: 116aeb6d1d92f387efa34319f7852febda729207
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 08/05/2020
+ms.openlocfilehash: 4af917ca583dac504bc61bdfb36c8b8485473db9
+ms.sourcegitcommit: 97e19fdcd074647bedec9efdfd3ce28e900ae2ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833222"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "10916516"
 ---
 # Microsoft surface Enterprise Management mode
 
@@ -226,6 +226,16 @@ Les exemples PowerShell qui créent un package de configuration pour un type d�
 
 ## Historique des versions
 
+
+### Version 2.73.136.0
+
+Cette version de SEMM inclut les éléments suivants:
+
+- L’audio peut désormais être désactivé sur surface Hub2S à l’aide de SEMM
+- Prise en charge de surface Pro X pour Dock 2
+- Prise en charge du gestionnaire UEFI pour les opérations connexes Dock 2
+- Correctif pour le bogue de réinitialisation du package surface Go
+
 ### Version 2.71.139.0
 
 Cette version de SEMM ajoute une prise en charge des fonctionnalités de gestion de l’ancrage de surface 2 pour le livre surface 3, surface Laptop 3 et surface Pro 7, y compris:
@@ -282,4 +292,4 @@ Cette version de SEMM inclut les éléments suivants:
 
 - [Inscrire et configurer les appareilsSurface auprès de SEMM](enroll-and-configure-surface-devices-with-semm.md)
 - [Désinscrire les appareils Surface de SEMM](unenroll-surface-devices-from-semm.md)
-- [Ports Secure surface Dock 2 avec SEMM](secure-surface-dock-ports-semm.md)
+- [Sécuriser les ports de Surface Dock 2 avec SEMM](secure-surface-dock-ports-semm.md)

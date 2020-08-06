@@ -9,12 +9,12 @@ author: greg-lindsay
 ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: f523fcfb29a2a7141dcc13183d7b0bc2801fc796
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 74b48d6fb7501d8c17d17604b5b2dbc9eff308c9
+ms.sourcegitcommit: 603bcb41dc1b7dd92d3bab1601fa6336480e1218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832892"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "10916015"
 ---
 # Guide de préparation du site pour SurfaceHub 
 
@@ -115,6 +115,7 @@ Connexion permet aux utilisateurs de projeter leur ordinateur portable, tablette
 Dans la mesure où la connexion sans fil est basée sur Miracast, vous n’avez pas besoin de câbles ou d’une planification supplémentaire pour l’utiliser. Vos utilisateurs peuvent charger Miracast sur la plupart des appareils Windows 8,1 et Windows 10 compatibles. Ils peuvent ensuite projeter leur affichage à partir de leur ordinateur ou leur téléphone vers l’écran surface Hub.
 
 <span id="wired" />
+
 #### Connexion câblée
 
 Avec connexion câblée, un câble transmet les informations des ordinateurs, tablettes ou téléphones à surface Hub. Il existe trois options de câble vidéo qui utilisent toutes le même câble USB 2,0. Le paquet de câble peut inclure une ou l’ensemble de ces options de connexion.
@@ -137,6 +138,6 @@ Pour plus d’informations sur touchback et Inkback, voir le Guide de l’utilis
 
 
 
-## Articles associés
+## Voir également
 
 [Regarder la vidéo (s’ouvre dans un lecteur multimédia contextuel)](https://compass.xbox.com/assets/27/aa/27aa7dd7-7cb7-40ea-9bd6-c7de0795f68c.mov?n=04.07.16_installation_video_01_site_readiness.mov)  

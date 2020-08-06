@@ -11,12 +11,13 @@ ms.topic: article
 ms.reviewer: scottmca
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: aab4c67a6a262b11cd5982ebe145afbddfeaa1c9
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 8/05/2020
+ms.openlocfilehash: 331d5122c6c64a99dad48ff6e5a90f38ce3d4ed4
+ms.sourcegitcommit: 603bcb41dc1b7dd92d3bab1601fa6336480e1218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832490"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "10916025"
 ---
 # Mise à jour du microprogramme Microsoft surface Dock: informations techniques destinées aux administrateurs informatiques
 
@@ -56,7 +57,7 @@ Pour surveiller la mise à jour:
 3. Installez la mise à jour comme décrit dans la [section suivante](#install-the-surface-dock-firmware-update) de cet article.
 4. L’événement 2007 avec le texte suivant indique une mise à jour réussie: **mise à jour du microprogramme terminée. hr = 0 DriverTelementry eventCode = 2007**. 
     - Si la mise à jour échoue, l’événement ID 2007 est affiché en tant qu’événement d' **erreur** plutôt que par **informations**. Par ailleurs, la version indiquée dans le Registre Windows ne sera pas la version actuelle.
-5. À l’issue de la mise à jour, les valeurs DWORD mises à jour s’affichent dans le Registre Windows, correspondant à la version actuelle de l’outil. Pour plus d’informations, consultez la section de [référence des versions](#versions-reference) de cet article. Exemple:
+5. À l’issue de la mise à jour, les valeurs DWORD mises à jour s’affichent dans le Registre Windows, correspondant à la version actuelle de l’outil. Pour plus d’informations, consultez la section de [référence des versions](#versions-reference) de cet article. Par exemple:
     - Component10CurrentFwVersion 0x04ac3970 (78395760)
     - Component20CurrentFwVersion 0x04915a70 (76634736)
 
@@ -75,7 +76,7 @@ Vous pouvez utiliser les commandes du programme d’installation Windows (Msiexe
 
 - **Msiexec.exe/i \<path to msi file\> /Quiet/norestart** 
 
-  Exemple:
+  Par exemple:
   ```
   msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi" /quiet /norestart
   ```
@@ -155,6 +156,16 @@ Les événements sont enregistrés dans le journal des événements de l’appli
 
 >[!NOTE]
 >Le fichier d’installation est mis en forme avec le format d’attribution de noms suivant: **Surface_Dock_FwUpdate_X.XX.XXX_Win10_XXXXX_XX.XXX.XXXXX_X.MSI** (par exemple: Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi) et installé par défaut dans C:\Program Files\SurfaceUpdate.
+
+### Version 1.53.139.0
+*Date de publication: 4 août 2020*
+
+Cette version de la mise à jour de microprogramme de surface Dock inclut des correctifs et une prise en charge pour:
+- Mise à jour de surface Dock 1 à l’aide de surface Pro X. 
+   > [!NOTE]
+   > Si vous exécutez surface Pro X, téléchargez le. Version de ARM64. Pour tous les autres appareils, utilisez la build AMD64. 
+ 
+
 
 ### Version 1.42.139 
 *Date de publication: 18 2019 septembre*
