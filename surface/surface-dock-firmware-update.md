@@ -11,13 +11,13 @@ ms.topic: article
 ms.reviewer: scottmca
 manager: laurawi
 ms.audience: itpro
-ms.date: 8/05/2020
-ms.openlocfilehash: 331d5122c6c64a99dad48ff6e5a90f38ce3d4ed4
-ms.sourcegitcommit: 603bcb41dc1b7dd92d3bab1601fa6336480e1218
+ms.date: 8/07/2020
+ms.openlocfilehash: 159eb4ca27bb867623020936276470ba9897f3b8
+ms.sourcegitcommit: 83530906c7e34c92bbee90b723321acd61e77669
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10916025"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "10918934"
 ---
 # Mise à jour du microprogramme Microsoft surface Dock: informations techniques destinées aux administrateurs informatiques
 
@@ -39,7 +39,7 @@ Cette section décrit comment installer manuellement la mise à jour du micropro
     - La mise à jour nécessite un appareil surface exécutant Windows 10, version 1803 ou ultérieure.
     - L’installation du fichier MSI peut vous inviter à redémarrer surface. Toutefois, le redémarrage n’est pas nécessaire pour effectuer la mise à jour.
 
-2. Déconnectez votre périphérique surface du Dock de surface (à l’aide de la carte Power), attendez ~ 5 secondes, puis reconnectez-vous. La mise à jour du microprogramme de surface Dock met à jour le Dock en silence en arrière-plan. Le processus peut prendre quelques minutes et continuer même en cas d’interruption. 
+2. Déconnectez votre appareil de surface du quai de surface, attendez ~ 5 secondes, puis reconnectez-vous. La mise à jour du microprogramme de surface Dock met à jour le Dock en silence en arrière-plan. Le processus peut prendre quelques minutes et continuer même en cas d’interruption. 
 
 ## Surveiller la mise à jour du microprogramme de surface Dock
 
