@@ -36,6 +36,7 @@
 
 ## Manage
 ### [Installer la version d'évaluation de mise à jour Windows10 Collaboration2020](surface-hub-install-2020preview.md)  
+### [Problèmes connus –Mise à jour Windows10 Collaboration2020](surface-hub-2020-team-update-known-issues.md)
 ### [Installer et configurer le nouveau Microsoft Edge sur SurfaceHub](surface-hub-install-chromium-edge.md)        
 ### [Gérer SurfaceHub2S avec Microsoft Intune](surface-hub-2s-manage-intune.md)
 ### [Gestion locale des paramètres de SurfaceHub2S](local-management-surface-hub-settings.md)
