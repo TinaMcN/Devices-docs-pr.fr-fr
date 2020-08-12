@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 01/17/2018
 ms.localizationpriority: medium
-ms.openlocfilehash: 04eb2b08ebc8fc7034ab5d27a038c5d517a2eda3
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 935f67e88af8b784230becb1cd89f7360b8a0857
+ms.sourcegitcommit: 8e809e8481023fe4421abcdaa1e055a6f2f74f5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834226"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "10924960"
 ---
 # Gérer le Microsoft SurfaceHub
 
@@ -40,7 +40,7 @@ En savoir plus sur la gestion et la mise à jour du SurfaceHub.
 | [Installer des applications sur le SurfaceHub]( https://technet.microsoft.com/itpro/surface-hub/install-apps-on-surface-hub) | Les administrateurs peuvent installer des applications, au choix depuis le Microsoft Store ou le Microsoft Store pour Entreprises.|
 [Configurer le menu Démarrer de Surface Hub](surface-hub-start-menu.md) | Utilisez la GPM pour personnaliser le menu Démarrer de Surface Hub.
 | [Configurer et utiliser le Tableau blanc collaboratif Microsoft](whiteboard-collaboration.md)  | La dernière mise à jour du tableau blanc Microsoft inclut la possibilité pour deux Surface Hub de collaborer en temps réel sur le même tableau.   |
-| [Mettre fin à une réunion avec Terminer la session](https://technet.microsoft.com/itpro/surface-hub/i-am-done-finishing-your-surface-hub-meeting) | À l’issue d’une réunion, les utilisateurs peuvent appuyer sur **Terminer la session** pour nettoyer les données sensibles et préparer l’appareil pour la prochaine réunion.|
+| [Mettre fin à une réunion avec Terminer la session](https://technet.microsoft.com/itpro/surface-hub/finishing-your-surface-hub-meeting) | À l’issue d’une réunion, les utilisateurs peuvent appuyer sur **Terminer la session** pour nettoyer les données sensibles et préparer l’appareil pour la prochaine réunion.|
 | [Se connecter à Surface Hub avec MicrosoftAuthenticator](surface-hub-authenticator-app.md) | Vous pouvez vous connecter à un Surface Hub sans mot de passe à l’aide de l’application MicrosoftAuthenticator, disponible sur iOS et Android.   |
 | [Enregistrer la clé BitLocker](https://technet.microsoft.com/itpro/surface-hub/save-bitlocker-key-surface-hub) | Chaque Surface Hub est automatiquement configuré à l’aide du logiciel de chiffrement de lecteur BitLocker. Microsoft vous recommande vivement de sauvegarder vos clés de récupération BitLocker.|
 | [Connecter d’autres appareils et les afficher avec le SurfaceHub](https://technet.microsoft.com/itpro/surface-hub/connect-and-display-with-surface-hub) | Vous pouvez connecter un autre appareil à votre SurfaceHub pour en afficher le contenu.|
