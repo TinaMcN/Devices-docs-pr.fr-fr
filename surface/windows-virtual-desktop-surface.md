@@ -1,5 +1,5 @@
 ---
-title: Bureau virtuel Windows sur surface
+title: Windows Virtual Desktop sur Surface
 description: Cet article explique comment les appareils de surface fournissent un nœud de fin idéal pour les solutions de bureau virtuel Windows, offrant aux clients des facteurs de forme flexibles, la sécurité et la gestion modernes des appareils Windows 10, ainsi que la prise en charge des scénarios de travail persistants & de temps.
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -8,22 +8,22 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 5/20/2020
+ms.date: 8/12/2020
 ms.reviewer: rohenr
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 7db54b7bf8d08a10707753738e40c358a8723cf4
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: a3dfb5e4b2e5dc87dd4ae1dbced943e6be0772df
+ms.sourcegitcommit: 16845b3289a035b4e6ab5e7536307ef66651db28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832826"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926306"
 ---
-# Bureau virtuel Windows sur surface
+# Windows Virtual Desktop sur Surface
 
 ## Introduction
 
-Le bureau virtuel Windows sur surface vous permet d’exécuter l’infrastructure VDI (Virtual Desktop Infrastructure) sur un appareil surface qui estompe les lignes entre l’expérience de bureau locale et le bureau virtuel pour lesquels l’authentification d’entrée manuscrite, de stylet, d’entrée manuscrite et biométrique s’étend à la fois dans les environnements physiques et virtuels. Représentant un autre jalon de l’évolution de l’informatique, le bureau virtuel Windows sur surface <a href="#1"><sup> 1 </sup></a> combine Microsoft 365-virtualisé dans le Cloud Azure-avec les protections de sécurité avancées, la gestion de niveau entreprise et les outils de productivité améliorés de Windows 10 sur surface.  La fusion du facteur de forme Premium et de l’infrastructure de bureau virtuelle dans Azure fournit une valeur client exceptionnelle pour les expériences utilisateur, la portabilité, la sécurité, la continuité d’activité et la gestion moderne.
+Le bureau virtuel Windows sur surface vous permet d’exécuter l’infrastructure VDI (Virtual Desktop Infrastructure) sur un appareil surface qui estompe les lignes entre l’expérience de bureau locale et le bureau virtuel pour lesquels l’authentification d’entrée manuscrite, de stylet, d’entrée manuscrite et biométrique s’étend à la fois dans les environnements physiques et virtuels. Représentant un autre jalon de l’évolution de l’informatique, le bureau virtuel Windows sur surface <a href="#1"><sup> 1 </sup></a> combine Microsoft 365-virtualisé dans le Cloud Azure-avec les protections de sécurité avancées, la gestion de niveau entreprise et les outils de productivité améliorés de Windows 10 sur surface.  La fusion de facteurs de forme prime et de l’infrastructure de bureau virtuelle dans Azure fournit une valeur client exceptionnelle pour les expériences utilisateur, la portabilité, la sécurité, la continuité d’activité et la gestion moderne.
 
 ### Windows Virtual Desktop
 
@@ -37,7 +37,7 @@ Pour obtenir la liste des fournisseurs et fournisseurs de logiciels indépendant
 
 L’ingénierie de surface possède de longues nouvelles normes d’innovation par le biais du clavier et de la souris, afin d’imaginer des méthodes plus naturelles pour interagir avec des appareils, que ce soit à l’aide d’un clavier, d’une entrée manuscrite ou de surface Dial. Grâce à l’intégration de puce à Cloud de Microsoft 365 et de la sécurité et de la gestion de Windows 10 professionnel, surface fournit des matériels, logiciels, applications et services connectés comme prévu. Même s’il est possible d’exécuter WVD à partir de la mise à jour des appareils Windows vers Windows 7, les appareils Microsoft surface offrent des avantages uniques tels que la prise en charge des éléments suivants:
 
-- **Facteurs de forme flexibles** tels que les appareils 2-en-1 tels que surface Go 2, surface Pro 7 et surface Pro X avec le stylet, le clavier et le clavier amovible.
+- **Facteurs de forme flexibles** tels que les appareils 2-en-1 tels que surface Go 2, surface Pro 7 et surface Pro X avec le stylet, le clavier et le clavier amovible. Vous pouvez même utiliser la nouvelle surface duo pour vous connecter à WVD.
 - **Scénarios de fonctionnement permanents, à la demande et juste** -à-temps-avec accès hors ligne et sur un appareil pour des expériences plus productives.
 - La **sécurité et la gestion modernes des appareils Windows 10** vous permettent d’être productif en tout lieu.
 
