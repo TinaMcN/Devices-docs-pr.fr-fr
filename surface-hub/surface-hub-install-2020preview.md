@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 08/07/2020
+ms.date: 08/13/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 79e6c35deba5c4635945c3b376a1069e3df324d9
-ms.sourcegitcommit: 83530906c7e34c92bbee90b723321acd61e77669
+ms.openlocfilehash: 51d6b9169b0074eb474ddc89b6fe9b43a921bb07
+ms.sourcegitcommit: feb81137d009d9b7c743aabd7d02615e89842200
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "10918914"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929763"
 ---
 # Installer la version d'évaluation de mise à jour Windows10 Collaboration2020 
 
@@ -53,8 +53,14 @@ Pour plus d’informations, voir [enregistrer votre clé BitLocker](https://docs
 ## Installation de la version préliminaire de Windows 10 Team 2020 Update preview
 
 1. Sur surface Hub, ouvrez **paramètres** , puis entrez vos informations d’identification d’administrateur lorsque vous y êtes invité.
-2. Accédez à **confidentialité > diagnostics & commentaires** et **complet** pour les données de diagnostic. 
-3. Accédez à **mettre à jour &**  >  **programme Windows Insider** Security et sélectionnez **commencer**.
+2. Accédez à **confidentialité > diagnostics & commentaires** et définissez les données de diagnostic sur **complet**. Certaines régions ou organisations peuvent avoir besoin d’appliquer ce paramètre via la stratégie de gestion des périphériques mobiles ou le fichier PPKG:
+   - **Pour le GPM:** Définissez la stratégie suivante:. **/Vendor/msft/Policy/System/AllowTelemetry** avec la valeur entière 3:
+    
+        ![Définissez AllowTelemetry sur 3](images/hub-2020-allow-telemetry.png)
+
+    - **Pour PPKG:** Téléchargez le [fichier PPKG](https://aka.ms/HubTltmtry).
+
+3. Accédez à **mettre à jour &**  >  **programme Windows Insider** Security et sélectionnez **commencer** pour vous inscrire.
 4. Suivez les invites pour vous inscrire au programme Windows Insider à l’aide de votre compte professionnelle (recommandé) ou de votre compte Microsoft personnel. Pour plus d’informations sur les avantages liés à l’inscription auprès de votre compte professionnel, voir Inscrivez-vous [au programme Windows Insider pour les entreprises](https://docs.microsoft.com/windows-insider/at-work-pro/wip-4-biz-register).
 5. Sous sélectionnez **vos paramètres Insider**, sélectionnez **rapide**.
 6. Autorisez surface Hub à installer automatiquement la build Preview et les mises à jour requises du microprogramme sur les 3 à 4 jours suivants. L’appareil télécharge et installe automatiquement les mises à jour dans les [fenêtres de maintenance](https://docs.microsoft.com/surface-hub/manage-windows-updates-for-surface-hub#maintenance-window)journalière. Par exemple:
