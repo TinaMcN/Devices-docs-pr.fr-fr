@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 03/16/2019
 ms.localizationpriority: medium
-ms.openlocfilehash: 0ce77122aecfc9a30ac9dc52dfea7e0b0ccf7e1f
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 9158bec3d2285e5e8d4f9f56e582ff2320a34024
+ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833899"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10934874"
 ---
 # Créer des packages d’approvisionnement (SurfaceHub)
 
@@ -81,7 +81,7 @@ Après avoir [installé le Concepteur de configuration Windows](https://technet.
     
      ou
     
-   - Si vous avez installé le Concepteur de configuration Windows à partir du kit ADK, accédez à `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86` (sur un x64 ordinateur) ou `C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe` (sur un ordinateur x86), puis double-cliquez sur **ICD.exe**.
+   - Si vous avez installé le Concepteur de configuration Windows à partir du kit ADK, accédez à `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86` (sur un ordinateur x64) ou à `C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe` (sur un ordinateur x86), puis double-cliquez sur **ICD.exe**.
 
 2. Cliquez sur **Approvisionner des appareils Surface Hub**.
 
@@ -107,7 +107,7 @@ Un fichier de configuration SurfaceHub contient une liste de comptes d’apparei
 
 Utilisez MicrosoftExcel ou tout autre éditeur CSV pour créer un fichier CSV nommé`SurfaceHubConfiguration.csv`. Dans le fichier, entrez la liste des comptes d’appareil et des noms conviviaux en utilisant le format suivant:
 
-```
+```console
 <DeviceAccountName>,<DeviceAccountPassword>,<FriendlyName>
 ```
 >[!IMPORTANT]
@@ -116,7 +116,7 @@ Utilisez MicrosoftExcel ou tout autre éditeur CSV pour créer un fichier CSV no
 
 Voici un exemple de `SurfaceHubConfiguration.csv`. 
 
-```
+```console
 Rainier@contoso.com,password,Rainier Surface Hub
 Adams@contoso.com,password,Adams Surface Hub
 Baker@contoso.com,password,Baker Surface Hub
@@ -156,11 +156,11 @@ Après avoir [installé le Concepteur de configuration Windows](https://technet.
    
 3. Nommez votre projet, puis cliquez sur **Suivant**.
 
-4. Sélectionnez **Commun à l’édition Windows10 Collaboration**, puis cliquez sur **Suivant** et sur **Terminer**.
+4. Sélectionnez **communs aux équipes Windows 10**, cliquez sur **suivant**, puis sur **Terminer**.
 
     ![Nouveau projetICD](images/icd-new-project.png)
 
-5. Dans le projet, sous **Personnalisations disponibles**, sélectionnez **Paramètres communs de TeamEdition**.
+5. Dans le projet, sous **personnalisations disponibles**, sélectionnez **paramètres d’équipe communs**.
 
     ![ParamètresICD communs](images/icd-common-settings.png)
 
@@ -296,7 +296,7 @@ Deuxoptions permettent de déployer des packages d’approvisionnement sur un Su
 
     ![Choisir un package](images/provisioningpackageoobe-03.png)
 
-5. Le programme de première utilisation affiche un résumé des modifications que le package d’approvisionnement appliquera. Sélectionner **Oui, l’ajouter**.  
+5. Le programme de première utilisation affiche un résumé des modifications que le package d’approvisionnement appliquera. Sélectionnez **Oui, l’ajouter**.  
 
     ![Faites-vous confiance à ce package?](images/provisioningpackageoobe-04.png)
     

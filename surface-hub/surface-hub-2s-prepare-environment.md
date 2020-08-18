@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 11/21/2019
 ms.localizationpriority: Medium
-ms.openlocfilehash: 38f02b885a0ac2789ffc82f1ab38dc57fea5e841
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: dddab2adce1bec9ff722a3324b9c4b1be609ae89
+ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833024"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10934844"
 ---
 # Préparer votre environnement pour SurfaceHub 2S
 
@@ -31,7 +31,7 @@ Microsoft met régulièrement à jour le service Office 365 avec de nouvelles fo
 ## Affiliation d’appareil
 
 Utilisez affiliation d’appareil pour gérer l’accès utilisateur à l’application paramètres sur surface Hub 2S.
-Le système d’exploitation Windows 10 Team Edition (exécuté sur surface Hub 2) permet uniquement aux utilisateurs autorisés d’ajuster les paramètres à l’aide de l’application paramètres. Dans la mesure où le choix de l’affiliation peut affecter la disponibilité des fonctionnalités, planifiez de manière appropriée pour vous assurer que les utilisateurs peuvent accéder aux fonctions comme prévu.
+Le système d’exploitation de l’équipe Windows 10 (exécuté sur surface Hub 2) permet uniquement aux utilisateurs autorisés d’ajuster les paramètres à l’aide de l’application paramètres. Dans la mesure où le choix de l’affiliation peut affecter la disponibilité des fonctionnalités, planifiez de manière appropriée pour vous assurer que les utilisateurs peuvent accéder aux fonctions comme prévu.
 
 > [!NOTE]
 > Dans le cadre de la configuration initiale du programme OOBE (OOBE), vous ne pouvez définir aucune affiliation d’appareil. Si vous devez réinitialiser l’affiliation de l’appareil, vous devez répéter l’installation d’OOBE.

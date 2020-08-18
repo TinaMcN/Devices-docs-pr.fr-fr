@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 07/23/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 05279a54b51113ca96c4c939e8d64e51c4eca543
-ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
+ms.openlocfilehash: 389db218d06f9f8d3f510e711b03487daf4e06f9
+ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10893109"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10934864"
 ---
 # Gérer le Surface Hub 2S avec Intune
 
@@ -35,7 +35,7 @@ Le Surface Hub 2S permet aux administrateurs informatiques de gérer les paramè
 
 Au cours du processus de configuration initial, l’appareil est inscrit automatiquement avec Intune lors de l’affiliation du SurfaceHub avec un client AzureAD sur lequel l’inscription automatique Intune est activée. Si vous souhaitez en savoir plus, consultez la page [Méthodes d’inscription Intune pour les appareils Windows](https://docs.microsoft.com/intune/enrollment/windows-enrollment-methods). L’affiliation AzureAD et l’inscription automatique Intune sont requises pour que le SurfaceHub soit un «appareil compatible» dans Intune. 
 
-## Gestion des paramètres de Windows 10 Team Edition avec Intune
+## Gestion des paramètres d’équipe Windows 10 avec Intune
 
 1. Connectez-vous au **Gestionnaire de points de terminaison Microsoft**, puis sélectionnez profils de configuration des **appareils**  >  **Configuration profiles**  >  **créer un profil**. 
 2. Sous **plateforme**, sélectionnez **Windows 10 et les versions ultérieures**de  >  **restrictions d’appareils (équipe Windows 10)** , puis sélectionnez **créer**. 
@@ -63,15 +63,15 @@ Pour obtenir une qualité vidéo et audio optimale sur le Surface Hub 2S, ajoute
 
 ### Paramètres de QoS de Microsoft Teams 
 
-|**Nom**|**Description**|**OMA-URI**|**Type**|**Valeur**|
+| Nom | Description | OMA-URI | Type | Valeur |
 |:------ |:------------- |:--------- |:------ |:------- |
-|**Ports audio**| Plage du port audio | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsAudio/DestinationPortMatchCondition | Chaîne  | 3478-3479 |
-|**Valeur DSCP de l’audio**| Marquage des ports audio | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsAudio/DSCPAction | entier. | 46 |
-|**Port vidéo**| Plage du port vidéo | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsVideo/DestinationPortMatchCondition | Chaîne  | 3480 |
+|**Ports audio**| Plage du port audio | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsAudio/DestinationPortMatchCondition | String  | 3478-3479 |
+|**Valeur DSCP de l’audio**| Marquage des ports audio | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsAudio/DSCPAction | Integer | 46 |
+|**Port vidéo**| Plage du port vidéo | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsVideo/DestinationPortMatchCondition | String  | 3480 |
 |**Valeur DSCP de la vidéo**| Marquage des ports vidéo | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsVideo/DSCPAction | Integer | 34 |
-|**Ports audio pour le P2P**| Plage du port audio | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PAudio/DestinationPortMatchCondition | Chaîne  | 50000-50019 |
-|**Valeur DSCP de l’audio pour le P2P**| Marquage des ports audio | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PAudio/DSCPAction | entier. | 46 |
-|**Ports vidéo pour le P2P**| Plage du port vidéo | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PVideo/DestinationPortMatchCondition | Chaîne  | 50020-50039 |
+|**Ports audio pour le P2P**| Plage du port audio | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PAudio/DestinationPortMatchCondition | String  | 50000-50019 |
+|**Valeur DSCP de l’audio pour le P2P**| Marquage des ports audio | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PAudio/DSCPAction | Integer | 46 |
+|**Ports vidéo pour le P2P**| Plage du port vidéo | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PVideo/DestinationPortMatchCondition | String  | 50020-50039 |
 |**Valeur DSCP de la vidéo pour le P2P**| Marquage des ports vidéo | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PVideo/DSCPAction | Integer | 34 |
 
 
@@ -79,10 +79,10 @@ Pour obtenir une qualité vidéo et audio optimale sur le Surface Hub 2S, ajoute
 
 | Nom               | Description         | OMA-URI                                                                  | Type    | Valeur                          |
 | ------------------ | ------------------- | ------------------------------------------------------------------------ | ------- | ------------------------------ |
-| Ports audio        | Plage du port audio    | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/SourcePortMatchCondition  | Chaîne  | 50000-50019                    |
-| Valeur DSCP de l’audio         | Marquage des ports audio | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/DSCPAction                | entier. | 46                             |
+| Ports audio        | Plage du port audio    | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/SourcePortMatchCondition  | String  | 50000-50019                    |
+| Valeur DSCP de l’audio         | Marquage des ports audio | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/DSCPAction                | Integer | 46                             |
 | Source audio du média | Nom de l’application Skype      | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/AppPathNameMatchCondition | String  | Microsoft.PPISkype.Windows.exe |
-| Ports vidéo        | Plage du port vidéo    | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/SourcePortMatchCondition  | Chaîne  | 50020-50039                    |
+| Ports vidéo        | Plage du port vidéo    | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/SourcePortMatchCondition  | String  | 50020-50039                    |
 | Valeur DSCP de la vidéo         | Marquage des ports vidéo | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/DSCPAction                | Integer | 34                             |
 | Source vidéo du média | Nom de l’application Skype      | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/AppPathNameMatchCondition | String  | Microsoft.PPISkype.Windows.exe |
 
@@ -101,7 +101,7 @@ Vous pouvez configurer le mode application de Microsoft Teams à l’aide de Int
 
 Pour configurer les modes, ajoutez les paramètres suivants à un profil de configuration de périphérique personnalisé.
 
-|**Nom**|**Description**|**OMA-URI**|**Type**|**Valeur**|
+| Nom | Description | OMA-URI | Type | Valeur |
 |:--- |:--- |:--- |:--- |:--- |
 |**ID de l’application Teams**|Nom de l’application|./Vendor/MSFT/SurfaceHub/Properties/VtcAppPackageId|String| Microsoft.MicrosoftTeamsforSurfaceHub_8wekyb3d8bbwe!Teams|
 |**Mode de l’application Teams**|Mode Teams|./Vendor/MSFT/SurfaceHub/Properties/SurfaceHubMeetingMode|Integer| 0 ou 1 ou 2|
