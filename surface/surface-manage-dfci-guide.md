@@ -1,5 +1,5 @@
 ---
-title: Gestion Intune des paramètres UEFI Surface
+title: Gestion Intune des paramètres de surface UEFI
 description: Cet article décrit la configuration d’un environnement DFCI dans Microsoft Intune et la gestion des paramètres du microprogramme pour les appareils surface ciblés.
 ms.localizationpriority: medium
 ms.prod: w10
@@ -8,18 +8,23 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 11/13/2019
+ms.date: 08/19/2020
 ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: 0aa69bb229f0d76972620bc58f236e43e03075b2
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+appliesto:
+- Surface Pro 7
+- Surface Pro X
+- Surface Laptop 3
+- Surface Book 3
+ms.openlocfilehash: 9d83fe9b7febf996d2cb314399505ed050a69a92
+ms.sourcegitcommit: b94832cba98e01014f7d184c85d79f8339e046c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833204"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10941663"
 ---
-# Gestion Intune des paramètres UEFI Surface
+# Gestion Intune des paramètres de surface UEFI
 
 ## Introduction
 
@@ -43,11 +48,12 @@ Le DFCI permet une gestion sans égale nulle, ce qui évite d’avoir recours à
 
 ## Appareils pris en charge
 
-Pour le moment, DFCI est pris en charge sur les appareils suivants:
+DFCI est pris en charge sur les appareils suivants:
 
 - SurfacePro7
 - SurfaceProX
 - Surface Laptop3
+- SurfaceBook3
 
 > [!NOTE]
 > Surface Pro X ne prend pas en charge la gestion des paramètres de DFCI pour les appareils photo, audio et Wi-Fi intégrés.
@@ -56,7 +62,7 @@ Pour le moment, DFCI est pris en charge sur les appareils suivants:
 
 - Un appareil doit être inscrit auprès de Windows AutoPilot par un [partenaire fournisseur de solutions Cloud Microsoft](https://partner.microsoft.com/membership/cloud-solution-provider) ou un distributeur OEM.
 
-- Avant de configurer DFCI pour la surface, vous devez être familiarisé avec la configuration requise dans [Microsoft Intune](https://docs.microsoft.com/intune/) et [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) (Azure AD).
+- Avant de configurer DFCI pour la surface, vous devez être familiarisé avec la configuration requise dans  [Microsoft Intune](https://docs.microsoft.com/intune/) et [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) (Azure AD).
 
 ## Avant de commencer
 
