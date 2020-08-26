@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/05/2019
 ms.localizationpriority: Medium
-ms.openlocfilehash: 7d79fab22b62e6ef29832be6241c484e9caf72e0
-ms.sourcegitcommit: 537fa38bdd21fcd679af0764e734f4b8efb6a03f
+ms.openlocfilehash: e3b1e380f9776fc56e99b8d4e35f708aa952759c
+ms.sourcegitcommit: e075b46f14b730464d66246b0280ef2cfa16b3fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "10959946"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "10963579"
 ---
 # Réinitialiser et récupérer des surface Hub 2
 
@@ -60,7 +60,7 @@ Nouveauté de surface Hub 2, vous pouvez maintenant réinstaller l’appareil à
 
 1. Éteindre le périphérique:
 
-   1. Tout en appuyant sur le bouton volume haut, appuyez sur le bouton d’alimentation.
+   1. Tout en appuyant sur le bouton volume inférieur, appuyez sur le bouton d’alimentation.
    1. Continuez à appuyer sur les deux boutons jusqu’à ce que vous voyiez le logo Windows.
    1. Relâchez le bouton d’alimentation tout en maintenant le bouton volume enfoncé jusqu’à ce que l’interface utilisateur de l’installation démarre.
 
