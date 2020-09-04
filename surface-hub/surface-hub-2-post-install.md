@@ -1,6 +1,6 @@
 ---
-title: Configuration du post-installation de Windows 10 pour surface Hub 2
-description: Configuration du post-installation de Windows 10 pour surface Hub 2
+title: Configurer Windows 10 professionnel ou entreprise sur surface Hub 2
+description: Cet article inclut des recommandations pour garantir une meilleure utilisation lors de l’utilisation d’un ordinateur de stylet et d’un grand écran personnalisés.
 keywords: Surface Hub, Windows 10, ordinateur de bureau, installer, configuration
 ms.prod: surface-hub
 ms.mktglfcycl: deploy
@@ -13,14 +13,14 @@ ms.audience: itpro
 author: greg-lindsay
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.openlocfilehash: d6a1cdb2cac01b48c80e0fa4b7ccb6d3bcdb76ac
-ms.sourcegitcommit: 6618e8fe05628aa8b17654584657eff0f784dbfd
+ms.openlocfilehash: 47852284c35d213b81dd7b87ca875b400d8c713f
+ms.sourcegitcommit: c74835239cf4e304af59465fb6fc785de4a0c5cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986467"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "10994590"
 ---
-# Configuration du post-installation de Windows 10 pour surface Hub 2
+# Configurer Windows 10 professionnel ou entreprise sur surface Hub 2
 
 **S’applique à: surface Hub 2** 
 
@@ -135,14 +135,20 @@ Utilisez un appareil certifié Windows Hello pour la reconnaissance faciale. La 
 Pour ajouter une icône à la barre des tâches qui permet le verrouillage de l’écran à une seule touche, comme le raccourci clavier Windows-L: 
 
 1.  Appuyez de façon prolongée ou cliquez avec le bouton droit sur le bureau, sélectionnez **nouveau**  >  **raccourci**  >  **Parcourir**le  >  **Bureau**  >  **OK**  >  **suivant**.
-2.  Indiquez un nom pour le raccourci tel que **verrouiller mon PC**, puis cliquez sur **Terminer**.
-3.  Cliquez avec le bouton droit ou appuyez longuement sur le raccourci qui vient d’être créé sur le bureau, puis sélectionnez **Propriétés**. Dans l’onglet **raccourci** , entrez les informations suivantes dans le champ **cible** : **Rundll32.exe User32.dll LockWorkStation**
-4.  Cliquez sur le bouton **modifier l’icône** et recherchez **C:\Windows\System32\imageres.dll** et sélectionnez une icône à utiliser. 
-5. Consultez l’exemple suivant:
+
+1.  Indiquez un nom pour le raccourci tel que **verrouiller mon PC**, puis cliquez sur **Terminer**.
+
+1.  Cliquez avec le bouton droit ou appuyez longuement sur le raccourci qui vient d’être créé sur le bureau, puis sélectionnez **Propriétés**. Dans l’onglet **raccourci** , entrez les informations suivantes dans le champ **cible** : **Rundll32.exe User32.dll LockWorkStation**
+
+1.  Cliquez sur le bouton **modifier l’icône** et recherchez **C:\Windows\System32\imageres.dll** et sélectionnez une icône à utiliser. 
+
+    Consultez l’exemple suivant:
 
     ![Choisir une icône](images/lock.png)
-6.  Cliquez sur **OK** pour enregistrer le raccourci.
-7.  Cliquez avec le bouton droit ou appuyez longuement sur le raccourci et sélectionnez **Épingler à la barre des tâches**.
+    
+1.  Cliquez sur **OK** pour enregistrer le raccourci.
+
+1.  Cliquez avec le bouton droit ou appuyez longuement sur le raccourci et sélectionnez **Épingler à la barre des tâches**.
 
 ## Applications
 
@@ -151,14 +157,16 @@ Pour ajouter une icône à la barre des tâches qui permet le verrouillage de l�
 Pour mettre à jour toutes les applications du Windows Store installées:
 
 1. Ouvrez l’application Microsoft Store et sélectionnez les points de suspension **voir plus** dans le coin supérieur droit.
-2. Sélectionnez **téléchargements et mises à jour**.
-2. Sélectionnez **obtenir les mises à jour**.
+2. Sélectionnez **Téléchargements et mises à jour**.
+2. Sélectionnez **Obtenir les mises à jour**.
 
 ### Tableau blanc collaboratif Microsoft
 
 Pour installer le tableau blanc Microsoft, procédez comme suit:
 
-1. Sélectionnez l’espace de travail d’entrée manuscrite de l' **espace de travail Windows Ink** ![ ](images/ink.png) dans le coin inférieur droit de la barre des tâches et téléchargez le **tableau blanc**.
+ - Cliquez sur l’icône de l' **espace de travail Windows Ink** dans le coin inférieur droit de la barre des tâches et téléchargez le **tableau blanc**.
+ 
+   ![Espace de travail Ink](images/ink.png) 
 
 Vous pouvez également installer le tableau blanc à partir du Microsoft Store:
 
@@ -275,9 +283,9 @@ Activez le mode tablette si vous le souhaitez, pour les besoins en matière d’
 
 1. Recherchez le **Centre de logiciels** et ouvrez-le.
 2. Sélectionnez des **options** dans le volet de navigation.
-3. Développez la section gestion de l' **alimentation** , puis activez la case à cocher **ne pas appliquer de paramètres d’alimentation du service informatique à cet ordinateur**.
+3. Développez la section gestion de l' **alimentation** et sélectionnez **ne pas appliquer les paramètres d’alimentation du service informatique à cet ordinateur**.
 
-  ![Paramètres logiciels](images/soft-cntr.png)
+   ![Paramètres logiciels](images/soft-cntr.png)
 
 ### Paramètres du son
 
@@ -327,4 +335,4 @@ Activez le mode tablette si vous le souhaitez, pour les besoins en matière d’
 
 ## Rubriquesassociées
 
-[Migrer vers Windows 10 professionnel ou entreprise sur surface Hub 2](surface-hub-2s-migrate-os.md)
+[Migrer vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2](surface-hub-2s-migrate-os.md)
