@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/03/2020
+ms.date: 09/08/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: a114a9200a58a848f2480de965f268cee71cebae
-ms.sourcegitcommit: c74835239cf4e304af59465fb6fc785de4a0c5cc
+ms.openlocfilehash: e47ee735c0ba1cc0782c892b64d50f7e9d09f355
+ms.sourcegitcommit: d24759da42dfe0b913fd9ebf716407a673c2b818
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "10994600"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "11004486"
 ---
 # Migrer vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2
 
@@ -64,10 +64,11 @@ La version UEFI minimale requise avant la migration de surface hub d’une équi
 
 1. Dans l’écran d’accueil de surface Hub 2, sélectionnez **Démarrer** , puis ouvrez l' **SurfaceApp** (surface de**toutes les applications**  >  **Surface**).
 
-1. Sélectionnez **votre surface** pour afficher des informations sur l’appareil surface Hub, y compris la version actuelle de l’interface UEFI sur l’appareil. S’il s’agit de **694.2938.768.0** ou d’une version ultérieure, comme illustré ci-dessous, la version UEFI est éligible pour vous permettre de créer le package SEMM pour la migration du système d’exploitation.
+2. Sélectionnez **votre surface** pour afficher des informations sur l’appareil surface Hub, y compris la version actuelle de l’interface UEFI sur l’appareil. S’il s’agit de **694.2938.768.0** ou d’une version ultérieure, comme illustré ci-dessous, la version UEFI est éligible pour vous permettre de créer le package SEMM pour la migration du système d’exploitation.
 
-   ! [Ouvrir sur
-1. Si la version UEFI est antérieure à la version 6face application & sélectionner votre surface] (images/shm-fig1.png) 94.2938.768.0, vous devrez obtenir une version actuelle à l’aide de Windows Update.
+    ![Ouvrir l’application surface & sélectionner votre surface](images/shm-fig1.png)
+ 
+3. Si la version UEFI est antérieure à la version **694.2938.768.0**, vous devez obtenir une version actuelle à l’aide de Windows Update.
 
 **Pour mettre à jour UEFI à partir de Windows Update:**
 1. Sur votre surface Hub 2, connectez-vous en tant qu' **administrateur**, accédez à la **All apps**  >  **Settings** >  **mise à jour des**paramètres d’applications et à la sécurité  >  **Windows Update** et installez toutes les mises à jour, puis redémarrez l’appareil. Vérifiez la version UEFI à l’aide de l’application surface. Remarque: Si vous ne connaissez pas votre nom d’utilisateur ou votre mot de passe d’administrateur, vous devez réinitialiser l’appareil. Pour en savoir plus, voir [Réinitialiser et récupérer des éléments MultiSurface](https://docs.microsoft.com/surface-hub/surface-hub-2s-recover-reset).
