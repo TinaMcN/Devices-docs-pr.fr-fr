@@ -1,7 +1,7 @@
 ---
 title: Migrer vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2
 description: Cet article décrit le processus de migration de l’équipe Windows 10 sur surface Hub 2 vers Windows 10 professionnel ou Windows 10 entreprise.
-keywords: séparer les valeurs par des virgules
+keywords: Bureau surface Hub, surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
 author: greg-lindsay
@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/08/2020
+ms.date: 09/09/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: e47ee735c0ba1cc0782c892b64d50f7e9d09f355
-ms.sourcegitcommit: d24759da42dfe0b913fd9ebf716407a673c2b818
+ms.openlocfilehash: 5431cb9c11fbcfadf0ef517164521c237fb6b3bb
+ms.sourcegitcommit: 75940bb1ab4e08c96736923859c7dd673dcf8d79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11004486"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009622"
 ---
 # Migrer vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2
 
@@ -232,7 +232,7 @@ Utilisez votre lecteur **BOOTME** pour installer les fichiers de package SEMM et
 
    ![Sélectionner gestion & installer à partir du bus USB](images/shm-fig21.png)
    
-5. Sélectionnez **redémarrer maintenant**, comme illustré ci-dessous. Le périphérique s’arrêtera.
+5. Sélectionnez **redémarrer maintenant**, comme illustré ci-dessous. Le périphérique redémarre et affiche le logo blanc 4 carrés au milieu de l’écran, puis il s’éteint.
 
    ![Sélectionner redémarrer maintenant](images/shm-fig25.png)
    
@@ -245,7 +245,7 @@ Utilisez votre lecteur **BOOTME** pour installer les fichiers de package SEMM et
    > [!NOTE]
    > Dès lors que vous activez SEMM sur votre appareil, le nouveau paramètre UEFI **EnableOSMigration** est appliqué. Vous ne serez plus en mesure d’accéder à l’équipe Windows 10 et devez passer à l’étape suivante et installer Windows 10 professionnel ou Windows 10 entreprise. 
 
-8. L’appareil est redémarré, affichez le carré 4 blancs au milieu de l’écran, puis désactivez-le à nouveau.
+8. Le périphérique redémarre, affiche le logo blanc à 4 carrés au milieu de l’écran, puis il s’éteint de nouveau
 
 ### Installation de Windows 10 professionnel ou entreprise
 
@@ -253,7 +253,7 @@ Utilisez votre lecteur **BOOTME** pour installer les fichiers de package SEMM et
 
 2. Le périphérique démarre, vous verrez le carré 4 carrés au milieu de l’écran, et vous verrez un cercle de rotation en dessous du logo blanc à quatre carrées.
 
-3. Si l’appareil ne démarre pas automatiquement sur le lecteur USB, débranchez le périphérique (débranchez le cordon d’alimentation et rebranchez-le), appuyez sur le bouton d’alimentation et maintenez le bouton enfoncé, puis appuyez de façon prolongée sur le bouton de volume vers le bas jusqu’à ce que le cercle en forme de quatre carrés s’affiche.
+3. Si l’appareil ne démarre pas automatiquement sur le lecteur USB, éteignez le périphérique (débranchez le cordon d’alimentation et rebranchez-le). Après avoir branché le cordon d’alimentation, le périphérique doit être redémarré après quelques secondes du logo blanc 4 pouces au milieu de l’écran, ou vous pouvez appuyer sur le bouton d’alimentation et le relâcher pour le rallumer. Immédiatement après avoir affiché le logo à quatre carrées au milieu de l’écran, appuyez de façon prolongée sur le bouton de volume vers le bas jusqu’à ce que le cercle en forme de quatrième carré s’affiche.
  
    ![Démarrer vers Windows 10 à partir de la norme USB](images/shm-fig26.png)
    
