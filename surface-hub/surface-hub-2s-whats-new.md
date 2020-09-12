@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 06/20/2019
+ms.date: 09/11/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 2da6daf2bb32e9209f33d5eb19d76221db28c0ed
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: a552434846c14a5f612b3743ea42819999aa8553
+ms.sourcegitcommit: ae0dae16e0b7bb9c906de78095634c3070a58c61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833552"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "11013414"
 ---
 # Nouveautés de SurfaceHub2S pour les administrateurs informatiques
 
@@ -24,6 +24,7 @@ Surface Hub 2 est une toile de collaboration tout-en-un conçue pour le travail 
 
 |**Fonctionnalité**|**Résumé**|**En savoir plus**|
 |:-------|:------|:----|
+|**Migration vers Windows 10 professionnel ou entreprise**| Surface Hub 2 est préinstallé avec l’équipe Windows 10, une édition personnalisée de Windows 10 conçue pour faciliter la collaboration dans les environnements de salle de réunion. À présent, vous avez la possibilité d’exécuter Windows 10 professionnel ou entreprise pour utiliser surface Hub 2S de la même façon que n’importe quel autre PC.| [Annonce de la disponibilité de Windows 10 professionnel et entreprise sur surface Hub 2](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107) <br> <br> [Migrer vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2](surface-hub-2s-migrate-os.md) |
 |**Gestion des périphériques mobiles et gestion UEFI**| Gérer les paramètres et les stratégies à l’aide d’un fournisseur de gestion des périphériques mobiles (GPM). <br> <br> L’intégration complète avec le mode de gestion de surface entreprise (SEMM) vous permet de gérer les composants matériels et le microprogramme. | [Gestion de surface Hub 2 avec Microsoft Intune](surface-hub-2s-manage-intune.md) <br> <br> [Mode de gestion SurfaceEnterprise](https://docs.microsoft.com/surface/surface-enterprise-management-mode) |
 |**Coexistence sur le Cloud et sur site**| Prend en charge les services local, hybride ou en ligne. | [Préparer votre environnement pour MicrosoftSurfaceHub2S](surface-hub-2s-prepare-environment.md) |
 |**Réinitialisation et récupération**| Restauration à partir du lecteur Cloud ou USB. | [Récupérer et réinitialiser SurfaceHub2S](surface-hub-2s-recover-reset.md) |
@@ -58,7 +59,7 @@ Le tableau suivant décrit en détail les différences entre surface Hub et surf
 |**Network**| Wi-Fi (802,11 a/b/g/n/AC) <br> Ethernet 1 Gbit/s <br> Bluetooth 4,0 Low Energy <br> Miracast activé | Wi-Fi (802,11 a/b/g/n/AC) <br> Ethernet 1 Gbit/s <br> Bluetooth 4,0 Low Energy <br> Miracast activé | Wi-Fi 5 (IEEE 802,11 a/b/g/n/ca) <br> Ethernet 1 Gbit/s <br> Technologie sans fil Bluetooth 4,1 <br> Affichage Miracast |
 |**Ports**| (1) USB 3,0 (en bas) + (1) 3,0 USB  <br> (2) USB 2,0 <br> Sortie vidéo DisplayPort <br> 3,5 mm stéréo <br> Connecteur RJ11 pour le contrôle au niveau du système <br> <br> Entrée vidéo DisplayPort <br> Entrée vidéo HDMI <br> Entrée vidéo VGA <br> Entrée stéréo 3,5 mm <br> (1) USB 2,0 type B sortie touchback | (1) USB 3,0 (en bas) + (1) 3,0 USB <br> (4) 2,0 USB <br> Sortie vidéo DisplayPort <br> 3,5 mm stéréo <br> Connecteur RJ11 pour le contrôle au niveau du système <br> <br> Entrée vidéo DisplayPort <br> Entrée vidéo HDMI <br> Entrée vidéo VGA <br> Entrée stéréo 3,5 mm <br> (1) USB 2,0 type B sortie touchback | (1) USB-A <br> Sortie vidéo mini-DisplayPort <br> Entrée vidéo HDMI <br> Entrée USB-C avec le DisplayPort <br> (4) USB-C (à l’écran) <br> Gigabit Ethernet RJ45 |
 |**Capteurs**| (2) capteurs de présence infrarouge passifs, capteurs de lumière ambiante | (2) capteurs de présence infrarouge passifs, capteurs de lumière ambiante | Capteur d’occupation Doppler, <br> Accéléromètre <br> Gyroscope  |
-|**NFC**| Lecteur NFC | Lecteur NFC | N/A |
+|**NFC**| Lecteur NFC | Lecteur NFC | Non applicable |
 |**Haut-parleurs**| (2) haut-parleurs stéréo en face | (2) haut-parleurs stéréo en face | Haut-parleurs stéréo en trois directions complètes |
 |**Micro**| Matrice 4 éléments haute performance | Matrice 4 éléments haute performance | Tableau de microphone MEMS 8 éléments à bandes entières |
 |**Appareil photo**| (2) caméras HD à angle large 1080p à 30 images par seconde | (2) caméras HD à angle large 1080p à 30 images par seconde | (1) appareil photo Microsoft surface Hub 2, 4 Ko, connexion USB-C, champ horizontal 90-niveau de vue                                                           |

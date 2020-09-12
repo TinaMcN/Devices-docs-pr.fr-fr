@@ -7,20 +7,26 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 06/20/2019
+ms.date: 09/11/2020
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 92a634e897d3e0c9163fe092aaf7992f625de991
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: cae09fa3a21fe497d021f38621085b639b15c4da
+ms.sourcegitcommit: ae0dae16e0b7bb9c906de78095634c3070a58c61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833144"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "11013404"
 ---
 # Notions fondamentales sur le système d’exploitation (SurfaceHub)
 
 Le système d’exploitation du Surface Hub, Windows10 Collaboration, est basé sur Windows10 Entreprise, ce qui garantit une excellente prise en charge de la gestion de l’entreprise, de la sécurité et d’autres fonctionnalités. Toutefois, il existe des différences importantes entre les deux. Si l’édition Entreprise est destinée aux PC, Windows10 Collaboration est entièrement conçu pour une utilisation sur grand écran et dans les salles de réunion. Lorsque vous évaluez les exigences en matière de sécurité et de gestion du Surface Hub, il est préférable de le considérer comme un nouveau système d’exploitation. Cet article est conçu pour vous aider à mettre en évidence les différences clés entre Windows10 Collaboration sur le Surface Hub et Windows10 Entreprise, ainsi que leurs conséquences pour votre organisation.
+
+À compter du 2020 septembre, les clients ont la possibilité de migrer vers Windows 10 professionnel ou entreprise sur surface Hub 2. Pour en savoir plus, consultez les rubriques suivantes :
+
+- [Annonce de la disponibilité de Windows 10 professionnel et entreprise sur surface Hub 2](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107).
+
+- [Migrer vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2](surface-hub-2s-migrate-os.md)
 
 ## Interface utilisateur
 

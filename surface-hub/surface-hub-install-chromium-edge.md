@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/10/2020
+ms.date: 09/11/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: fe5f76034b5b8ae4801a8fb403d6db0ed423c144
-ms.sourcegitcommit: 75940bb1ab4e08c96736923859c7dd673dcf8d79
+ms.openlocfilehash: 6de949c7341f9d9bee60f808dab77770377acefc
+ms.sourcegitcommit: a64f5f375ebc0611e5735c63afd9540db0f807c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009612"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "11013695"
 ---
 # Installer et configurer le nouveau Microsoft Edge sur SurfaceHub
 
@@ -24,15 +24,16 @@ La mise à jour de l’équipe 2020 de Windows 10 prend en charge le nouveau Mic
 
 Par défaut, les appareils surface Hub sont préinstallés avec la version 44 de Microsoft Edge.
  
-Si vous avez déjà installé Edge dev, procédez comme suit:
-
-1. Si vous ne connaissez pas la version que vous voulez confirmer, ouvrez votre navigateur Edge et rendez-vous sur edge://version.
-2. Accédez à **surface Hub > gestion des appareils**. Sous **packages de déploiement**, sélectionnez **Ajouter ou supprimer un package de mise à service.**
-3. Si vous avez utilisé le programme d’installation antérieur pour épingler Microsoft Edge dev dans le menu Démarrer, cliquez sur **menu Démarrer personnalisé** dans la liste, puis cliquez sur **Supprimer.**
-4. Si vous avez utilisé une stratégie de disposition de démarrage personnalisée, vous devez la modifier à l’aide du chemin Edge le plus récent, comme décrit dans la section ci-dessous [Afficher Microsoft Edge dans le menu Démarrer de surface Hub](#display-microsoft-edge-in-the-surface-hub-start-menu).
-5. Vous pouvez à présent approvisionner MicrosoftEdgeDevUninstaller. ppkg.
-6. Après la suppression de l’application Edge pour **toutes les applications**, supprimez d’abord «MicrosoftEdgeDevInstaller», puis supprimez «MicrosoftEdgeDevUninstaller».
-7. La désinstallation de Microsoft Edge dev a réussi. Vous pouvez à présent installer la version standard.
+> [!NOTE]
+> Si vous avez déjà installé Edge dev, procédez comme suit:
+>
+>1. Si vous ne connaissez pas la version que vous voulez confirmer, ouvrez votre navigateur Edge et rendez-vous sur edge://version.
+>2. Accédez à **surface Hub > gestion des appareils**. Sous **packages de déploiement**, sélectionnez **Ajouter ou supprimer un package de mise à service.**
+>3. Si vous avez utilisé le programme d’installation antérieur pour épingler Microsoft Edge dev dans le menu Démarrer, cliquez sur **menu Démarrer personnalisé** dans la liste, puis cliquez sur **Supprimer.**
+>4. Si vous avez utilisé une stratégie de disposition de démarrage personnalisée, vous devez la modifier à l’aide du chemin Edge le plus récent, comme décrit dans la section ci-dessous [Afficher Microsoft Edge dans le menu Démarrer de surface Hub](#display-microsoft-edge-in-the-surface-hub-start-menu).
+>5. Vous pouvez à présent approvisionner MicrosoftEdgeDevUninstaller. ppkg.
+>6. Après la suppression de l’application Edge pour **toutes les applications**, supprimez d’abord «MicrosoftEdgeDevInstaller», puis supprimez «MicrosoftEdgeDevUninstaller».
+>7. La désinstallation de Microsoft Edge dev a réussi. Vous pouvez à présent installer la version standard.
 
  
  
@@ -40,7 +41,7 @@ Si vous avez déjà installé Edge dev, procédez comme suit:
 
 ### Installer Microsoft Edge à l’aide d’un package de mise à service
 
-1. À partir d’un PC, téléchargez le [package de mise en service de Microsoft Edge](https://aka.ms/HubEdge) (MicrosoftEdgeDevInstaller. ppkg) dans le dossier racine d’un lecteur USB.
+1. À partir d’un PC, téléchargez le [package de mise en service de Microsoft Edge](https://aka.ms/HubEdge) (MicrosoftEdgeInstaller. ppkg) dans le dossier racine d’un lecteur USB.
 2. Insérez la clé USB dans surface Hub.
 3. À partir de surface Hub, ouvrez **paramètres** , puis entrez vos informations d’identification d’administrateur lorsque vous y êtes invité.
 4. Accédez à **Surface Hub** > **Gestion des appareils**. Sous **Packages d’approvisionnement**, sélectionnez **Ajouter ou supprimer un package d’approvisionnement**.
