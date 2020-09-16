@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/11/2020
+ms.date: 09/15/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 44e7ca08ca4b8c077d430cba2a8cb4b674b68631
-ms.sourcegitcommit: ae0dae16e0b7bb9c906de78095634c3070a58c61
+ms.openlocfilehash: d36f42485107dd84be08c20291b36540662503da
+ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "11013434"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "11016453"
 ---
 # Migrer vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2
 
@@ -26,6 +26,11 @@ Surface Hub 2 est préinstallé avec l’équipe Windows 10, une édition person
 
 > [!IMPORTANT]
 >Contrairement à une mise à niveau ou une migration classique, il est nécessaire de suivre une procédure d’instructions, comme décrit dans cette page. Avant de continuer, passez en revue les composants de la [solution](#solution-components) et le [flux de travail de migration et d’installation](#migration-and-installation-workflow-summary) .
+
+
+> [!NOTE]
+> Lors de l’installation de Windows 10 professionnel ou entreprise, vous avez besoin d’une nouvelle licence distincte de celle de votre licence d’équipe Windows 10 existante. 
+
 
 Vous commencez la migration à partir de l’équipe Windows 10 à l’aide d’un PC distinct et du **Configurateur** d’outils de surface (Configurator) pour créer un package contenant un nouveau paramètre UEFI que vous appliquez à surface Hub 2.  Fonction de Configurateur de surface UEFI en tant qu’interface en mode de gestion de surface entreprise (SEMM), conçue pour faciliter la gestion centralisée des paramètres du microprogramme sur les appareils surface dans un environnement d’entreprise. Pour en savoir plus sur SEMM, voir [la documentation du mode de gestion Microsoft surface Enterprise](https://docs.microsoft.com/surface/surface-enterprise-management-mode).
  
@@ -93,7 +98,7 @@ S’il s’agit de votre première utilisation du Configurateur de surface pour 
 
 - Les entreprises de taille moyenne et d’autres personnes pourront choisir d’obtenir un certificat de fournisseurs tiers. Cette option est recommandée pour les organisations sans compétences informatiques suffisantes ou par équipe de sécurité informatique dédiée.
 
-- Vous pouvez également générer un certificat auto-signé à l’aide d’un script PowerShell par le biais de la documentation suivante: [exigences de certificat en mode de gestion des entreprises en surface](https://docs.microsoft.com/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements). Vous pouvez utiliser PowerShell pour créer votre propre certificat en fonction de la documentation suivante: [New-SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps).
+- Vous pouvez également générer un certificat auto-signé à l’aide d’un script PowerShell par le biais de la documentation suivante: [exigences de certificat en mode de gestion des entreprises en surface](https://docs.microsoft.com/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements). Vous pouvez utiliser PowerShell pour créer votre propre certificat en fonction de la documentation suivante: [New-SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate).
 
 Le package SEMM doit être sécurisé à l’aide d’un certificat pour vérifier la signature des fichiers de configuration avant que les paramètres UEFI puissent être appliqués. Pour en savoir plus, voir documentation sur le [mode de gestion de surface Enterprise](https://docs.microsoft.com/surface/surface-enterprise-management-mode) .
  
@@ -274,3 +279,9 @@ Pour configurer entièrement surface Hub 2S en tant que périphérique de produc
 
 Si vous souhaitez restaurer votre appareil vers l’équipe Windows 10, voir [Réinitialiser et récupérer pour surface Hub 2](surface-hub-2s-recover-reset.md)
 
+## Historique des versions
+
+| Version | Date               | Description                                                                                           |
+| ------- | ------------------ | ----------------------------------------------------------------------------------------------------- |
+| version. 1,1  | 15 septembre 2020 | Placement d’une note supplémentaire dans l’introduction clarification des conditions de licence pour l’installation d’un nouveau système d’exploitation. |
+| version. 1.0  | 1er septembre 2020  | Nouvel article                                                                                           |

@@ -36,7 +36,7 @@
 
 ## Manage
 ### [Migrer vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2](surface-hub-2s-migrate-os.md)
-### [Configuration post-installation de Windows 10 pour Surface Hub 2](surface-hub-2-post-install.md)
+### [Configurer Windows 10 Professionnel ou Entreprise sur Surface Hub 2](surface-hub-2-post-install.md)
 ### [Installer la version d'évaluation de mise à jour Windows10 Collaboration2020](surface-hub-install-2020preview.md)  
 ### [Problèmes connus –Mise à jour Windows10 Collaboration2020](surface-hub-2020-team-update-known-issues.md)
 ### [Installer et configurer le nouveau Microsoft Edge sur SurfaceHub](surface-hub-install-chromium-edge.md)        

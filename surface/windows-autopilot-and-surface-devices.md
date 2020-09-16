@@ -13,16 +13,31 @@ ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: ea5920649a4a29841b102de73c88187440968910
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 9/14/2020
+ms.openlocfilehash: d2a948d236ffa286192937cc5ca71099b6eeeafb
+ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832483"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "11016423"
 ---
 # Windows Autopilot et appareils Surface
 
 Windows AutoPilot est une technologie de déploiement basée sur le Cloud dans Windows 10. Vous pouvez utiliser Windows AutoPilot pour déployer et configurer à distance des appareils dans le cadre d’un processus de zéro-clic.
+
+Traditionnellement, les professionnels de l’informatique passent beaucoup de temps à créer et à personnaliser des images qui seront ensuite déployées sur les appareils qui disposent déjà d’un système d’exploitation parfaitement adapté. Windows AutoPilot introduit une nouvelle approche de déploiement de zéro-effleurement à l’aide d’une collection de technologies de configuration et de configuration des appareils Windows. Cela permet à un service informatique de configurer/personnaliser des images avec peu ou pas d’infrastructure pour gérer le processus et d’en simplifier le processus. Du point de vue de l’utilisateur, il ne suffit pas de quelques étapes simples pour rendre la surface dans un État productif. En fait, la seule interaction requise de la part de l’utilisateur final consiste à se connecter à un réseau et à vérifier ses informations d’identification. Tout ce qui se passe après le niveau entièrement automatisé.
+
+Windows AutoPilot vous permet d’effectuer les opérations suivantes:
+
+- Joindre automatiquement des appareils à Azure Active Directory (Azure AD).
+- Inscription automatique des appareils dans les services de gestion des périphériques mobiles, tels que Microsoft Intune (nécessite un abonnement Azure AD Premium).
+- Limiter la création de compte administrateur. AutoPilot est le seul moyen de faire en sorte que la première personne se connecte à Windows en tant qu’utilisateur standard.
+- Créer et affecter automatiquement des appareils aux groupes de configuration en fonction de profils d’appareil.
+- Personnalisez le contenu OOBE (out-of-Box Experience) et la personnalisation selon les besoins de l’organisation.
+- Activez la configuration complète de l’appareil avec Intune.
+- Reconfigurez ou redémarrez les appareils à distance.
+
+## Fonctionnement
 
 Windows AutoPilot-les appareils enregistrés sont identifiés sur Internet au premier démarrage à l’aide d’une signature d’appareil unique appelée « *hachage matérielle*». Ils sont automatiquement inscrits et configurés à l’aide d’Azure Active Directory (Azure AD) et de la gestion des périphériques mobiles.
 
@@ -47,6 +62,10 @@ Microsoft vérifie automatiquement chaque surface pour l’inscription au pilote
 > [!NOTE]
 > Lorsque les clients utilisent un partenaire pour retourner des appareils, le partenaire est responsable de la gestion du processus Exchange, y compris l’enregistrement et l’inscription des appareils dans Windows AutoPilot.
 
+## Enregistrement du support Microsoft
+
+Les clients et les fournisseurs de solutions de Cloud Computing Microsoft (CSP) ont la possibilité d’inscrire des appareils surface en envoyant des demandes au support Microsoft. Pour en savoir plus, voir [prise en charge de l’enregistrement de surface pour Windows AutoPilot](surface-autopilot-registration-support.md).
+
 ## Partenaires de surface activés pour Windows AutoPilot
 
 Sélectionnez les partenaires de surface peuvent inscrire des appareils surface dans Windows AutoPilot pour vous au moment de l’achat. Ils peuvent également expédier des périphériques inscrits directement à vos utilisateurs. Les appareils peuvent être configurés complètement par le biais d’un processus Zero-effleurement à l’aide du pilotage automatique Windows, d’Azure AD et de la gestion des appareils mobiles.
@@ -68,3 +87,4 @@ Les partenaires de surface qui sont activés pour Windows AutoPilot incluent:
 Pour plus d’informations sur Windows AutoPilot, voir:
 - [Vue d’ensemble de Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)
 - [Configuration requise de Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements)
+- [Prise en charge de l’inscription de surface pour Windows AutoPilot](surface-autopilot-registration-support.md)
