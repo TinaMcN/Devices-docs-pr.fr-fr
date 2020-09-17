@@ -15,12 +15,12 @@ ms.author: greglin
 ms.topic: article
 ms.audience: itpro
 ms.date: 5/08/2020
-ms.openlocfilehash: 0e136bd0a69db7a4c4e5cea7d2c065727dcc8fcc
-ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
+ms.openlocfilehash: 3ede7311289dc4bc720735c0142ff3a46fbb69e7
+ms.sourcegitcommit: 582c5a79881c58c4f1aa66cfcab46db966ca9f24
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/16/2020
-ms.locfileid: "11016436"
+ms.locfileid: "11016555"
 ---
 # Microsoft Surface Deployment Accelerator
 
@@ -36,8 +36,11 @@ L’image obtenue correspond étroitement à la configuration des images de réc
 
 1. Une clé USB USB d’au moins 16 Go. Le lecteur USB sera formaté.
 2. Un fichier. ISO avec Windows 10 professionnel ou Windows 10 entreprise. Vous pouvez utiliser l’outil de création de médias pour télécharger Windows 10 et créer un fichier. ISO. Pour plus d’informations, reportez-vous à [Télécharger Windows 10](https://www.microsoft.com/software-download/windows10).
+3. Un appareil exécutant Windows 10, version 2004 ou ultérieure avec accès Internet.
 
-## Exécution de SDA
+Pour obtenir la liste détaillée des exigences, voir la section [configuration](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#prerequisites) requise du document Lisezmoi.
+
+## Exécution du SDA
 
 **Pour exécuter SDA:**
 
@@ -52,17 +55,20 @@ L’image obtenue correspond étroitement à la configuration des images de réc
     ```powershell
     Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted -Force
     ```
-8. Exécutez le script SDA spécifiant les paramètres pour votre environnement. Par exemple, la commande suivante permet de créer un lecteur USB amorçable qui peut être utilisé pour installer Windows 10 sur un surface Hub 2:
+8. Exécutez le script SDA spécifiant les paramètres pour votre environnement. Le script peut être utilisé pour créer des images et installer Windows 10 sur de nombreux appareils surface. Pour obtenir la liste complète des appareils pris en charge, consultez la [Description du paramètre d’appareil](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#full-parameter-documentation) dans l’article Lisezmoi de SDA. 
+
+    Par exemple, la commande suivante permet de créer un lecteur USB amorçable qui peut être utilisé pour [installer Windows 10 sur surface Hub 2](https://docs.microsoft.com/surface-hub/surface-hub-2s-migrate-os):
 
     ```powershell
     .\CreateSurfaceWindowsImage.ps1 -ISO C:\SDA\enterprise_client.iso -OSSKU Enterprise -DestinationFolder C:\Output -Device SurfaceHub2 -CreateUSB $True
     ```
+    Voici un exemple de sortie de script ci-dessous.
 
    ![Outil accélérateur de déploiement de surface exécuté](images/sda1.png)
 
     Le script nécessite environ 45 minutes pour s’exécuter, mais peut prendre plus de temps en fonction des ressources du processeur et du disque disponibles. 
 
-    Une fois que vous avez créé une image Windows, le script vous demande de confirmer la lettre de lecteur de votre lecteur USB. Le lecteur USB est alors formaté, configuré comme amorçable et les fichiers copiés pour permettre l’installation de l’image Windows 10 personnalisée pour les appareils surface.
+    Une fois que vous avez créé une image Windows, le script vous demande d’insérer et de confirmer la lettre de lecteur de votre lecteur USB. Le lecteur USB est alors formaté, configuré comme amorçable et les fichiers copiés pour permettre l’installation de l’image Windows 10 personnalisée pour les appareils surface.
 
 9. Insérez le lecteur USB dans l’appareil sur lequel vous voulez installer Windows 10, puis redémarrez l’installation pour commencer l’installation de Windows 10. Le démarrage USB doit être activé dans le BIOS, ce qui peut nécessiter le Désactivation temporaire du démarrage sécurisé.
 
@@ -72,5 +78,4 @@ L’image obtenue correspond étroitement à la configuration des images de réc
 ## Liens connexes
 
  - [Outil de déploiement d’image source ouverte sur GitHub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/open-source-image-deployment-tool-released-on-github/ba-p/1314115)
-
  - [Télécharger et installer Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
