@@ -12,15 +12,15 @@ manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
 ms.author: greglin
-ms.date: 09/16/2020
+ms.date: 09/18/2020
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.openlocfilehash: d908c937c331e36f6b82f4c3c5ee213abf8a0176
-ms.sourcegitcommit: 2ac88d30b7d104d86b3bec657941457c916a116c
+ms.openlocfilehash: 24998848f16803585bc414d50e2099745943dcc7
+ms.sourcegitcommit: 13015036a3e5cb5909924d7e4289473a1572cf9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11027000"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "11030421"
 ---
 # Composants additionnels pour Windows 10 professionnel et entreprise sur surface Hub 2
 
@@ -54,6 +54,7 @@ Pour plus d’informations sur la configuration du lecteur d’empreintes digita
 | **Configuration requise**          | Windows 10 professionnel, Windows 10 entreprise                                                                                               |
 | **Certification Windows**       | Windows10                                                                                                                           |
 | **Taux d’approbation faux (FAR)** | 1/1,5 million. Dans la plupart des cas, le système de sécurité biométrique n’accepte pas correctement les tentatives d’accès d’utilisateurs non autorisés. |
+| **Faux taux de rejet (FRR)** | 4,9%. FRR indique la probabilité d’un système de sécurité biométrique de rejeter de manière incorrecte les tentatives d’accès par les utilisateurs autorisés. |
 
 
 > [!NOTE]
