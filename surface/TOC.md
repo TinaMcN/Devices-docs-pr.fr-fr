@@ -2,7 +2,7 @@
 
 ## [Documentation sur les appareils Surface](get-started.yml)
 
-## Vue d'ensemble
+## Présentation
 
 ### [Nouveautés de station d’accueilSurface 2.](surface-dock-whats-new.md)
 ### [Vue d’ensemble technique de GPU Surface Book 3](surface-book-GPU-overview.md)
@@ -30,6 +30,7 @@
 
 ### [Déployer des appareilsSurface](deploy.md)
 ### [Windows Autopilot et appareils Surface](windows-autopilot-and-surface-devices.md)
+### [Prise en charge de l’inscription en surface pour Windows AutoPilot](surface-autopilot-registration-support.md)
 ### [Windows Virtual Desktop sur Surface](windows-virtual-desktop-surface.md)
 ### [Déploiement, gestion et maintenance de SurfaceProX](surface-pro-arm-app-management.md)
 ### [Compatibilité des applications Surface ProX](surface-pro-arm-app-performance.md)
