@@ -19,12 +19,12 @@ ms.custom:
 - CSSTroubleshoot
 ms.reviewer: mablaik
 description: Informations de support pour les produits Microsoft surface and surface Hub.
-ms.openlocfilehash: 52be75fdec27e1ccf4d68be36afab19c77db540a
-ms.sourcegitcommit: 16845b3289a035b4e6ab5e7536307ef66651db28
+ms.openlocfilehash: f423bdcc5bc4890861614e6213e9281b22925b42
+ms.sourcegitcommit: 13015036a3e5cb5909924d7e4289473a1572cf9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926296"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "11030411"
 ---
 # Surface support
 
@@ -39,7 +39,7 @@ Si vous rencontrez toujours un problème après avoir exécuté le kit de jeu, u
 > [!NOTE]
 > Vous serez invité à vous connecter au portail de soumission en ligne à l’aide de votre compte Microsoft ou de votre compte Azure Active Directory.  
 
-Pour les clients professionnels: [Envoyez votre demande de service](https://support.microsoft.com/supportforbusiness/productselection?sapid=d383b26c-f150-6220-8f1b-e8aa325d9727). 
+Pour les clients professionnels: [Envoyez votre demande de service](https://support.microsoft.com/supportforbusiness/productselection). 
 
 Pour les clients Microsoft premier: [Envoyez votre demande de service sur le Hub services](https://serviceshub.microsoft.com/support/contactsupport). 
 

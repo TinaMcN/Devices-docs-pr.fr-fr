@@ -14,13 +14,13 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 audience: itpro
-ms.date: 05/11/2020
-ms.openlocfilehash: da3624d5eb271e999334b4859cfb6123eeabfa46
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 09/18/2020
+ms.openlocfilehash: dc1a9b4480f37af6d74699a2e693ef8d5318da76
+ms.sourcegitcommit: 8bd03770279d5e53446436781226ffd51eeec916
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832351"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "11029228"
 ---
 # Microsoft Surface Data Eraser
 
@@ -34,26 +34,13 @@ Découvrez comment l’outil Microsoft Surface Data Eraser peut vous aider à ef
 
 Appareils Surface compatibles:
 
-* SurfaceBook3
-* SurfaceGo2
-* SurfacePro7
-* SurfaceProX
-* Surface Laptop3
-* SurfacePro6
-* Surface Laptop2
-* SurfaceGo
-* SurfaceBook2
-* SurfacePro avec LTE Advanced (modèle1807)
-* SurfacePro (modèle1796)
-* Surface Laptop
-* SurfaceStudio
-* Surface Studio2
-* SurfaceBook
-* Surface Pro4
-* VersionsLTE du modèleSurface3
-* Surface3
-* Surface Pro3
-* SurfacePro2
+- Surface Book (toutes éditions)
+- Surface Go (toutes éditions)
+- Surface Pro X (toutes éditions)
+- Surface Laptop (toutes éditions)
+- Surface Studio (toutes éditions)
+- Surface Pro 2 et version ultérieure
+- Windows 10 professionnel et entreprise sur surface Hub 2
 
 Voici quelques scénarios durant lesquels l’outil Microsoft Surface Data Eraser peut s’avérer utile:
 
@@ -171,6 +158,17 @@ Une fois que vous avez créé une clé USB Microsoft Surface Data Eraser, vous p
 ## Modifications et mises à jour
 
 MicrosoftSurface Data Eraser est régulièrement mis à jour par Microsoft. Pour plus d’informations sur les modifications apportées dans chaque nouvelle version, consultez les rubriques suivantes:
+
+### 3.33.139
+*Date de publication: 9 septembre 2020*
+
+Cette version de l’outil de suppression de données en surface inclut des corrections de bogues et prend en charge les éléments suivants: 
+
+- Architecture nouvelle conception pour réduire les besoins en matière de mise à jour avec les nouvelles versions du produit
+- Notification disponible pour les nouvelles mises à jour d’outils
+- Ajouts de télémétrie
+- Windows 10 professionnel et entreprise sur surface Hub 2
+
 
 ### 3.30.139
 *Date de sortie: 11mai2020*
