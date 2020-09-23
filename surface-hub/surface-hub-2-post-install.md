@@ -1,5 +1,5 @@
 ---
-title: Configurer Windows 10 professionnel ou entreprise sur surface Hub 2
+title: Configurer Windows 10 Professionnel ou Entreprise sur Surface Hub 2
 description: Cet article inclut des recommandations pour garantir une meilleure utilisation lors de l’utilisation d’un ordinateur de stylet et d’un grand écran personnalisés.
 keywords: Surface Hub, Windows 10, ordinateur de bureau, installer, configuration
 ms.prod: surface-hub
@@ -14,16 +14,17 @@ author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.openlocfilehash: f6ea6324799981e57c36a11b33cf2e22ea80039e
-ms.sourcegitcommit: d24759da42dfe0b913fd9ebf716407a673c2b818
+ms.date: 09/22/2020
+appliesto:
+- Surface Hub 2S
+ms.openlocfilehash: dd580a3b67ffa7c46ce823765d589fec47fadb44
+ms.sourcegitcommit: d7fe059a823b7e5f1daec447d92dac60bdd2a26e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11004476"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11072841"
 ---
-# Configurer Windows 10 professionnel ou entreprise sur surface Hub 2
-
-**S’applique à: surface Hub 2** 
+# Configurer Windows 10 Professionnel ou Entreprise sur Surface Hub 2
 
 Après avoir terminé le processus d’installation de la migration vers Windows 10 professionnel ou entreprise, vous pouvez effectuer les étapes suivantes pour configurer les applications et les paramètres sur votre surface Hub 2. Ces étapes sont recommandées pour garantir la meilleure utilisation de cette fonction d’affichage du stylo et de l’écran grand écran.
 
@@ -182,7 +183,7 @@ Vous pouvez également installer le tableau blanc à partir du Microsoft Store:
 3. Installez l’application **surface** . Il s’agit de la première application répertoriée. Vous devrez peut-être associer votre MSA au Windows Store pour pouvoir installer l’application.
 4. Épingler l’application **surface** à la barre des tâches.
 
-### Capture & croquis
+### Capture d'écran et Croquis
 
 1. Ouvrez l’application de **capture & esquisse** et épinglez-la à la barre des tâches.
 2. Sélectionnez les points de suspension dans le coin supérieur droit, puis sélectionnez **paramètres**.
@@ -226,7 +227,7 @@ Configuration recommandée sur le réseau d’entreprise:
 
   ![Paramètres au bureau](images/project2.png)
 
-### Votre téléphone
+### Votre Téléphone
 
 L’application **votre téléphone** est installée par défaut sur Windows 10. Si ce n’est pas le cas, vous pouvez également l’installer à partir du Windows Store.
 
@@ -251,9 +252,8 @@ Téléchargez et installez le nouveau [navigateur Microsoft Edge chrome](https:/
 
 1. Sélectionnez **Démarrer**les  >  **paramètres**  >  **système**  >  **d’alimentation & Sleep**.
 2. Positionnez le curseur mode d’alimentation sur **meilleures performances**.
-3. Configurez les valeurs de l’écran et du mode veille à votre choix.
-
-### Écran de veille
+3. Configurez les valeurs de l’écran et de la mise en veille de votre choix en tenant compte de la détection de présence Doppler qui met l’appareil en éveil lorsque le mouvement est détecté. Par conséquent, il est recommandé de configurer l’écran pour qu’il soit **désactivé au bout de 2 heures** et du PC pour le désactiver **après 4 heures.**
+### Écran de veille.
 
 1. Recherchez l' **écran de verrouillage** et ouvrez les paramètres de l' **écran de verrouillage**.
 2. Configurez vos préférences en matière de **paramètres de délai d’écran** et de paramètres d' **écran de veille** .
@@ -314,7 +314,7 @@ Activez le mode tablette si vous le souhaitez, pour les besoins en matière d’
 4. Vérifiez les applications de la barre des tâches.
     - Connecter l’application
     - Icône de verrouillage
-    - Capture & croquis
+    - Capture d'écran et Croquis
     - Teams (le cas échéant)
     - Applications Office (le cas échéant)
     - Application surface
@@ -324,12 +324,11 @@ Activez le mode tablette si vous le souhaitez, pour les besoins en matière d’
 6. Vérifier que l’application de Project à ce PC est activée avec l’application connexion (l’application n’a pas besoin d’être en cours d’exécution avant la connexion).
 7. Vérifiez les paramètres d’alimentation et de veille.
     - Écran de veille: 15 minutes, définie sur (aucune), mystification ou Blank; la case à cocher pour exiger un mot de passe est activée
-    - Écran: 2 heures
-    - PC: 4 heures
+    - Écran: **désactiver après 2 heures.**
+    - PC:  **désactivez après 4 heures.**
 8. Vérifiez que Windows Hello fonctionne.
-9. Vérifiez les paramètres d’alimentation.
-10. Vérifier la synchronisation vos paramètres sont désactivés.
-11. Vérifiez les applications de démarrage.
+9. Vérifier la synchronisation vos paramètres sont désactivés.
+10. Vérifiez les applications de démarrage.
 
 > [!TIP]
 > Après l’installation et la configuration de Windows 10, les applications de surface Hub 2 peuvent être gérées comme n’importe quel autre appareil Windows 10.

@@ -9,16 +9,16 @@ manager: laurawi
 ms.author: greglin
 audience: Admin
 ms.topic: article
-ms.date: 11/19/2019
+ms.date: 09/22/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 4cb01b3baa65292d611a45439d57820bd21f5fb7
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: c563a518cf1e30ce6e1aa95a4e71e748acdbf906
+ms.sourcegitcommit: 4f89d9af7bd0865828d097ed4a7863d8d396d41f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833581"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "11076382"
 ---
-# Caractéristiques techniques de SurfaceHub2S
+# Caractéristiques techniques de surface Hub 50 2 pouces
 
 |**Élément**|**Détails**|
 |:------ |:--------- |
@@ -35,7 +35,7 @@ ms.locfileid: "10833581"
 |**Capteurs**| Occupation Doppler <sup> 2</sup> <br> Accéléromètre <br> Gyroscope |
 |**Audio/Vidéo**| Haut-parleurs stéréo en trois directions <br> Tableau de microphone MEMS 8 éléments à bandes entières <br> Caméra Microsoft surface Hub 2, 4 Ko, connexion USB-C, 90-niveau HFOV |
 |**Stylet**| Stylo Microsoft surface Hub 2 (actif) |
-|**Logiciels**| Windows 10 <br> Microsoft teams pour surface Hub <sup> 3</sup> <br> SkypeEntreprise <br> Tableau blanc collaboratif Microsoft <br> Microsoft Office (mobile) <br> Microsoft Power BI <sup> 2</sup> |
+|**Logiciels**| Windows10 <br> Microsoft teams pour surface Hub <sup> 3</sup> <br> SkypeEntreprise <br> Tableau blanc collaboratif Microsoft <br> Microsoft Office (mobile) <br> Microsoft Power BI <sup> 2</sup> |
 |**Extérieures**| Carter: aluminium précision en aluminium avec une résine composite minérale <br> Couleur: Platinum <br> Boutons physiques: alimentation, volume, source |
 |**Ce qui se trouve dans la zone**| Un surface Hub 2 <br> Un stylet surface Hub 2  <br> Une caméra surface Hub 2 <br> Câble d’alimentation CA 2,5 m <br> Guide de démarrage rapide |
 |**Garantie**| garantie matérielle d’un an limitée |
