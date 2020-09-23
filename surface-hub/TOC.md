@@ -2,9 +2,10 @@
 
 # SurfaceHub2S
 
-## Présentation
+## Vue d'ensemble
 ### [Nouveautés de SurfaceHub2S pour les administrateurs informatiques](surface-hub-2s-whats-new.md)
-### [Caractéristiques techniques de SurfaceHub2S](surface-hub-2s-techspecs.md) 
+### [Caractéristiques techniques de SurfaceHub2S 50pouces](surface-hub-2s-techspecs.md) 
+### [SurfaceHub2S 85pouces](surface-hub-2s-85.md)
 ### [Notions fondamentales sur le système d’exploitation (SurfaceHub)](differences-between-surface-hub-and-windows-10-enterprise.md)
 ### [Ajuster la luminosité, le volume et les entrées de SurfaceHub2S](surface-hub-2s-onscreen-display.md)
 ### [Utiliser le tableau blanc Microsoft sur un Surface Hub](https://support.office.com/article/use-microsoft-whiteboard-on-a-surface-hub-5c594985-129d-43f9-ace5-7dee96f7621d)
