@@ -11,12 +11,12 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 5cbfeee6dee7dcb921b5cbecaaeca7b4461073dc
-  ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
+  ms.openlocfilehash: 6d3d6f4c3e9ed468f91cccf68ac3532afa3d2266
+  ms.sourcegitcommit: 3b1bc3682d0dee24149ec26cdc78d3148b8d7808
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/16/2020
-  ms.locfileid: "11016403"
+  ms.lasthandoff: 09/24/2020
+  ms.locfileid: "11077739"
 landingContent:
 - title: Appareils Surface
   linkLists:
@@ -38,13 +38,23 @@ landingContent:
       url: surface-book-quadro.md
     - text: Nouveautés de surface Dock 2
       url: surface-dock-whats-new.md
+- title: MicrosoftIgnite
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Déploiement de Zero effleurement avec surface & AutoPilot
+      url: https://youtu.be/WQ-wg8fRzN0
+    - text: Surface Pro X et Windows sur ARM dans un monde distant
+      url: https://youtu.be/bDw77ZQNPPw
+    - text: Surface Security-chip to Cloud Endpoint Protection de Microsoft
+      url: https://youtu.be/uadAecDbqf4
 - title: Déployer des appareilsSurface
   linkLists:
   - linkListType: deploy
     links:
     - text: Appareils Autopilot et Surface
       url: windows-autopilot-and-surface-devices.md
-    - text: Prise en charge de l’inscription de surface pour Windows AutoPilot
+    - text: Prise en charge de l’inscription en surface pour Windows AutoPilot
       url: surface-autopilot-registration-support.md
     - text: Windows Virtual Desktop sur Surface
       url: windows-virtual-desktop-surface.md
