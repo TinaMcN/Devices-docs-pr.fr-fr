@@ -1,5 +1,5 @@
 ---
-title: Surface Hub 2 85 pouces
+title: SurfaceHub2S 85pouces
 description: Cet article présente surface Hub 2 85 pouces.
 keywords: Surface Hub 2 85, spécifications techniques
 ms.prod: surface-hub
@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/25/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 40c16aa783e0880a3d28178ed936a68d7dc49c1a
-ms.sourcegitcommit: d7fe059a823b7e5f1daec447d92dac60bdd2a26e
+ms.openlocfilehash: 149e3498b2d976b5ab090db1726d56eb2357ffc5
+ms.sourcegitcommit: 5fa5efefd510ce6f435d7142fb2f2cc08b520da9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072824"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "11078734"
 ---
 # Vue d’ensemble de surface Hub 2 85 "& spécifications techniques
 
@@ -35,7 +35,7 @@ La version 85 de la famille surface Hub permet d’obtenir l’interface de surf
 
 | Composant    | Description                                                                                                                                                                                                                                         |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Analytique        | 44,5 "x 62,8" x 3,4 "<br>(1130mm x 1595mm x 85.6 mm)                                                                                                                                                                                                        |
+| Analytique        | 44,5 "x 77,1" x 3,4 "<br>(1130mm x 1959mm x 85.6 mm)                                                                                                                                                                                                        |
 | Épaisseur            | 185 livres (84kg)                                                                                                                                                                                                                                            |
 | Résolution        | 3840 x 2160                                                                                                                                                                                                                                               |
 | Affichage           | PixelSense™ afficher, le rapport hauteur/largeur de 16:9, la couleur 10 bits, la largeur de bordure de 30.5 mm, le niveau d’éblouissement                                                                                                           |
