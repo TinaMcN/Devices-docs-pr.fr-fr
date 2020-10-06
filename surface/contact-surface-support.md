@@ -1,5 +1,5 @@
 ---
-title: Contactez le support Surface
+title: Contact Surface Support
 ms.author: v-todmc
 author: greg-lindsay
 manager: laurawi
@@ -18,47 +18,47 @@ ms.custom:
 - CI 118876
 - CSSTroubleshoot
 ms.reviewer: mablaik
-description: Informations de support pour les produits Microsoft surface and surface Hub.
-ms.openlocfilehash: f423bdcc5bc4890861614e6213e9281b22925b42
-ms.sourcegitcommit: 13015036a3e5cb5909924d7e4289473a1572cf9d
+description: Support information for Microsoft Surface and Surface Hub products.
+ms.openlocfilehash: 37554183b4839b5e6825a8ac680336b12e213219
+ms.sourcegitcommit: edc92b4be50e6a86f4b942bf71339d97aaf3c5ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "11030411"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "11094911"
 ---
-# Surface support
+# Surface Support
 
-### Avant de nous contacter:  
+### Before you contact us:  
 
-Exécutez le [Kit de diagnostics surface pour les entreprises](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business) (SDT). Le SDT permet aux administrateurs informatiques de rechercher rapidement, de résoudre les problèmes et de résoudre les problèmes de matériel, de logiciel et de microprogramme avec des appareils surface. Vous pouvez exécuter une gamme de tests de diagnostic et de réparations logicielles en plus d’informations sur l’obtention d’informations sur l’état de l’appareil et des instructions pour la résolution des problèmes. 
+Run the [Surface Diagnostic Toolkit for Business](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business) (SDT). The SDT enables IT administrators to quickly investigate, troubleshoot, and resolve hardware, software, and firmware issues with Surface devices. You can run a range of diagnostic tests and software repairs in addition to obtaining device health insights and guidance for resolving issues. 
 
-Si vous rencontrez toujours un problème après avoir exécuté le kit de jeu, utilisez les onglets ci-dessous pour sélectionner une option de support.
+If you are still having a problem after running the toolkit, use the tabs below to select a support option.
 
-## [Support en ligne](#tab/online)
+## [Online support](#tab/online)
 
 > [!NOTE]
-> Vous serez invité à vous connecter au portail de soumission en ligne à l’aide de votre compte Microsoft ou de votre compte Azure Active Directory.  
+> You will be required to log into the online submission portal using your Microsoft Account or Azure Active Directory Account.  
 
-Pour les clients professionnels: [Envoyez votre demande de service](https://support.microsoft.com/supportforbusiness/productselection). 
+For business customers: [Submit your service request](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d383b26c-f150-6220-8f1b-e8aa325d9727). 
 
-Pour les clients Microsoft premier: [Envoyez votre demande de service sur le Hub services](https://serviceshub.microsoft.com/support/contactsupport). 
+For Microsoft Premier customers: [Submit your service request on Services Hub](https://serviceshub.microsoft.com/support/contactsupport). 
 
  
-## [Support téléphonique](#tab/phone)
+## [Phone support](#tab/phone)
 
-[Appelez-nous pour commencer votre demande de service](https://support.microsoft.com/help/4051701/global-customer-service-phone-numbers). Préparez le numéro de série de votre appareil lorsque vous appelez. 
+[Call us to start your service request](https://support.microsoft.com/help/4051701/global-customer-service-phone-numbers). Have your device’s serial number ready when you call. 
 
-## [Support en magasin](#tab/instore)
+## [In-store support](#tab/instore)
 
-## Chine, Inde
+## China, India
 
-Rendez un rendez-vous dans un centre de cheminement de surface pour vous aider à résoudre votre problème:
+Make an appointment at a Surface Walk-In Center to help resolve your issue:
 
-1. Accédez à la page des [informations de contact du centre de maintenance surface](https://support.microsoft.com/help/4498593/find-surface-walk-in-center-contact-information) . 
-2. Sélectionnez votre emplacement pour trouver le centre d’étape le plus proche de chez vous.  
-3. Choisissez votre centre de visite et contactez-le pour planifier un rendez-vous.
+1. Go to the [Surface Walk-In Center Contact Information](https://support.microsoft.com/help/4498593/find-surface-walk-in-center-contact-information) page. 
+2. Select your location to find the Walk-In Center nearest you.  
+3. Choose your Walk-In Center and contact them to schedule an appointment.
 
 
 ---
 
-Encore besoin d’aide? Accédez à la [communauté Microsoft](https://answers.microsoft.com/).
+Still need help? Go to [Microsoft Community](https://answers.microsoft.com/).
