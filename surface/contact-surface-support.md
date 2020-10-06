@@ -1,5 +1,5 @@
 ---
-title: Contactez le support Surface
+title: Contact Surface Support
 ms.author: v-todmc
 author: greg-lindsay
 manager: laurawi
@@ -18,47 +18,47 @@ ms.custom:
 - CI 118876
 - CSSTroubleshoot
 ms.reviewer: mablaik
-description: Informations de support pour les produits Microsoft surface and surface Hub.
-ms.openlocfilehash: f423bdcc5bc4890861614e6213e9281b22925b42
-ms.sourcegitcommit: 13015036a3e5cb5909924d7e4289473a1572cf9d
+description: Support information for Microsoft Surface and Surface Hub products.
+ms.openlocfilehash: 37554183b4839b5e6825a8ac680336b12e213219
+ms.sourcegitcommit: edc92b4be50e6a86f4b942bf71339d97aaf3c5ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "11030411"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "11094911"
 ---
-# <span data-ttu-id="072d4-103">Surface support</span><span class="sxs-lookup"><span data-stu-id="072d4-103">Surface Support</span></span>
+# <span data-ttu-id="aecec-103">Surface Support</span><span class="sxs-lookup"><span data-stu-id="aecec-103">Surface Support</span></span>
 
-### <span data-ttu-id="072d4-104">Avant de nous contacter:</span><span class="sxs-lookup"><span data-stu-id="072d4-104">Before you contact us:</span></span>  
+### <span data-ttu-id="aecec-104">Before you contact us:</span><span class="sxs-lookup"><span data-stu-id="aecec-104">Before you contact us:</span></span>  
 
-<span data-ttu-id="072d4-105">Exécutez le [Kit de diagnostics surface pour les entreprises](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business) (SDT).</span><span class="sxs-lookup"><span data-stu-id="072d4-105">Run the [Surface Diagnostic Toolkit for Business](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business) (SDT).</span></span> <span data-ttu-id="072d4-106">Le SDT permet aux administrateurs informatiques de rechercher rapidement, de résoudre les problèmes et de résoudre les problèmes de matériel, de logiciel et de microprogramme avec des appareils surface.</span><span class="sxs-lookup"><span data-stu-id="072d4-106">The SDT enables IT administrators to quickly investigate, troubleshoot, and resolve hardware, software, and firmware issues with Surface devices.</span></span> <span data-ttu-id="072d4-107">Vous pouvez exécuter une gamme de tests de diagnostic et de réparations logicielles en plus d’informations sur l’obtention d’informations sur l’état de l’appareil et des instructions pour la résolution des problèmes.</span><span class="sxs-lookup"><span data-stu-id="072d4-107">You can run a range of diagnostic tests and software repairs in addition to obtaining device health insights and guidance for resolving issues.</span></span> 
+<span data-ttu-id="aecec-105">Run the [Surface Diagnostic Toolkit for Business](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business) (SDT).</span><span class="sxs-lookup"><span data-stu-id="aecec-105">Run the [Surface Diagnostic Toolkit for Business](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business) (SDT).</span></span> <span data-ttu-id="aecec-106">The SDT enables IT administrators to quickly investigate, troubleshoot, and resolve hardware, software, and firmware issues with Surface devices.</span><span class="sxs-lookup"><span data-stu-id="aecec-106">The SDT enables IT administrators to quickly investigate, troubleshoot, and resolve hardware, software, and firmware issues with Surface devices.</span></span> <span data-ttu-id="aecec-107">You can run a range of diagnostic tests and software repairs in addition to obtaining device health insights and guidance for resolving issues.</span><span class="sxs-lookup"><span data-stu-id="aecec-107">You can run a range of diagnostic tests and software repairs in addition to obtaining device health insights and guidance for resolving issues.</span></span> 
 
-<span data-ttu-id="072d4-108">Si vous rencontrez toujours un problème après avoir exécuté le kit de jeu, utilisez les onglets ci-dessous pour sélectionner une option de support.</span><span class="sxs-lookup"><span data-stu-id="072d4-108">If you are still having a problem after running the toolkit, use the tabs below to select a support option.</span></span>
+<span data-ttu-id="aecec-108">If you are still having a problem after running the toolkit, use the tabs below to select a support option.</span><span class="sxs-lookup"><span data-stu-id="aecec-108">If you are still having a problem after running the toolkit, use the tabs below to select a support option.</span></span>
 
-## [<span data-ttu-id="072d4-109">Support en ligne</span><span class="sxs-lookup"><span data-stu-id="072d4-109">Online support</span></span>](#tab/online)
+## [<span data-ttu-id="aecec-109">Online support</span><span class="sxs-lookup"><span data-stu-id="aecec-109">Online support</span></span>](#tab/online)
 
 > [!NOTE]
-> <span data-ttu-id="072d4-110">Vous serez invité à vous connecter au portail de soumission en ligne à l’aide de votre compte Microsoft ou de votre compte Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="072d4-110">You will be required to log into the online submission portal using your Microsoft Account or Azure Active Directory Account.</span></span>  
+> <span data-ttu-id="aecec-110">You will be required to log into the online submission portal using your Microsoft Account or Azure Active Directory Account.</span><span class="sxs-lookup"><span data-stu-id="aecec-110">You will be required to log into the online submission portal using your Microsoft Account or Azure Active Directory Account.</span></span>  
 
-<span data-ttu-id="072d4-111">Pour les clients professionnels: [Envoyez votre demande de service](https://support.microsoft.com/supportforbusiness/productselection).</span><span class="sxs-lookup"><span data-stu-id="072d4-111">For business customers: [Submit your service request](https://support.microsoft.com/supportforbusiness/productselection).</span></span> 
+<span data-ttu-id="aecec-111">For business customers: [Submit your service request](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d383b26c-f150-6220-8f1b-e8aa325d9727).</span><span class="sxs-lookup"><span data-stu-id="aecec-111">For business customers: [Submit your service request](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d383b26c-f150-6220-8f1b-e8aa325d9727).</span></span> 
 
-<span data-ttu-id="072d4-112">Pour les clients Microsoft premier: [Envoyez votre demande de service sur le Hub services](https://serviceshub.microsoft.com/support/contactsupport).</span><span class="sxs-lookup"><span data-stu-id="072d4-112">For Microsoft Premier customers: [Submit your service request on Services Hub](https://serviceshub.microsoft.com/support/contactsupport).</span></span> 
+<span data-ttu-id="aecec-112">For Microsoft Premier customers: [Submit your service request on Services Hub](https://serviceshub.microsoft.com/support/contactsupport).</span><span class="sxs-lookup"><span data-stu-id="aecec-112">For Microsoft Premier customers: [Submit your service request on Services Hub](https://serviceshub.microsoft.com/support/contactsupport).</span></span> 
 
  
-## [<span data-ttu-id="072d4-113">Support téléphonique</span><span class="sxs-lookup"><span data-stu-id="072d4-113">Phone support</span></span>](#tab/phone)
+## [<span data-ttu-id="aecec-113">Phone support</span><span class="sxs-lookup"><span data-stu-id="aecec-113">Phone support</span></span>](#tab/phone)
 
-<span data-ttu-id="072d4-114">[Appelez-nous pour commencer votre demande de service](https://support.microsoft.com/help/4051701/global-customer-service-phone-numbers).</span><span class="sxs-lookup"><span data-stu-id="072d4-114">[Call us to start your service request](https://support.microsoft.com/help/4051701/global-customer-service-phone-numbers).</span></span> <span data-ttu-id="072d4-115">Préparez le numéro de série de votre appareil lorsque vous appelez.</span><span class="sxs-lookup"><span data-stu-id="072d4-115">Have your device’s serial number ready when you call.</span></span> 
+<span data-ttu-id="aecec-114">[Call us to start your service request](https://support.microsoft.com/help/4051701/global-customer-service-phone-numbers).</span><span class="sxs-lookup"><span data-stu-id="aecec-114">[Call us to start your service request](https://support.microsoft.com/help/4051701/global-customer-service-phone-numbers).</span></span> <span data-ttu-id="aecec-115">Have your device’s serial number ready when you call.</span><span class="sxs-lookup"><span data-stu-id="aecec-115">Have your device’s serial number ready when you call.</span></span> 
 
-## [<span data-ttu-id="072d4-116">Support en magasin</span><span class="sxs-lookup"><span data-stu-id="072d4-116">In-store support</span></span>](#tab/instore)
+## [<span data-ttu-id="aecec-116">In-store support</span><span class="sxs-lookup"><span data-stu-id="aecec-116">In-store support</span></span>](#tab/instore)
 
-## <span data-ttu-id="072d4-117">Chine, Inde</span><span class="sxs-lookup"><span data-stu-id="072d4-117">China, India</span></span>
+## <span data-ttu-id="aecec-117">China, India</span><span class="sxs-lookup"><span data-stu-id="aecec-117">China, India</span></span>
 
-<span data-ttu-id="072d4-118">Rendez un rendez-vous dans un centre de cheminement de surface pour vous aider à résoudre votre problème:</span><span class="sxs-lookup"><span data-stu-id="072d4-118">Make an appointment at a Surface Walk-In Center to help resolve your issue:</span></span>
+<span data-ttu-id="aecec-118">Make an appointment at a Surface Walk-In Center to help resolve your issue:</span><span class="sxs-lookup"><span data-stu-id="aecec-118">Make an appointment at a Surface Walk-In Center to help resolve your issue:</span></span>
 
-1. <span data-ttu-id="072d4-119">Accédez à la page des [informations de contact du centre de maintenance surface](https://support.microsoft.com/help/4498593/find-surface-walk-in-center-contact-information) .</span><span class="sxs-lookup"><span data-stu-id="072d4-119">Go to the [Surface Walk-In Center Contact Information](https://support.microsoft.com/help/4498593/find-surface-walk-in-center-contact-information) page.</span></span> 
-2. <span data-ttu-id="072d4-120">Sélectionnez votre emplacement pour trouver le centre d’étape le plus proche de chez vous.</span><span class="sxs-lookup"><span data-stu-id="072d4-120">Select your location to find the Walk-In Center nearest you.</span></span>  
-3. <span data-ttu-id="072d4-121">Choisissez votre centre de visite et contactez-le pour planifier un rendez-vous.</span><span class="sxs-lookup"><span data-stu-id="072d4-121">Choose your Walk-In Center and contact them to schedule an appointment.</span></span>
+1. <span data-ttu-id="aecec-119">Go to the [Surface Walk-In Center Contact Information](https://support.microsoft.com/help/4498593/find-surface-walk-in-center-contact-information) page.</span><span class="sxs-lookup"><span data-stu-id="aecec-119">Go to the [Surface Walk-In Center Contact Information](https://support.microsoft.com/help/4498593/find-surface-walk-in-center-contact-information) page.</span></span> 
+2. <span data-ttu-id="aecec-120">Select your location to find the Walk-In Center nearest you.</span><span class="sxs-lookup"><span data-stu-id="aecec-120">Select your location to find the Walk-In Center nearest you.</span></span>  
+3. <span data-ttu-id="aecec-121">Choose your Walk-In Center and contact them to schedule an appointment.</span><span class="sxs-lookup"><span data-stu-id="aecec-121">Choose your Walk-In Center and contact them to schedule an appointment.</span></span>
 
 
 ---
 
-<span data-ttu-id="072d4-122">Encore besoin d’aide?</span><span class="sxs-lookup"><span data-stu-id="072d4-122">Still need help?</span></span> <span data-ttu-id="072d4-123">Accédez à la [communauté Microsoft](https://answers.microsoft.com/).</span><span class="sxs-lookup"><span data-stu-id="072d4-123">Go to [Microsoft Community](https://answers.microsoft.com/).</span></span>
+<span data-ttu-id="aecec-122">Still need help?</span><span class="sxs-lookup"><span data-stu-id="aecec-122">Still need help?</span></span> <span data-ttu-id="aecec-123">Go to [Microsoft Community](https://answers.microsoft.com/).</span><span class="sxs-lookup"><span data-stu-id="aecec-123">Go to [Microsoft Community](https://answers.microsoft.com/).</span></span>
