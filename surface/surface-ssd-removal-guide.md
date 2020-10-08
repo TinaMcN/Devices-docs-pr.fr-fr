@@ -8,7 +8,7 @@ ms.sitesec: library
 author: mccoybot
 ms.author: v-todmc
 ms.topic: article
-ms.date: 8/7/2020
+ms.date: 10/7/2020
 ms.reviewer: johnk
 manager: laurawi
 ms.audience: itpro
@@ -19,22 +19,22 @@ appliesto:
 ms.custom:
 - CI 121887
 - CSSTroubleshoot
-ms.openlocfilehash: 66860af06f4fad8f19ca26702350f19cc85ffef1
-ms.sourcegitcommit: bad416f04c6877f2200f134a69146bb633155f22
+ms.openlocfilehash: 00109e4e1bb3873fc2914b2044f58e6fa3b6c211
+ms.sourcegitcommit: d0a5c8fb2b37eb11858c7be4549e55c4b36d7471
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919223"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104806"
 ---
 # Recommandations en matière de suppression de disques durs de périphériques de surface compatibles
 
 > [!IMPORTANT]
-> Cet article est destiné aux techniciens informatiques qualifiés au sein d’une organisation d’entreprise. Il présente les meilleures pratiques recommandées pour les techniciens informatiques qualifiés lors de la suppression et du remplacement de SSDs dans des appareils surface dotés de SSDs amovible. 
+> Cet article est destiné aux techniciens informatiques qualifiés au sein d’une organisation d’entreprise. Il présente les meilleures pratiques recommandées pour les techniciens informatiques qualifiés lors de la suppression et du remplacement de SSDs dans surface Laptop 3 ou surface Pro X uniquement. 
 
 > [!WARNING]
 > L’ouverture de périphériques et le remplacement des composants de périphériques peuvent présenter un choc électrique, un dommage de l’appareil, un incendie, des risques liés au préjudice personnel et autres dangers.  Soyez toujours prudent lorsque vous exercez de telles activités. Suivez les consignes et procédures de sécurité qui sont identifiées dans le [Guide de suppression de rSSD pour les entreprises](https://www.microsoft.com/download/100440). Nous vous recommandons d’obtenir une assistance technique si vous ne pouvez pas suivre les consignes de sécurité et les procédures indiquées dans le Guide de suppression de rSSD pour les entreprises.
 
-## Prérequis
+## Conditions préalables
 
 > [!IMPORTANT]
 > Cet article part du principe que vous comprenez les consignes générales en matière de sécurité et les stratégies et procédures de sécurité décrites dans le «Guide de suppression rSSD pour les entreprises».

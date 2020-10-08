@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/29/2020
+ms.date: 10/08/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 0c6a52d1023377f51ae6a63879e54b86db16cb9a
-ms.sourcegitcommit: 35f64110ce8e0c0b019b02023d746f648f554c1c
+ms.openlocfilehash: 0a74a082d1afe48c938fcc4780407d56cfdd121e
+ms.sourcegitcommit: 56526c92d84dbc2cebcb8071d995efe399f306df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "11088628"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11105275"
 ---
 # Migrer vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2
 
@@ -87,7 +87,7 @@ La version UEFI minimale requise avant la migration de surface hub d’une équi
 
 Sur un PC différent:
 
-- Téléchargez Microsoft [surface Configurateur](https://www.microsoft.com/download/details.aspx?id=46703) à partir d’outils surface. Le configurateur surface surface ne peut pas être exécuté sur surface Hub 2, alors que l’équipe Windows 10 est installée.
+- Cliquez sur le bouton Télécharger dans la [page outils surface pour cette page](https://www.microsoft.com/download/details.aspx?id=46703), puis sélectionnez et téléchargez surface UEFI Configurator. Et l’installer sur un PC distinct. L’outil de Configurateur surface UEFI ne peut pas être exécuté sur un surface Hub 2
 
 - Téléchargez [les pilotes surface Hub 2 et le programme d’installation de Windows. Fichier MSI](https://www.microsoft.com/download/details.aspx?id=101974) à appliquer lors de l’installation du nouveau système d’exploitation.
 
@@ -107,6 +107,7 @@ Le package SEMM créé à l’aide de l’outil de configuration de surface UEFI
 ### Créer un package SEMM
 
 1. Installez les outils de **Configurateur surface UEFI** téléchargés précédemment sur un autre ordinateur. 
+
 2. Ouvrez le **Configurateur surface UEFI** et sélectionnez **Démarrer**.
 
    ![Ouverture du configurateur surface UEFI](images/shm-fig2.png)
@@ -137,14 +138,14 @@ Le package SEMM créé à l’aide de l’outil de configuration de surface UEFI
    
 9. Définissez un **mot de passe UEFI** et sélectionnez **OK**.
 
- > [!IMPORTANT]
+   > [!IMPORTANT]
    > Enregistrez le mot de passe à un emplacement sécurisé accessible aux administrateurs informatiques de votre organisation responsable de la gestion des hubs de surface. Si le mot de passe est perdu, il n’y a pas de processus de récupération. 
 
    ![Entrer votre mot de passe UEFI](images/shm-fig9.png)
 
-10. Sélectionnez **surface Hub 2** , puis sélectionnez **suivant**.
+10. Sélectionnez **surface Hub 2**, puis sélectionnez **suivant**.
 
-   ![Sélectionner surface Hub 2](images/shm-fig10.png)
+    ![Sélectionner surface Hub 2](images/shm-fig10.png)
    
 11. Sélectionnez **Suivant**.
 
@@ -159,7 +160,7 @@ Le package SEMM créé à l’aide de l’outil de configuration de surface UEFI
     ![Définir l’activation de la migration du système d’exploitation](images/shm-fig12.png)
 
 > [!NOTE]
-> Lorsque vous appliquez un package SEMM, tous les paramètres UEFI apparaissent comme grisés dans le menu UEFI de l’appareil. Cela inclut les valeurs par défaut pour d’autres paramètres, tels que IPv6 pour le démarrage PXE. Pour modifier les paramètres UEFI, vous devez appliquer un autre package SEMM ou annuler l’inscription de l’appareil à partir de SEMM.
+> Lorsque vous appliquez un package SEMM, tous les paramètres UEFI apparaissent comme grisés dans le menu UEFI de l’appareil. Cela inclut les valeurs par défaut pour d’autres paramètres, tels que IPv6 pour le démarrage PXE. Pour modifier les paramètres UEFI après avoir terminé la migration, vous devez appliquer un autre package SEMM ou annuler l’inscription de l’appareil à partir de SEMM. Si vous appliquez un autre package SEMM pour modifier les paramètres UEFI, vous devez utiliser le certificat d’origine lors de la création du nouveau package SEMM à l’aide de l’outil de configuration UEFI. 
 
 #### Enregistrer le package SEMM sur le lecteur USB
 
@@ -213,10 +214,12 @@ Cette procédure décrit la création d’un lecteur flash USB à partir du supp
 6. Copiez les fichiers du package SEMM et les pilotes et le microprogramme pour Windows 10 professionnel ou Enterprise sur surface Hub 2 (. Fichier MSI) à la racine de la clé USB USB (**BOOTME**) contenant votre image Windows 10. Le lecteur USB BOOTME contient les éléments suivants:
 
     - Image de démarrage de Windows 10
+    
     - Fichiers de package SEMM (copiés à la racine du lecteur USB)
-        - DfciUpdate. DFI
-        - Fichier texte avec l’empreinte numérique SEMM. (Dans cet exemple: SurfaceUEFI_2020Aug25_1058.txt. La date d’horodatage de la génération automatique correspond à la date à laquelle vous avez créé le fichier à l’aide de surface UEFI Configurator.)
-    - Pilotes et microprogrammes pour Windows 10 professionnel et entreprise sur surface Hub 2 (SurfaceHub2S_Win10_18362_20.082.25682.0.msi)
+    
+      - DfciUpdate. DFI
+      - Fichier texte avec l’empreinte numérique SEMM. (Dans cet exemple: SurfaceUEFI_2020Aug25_1058.txt. La date d’horodatage de la génération automatique correspond à la date à laquelle vous avez créé le fichier à l’aide de surface UEFI Configurator.)
+      - Pilotes et microprogrammes pour Windows 10 professionnel et entreprise sur surface Hub 2 (SurfaceHub2S_Win10_18362_20.082.25682.0.msi)
 
 ### Mise à jour de UEFI sur surface Hub 2S pour permettre la migration du système d’exploitation
 

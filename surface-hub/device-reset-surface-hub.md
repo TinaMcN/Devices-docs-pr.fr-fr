@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 07/31/2019
 ms.localizationpriority: medium
-ms.openlocfilehash: c5cf643d0f4a68344bb098916a909dd66e1dac9b
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 1c8d8b6d89ec1a20550b7aa13c82c73a239c3965
+ms.sourcegitcommit: d0a5c8fb2b37eb11858c7be4549e55c4b36d7471
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833731"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104816"
 ---
 # Réinitialiser ou récupérer un surface Hub
 
@@ -73,7 +73,7 @@ Il est possible que vous deviez utiliser ce type de processus de récupération 
 - [Surface Hub est verrouillé](#recover-a-locked-surface-hub)
 
 >[!IMPORTANT]
->La **récupération à partir du processus Cloud** nécessite une connexion Internet ouverte (aucune doublure ou autre authentification). Il est recommandé d’avoir une connexion Ethernet.
+>Le processus **de récupération à partir du Cloud** nécessite une connexion câblée qui fournit une connectivité Internet ouverte (pas de proxy ou d’autres invites d’authentification).
 
 ### Récupérer un Surface Hub se trouvant dans un état incorrect
 
@@ -127,8 +127,8 @@ Si le compte d’appareil est dans un état instable ou si le compte d’adminis
 Si vous avez des questions ou si vous avez besoin d’aide, vous pouvez [créer une demande de support](https://support.microsoft.com/supportforbusiness/productselection).
 
 
-## Rubriques connexes
+## Rubriquesassociées
 
-[Gérer le Microsoft SurfaceHub](manage-surface-hub.md)
+[Gérer Microsoft Surface Hub](manage-surface-hub.md)
 
 [Guide de l’administrateur Microsoft Surface Hub](surface-hub-administrators-guide.md)
