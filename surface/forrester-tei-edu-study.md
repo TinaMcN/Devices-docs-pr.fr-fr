@@ -1,6 +1,6 @@
 ---
-title: The Total Economic Impact of Microsoft Surface for Education
-description: This page provides a downloadable PDF of a Forrester Consulting study on the potential return on investment (ROI) for K-12 schools deploying Surface.
+title: Impact économique total de Microsoft surface pour l’éducation
+description: Cette page fournit une version PDF téléchargeable d’une étude de Forrester Consulting sur le retour sur investissement potentiel pour les écoles de K-12 qui déploient surface.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.localizationpriority: medium
@@ -19,13 +19,13 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/06/2020
 ms.locfileid: "11099879"
 ---
-# The Total Economic Impact of Microsoft Surface for Education
+# Impact économique total de Microsoft surface pour l’éducation
 
-Access to individual computing devices is critical for the education of K-12 students. Benefits of this access include better instruction, enhanced creativity and collaboration, fulfillment of accessibility and special learning requirements, and teaching workplace technology skill sets. Microsoft Surface devices create better outcomes for students, while also making it easier for IT organizations to support 1:1 student device models as well as freeing up teachers’ and administrators’ time.
+L’accès à des appareils informatiques individuels est essentiel pour l’éducation de K-12 étudiants. Les avantages de cet accès incluent de meilleures instructions, de créativité et de collaboration optimisées, d’accessibilité et d’apprentissage spécial requis, ainsi que des compétences en matière de technologie de l’espace de travail. Les périphériques Microsoft surface permettent de créer de meilleurs résultats pour les étudiants, tout en facilitant la prise en charge des modèles d’appareils d’étudiant 1:1 et la simplification des enseignants et du temps pour les enseignants.
 
-Microsoft commissioned Forrester Consulting to conduct a Total Economic Impact&trade; (TEI) study and examine the potential return on investment (ROI) for K-12 schools deploying Surface. The purpose of this study is to provide readers with a framework to evaluate the potential financial impact of Surface on their organizations. Adopting Surface as the device of choice for an institution improves student outcomes, helps overworked IT departments, frees up instructors’ time, and reduces total cost of ownership (TCO) for devices.
+Étude de Forrester Consulting dans le cadre de la mise en place d’une étude d’impact &trade; sur le coût total (TEI) et examen du retour sur investissement potentiel pour les écoles de K-12 qui déploient surface. Cette étude a pour but de fournir aux utilisateurs un cadre permettant d’évaluer l’impact financier potentiel de la surface dans leurs organisations. L’adoption de la surface comme le dispositif de choix d’une entreprise améliore les résultats de ses étudiants, aide les services informatiques surtravaillés, libère les heures des enseignants et réduit le coût total de propriété (TCO) pour les appareils.
 
-[![The Total Economic Impact of Microsoft Surface for Education](./images/download-report.png)](./media/forrester-tei-microsoft-surface-for-education.pdf)
+[![Tson impact économique total sur Microsoft surface pour l’éducation](./images/download-report.png)](./media/forrester-tei-microsoft-surface-for-education.pdf)
 
 
 

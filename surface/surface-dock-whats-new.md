@@ -1,6 +1,6 @@
 ---
-title: What’s new in Surface Dock
-description: This article highlights new features and functionality for the next generation Surface Dock.
+title: Nouveautés du quai de surface
+description: Cet article présente les nouvelles fonctionnalités pour le Dock surface nouvelle génération.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.localizationpriority: medium
@@ -19,116 +19,116 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/01/2020
 ms.locfileid: "11093137"
 ---
-# What’s new in Surface Dock 
+# Nouveautés du quai de surface 
 
-Surface Dock 2, the next generation Surface dock, lets users connect external monitors and multiple peripherals to obtain a fully modernized desktop experience from a Surface device. Built to maximize efficiency at the office, in a flexible workspace, or at home, Surface Dock 2 features seven ports, including two front-facing USB-C ports, with 15 watts of fast charging power for phone and accessories. 
+Le Dock surface 2, le Dock de surface de nouvelle génération, permet aux utilisateurs de connecter des moniteurs externes et de nombreux périphériques pour obtenir une expérience de bureau entièrement moderne à partir d’un appareil surface. Conçue pour optimiser l’efficacité au bureau, dans un espace de travail flexible, ou à la maison, surface Dock 2 comporte sept ports, y compris deux ports USB-C, avec 15 watts de puissance de chargement rapide pour les téléphones et les accessoires. 
 
-### Full device management support
+### Prise en charge de la gestion complète des appareils
 
-Surface Dock 2 is designed to simplify IT management, enabling admins to automate firmware updates using Windows Update or centralize updates with internal software distribution tools.
+Surface Dock 2 est conçu pour simplifier la gestion informatique, permettant ainsi aux administrateurs d’automatiser les mises à jour de microprogramme à l’aide de Windows Update ou de centralisation des mises à jour avec les outils de distribution de logiciels internes.
 
-- Surface Enterprise Management Mode (SEMM) enables IT admins to secure ports on Surface Dock 2. For more information, see [Secure Surface Dock 2 ports with Surface Enterprise Management Mode](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/secure-surface-dock-2-ports-with-surface-enterprise-management/ba-p/1418999).
--  Windows Management Instrumentation (WMI) support enables IT admins to remotely monitor and manage the latest firmware, policy state, and related data across Surface Dock 2 devices. For more information, see [Manage Surface Dock 2 with WMI](surface-dock2-wmi.md).
+- Le mode de gestion des entreprises de surface (SEMM) permet aux administrateurs informatiques de sécuriser les ports du Dock 2. Pour plus d’informations, reportez-vous à la section [Secure surface Dock 2 ports avec le mode Enterprise Management surface](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/secure-surface-dock-2-ports-with-surface-enterprise-management/ba-p/1418999).
+-  La prise en charge de WMI (Windows Management Instrumentation) permet aux administrateurs informatiques de surveiller et de gérer à distance les derniers microprogrammes, l’état de la stratégie et les données associées sur les appareils de l’ancrage surface 2. Pour plus d’informations, reportez-vous à [gérer surface Dock 2 avec WMI](surface-dock2-wmi.md).
 
-## General system requirements
+## Configuration système requise
 
-- Windows 10 version 1809. There is no support for Windows 7, Windows 8, or non-Surface host devices. Surface Dock 2 works with the following Surface devices:
+- Windows 10 version 1809. Il n’y a pas de prise en charge pour les appareils hôtes Windows 7, Windows 8 et non surface. Le quai de surface 2 fonctionne avec les appareils surface suivants:
 
-  - Surface Pro (5th Gen)
-  - Surface Laptop (1st Gen)
-  - Surface Pro 6
-  - Surface Book 2
-  - Surface Laptop 2
-  - Surface Go
-  - Surface Pro 7
+  - Surface Pro (5e génération)
+  - Surface Laptop (1ère génération)
+  - SurfacePro6
+  - SurfaceBook2
+  - Surface Laptop2
+  - SurfaceGo
+  - SurfacePro7
   - SurfaceProX 
-  - Surface Laptop 3
-  - Surface Book 3
-  - Surface Go 2
+  - Surface Laptop3
+  - SurfaceBook3
+  - SurfaceGo2
 
-## Surface Dock 2 Components
+## Composants du Dock surface 2
 
-![Surface Dock 2 Components](./images/surface-dock2.png)
+![Composants du Dock surface 2](./images/surface-dock2.png)
  
 ### USB
 
-- Two front facing USB-C ports.
-- Two rear facing USB-C (gen 2) ports.
-- Two rear facing USB-A ports. 
+- Deux ports USB-C en face.
+- Deux ports USB-C (Gen 2) arrière.
+- Deux bus USB tournés vers l’arrière. 
 
-### Video
+### Vidéo
     
-- Dual 4K@60hz. Supports up to two displays on the following devices:
+- Deux 4K@60hz. Prend en charge jusqu’à deux affichages sur les appareils suivants:
 
-  - Surface Book 3
+  - SurfaceBook3
   - SurfaceGo2
   - SurfacePro7
   - SurfaceProX
-  - Surface Laptop 3
+  - Surface Laptop3
 
-- Dual 4K@ 4K@30Hz. Supports up to two displays on the following devices:
+- 4K@30Hz 4K@. Prend en charge jusqu’à deux affichages sur les appareils suivants:
 
-  - Surface Pro 6
-  - Surface Pro (5th Gen)
-  - Surface Laptop 2
-  - Surface Laptop (1st Gen)
-  - Surface Go
+  - SurfacePro6
+  - Surface Pro (5e génération)
+  - Surface Laptop2
+  - Surface Laptop (1ère génération)
+  - SurfaceGo
   - Surface Book 2.
 
 ### Ethernet
 
-- 1 gigabit Ethernet port. 
+- 1 port Gigabit Ethernet. 
 
-### External Power supply
+### Alimentation électrique externe
 
-- 199 watts supporting 100V-240V.
-
-
-## Comparing Surface Dock 
-
-**Table 1. Surface Dock and USB-C Travel Hub**
+- 199 watts prenant en charge 100V-240 v.
 
 
-| Component                           | Surface Dock                                                | Surface Dock 2                                                                                      | USB-C Travel Hub |
+## Comparer le quai de surface 
+
+**Tableau1. Centre de voyage en surface pour station d’accueil USB-C**
+
+
+| Composant                           | Station d’accueilSurface                                                | Quai de surface 2                                                                                      | Concentrateur de voyages USB-C |
 | ----------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------- |
-| Surflink                            | Yes                                                         | Oui                                                                                                 | No               |
-| USB-A                               | 2 front facing USB 3.1 Gen 1<br>2 rear facing USB 3.1 Gen 1 | 2 rear facing USB 3.2 Gen 2 (7.5W power)                                                            | 1 USB 3.1 Gen 2  |
-| Mini Display port                   | 2 rear facing (DP1.2)                                       | None                                                                                                | None             |
-| USB-C                               | None                                                        | 2 front facing USB 3.2 Gen 2<br>(15W power)<br>2 rear facing USB 3.2 Gen 2 (DP1.4a)<br>(7.5W power) | 1 USB 3.2 Gen 2  |
-| 3.5 mm Audio in/out                 | Yes                                                         | Oui                                                                                                 | Yes              |
-| Ethernet                            | Yes, 1 gigabit                                              | Yes 1 gigabit                                                                                       | Yes, 1 gigabit   |
-| DC power in                         | Yes                                                         | Yes                                                                                                 |                  |
-| Kensington lock                     | Yes                                                         | Yes                                                                                                 |                  |
-| Surflink cable length               | 65cm                                                        | 80cm                                                                                                | 20cm             |
-| Surflink host power                 | 60W                                                         | 120W                                                                                                | N/A              |
-| USB load power                      | 30W                                                         | 60W                                                                                                 |                  |
-| USB bit rate                        | 5 Gbps                                                      | 10 Gbps                                                                                             | 10 Gbps          |
-| Monitor support                     | 2 x 4k @30fps, or<br>1 x 4k @ 60fps                         | 2 x 4K @ 60fps                                                                                      | 1 x 4K @ 60fps   |
-| Wake-on-LAN from Connected Standby<sup>1</sup> | Yes                                                         | Yes                                                                                                 |                  |
-| Wake-on-LAN from S4/S5 sleep modes  | No                                                          | Oui                                                                                                 |          Yes        |
-| Network PXE boot                    | Yes                                                         | Oui                                                                                                 |        Yes          |
-| SEMM host access control            | No                                                          | Oui                                                                                                 | No               |
-| SEMM port access control<sup>2</sup>          | No                                                          | Oui                                                                                                 | No               |
-| Servicing support                   | MSI                                                         | Windows Update or MSI                                                                               |                  |
+| Surflink                            | Oui                                                         | Oui                                                                                                 | Non               |
+| USB-A                               | 2 port frontal USB 3,1 Gen 1<br>2 USB 3,1 Gen 1 | 2 bus USB 3,2 Gen 2 de l’arrière                                                            | 1 3,1 génération 2 USB  |
+| Mini-port d’affichage                   | 2 face arrière (DP 1,2)                                       | Aucun(e)                                                                                                | Aucun(e)             |
+| USB-C                               | None                                                        | 2 interface USB 3,2 Gen 2<br>(alimentation 15W)<br>2 USB 3,2 Gen 2 (DP 1.4 a)<br>(7,5 w puissance) | 1 3,2 génération 2 USB  |
+| entrée/sortie audio de 3,5 mm                 | Oui                                                         | Oui                                                                                                 | Oui              |
+| Ethernet                            | Oui, 1 Gigabit                                              | Oui 1 Gigabit                                                                                       | Oui, 1 Gigabit   |
+| Alimentation C.C.                         | Oui                                                         | Oui                                                                                                 |                  |
+| Antivol Kensington                     | Oui                                                         | Oui                                                                                                 |                  |
+| Longueur du câble SurfLink               | 65cm                                                        | 80cm                                                                                                | 20cm             |
+| Puissance de l’hôte SurfLink                 | 60W                                                         | 120W                                                                                                | Non applicable              |
+| Puissance de chargement USB                      | 30W                                                         | 60W                                                                                                 |                  |
+| Taux binaire USB                        | 5 Gbit/s                                                      | 10 Gbit/s                                                                                             | 10 Gbit/s          |
+| Surveiller la prise en charge                     | 2 x 4Ko @30fps ou<br>1 x 4 000 @ des                         | 2 x 4 000 @ des                                                                                      | 1 x 4 000 @ des   |
+| Wake-on-LAN du mode veille connectée <sup> 1</sup> | Oui                                                         | Oui                                                                                                 |                  |
+| Wake-on-LAN à partir du mode veille S4/S5  | Non                                                          | Oui                                                                                                 |          Oui        |
+| Démarrage du réseau PXE                    | Oui                                                         | Oui                                                                                                 |        Oui          |
+| Contrôle d’accès de l’hôte SEMM            | Non                                                          | Oui                                                                                                 | Non               |
+| Contrôle d’accès au port SEMM <sup> 2</sup>          | Non                                                          | Oui                                                                                                 | Non               |
+| Maintenance du support technique                   | MSI                                                         | Windows Update ou MSI                                                                               |                  |
 
  
 
 
 
-1. *Devices must be configured for Wake on LAN via Surface Enterprise Management Mode (SEMM) or Device Firmware Control Interface (DFCI) to wake from Hibernation or Power-Off states. Wake from Hibernation or Power-Off is supported on Surface Pro 7, Surface Laptop 3, Surface Pro X, Surface Book 3, and Surface Go 2.  Software license required for some features. Sold separately.*
+1. *Les appareils doivent être configurés pour la fonction Wake on LAN via le mode de gestion de surface entreprise (SEMM) ou l’interface de contrôle du microprogramme de l’appareil (DFCI) pour sortir de la mise en veille La mise en éveil est prise en charge sur surface Pro 7, surface Laptop 3, surface Pro X, surface Book 3 et surface Go 2.  Licence logicielle requise pour certaines fonctionnalités. Vendu séparément.*
 
-2. *Software license required for some features. Sold separately.*
+2. *Licence logicielle requise pour certaines fonctionnalités. Vendu séparément.*
 
-## Streamlined device management
+## Gestion rationalisée des appareils
 
-Surface has released streamlined management functionality via Windows Update enabling IT admins to utilize the following enterprise-grade features:
+Surface dispose de fonctionnalités de gestion rationalisées par le biais de Windows Update, ce qui permet aux administrateurs informatiques d’utiliser les fonctionnalités de niveau entreprise suivantes:
 
-- **Frictionless updates**. Update your docks silently and automatically, with Windows Update or Microsoft Endpoint Configuration Manager, (formerly System Center Configuration Manager - SCCM) or other MSI deployment tools. 
-- **Wake from the network**. Manage and access corporate devices without depending on users to keep their devices powered on. Even when a docked device is in sleep, hibernation, or power off mode, your team can wake from the network for service and management, using Endpoint Configuration Manager or other enterprise management tools.
-- **Centralized IT control**. Control who can connect to Surface Dock 2 by turning ports on and off. Restrict which host devices can be used with Surface Dock 2. Limit dock access to a single user or configure docks so they can only be accessed by specific users in your team or across the entire company.
+- Les **mises à jour apportées par friction**. Mettez à jour vos ancrages de manière silencieuse et automatique, à l’aide de Windows Update ou du gestionnaire de configuration de point de terminaison Microsoft (anciennement System Center Configuration Manager-SCCM) ou d’autres outils de déploiement MSI. 
+- **Sortir du réseau**. Gérer et accéder aux appareils d’entreprise sans dépendre des utilisateurs pour maintenir leurs appareils allumés. Même lorsqu’un appareil fixe est en veille, en veille ou en mode hors connexion, votre équipe peut sortir du réseau pour le service et la gestion, à l’aide du gestionnaire de configuration de point de terminaison ou d’autres outils de gestion d’entreprise.
+- **Contrôle informatique centralisé**. Déterminez qui peut se connecter à l’ancrage surface 2 en activant ou en désactivant les ports. Restreignez les appareils hôtes qui peuvent être utilisés avec l’ancrage surface 2. Limitez l’accès à un utilisateur unique ou configurez les stations d’accueil de sorte qu’elles soient accessibles uniquement par des utilisateurs spécifiques de votre équipe ou de toute la société.
 
-## Next steps
+## Étapes suivantes
 
-- [Secure Surface Dock 2 ports with Surface Enterprise Management Mode](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/secure-surface-dock-2-ports-with-surface-enterprise-management/ba-p/1418999)
-- [Surface Enterprise Management Mode](surface-enterprise-management-mode.md)
-- [Best practice power settings for Surface devices](maintain-optimal-power-settings-on-Surface-devices.md)
+- [Ports 2 du Dock de surface sécurisée avec le mode de gestion de surface entreprise](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/secure-surface-dock-2-ports-with-surface-enterprise-management/ba-p/1418999)
+- [Mode de gestion SurfaceEnterprise](surface-enterprise-management-mode.md)
+- [Bonne pratique pour les paramètres d’alimentation des appareils Surface](maintain-optimal-power-settings-on-Surface-devices.md)
