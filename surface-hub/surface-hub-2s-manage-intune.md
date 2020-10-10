@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 07/23/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: a031fd7fd861e5d45194ec1a8c391621a2bcb71a
-ms.sourcegitcommit: 5fa5efefd510ce6f435d7142fb2f2cc08b520da9
+ms.openlocfilehash: 2fafca4a8f19da72d1584c02cbebe1ce3c03adde
+ms.sourcegitcommit: a16c75f4e81c48e2d0e3ec45430af0939e4feaa2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "11078744"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "11105940"
 ---
 # Gérer le Surface Hub 2S avec Intune
 
@@ -92,19 +92,25 @@ Pour obtenir une qualité vidéo et audio optimale sur le Surface Hub 2S, ajoute
 > [!NOTE]
 > Les deux tableaux affichent les plages des ports par défaut. Les administrateurs peuvent modifier les plages des ports dans le panneau de configuration de SkypeEntreprise et de Teams.
 
-## Paramètres du mode Microsoft Teams
+## Paramètres de Microsoft teams
 
-Vous pouvez configurer le mode application de Microsoft Teams à l’aide de Intune. Microsoft Teams est nativement installé et défini sur le mode 0 sur le Surface Hub 2S, qui prend en charge Microsoft Teams et Skype Entreprise. Vous pouvez régler les modes comme illustré ci-dessous.
+Vous pouvez configurer différents paramètres de Microsoft teams à l’aide de Intune.
 
-### Modes:
+### Mode
+
+Microsoft Teams est nativement installé et défini sur le mode 0 sur le Surface Hub 2S, qui prend en charge Microsoft Teams et Skype Entreprise. Fonction modes comme décrit ci-dessous:
 
 - Mode0: Skype Entreprise avec la fonctionnalité Microsoft Teams pour les réunions planifiées.
 - Mode1: Microsoft Teams avec la fonctionnalité Skype Entreprise pour les réunions planifiées.
 - Mode2: Microsoft Teams uniquement.
 
-Pour configurer les modes, ajoutez les paramètres suivants à un profil de configuration de périphérique personnalisé.
+Pour ajuster le mode, ajoutez les paramètres suivants à un [profil de configuration d’appareil personnalisé](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure).
 
 | Nom | Description | OMA-URI | Type | Valeur |
 |:--- |:--- |:--- |:--- |:--- |
 |**ID de l’application Teams**|Nom de l’application|./Vendor/MSFT/SurfaceHub/Properties/VtcAppPackageId|String| Microsoft.MicrosoftTeamsforSurfaceHub_8wekyb3d8bbwe!Teams|
 |**Mode de l’application Teams**|Mode Teams|./Vendor/MSFT/SurfaceHub/Properties/SurfaceHubMeetingMode|Integer| 0 ou 1 ou 2|
+
+### Réunions coordonnées et jointure de proximité
+
+Les fonctionnalités de réunion et de proximité coordonnées des équipes peuvent être [configurées par le biais d’un fichier XML](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure) déployé par le biais d’un profil Intune.

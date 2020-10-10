@@ -8,7 +8,7 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 08/19/2020
+ms.date: 10/09/2020
 ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
@@ -17,12 +17,13 @@ appliesto:
 - Surface Pro X
 - Surface Laptop 3
 - Surface Book 3
-ms.openlocfilehash: 9d83fe9b7febf996d2cb314399505ed050a69a92
-ms.sourcegitcommit: b94832cba98e01014f7d184c85d79f8339e046c4
+- Surface Laptop Go
+ms.openlocfilehash: 20d1b187a565f210eedc632be1addeac5dd714ba
+ms.sourcegitcommit: 7d5b0a7948eb540d6849a0e2c70a1058584cc5f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "10941663"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "11105859"
 ---
 # Gestion Intune des paramètres de surface UEFI
 
@@ -54,6 +55,7 @@ DFCI est pris en charge sur les appareils suivants:
 - SurfaceProX
 - Surface Laptop3
 - SurfaceBook3
+- Surface Laptop Go
 
 > [!NOTE]
 > Surface Pro X ne prend pas en charge la gestion des paramètres de DFCI pour les appareils photo, audio et Wi-Fi intégrés.
@@ -84,7 +86,7 @@ Avant de configurer les paramètres de stratégie DFCI, commencez par créer un 
     ![Créer un profil DFCI](images/df1.png)
 
 5. Cliquez sur **OK** , puis sélectionnez **créer**.
-6. Sélectionnez **devoirs** et, sous **Sélectionner des groupes** , sélectionnez le groupe de sécurité Azure ad qui contient vos périphériques cibles, comme illustré dans la figure ci-dessous. Cliquez sur **Save**.
+6. Sélectionnez **devoirs** et, sous **Sélectionner des groupes** , sélectionnez le groupe de sécurité Azure ad qui contient vos périphériques cibles, comme illustré dans la figure ci-dessous. Cliquez sur **Enregistrer**.
 
     ![Attribuer un groupe de sécurité](images/df2a.png)
 
