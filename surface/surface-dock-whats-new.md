@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/01/2020
+ms.date: 10/12/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 19aba3e88afd7b17de5b391d1bfe6eaf77db38e9
-ms.sourcegitcommit: f996a95af741e54536b1f3eb94d0f13f681f5d5d
+ms.openlocfilehash: e96242ab9cef127238bda3ee3ea797c943479798
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "11093137"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114682"
 ---
 # Nouveautés du quai de surface 
 
@@ -45,6 +45,7 @@ Surface Dock 2 est conçu pour simplifier la gestion informatique, permettant ai
   - Surface Laptop3
   - SurfaceBook3
   - SurfaceGo2
+  - Surface Laptop Go
 
 ## Composants du Dock surface 2
 
@@ -115,7 +116,7 @@ Surface Dock 2 est conçu pour simplifier la gestion informatique, permettant ai
 
 
 
-1. *Les appareils doivent être configurés pour la fonction Wake on LAN via le mode de gestion de surface entreprise (SEMM) ou l’interface de contrôle du microprogramme de l’appareil (DFCI) pour sortir de la mise en veille La mise en éveil est prise en charge sur surface Pro 7, surface Laptop 3, surface Pro X, surface Book 3 et surface Go 2.  Licence logicielle requise pour certaines fonctionnalités. Vendu séparément.*
+1. *Les appareils doivent être configurés pour la fonction Wake on LAN via le mode de gestion de surface entreprise (SEMM) ou l’interface de contrôle du microprogramme de l’appareil (DFCI) pour sortir du mode veille ou Power-Off. La sortie à partir de la mise en veille prolongée ou Power-Off est prise en charge sur surface Pro 7, surface Laptop 3, surface Pro X, surface Book 3 et surface Go 2.  Licence logicielle requise pour certaines fonctionnalités. Vendu séparément.*
 
 2. *Licence logicielle requise pour certaines fonctionnalités. Vendu séparément.*
 

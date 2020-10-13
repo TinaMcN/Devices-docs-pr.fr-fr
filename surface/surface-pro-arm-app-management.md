@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/09/2020
+ms.date: 10/12/2020
 ms.reviewer: jessko
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: 202818488f19c82ba9d08cfcbfcd091e3e8b7bf6
-ms.sourcegitcommit: 7d5b0a7948eb540d6849a0e2c70a1058584cc5f8
+ms.openlocfilehash: 7d82a24126798c20f11c51074f6099e1363c257f
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "11105839"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114622"
 ---
 # Déploiement, gestion et maintenance de SurfaceProX
 
@@ -96,8 +96,7 @@ La plupart des applications s’exécutent sur des PC Windows10 ARM avec des exc
 
 ### Soutien aux applications de FastTrack 
 
-Le programme de Soutien aux applications est à la disposition des clients commerciaux pour leurs applications métier, éditeurs de logiciels indépendants et applications Microsoft internes ciblant Windows10 sur ARM. Si vous rencontrez un problème de compatibilité avec une application fonctionnant sous Windows10ARM, Microsoft fournit des ressources pour les développeurs afin de résoudre les problèmes et de fournir une aide dans le cadre des corrections d’applications, sans frais supplémentaires. Si vous souhaitez en savoir plus, visitez aka.ms/AppAssure
-
+Le programme de Soutien aux applications est à la disposition des clients commerciaux pour leurs applications métier, éditeurs de logiciels indépendants et applications Microsoft internes ciblant Windows10 sur ARM. Si les clients commerciaux rencontrent un problème de compatibilité avec une application fonctionnant sous Windows10ARM, Microsoft fournit des ressources pour les développeurs afin de résoudre les problèmes et de fournir une aide dans le cadre des corrections d’applications, sans frais supplémentaires. Si vous souhaitez en savoir plus, visitez [aka.ms/AppAssure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure).
 
 Pour plus d’informations sur l’exécution d’applications sur Surface Pro X, consultez:
 

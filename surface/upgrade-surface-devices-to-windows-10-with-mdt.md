@@ -13,35 +13,25 @@ ms.localizationpriority: medium
 ms.audience: itpro
 ms.reviewer: ''
 manager: laurawi
-ms.date: 04/24/2020
-ms.openlocfilehash: e1a1d34c4d32c5e6f95c985e335e405c0d9e59e4
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 10/12/2020
+ms.openlocfilehash: d9bc720c846b2bb158241a55e1759c841f1d7b3a
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833168"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114522"
 ---
 # Mettre à niveau des appareils surface vers Windows 10 à l’aide du kit de développement Microsoft Deployment
 
-#### S'applique à
-- SurfacePro6
-- Surface Laptop2
-- SurfaceGo
-- Surface Go avec LTE
-- SurfaceBook2
-- SurfacePro avec LTE Advanced (modèle1807)
-- SurfacePro (modèle1796)
-- Surface Laptop
-- SurfaceStudio
-- Surface Studio2
-- SurfaceBook
-- Surface Pro4
-- VersionsLTE du modèleSurface3
-- Surface3
-- Surface Pro3
-- Surface Pro2
-- SurfacePro
-- Windows 10
+#### Concerne
+
+- Surface Book (toutes éditions)
+- Surface Go (toutes éditions)
+- Surface Pro X (toutes éditions)
+- Surface Laptop (toutes éditions)
+- Surface Laptop Go
+- Surface Studio (toutes éditions)
+- Surface Pro 2 et version ultérieure
 
 Outre le mode de déploiement traditionnel des appareils de récréation d’image, les administrateurs désireux de mettre à jour les appareils de surface exécutant Windows 8,1 ou Windows 10 peuvent choisir de déployer des mises à niveau. En effectuant un déploiement de mise à niveau, Windows 10 peut être appliqué aux appareils sans suppression des utilisateurs, des applications ou de la configuration. Les utilisateurs des appareils déployés peuvent simplement continuer à utiliser les appareils avec les mêmes applications et paramètres que ceux utilisés avant la mise à niveau. 
 

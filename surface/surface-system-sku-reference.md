@@ -9,17 +9,17 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 08/04/2020
+ms.date: 10/12/2020
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 3eb177e976bd99ec245996db8cb22eab639f63cc
-ms.sourcegitcommit: c0676329f894135388b6d52f85ee8ac9507a836e
+ms.openlocfilehash: ec1d53a4bdbcaaf6606dcb0e52fc81de92a2a53b
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "10905671"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114542"
 ---
 # Référence SKU système
 
@@ -51,9 +51,11 @@ Les variables de modèle système et de référence système sont des variables 
 | Ordinateur portable surface 2 commercial                                  | Surface Laptop2 | Surface_Laptop_2_1769_Commercial |
 | SurfacePro7                 | SurfacePro7    | Surface_Pro_7_1866         |
 | SurfaceProX                 | SurfaceProX    | Surface_Pro_X_1876         |
+| Surface Pro X avec processeur SQ2                | SurfaceProX    | Surface_Pro_X_H_1876        |
 | Surface Laptop 3 13 "Intel | Surface Laptop3 | Surface_Laptop_3_1867:1868 |
 | Surface Laptop 3 15 "Intel | Surface Laptop3 | Surface_Laptop_3_1872      |
 | Ordinateur portable surface 3 15 "AMD   | Surface Laptop3 | Surface_Laptop_3_1873      | 
+| Surface Laptop Go  | Surface Laptop Go | Surface_Laptop_Go_1943      | 
 
 ## Exemples 
 

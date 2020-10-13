@@ -13,25 +13,26 @@ ms.localizationpriority: medium
 ms.audience: itpro
 ms.reviewer: ''
 manager: laurawi
-ms.date: 04/24/2020
-ms.openlocfilehash: b13b0a7fa486d2360c5e69ad1578c85a5e46a91d
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 10/12/2020
+ms.openlocfilehash: 858b6726f1127e3c439864f8946274ed0ea1edd3
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833264"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114562"
 ---
 # Déploiement de Windows 10 sur les appareils surface avec le kit de développement Microsoft Deployment
 
-**S'applique à**
+**Concerne**
 
 - Surface Studio et versions ultérieures
 - Surface Pro 4 et version ultérieure
 - Surface Book et version ultérieure
 - Surface Laptop et version ultérieure
+- Surface Laptop Go
 - SurfaceGo
 - Surface3
-- Windows 10
+- Windows10
 
 > [!NOTE]
 > MDT n’est pas pris en charge sur surface Pro X. Pour plus d’informations, reportez-vous à la rubrique [déploiement, gestion et maintenance de surface Pro X](surface-pro-arm-app-management.md).

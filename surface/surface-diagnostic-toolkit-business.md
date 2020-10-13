@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 07/31/2020
+ms.date: 10/12/2020
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 9c250cef63b760f3faab9172aa950c305e4e47e5
-ms.sourcegitcommit: f875a45961ff5f3c04006afc8690b5e5965e4d80
+ms.openlocfilehash: 1f2661811516507abd432dba602cf8ce81e6dbb3
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "10902982"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114662"
 ---
 # Déploiement du Kit de ressources de diagnostic pour Surface Entreprise
 
@@ -46,6 +46,7 @@ Ligne de commande |  Résoudre les problèmes liés aux appareils surface à dis
 
 Le SDT pour les entreprises est pris en charge sur les appareils surface 3 et les versions ultérieures, notamment:
 
+- Surface Laptop Go
 - SurfaceBook3
 - SurfaceGo2
 - SurfaceProX
@@ -180,6 +181,17 @@ Vous pouvez choisir d’exécuter une large gamme de journaux entre les applicat
 
 ## Modifications et mises à jour
 
+### Version 2.124.139.0
+
+Cette version du kit de diagnostics de surface pour les entreprises ajoute une prise en charge pour les éléments suivants:
+
+- Support intégré transparente
+- Enregistrer tous les résultats des tests
+- Vérifier que l’image est créée personnalisé
+- Inclure les avertissements du gestionnaire de périphériques
+- Version du microprogramme du Dock
+- Marquer des lecteurs comme des échecs potentiels dans le test de stockage
+- Supprimer le lien vers le magasin 
 
 ### Version 2.121.139
 *Date de publication: 31 2020 juillet*<br>

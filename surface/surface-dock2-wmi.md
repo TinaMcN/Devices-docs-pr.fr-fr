@@ -8,20 +8,20 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 8/05/2020
+ms.date: 10/12/2020
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 2c7e4ac00eea798613335a320b21ce6fcb9f9f2d
-ms.sourcegitcommit: 97e19fdcd074647bedec9efdfd3ce28e900ae2ea
+ms.openlocfilehash: 06933d49e99862fb19d0f6a09c9680a127b755cd
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10916506"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114652"
 ---
 # Gérer station d’accueilSurface 2 avec WMI
 
-La prise en charge de WMI (Windows Management Instrumentation) fournit un large éventail d’informations de diagnostic permettant aux administrateurs informatiques de surveiller et de gérer à distance le microprogramme, l’état de stratégie et les données associées de surface Dock 2. Vous pouvez utiliser WMI avec Windows PowerShell, System Center Operations Manager et d’autres outils. Pour plus d’informations sur WMI, voir [utilisation de WMI](https://docs.microsoft.com/powershell/scripting/learn/ps101/07-working-with-wmi?view=powershell-5.1). 
+La prise en charge de WMI (Windows Management Instrumentation) fournit un large éventail d’informations de diagnostic permettant aux administrateurs informatiques de surveiller et de gérer à distance le microprogramme, l’état de stratégie et les données associées de surface Dock 2. Vous pouvez utiliser WMI avec Windows PowerShell, System Center Operations Manager et d’autres outils. Pour plus d’informations sur WMI, voir [utilisation de WMI](https://docs.microsoft.com/powershell/scripting/learn/ps101/07-working-with-wmi?&preserve-view=true). 
 
 Pour activer la prise en charge de WMI, accédez au [microprogramme et aux pilotes de surface Dock 2](https://www.microsoft.com/download/details.aspx?id=101317) , puis téléchargez le package approprié:
 
@@ -31,6 +31,7 @@ Pour activer la prise en charge de WMI, accédez au [microprogramme et aux pilot
 - Surface Book (2ème génération et version ultérieure)
 - Surface Go (toutes les générations)
 - Surface Laptop (toutes les générations)
+- Surface Laptop Go
 
  **SurfaceDock2_WmiInstanceProvider_Win10_17763_&#60;version # C1_arm64.msi:** <br>
 
@@ -77,4 +78,4 @@ Pour activer la prise en charge de WMI, accédez au [microprogramme et aux pilot
 - [Sécuriser les ports de Surface Dock 2 avec SEMM](secure-surface-dock-ports-semm.md)
 - [Nouveautés de station d’accueilSurface 2.](surface-dock-whats-new.md)
 - [Codes d’erreur du gestionnaire de périphériques](https://docs.microsoft.com/windows-hardware/drivers/install/device-manager-error-messages)
-- [Utilisation de WMI](https://docs.microsoft.com/powershell/scripting/learn/ps101/07-working-with-wmi?view=powershell-5.1)
+- [Utilisation de WMI](https://docs.microsoft.com/powershell/scripting/learn/ps101/07-working-with-wmi?&preserve-view=true)

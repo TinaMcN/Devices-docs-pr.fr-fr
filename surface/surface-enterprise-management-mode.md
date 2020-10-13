@@ -13,20 +13,20 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 audience: itpro
-ms.date: 09/01/2020
-ms.openlocfilehash: 239b5e4659ff48e6c0fd9d2fca03341eadb9a27d
-ms.sourcegitcommit: 78694f3958117a339a28d3a5854908181f1b65d7
+ms.date: 10/12/2020
+ms.openlocfilehash: 463759d2dd01b9333d10a66c1781055f4a5217ac
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993664"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114642"
 ---
 # Microsoft surface Enterprise Management mode
 
 Le mode Microsoft surface Enterprise Management (SEMM) est une fonctionnalité des appareils surface dotés de surface UEFI qui vous permet de sécuriser et de gérer les paramètres du microprogramme au sein de votre organisation. Avec SEMM, les professionnels de l’informatique peuvent préparer des configurations de paramètres UEFI et les installer sur un appareil surface. Outre la possibilité de configurer les paramètres UEFI, SEMM utilise également un certificat pour protéger la configuration contre toute falsification ou suppression non autorisée. SEMM est une obligation d’être en mesure de migrer un surface Hub 2 vers Windows 10 professionnel ou entreprise.
 
 >[!NOTE]
->SEMM est uniquement disponible sur les appareils dotés d’un microprogramme surface UEFI. Cela comprend la plupart des appareils surface, y compris surface Pro 7, surface Pro X, surface Hub 2 et les références SKU de surface Laptop 3 avec un processeur Intel. SEMM n’est pas pris en charge sur la référence de 15 pouces surface pour le processeur AMD (disponible uniquement pour les points de vente). 
+>SEMM est uniquement disponible sur les appareils dotés d’un microprogramme surface UEFI. Il s’agit de la plupart des appareils surface, y compris les références de surface Pro 7, de surface Pro X, de surface Hub 2 et de surface Laptop 3 sur le processeur Intel, et de surface Laptop Go. SEMM n’est pas pris en charge sur la référence de 15 pouces surface pour le processeur AMD (disponible uniquement pour les points de vente). 
 
 Lorsque les appareils de surface sont configurés par SEMM et protégés par le certificat SEMM, ils sont considérés comme *inscrits* dans SEMM. Lorsque le certificat SEMM est supprimé et que le contrôle des paramètres UEFI est retourné à l’utilisateur de l’appareil, le périphérique surface est considéré comme non *inscrit* dans SEMM.
 
@@ -174,7 +174,7 @@ Les paramètres suivants sont recommandés pour le certificat SEMM:
 * **Date d’expiration** : 15 mois de création de certificats
 * **Politique d’exportation clé** -exportable
 
-Il est également recommandé d’authentifier le certificat SEMM dans une architecture de l’infrastructure à clé publique (PKI) sur deux couches, dans laquelle l’autorité de certification intermédiaire est dédiée à SEMM, activant la révocation des certificats. Pour plus d’informations sur la configuration d’une PKI sur deux couches, voir le [Guide du laboratoire de test: déploiement d’une hiérarchie PKI à deux couches AD CS](https://technet.microsoft.com/library/hh831348).
+Il est également recommandé d’authentifier le certificat SEMM dans une architecture de l’infrastructure à clé publique (PKI) sur deux couches, dans laquelle l’autorité de certification intermédiaire est dédiée à SEMM, activant la révocation des certificats. Pour plus d’informations sur la configuration d’une PKI sur deux couches, voir le [Guide du laboratoire de test: déploiement d’une hiérarchie de pki Two-Tier PKI](https://technet.microsoft.com/library/hh831348).
 
 ### Certificat auto-signé 
 Vous pouvez utiliser l’exemple de script PowerShell suivant pour créer un certificat auto-signé à utiliser dans les scénarios de validation.
@@ -243,6 +243,18 @@ Les exemples PowerShell qui créent un package de configuration pour un type d�
 ## Historique des versions
 
 
+### Version 2.78.139.0
+
+Cette version de SEMM inclut les éléments suivants:
+
+- Prise en charge de surface Laptop Go et de surface Pro X
+- Notifications pour la nouvelle version version
+- Possibilité de créer des packages personnalisés pour modifier la propriété;
+- Correction de bogues
+
+
+
+
 ### Version 2.73.136.0
 
 Cette version de SEMM inclut les éléments suivants:
@@ -305,7 +317,7 @@ Cette version de SEMM inclut les éléments suivants:
 * Ajouter la prise en charge de surface Pro
 * Correction de bogues et amélioration générale
 
-## Rubriquesassociées
+## Rubriques associées
 
 - [Inscrire et configurer les appareilsSurface auprès de SEMM](enroll-and-configure-surface-devices-with-semm.md)
 - [Désinscrire les appareils Surface de SEMM](unenroll-surface-devices-from-semm.md)

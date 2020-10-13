@@ -10,18 +10,29 @@ ms.pagetype: devices, surface
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.reviewer: ''
+ms.reviewer: hachidan
 manager: laurawi
-ms.openlocfilehash: ce857260c3f4b42ae560a7dba51d47d0e20233bd
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 10/12/2020
+ms.openlocfilehash: 218f98b23adcb7bae2af92655d85144c6e5665e6
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833408"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114722"
 ---
 # Gérer les paramètres UEFI Surface
 
 Toutes les générations actuelles et futures des appareils surface utilisent une interface de microprogramme unique unifiée (UEFI) conçue par Microsoft en particulier pour ces appareils. Les paramètres de surface UEFI permettent d’activer ou de désactiver les appareils et composants intégrés, de protéger les paramètres UEFI et de modifier les paramètres de démarrage de l’appareil surface. 
+
+## Produits pris en charge
+
+La gestion UEFI est prise en charge sur les éléments suivants: 
+
+- Surface Pro 4, surface Pro (5e génération), surface Pro 6, surface Pro 7, surface Pro X
+- Surface Laptop (1ère génération), surface Laptop 2, surface Laptop 3, surface Laptop Go
+- Surface Studio (1ère génération), surface Studio 2
+- Surface Book, surface Book 2, surface Book 3
+- Surface Go, surface Go 2
 
 ## Prise en charge de la gestion basée sur le Cloud
 
@@ -91,7 +102,7 @@ La page Sécurité vous permet également de modifier la configuration du démar
 
 *Figure4. Configurer le démarrage sécurisé*
 
-En fonction de votre appareil, vous serez peut-être en mesure de voir si votre TPM est activé ou désactivé. Si vous ne voyez pas le paramètre **activer le module de plateforme sécurisée** , ouvrez TPM. msc dans Windows pour vérifier l’État, comme illustré dans la figure 5. Le module TPM permet d’authentifier le chiffrement des données de votre appareil avec BitLocker. Pour en savoir plus, voir [vue d’ensemble de BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview). 
+En fonction de votre appareil, vous serez peut-être en mesure de voir si votre TPM est activé ou désactivé. Si vous ne voyez pas le paramètre **activer le module de plateforme sécurisée**  , ouvrez TPM. msc dans Windows pour vérifier l’État, comme illustré dans la figure 5. Le module TPM permet d’authentifier le chiffrement des données de votre appareil avec BitLocker. Pour en savoir plus, voir [vue d’ensemble de BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview). 
 
 ![Console du TPM](images/manage-surface-uefi-fig5-a.png "TPM console")
 
@@ -221,6 +232,6 @@ Lors d’une mise à jour du microprogramme de l’appareil Surface, que ce soit
 
 ## Rubriques associées
 
-- [Gestion Intune des paramètres UEFI Surface](surface-manage-dfci-guide.md)
+- [Gestion Intune des paramètres de surface UEFI](surface-manage-dfci-guide.md)
 
 -  [Mode de gestion SurfaceEnterprise](surface-enterprise-management-mode.md)

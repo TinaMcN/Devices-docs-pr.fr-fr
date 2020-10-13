@@ -15,12 +15,12 @@ ms.topic: article
 ms.date: 06/08/2020
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: de16d76581926a90585b2c6beb2a7bf3b7a695bc
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 641d023b59426582130dcfb7e0d86c6f3af456e8
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832274"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114692"
 ---
 # Ports 2 de la station d’accueil de surface sécurisée avec le mode de gestion de surface entreprise (SEMM)
 
@@ -30,7 +30,7 @@ Le mode de gestion de surface Enterprise (SEMM) permet aux administrateurs infor
 
 ### Appareils pris en charge
 
-La gestion de surface Dock 2 avec SEMM est disponible pour les stations d’accueil connectées à surface Book 3, surface Laptop 3 et surface Pro 7. Ces périphériques de surface compatibles sont souvent appelés **périphériques hôtes**. Un package est appliqué aux appareils hôtes en fonction du fait qu’un appareil hôte est **authentifié ou non** **authentifié**. Les paramètres configurés résident dans la couche UEFI sur les appareils hôtes qui vous permettent, l’administrateur informatique, de gérer surface Dock 2 comme n’importe quel autre périphérique intégré, tel que la caméra.
+La gestion de surface Dock 2 avec SEMM est disponible pour les stations d’accueil connectées à surface Book 3, surface Laptop 3, surface Laptop Go, surface Pro 7 et surface Pro X. Ces périphériques de surface compatibles sont souvent appelés **périphériques hôtes**. Un package est appliqué aux appareils hôtes en fonction du fait qu’un appareil hôte est **authentifié ou non** **authentifié**. Les paramètres configurés résident dans la couche UEFI sur les appareils hôtes qui vous permettent, l’administrateur informatique, de gérer surface Dock 2 comme n’importe quel autre périphérique intégré, tel que la caméra.
 
 >[!NOTE]
 >Vous pouvez gérer les ports de l’ancrage de surface 2 uniquement lorsque le Dock est connecté à l’un des appareils compatibles suivants: surface Book 3, surface Laptop 3 et surface Pro 7. Tout appareil qui ne reçoit pas les paramètres de stratégie UEFI s’il s’agit d’un appareil non authentifié par nature.
@@ -80,7 +80,7 @@ Les valeurs EKU requises sont indiquées dans les tableaux 1 et 2.
 
 |Certificat|Algorithm|Description|Expiration|IDENTIFICATEUR EKU|
 |---|---|---|---|---|
-|Autorité de certification racine|ECDSA_P384|-Certificat racine avec l’algorithme de signature numérique de l' 384-bit prime (ECDSA)<br>-SHA 256 clé d’utilisation:<br>CERT_DIGITAL_SIGNATURE_KEY_USAGE<br>-CERT_KEY_CERT_SIGN_KEY_USAGE<br>CERT_CRL_SIGN_KEY_USAGE|30 ans|N/A
+|Autorité de certification racine|ECDSA_P384|-Certificat racine avec l’algorithme de signature numérique de l' 384-bit prime (ECDSA)<br>-SHA 256 clé d’utilisation:<br>CERT_DIGITAL_SIGNATURE_KEY_USAGE<br>-CERT_KEY_CERT_SIGN_KEY_USAGE<br>CERT_CRL_SIGN_KEY_USAGE|30 ans|Non applicable
 |Ancrer une autorité de certification|Courbe ECC P256|-Certificat d’hôte avec chiffrement à courbe elliptique de 256 bits<br>-SHA 256 clé d’utilisation:<br>CERT_KEY_CERT_SIGN_KEY_USAGE<br>-Contrainte de longueur du chemin d’accès = 0|20 ans|1.3.6.1.4.1.311.76.9.21.2<br>1.3.6.1.4.1.311.76.9.21.3|
 
    >[!NOTE]

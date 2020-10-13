@@ -12,9 +12,10 @@ appliesto:
 - Surface Pro 7
 - Surface Laptop 3
 - Surface Pro X
+- Surface Laptop Go
 ms.custom:
 - CI 121602
-ms.reviewer: johnk@cadencepreferred.com
+ms.reviewer: hachidan
 description: Décrit comment activer et désactiver la mise en éveil pour les appareils surface.
 keywords: mise à jour, déploiement, pilote, WOL, Wake-on-LAN
 ms.prod: w10
@@ -25,12 +26,12 @@ ms.localizationpriority: medium
 ms.topic: article
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: 272c19baedb295abac08e90012246e453b88f42f
-ms.sourcegitcommit: 6fd7008992503db9ae1f56654aa80110348924d3
+ms.openlocfilehash: dee2a2962cf6b70a1bf11cf597b4d41f4b5568e4
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "10903393"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114572"
 ---
 # Wake on Power pour les appareils Surface
 
@@ -41,7 +42,9 @@ La fonctionnalité de mise en éveil est disponible sur les appareils suivants:
 - SurfaceBook3
 - SurfacePro7
 - Surface Laptop3
+- Surface Laptop Go
 - SurfaceProX 
+
 
 ## Présentation et configuration requise
 
@@ -58,13 +61,13 @@ Le Configurator du Configurateur de surface vous permet d’enregistrer les para
     :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-1.png" alt-text="Sélectionnez périphériques surface, puis sélectionnez suivant.":::
 3.  Sélectionnez **Démarrer**, puis cliquez sur **créer** sous **package de configuration**.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="Sélectionnez créer un package de configuration.":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="Sélectionnez périphériques surface, puis sélectionnez suivant.":::
 4.  Sélectionnez **protection de certificat**, puis ajoutez votre fichier Certificate. pfx. 
 5. Entrez votre mot de passe, sélectionnez **suivant**, ajoutez une **protection par mot de passe**, le cas échéant, puis sélectionnez **suivant**.
 6.  Dans la page **sélectionnez le type de surface que vous souhaitez cibler** , sélectionnez les appareils cibles appropriés. Par exemple, sélectionnez **surface Pro 7**.
 7.  Sur la page **fonctionnalités avancées** , sélectionnez **mise en éveil** **, activez la fonctionnalité, puis**sélectionnez **suivant**.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="Sélectionnez éveil et activation."::: 
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="Sélectionnez périphériques surface, puis sélectionnez suivant."::: 
 8.  Dans la page **réussite** , sélectionnez **fin**.
 
     > [!NOTE]
@@ -83,10 +86,10 @@ Vous pouvez appliquer le package MSI aux appareils de votre réseau à l’aide 
 
 2.  Dans la boîte de dialogue d' **Avertissement** , sélectionnez **OK** ou désactiver BitLocker, selon le cas.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="Sélectionnez OK ou désactivez BitLocker selon le cas.":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="Sélectionnez périphériques surface, puis sélectionnez suivant.":::
 3.  Dans la page d’accueil, sélectionnez **Next (suivant** ) pour exécuter le package et appliquer le paramètre UEFI nouvellement configuré.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="Dans la page Bienvenue, sélectionnez suivant.":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="Sélectionnez périphériques surface, puis sélectionnez suivant.":::
 4.  Redémarrez votre appareil. 
 
 La mise en éveil est désormais configurée. Pour tester les paramètres, éteignez votre appareil, débranchez le cordon d’alimentation, puis rebranchez le cordon d’alimentation. Le périphérique doit démarrer automatiquement. 

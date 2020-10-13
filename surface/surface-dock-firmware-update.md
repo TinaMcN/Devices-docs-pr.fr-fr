@@ -12,19 +12,19 @@ ms.reviewer: scottmca
 manager: laurawi
 ms.audience: itpro
 ms.date: 8/07/2020
-ms.openlocfilehash: 159eb4ca27bb867623020936276470ba9897f3b8
-ms.sourcegitcommit: 83530906c7e34c92bbee90b723321acd61e77669
+ms.openlocfilehash: 9069903421d6e621dfbc31cd1cfaffb045fa9f19
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "10918934"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114552"
 ---
 # Mise à jour du microprogramme Microsoft surface Dock: informations techniques destinées aux administrateurs informatiques
 
 > [!IMPORTANT]
 > Cet article contient des instructions techniques destinées aux administrateurs informatiques. Si vous êtes un particulier, voir [Comment mettre à jour le microprogramme de votre Dock surface](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock)   sur le site du support Microsoft. Les instructions sur le site d’assistance sont les mêmes que les étapes générales d’installation ci-dessous, mais cet article contient des informations supplémentaires pour surveiller, vérifier et déployer la mise à jour sur plusieurs appareils sur un réseau.
 
-Cet article décrit l’utilisation de la mise à jour du microprogramme Microsoft surface Dock pour mettre à jour le microprogramme du Dock surface. Lorsqu’il est installé sur votre appareil surface, il met à jour tout Dock de surface relié à votre surface. 
+Cet article explique comment utiliser la mise à jour du microprogramme Microsoft surface Dock pour mettre à jour le microprogramme sur le Dock 1 de surface d’origine et ne s’applique pas à l’ancrage surface 2. Lorsqu’il est installé sur votre appareil surface, il met à jour tout Dock de surface relié à votre surface. 
 
 Cet outil remplace l’outil de mise à jour de l’outil de mise à jour de Microsoft surface Dock antérieur, auparavant disponible en téléchargement dans le cadre des outils surface. L’outil précédent a été nommé Surface_Dock_Updater_vx.xx.xxx.x.msi (où x indique le numéro de version) et n’est plus disponible en téléchargement et ne doit pas être utilisé.
 
@@ -109,7 +109,7 @@ Réussite de la mise à jour du microprogramme du Dock de surface entraîne de n
 
 1. Ouvrez Regedit et naviguez jusqu’au chemin de Registre suivant:
 
-    - **HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\SurfaceDockFwUpdate\Parameters**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\SurfaceDockFwUpdate\Parameters**
 
 2. Recherchez les clés de Registre suivantes: **Component10CurrentFwVersion et Component20CurrentFwVersion**, qui font référence au microprogramme actuellement sur l’appareil.
 

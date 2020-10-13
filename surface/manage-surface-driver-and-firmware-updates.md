@@ -1,6 +1,6 @@
 ---
 title: Gérer et déployer les mises à jour du microprogramme et des pilotes Surface
-description: Cet article décrit les options disponibles pour gérer et déployer des mises à jour de microprogramme et de pilote pour les appareils surface.
+description: Cet article décrit les options de gestion et de déploiement des mises à jour de microprogramme et de pilote disponibles pour les appareils surface.
 ms.assetid: CD1219BA-8EDE-4BC8-BEEF-99B50C211D73
 ms.reviewer: ''
 manager: laurawi
@@ -14,12 +14,13 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 ms.audience: itpro
-ms.openlocfilehash: f41974193d62e4c0cbc1e286976105c20534d906
-ms.sourcegitcommit: ed4478dd3c6116a25b1e01a3a0f5ff6c1f940013
+ms.date: 10/12/2020
+ms.openlocfilehash: 39022ca631e35f4328d3c353b7b0d1e2ebaee6a7
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "10897062"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114632"
 ---
 # Gérer et déployer les mises à jour du microprogramme et des pilotes Surface
 
@@ -68,7 +69,7 @@ Le gestionnaire de configuration de point de terminaison et MDT utilisent l’en
 
 ## Appareils pris en charge
 
-Des fichiers. msi peuvent être téléchargés pour les appareils surface Pro 2 et version ultérieure. Des informations sur les fichiers. msi correspondant aux périphériques de surface les plus récents, tels que surface Pro 7 et surface Laptop 3, seront disponibles sur cette page lors de la publication.
+Des fichiers. msi téléchargeables sont disponibles pour les appareils surface Pro 2 ou version ultérieure (à l’exception de surface Pro X exécutant Windows 10 sur ARM).
 
 ## Gestion du microprogramme avec DFCI
 
