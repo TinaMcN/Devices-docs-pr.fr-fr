@@ -9,18 +9,19 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.reviewer: ''
+ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: bba99d202d5d0dc5085c454202ae9a95df56109c
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 10/13/2020
+ms.openlocfilehash: bfd10df3bb7a7dd031c1719d4191ffc46418c4e3
+ms.sourcegitcommit: 30c1eb469610dfd2ad9169c154ca07e565240fdb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833161"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "11117850"
 ---
-# Utiliser Microsoft Endpoint Configuration Manager pour gérer les appareils avec SEMM
+# Utilisez Microsoft Endpoint Configuration Manager pour gérer les appareils avec SEMM
 
 La fonctionnalité Microsoft surface Management Mode (SEMM) des appareils surface UEFI permet aux administrateurs de gérer et de sécuriser la configuration des paramètres de surface UEFI. Pour la plupart des organisations, ce processus est réalisé en créant des packages Windows Installer (. msi) à l’aide de l’outil de configuration de Microsoft surface UEFI. Ces packages sont ensuite exécutés ou déployés sur les appareils surface du client pour inscrire les appareils dans SEMM et mettre à jour la configuration des paramètres de surface UEFI.
 
@@ -391,7 +392,7 @@ Pour afficher les noms de paramètres les plus courants et les ID pour les appar
 
 Il est possible d’afficher les noms et ID de tous les appareils dans l' ConfigureSEMM.ps1 script.
 
-Il est possible d’afficher les noms et ID pour des appareils spécifiques dans les scripts ConfigureSEMM- <device name> . ps1. Par exemple, vous pouvez trouver les noms et les ID de surface Pro X dans le script ConfigureSEMM-ProX.ps1.
+Il est possible d’afficher les noms et ID pour des appareils spécifiques dans les scripts ConfigureSEMM- <device name> . ps1. 
 
 ## Déploiement de SEMM Configuration Manager scripts
 
