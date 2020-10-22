@@ -14,15 +14,15 @@ author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.date: 10/08/2020
+ms.date: 10/21/2020
 appliesto:
 - Surface Hub 2S
-ms.openlocfilehash: 66245f84f4413df2d9ae7b683947afbd84484325
-ms.sourcegitcommit: 56526c92d84dbc2cebcb8071d995efe399f306df
+ms.openlocfilehash: 25705f889f70e3d12dfef690c34e03d98254725e
+ms.sourcegitcommit: 959d2d856b1e5b5c72cd636f576b5feb1b633048
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11105321"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "11133179"
 ---
 # Configurer Windows 10 Professionnel ou Entreprise sur Surface Hub 2
 
@@ -422,11 +422,11 @@ Activez le mode tablette si vous le souhaitez, pour les besoins en matière d’
 
    - La détection de présence sera une icône verte dans la barre d’état système.
     
-6. Vérifier que l’application de Project à ce PC est activée avec l’application connexion (l’application n’a pas besoin d’être en cours d’exécution avant la connexion).
+6. Vérifiez que l’option de projection vers ce PC est activée avec l’application connexion. Après la configuration  **de Project avec ce paramètre de PC** , exécutez l’application de connexion au moins une fois. (Par la suite, l’application connexion n’a pas besoin d’être en cours d’exécution pour projeter sur surface Hub.)
 
 7. Vérifiez les paramètres d’alimentation et de veille.
 
-    - Écran de veille: 15 minutes, définie sur (aucune), mystification ou Blank; la case à cocher pour exiger un mot de passe est activée
+    - Écran de veille: 15 minutes, définie sur (aucune), mystification ou Blank; Vérifiez que la case à cocher demander un mot de passe est activée.
     - Écran: **désactiver après 2 heures**.
     - PC:  **désactivez après 4 heures**.
     
@@ -439,6 +439,6 @@ Activez le mode tablette si vous le souhaitez, pour les besoins en matière d’
 > [!TIP]
 > Après l’installation et la configuration de Windows 10, les applications de surface Hub 2 peuvent être gérées comme n’importe quel autre appareil Windows 10.
 
-## Rubriquesassociées
+## Rubriques associées
 
 [Migrer vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2](surface-hub-2s-migrate-os.md)
