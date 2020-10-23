@@ -17,12 +17,12 @@ ms.topic: article
 ms.date: 10/21/2020
 appliesto:
 - Surface Hub 2S
-ms.openlocfilehash: 25705f889f70e3d12dfef690c34e03d98254725e
-ms.sourcegitcommit: 959d2d856b1e5b5c72cd636f576b5feb1b633048
+ms.openlocfilehash: a17d4b05e6ee5f7415fed62d96b9e0a62a6dc123
+ms.sourcegitcommit: cbf237e59c97311bd8add3aae2a17738fe271ddc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "11133179"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11134402"
 ---
 # Configurer Windows 10 Professionnel ou Entreprise sur Surface Hub 2
 
@@ -44,13 +44,14 @@ Lors de cette procédure, il peut s’avérer utile d’utiliser un clavier et u
 
     - Les paramètres utilisés ici sont destinés à permettre une meilleure utilisation de l’affichage des fonctions visuelles de grande taille et, par conséquent, vous ne souhaitez pas synchroniser d’autres appareils.
     
-4. Redémarrez l'appareil.
+4. Redémarrez l’appareil.
 
 ## Activez le clavier tactile et le pavé tactile.
 
 1. Appuyez de façon prolongée ou cliquez avec le bouton droit sur la barre des tâches, puis sélectionnez **afficher le bouton du clavier tactile** et **afficher le bouton du pavé**tactile. 
 
     - Le clavier tactile est utile pour la saisie directe de l’utilisateur, et le pavé tactile virtuel permet d’effectuer des sélections précises, de pointage sur les info-bulles ou d’appuyer longuement sur un clic avec le bouton droit. 
+    
     - Consultez l’exemple suivant.
 
       ![Paramètres d’interaction](images/touch.png)
@@ -63,10 +64,9 @@ Lors de cette procédure, il peut s’avérer utile d’utiliser un clavier et u
     
     3. Activez la case à cocher en regard de dernier type de clavier dans la ligne du haut pour activer AZERTY, et la dernière option pour activer le mode flottant, ce qui est très utile sur ce grand écran. Consultez les exemples suivants.
 
-      ![Paramètres du clavier](images/kbd.png)
+       ![Paramètres du clavier](images/kbd.png)
  
 3. Configurez les paramètres de clavier logiciels.
-
 
     1. Sélectionnez l’icône **paramètres** sur le clavier ou recherchez et ouvrez les **paramètres de saisie**.
     
@@ -90,6 +90,7 @@ Si votre périphérique surface Hub est proche d’un PC, vous pouvez utiliser [
 Utilisez [OneDrive entreprise](https://docs.microsoft.com/onedrive/onedrive) pour partager facilement des outils, des journaux et d’autres fichiers entre tous vos périphériques de travail.
 
 - OneDrive vous permet de partager vos fichiers de travail entre votre ordinateur portable, votre bureau surface Hub et vos appareils mobiles gérés par Intune. Les fichiers peuvent être modifiés sur n’importe quel appareil, et tous les appareils connectés réseau sont mis à jour avec les modifications.
+
 - Si vous considérez la taille de la fonction SSD de surface Hub (128 Go), si vous configurez OneDrive sur votre appareil de bureau surface Hub, assurez-vous que la configuration par défaut est de conserver les fichiers en ligne et de télécharger des fichiers lorsque vous les utilisez.
 
 Pour configurer OneDrive pour télécharger les fichiers uniquement lorsque cela est nécessaire, définissez le paramètre **fichiers à la demande** pour **économiser de l’espace et télécharger les fichiers lorsque vous les utilisez**. Pour plus d’informations, reportez-vous à [la rubrique interroger et définir des fichiers à la demande dans Windows](https://docs.microsoft.com/onedrive/files-on-demand-windows).
@@ -116,13 +117,17 @@ Pour synchroniser des fichiers d’entreprise internes sur votre disque local à
 5. Vérifiez que la configuration est définie pour conserver les fichiers en ligne et télécharger les fichiers uniquement lors de leur utilisation:
 
     1. Ouvrez l’Explorateur de fichiers.
-    2. Naviguez jusqu’à droite et sélectionnez dans la section **Microsoft \ \<SharePoint Document Folder Name\> **.
+    
+    2. Accédez et cliquez avec le bouton droit sur votre nom SharePoint; par exemple, **contoso \ \<SharePoint Document Folder Name\> **.
+    
     3. Sélectionnez **libérer**de l’espace.
+    
     4. La colonne État affiche l’état des fichiers et des dossiers. Pour plus d’informations, voir [synchroniser des fichiers SharePoint avec le client de synchronisation OneDrive](https://support.microsoft.com/office/sync-sharepoint-files-with-the-onedrive-sync-client-groove-exe-59b1de2b-519e-4d3a-8f45-51647cf291cd).
     
 6. Les fichiers de canal teams sont stockés sur des sites SharePoint, avec toutes les mêmes fonctionnalités de documents SharePoint, y compris l’historique des versions et la synchronisation avec les appareils de bureau locaux. Pour synchroniser des fichiers de canal d’équipe:
 
-    1. Accédez au canal d’intérêt de l’équipe et sélectionnez l’onglet **fichiers** en haut. Sélectionnez **synchroniser**. Les fichiers commenceront à se synchroniser et sont visibles dans l’Explorateur de fichiers sur le **Bureau \ Microsoft \ \<name of the Teams Channel\> **.
+    1. Accédez au canal d’intérêt de l’équipe et sélectionnez l’onglet **fichiers** en haut. Sélectionnez **synchroniser**. Les fichiers commenceront à se synchroniser et sont visibles dans l’Explorateur de fichiers sur le **Bureau \ contoso \ \<name of the Teams Channel\> **.
+    
     2. Utilisez la même procédure que celle que vous avez utilisée pour synchroniser des sites SharePoint afin de conserver les fichiers dans le Cloud et de les télécharger uniquement lorsque vous les utilisez, appuyez longuement ou cliquez avec le bouton droit dans l’Explorateur de fichiers sur le nom du canal Teams, puis sélectionnez libérer de l' **espace**.
 
 ## Paramètres de stylet surface Hub
@@ -153,7 +158,7 @@ Couplez le stylet pour maintenir à jour le microprogramme du stylo et obtenir d
 
 2. Dans la partie inférieure de la page, sélectionnez raccourcis clavier permettant d’ouvrir la boîte de dialogue, comme suit:
 
-![Raccourcis clavier](images/sh2-pen-shortcuts.png)
+   ![Raccourcis clavier](images/sh2-pen-shortcuts.png)
 
 ## Configuration de la caméra
 
@@ -200,7 +205,9 @@ Pour ajouter une icône à la barre des tâches qui permet le verrouillage de l�
 Pour mettre à jour toutes les applications du Windows Store installées:
 
 1. Ouvrez l’application Microsoft Store et sélectionnez les points de suspension **voir plus** dans le coin supérieur droit.
+
 2. Sélectionnez **Téléchargements et mises à jour**.
+
 2. Sélectionnez **Obtenir les mises à jour**.
 
 ### Tableau blanc collaboratif Microsoft
@@ -246,6 +253,7 @@ Vous pouvez également installer le tableau blanc à partir du Microsoft Store:
 3. Si Outlook est installé, assurez-vous de définir le cache OST Outlook de façon à ce qu’il enregistre uniquement le cache des deux dernières semaines. Le temps d’utilisation et de configuration du disque sera considérablement réduit.
 
     - Sélectionnez **File**  >  **paramètres du compte** de fichier, puis sélectionnez votre compte.
+    
     - Sélectionnez **modifier** , puis positionnez le curseur pour **utiliser le mode Exchange mis en cache** à 14 jours.
 
 ### Microsoft Teams
@@ -307,6 +315,11 @@ Les **zones super fantaisie** permettent aux utilisateurs de réorganiser les fe
 
 Téléchargez et installez le nouveau [navigateur Microsoft Edge chrome](https://www.microsoft.com/en-us/edge?form=MY01BL&OCID=MY01BL).
 
+
+### Outil de diagnostic du matériel surface Hub
+
+[Outil de diagnostic du matériel surface Hub](https://www.microsoft.com/p/surface-hub-hardware-diagnostic/9nblggh51f2g) disponible gratuitement sur le Microsoft Store. L’outil est conçu pour vous aider à veiller à ce que votre surface Hub fonctionne de façon optimale. Il contient des tests permettant de déterminer si le microprogramme est à jour et s’il est configuré correctement. Les tests interactifs vous permettent de vérifier que les fonctionnalités essentielles fonctionnent comme prévu. Si des problèmes surviennent, les résultats peuvent être enregistrés et partagés avec l’équipe du Support Surface Hub. Cliquez sur le lien pour l’installer à partir du Microsoft Store, puis épinglez l’application à votre barre des tâches.
+
 ## Paramètres supplémentaires
 
 ### Stylo d’aileron sélectionner pour lancer le tableau blanc
@@ -336,7 +349,7 @@ Windows 10 professionnel ou entreprise sur surface Hub 2 vous permet d’accéde
 2. Configurez vos préférences en matière de **paramètres de délai d’écran** et de paramètres d' **écran de veille** . Les valeurs par défaut recommandées sont les suivantes:
 
    - Écran de veille (aucun) ou écran de votre choix.
-   - Veuillez patienter pendant 15 minutes.
+   - Temps d’attente de 15 minutes.
    - En sortie, affichez l’écran de connexion.
 
 
@@ -406,7 +419,7 @@ Activez le mode tablette si vous le souhaitez, pour les besoins en matière d’
 
    1. À l’invite de commandes avec élévation de privilèges, entrez **gpupdate/force/Boot/Wait: 0**.
    
-3. Redémarrez l'appareil.
+3. Redémarrez l’appareil.
 
 4. Vérifiez les applications de la barre des tâches.
 
