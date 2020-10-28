@@ -10,14 +10,14 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 07/27/2017
+ms.date: 10/27/2020
 ms.localizationpriority: medium
-ms.openlocfilehash: 0ad65170b3cc2534fec1b22730c718025026d7bc
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: e070c28d13cd8466bff47022f4508fdb8aa06331
+ms.sourcegitcommit: 19d2a78242777590bd09af3ac6552c07b032e0a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833689"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11142913"
 ---
 # Programme de première utilisation (Surface Hub)
 
@@ -71,7 +71,7 @@ Si les valeurs par défaut affichées sont correctes, vous pouvez ensuite clique
 ### Que se passe-t-il?
 
 >[!NOTE]
-> Une fois que les paramètres de cette page sont entrés, vous ne pouvez pas revenir à cet écran, sauf si vous réinitialisez l’appareil (consultez [Réinitialiser l'appareil](device-reset-surface-hub.md)). Assurez-vous que les paramètres sont configurés correctement avant de poursuivre.
+> Une fois que les paramètres de cette page sont entrés, vous ne pouvez pas revenir à cet écran, sauf si vous réinitialisez l’appareil (consultez [Réinitialiser l'appareil](device-reset-surface-hub.md)). Assurez-vous que les paramètres sont configurés correctement avant de poursuivre.
 
  
 
@@ -128,17 +128,17 @@ Cette page s’affiche lorsque l’appareil détecte une connexion filaire avec 
 
 -   Vous pouvez sélectionner un réseau sans fil à utiliser au lieu de la connexion filaire limitée.
 -   Vous pouvez ignorer l’étape de connexion à un réseau en sélectionnant **Ignorer cette étape**. Vous allez être dirigé vers la [page Configuration pour vous](#set-up-for-you).
-    **Remarques**  Si vous ignorez cela, l’appareil n’aura pas de connexion réseau et aucune connexion réseau n’est nécessaire sur votre surface Hub, y compris des éléments tels que la synchronisation du courrier électronique et du calendrier. Vous pouvez vous connecter à un réseau sans fil ultérieurement à l’aide de paramètres (voir [gestion de réseau sans fil](wireless-network-management-for-surface-hub.md)).
+    **Remarque**  Si vous ignorez cette étape, l’appareil ne disposera pas d’une connexion réseau, et les fonctions nécessitant une connexion réseau sur votre Surface Hub ne fonctionneront pas, notamment la synchronisation du courrier électronique et du calendrier. Vous pouvez vous connecter à un réseau sans fil ultérieurement à l’aide de paramètres (voir [gestion de réseau sans fil](wireless-network-management-for-surface-hub.md)).
 
      
 
 -   Vous pouvez sélectionner **Entrer les paramètres du proxy** ce qui vous permettra de spécifier l’utilisation du proxy réseau. Vous allez être dirigé vers l’écran suivant.
 
-![Image illustrant la page du proxy réseau.](images/setupnetworksetup-2.png)
+    ![Image illustrant la page du proxy réseau.](images/setupnetworksetup-2.png)
 
-Il s’agit de l’écran qui s’affiche si vous avez cliqué sur **Entrer les paramètres du proxy** dans l’écran précédent.
+    Il s’agit de l’écran qui s’affiche si vous avez cliqué sur **Entrer les paramètres du proxy** dans l’écran précédent.
 
-![Image illustrant les détails des paramètres du serveur proxy.](images/setupnetworksetup-4.png)
+    ![Image illustrant les détails des paramètres du serveur proxy.](images/setupnetworksetup-4.png)
 
 ### Détails
 
@@ -210,7 +210,7 @@ Si vous cliquez sur **Ignorer la configuration d’un compte d’appareil**, l�
 
 ![Image illustrant le message le est affiché pour confirmer que vous voulez ignorer la création d’un compte d’appareil.](images/setupskipdeviceacct.png)
 
-### Que se passe-t-il ?
+### Que se passe-t-il?
 
 L’appareil utilisera le nom d’utilisateur principal ou l’option DOMAINE\\nom d’utilisateur et mot de passe du compte d’appareil pour effectuer les tâches suivantes:
 
@@ -371,9 +371,10 @@ Si vous avez décidé de joindre votre Surface Hub à Azure Active Directory (Az
 Joindre Azure AD présente deux avantages principaux :
 
 1.  Certains employés de votre entreprise seront en mesure d’accéder à l’appareil en tant qu’administrateurs, de démarrer l’application Paramètres et de configurer l’appareil. Les utilisateurs disposant d’autorisations d’administration seront définis dans votre abonnement Azure AD.
+
 2.  Si votre AzureAD est connecté à une solution de gestion des périphériques mobiles (GPM), l’appareil s’inscrira avec cette solution GPM afin que vous puissiez appliquer les stratégies et la configuration.
 
-![Image illustrant le message affiché lorsque vous joignez votre Surface Hub à Azure ActiveDirectory.](images/setupjoiningazuread-1.png)
+    ![Image illustrant le message affiché lorsque vous joignez votre Surface Hub à Azure ActiveDirectory.](images/setupjoiningazuread-1.png)
 
 ### Détails
 
@@ -388,7 +389,7 @@ Si vous arrivez à ce stade et que vous n’avez pas d’informations d’identi
 
 ![Image illustrant la page Configurer un compte administrateur.](images/setupjoiningazuread-3.png)
 
-### Que se passe-t-il ?
+### Que se passe-t-il?
 
 Une fois que vous saisissez des informations d’identification de compte Azure AD valides, l’appareil essaie de joindre l’organisation Azure AD associée. Si cette tentative aboutit, l’appareil configure les employés de cette organisation afin qu’ils soient les administrateurs locaux sur l’appareil. Si votre client Azure AD a été configuré pour cela, l’appareil s’inscrira également à GPM.
 
@@ -451,7 +452,7 @@ Cette page tente de créer un compte administrateur en utilisant les information
 
 Pour recevoir les fonctionnalités et correctifs les plus récents, mettez à jour votre Surface Hub dès que vous avez terminé toutes les étapes précédentes de première utilisation.
 
-1.  Assurez-vous que l’appareil dispose d’un accès aux serveurs Windows Update ou à WindowsServer Update Services (WSUS). Pour configurer WSUS, consultez [Utilisation de WSUS](manage-windows-updates-for-surface-hub.md#use-windows-server-update-services).
+1.  Assurez-vous que l’appareil a accès aux serveurs Windows Update. 
 2.  Ouvrez Paramètres, puis cliquez successivement sur **Mise à jour et sécurité**, **Windows Update** et **Rechercher les mises à jour**.
 3.  Si des mises à jour sont disponibles, elles seront téléchargées. Une fois que le téléchargement est terminé, cliquez sur le bouton **Mettre à jour à maintenant** pour installer les mises à jour.
 4.  Suivez les instructions à l’écran une fois que les mises à jour installées. Vous devrez peut-être redémarrer l’appareil.

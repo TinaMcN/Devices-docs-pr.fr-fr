@@ -9,22 +9,25 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 08/13/2020
+ms.date: 10/27/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 51d6b9169b0074eb474ddc89b6fe9b43a921bb07
-ms.sourcegitcommit: feb81137d009d9b7c743aabd7d02615e89842200
+ms.openlocfilehash: 6d370db0232ae1f93d1ba6b8ff15b5ff2cfa9f10
+ms.sourcegitcommit: 19d2a78242777590bd09af3ac6552c07b032e0a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929763"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11142903"
 ---
 # Installer la version d'évaluation de mise à jour Windows10 Collaboration2020 
 
-La dernière mise à jour du système d’exploitation surface Hub, **mise à jour de l’équipe 2020 de Windows 10**, est désormais disponible sans frais supplémentaires pour les appareils Windows insider 50-inch et surface hub 2 55 pouces à partir du [programme Windows Insider](https://insider.windows.com). Le modèle surface Hub 84-pouces sera pris en charge dans la version finale de la mise à jour d’équipe 2020 de Windows 10.
+La version d’évaluation du système d’exploitation surface Hub, **Windows 10 Team 2020 Update Preview**, est disponible sans frais supplémentaires par le [programme Windows Insider](https://insider.windows.com). 
 
-La mise à jour de l’équipe 2020 de Windows 10 apporte des améliorations majeures au déploiement et à la gestion des appareils ainsi qu’aux dernières fonctionnalités de Windows 10. Pour en savoir plus sur les nouveautés, voir le billet de blog suivant: [nouvelle mise à jour du système d’exploitation surface Hub publiée pour public preview.](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/new-surface-hub-os-update-released-for-public-preview/ba-p/1534823) Pour connaître les problèmes connus, voir la section «problèmes connus» ci-dessous.
+> [!NOTE] 
+> La version finale publique de la mise à jour d’équipe 2020 de Windows 10 est désormais disponible. Pour en savoir plus, voir [mise à jour d’équipe 2020 de Windows 10](surface-hub-2020-update.md).
+
+La mise à jour de l’équipe 2020 de Windows 10 apporte des améliorations majeures au déploiement et à la gestion des appareils ainsi qu’aux dernières fonctionnalités de Windows 10. Pour en savoir plus sur les nouveautés, voir le billet de blog suivant: [nouvelle mise à jour du système d’exploitation surface Hub publiée pour public preview.](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/new-surface-hub-os-update-released-for-public-preview/ba-p/1534823) Pour connaître les problèmes connus, voir [problèmes connus: mise à jour d’équipe 2020 de Windows 10](surface-hub-2020-team-update-known-issues.md)
  
-## Prérequis
+## Conditions préalables
 
 - Inscrivez-vous au [programme Windows Insider](https://insider.windows.com/).
 - Téléchargez la version d’évaluation de la mise à jour d’équipe 2020 de Windows 10 à partir du canal rapide du programme Windows Insider.
