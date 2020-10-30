@@ -14,27 +14,29 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: 8fec6b0fdd34c196ba2e5cfcb229c16b8e340fe6
-  ms.sourcegitcommit: a71724a00e0e9626fa2e26c26fe3b30d8a99238a
+  ms.openlocfilehash: 84397e6f5fa01e924e90961572845015e6331322
+  ms.sourcegitcommit: 19d2a78242777590bd09af3ac6552c07b032e0a1
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/28/2020
-  ms.locfileid: "11080643"
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "11142883"
 landingContent:
 - title: Se préparer pour le Surface Hub 2S
   linkLists:
   - linkListType: whats-new
     links:
+    - text: Installer Windows10 Collaborationmise à jour2020
+      url: surface-hub-2020-update.md
+    - text: Nouveautés de Windows 10 Collaboration mise à jour2020
+      url: surface-hub-2020-update-whats-new.md
     - text: Surface Hub 2S comble le fossé entre le numérique et le physique dans les espaces de travail hybrides d’aujourd’hui
       url: https://blogs.windows.com/devices/2020/09/22/surface-hub-2s-bridges-digital-and-physical-divide-in-todays-hybrid-workspaces/
     - text: Caractéristiques techniques et vue d’ensemble de SurfaceHub2S 85pouces
       url: surface-hub-2s-85.md
     - text: Annonce de la disponibilité de Windows 10 Professionnel et Enterprise sur Surface Hub 2
       url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107
-    - text: Migrer vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2
+    - text: Migrer vers Windows10 Professionnel ou Entreprise sur Surface Hub2
       url: surface-hub-2s-migrate-os.md
-    - text: Installer la version d'évaluation de mise à jour Windows10 Collaboration2020
-      url: surface-hub-install-2020preview.md
 - title: Prise en main
   linkLists:
   - linkListType: get-started

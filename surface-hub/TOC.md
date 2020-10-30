@@ -3,6 +3,7 @@
 # SurfaceHub2S
 
 ## Vue d'ensemble
+### [Nouveautés de Windows 10 Collaboration mise à jour2020](surface-hub-2020-update-whats-new.md)
 ### [Nouveautés de SurfaceHub2S pour les administrateurs informatiques](surface-hub-2s-whats-new.md)
 ### [Caractéristiques techniques de SurfaceHub2S 50pouces](surface-hub-2s-techspecs.md) 
 ### [Caractéristiques techniques de SurfaceHub2S 85pouces](surface-hub-2s-85.md)
