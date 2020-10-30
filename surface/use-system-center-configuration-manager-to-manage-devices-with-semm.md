@@ -13,13 +13,13 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 10/13/2020
-ms.openlocfilehash: bfd10df3bb7a7dd031c1719d4191ffc46418c4e3
-ms.sourcegitcommit: 30c1eb469610dfd2ad9169c154ca07e565240fdb
+ms.date: 10/28/2020
+ms.openlocfilehash: 2d31f520d8c4da54f47b2b89b58b43e2cb983f1a
+ms.sourcegitcommit: 7f5b97275fe301ef700f9c77954a1054e2e8d046
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "11117850"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "11145615"
 ---
 # Utilisez Microsoft Endpoint Configuration Manager pour gérer les appareils avec SEMM
 
@@ -388,11 +388,6 @@ Pour configurer les paramètres ou les autorisations de surface UEFI pour les pa
 
 Le Gestionnaire Microsoft surface UEFI doit être installé sur l’ordinateur sur lequel ShowSettingsOptions.ps1 est exécuté; il n’est pas nécessaire d’avoir un appareil surface.
 
-Pour afficher les noms de paramètres les plus courants et les ID pour les appareils, la meilleure façon consiste à utiliser le script de ConfigureSEMM.ps1 ou ConfigureSEMM- <device name> . ps1 du SEMM_Powershell.zip dans [Outils surface pour les télécharger](https://www.microsoft.com/download/details.aspx?id=46703).
-
-Il est possible d’afficher les noms et ID de tous les appareils dans l' ConfigureSEMM.ps1 script.
-
-Il est possible d’afficher les noms et ID pour des appareils spécifiques dans les scripts ConfigureSEMM- <device name> . ps1. 
 
 ## Déploiement de SEMM Configuration Manager scripts
 
