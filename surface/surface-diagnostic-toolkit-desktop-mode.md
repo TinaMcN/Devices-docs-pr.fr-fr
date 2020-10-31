@@ -12,12 +12,12 @@ manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.date: 7/31/2020
-ms.openlocfilehash: ec4a90d0d72956eaa4f98e928d128dca70d49c59
-ms.sourcegitcommit: f875a45961ff5f3c04006afc8690b5e5965e4d80
+ms.openlocfilehash: 8b113d16f2053fe0904518b2643f1bafeaebdf64
+ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "10902955"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "11145939"
 ---
 # Utiliser le Kit de ressources de diagnostic pour Surface Entreprise en mode bureau
 
@@ -26,7 +26,7 @@ Cette rubrique explique comment utiliser le kit de ressources de diagnostic de s
 L’exécution réussie de SDT peut déterminer rapidement si un problème signalé est lié à un problème de matériel ou d’erreur d’utilisateur. Pour obtenir la liste des appareils surface pris en charge dans le SDT, voir [déploiement de surface diagnostic Toolkit pour les entreprises](surface-diagnostic-toolkit-business.md).
 
 
-1. Demandez à l’utilisateur d’installer [le package SDT](surface-diagnostic-toolkit-business.md#create-custom-sdt) à partir d’un point de distribution de logiciels ou d’un partage réseau. Une fois l’installation terminée, vous pouvez guider l’utilisateur dans le cadre d’une série de tests. 
+1. Demandez à l’utilisateur d’installer [le package SDT](surface-diagnostic-toolkit-business.md#preparing-the-sdt-package-for-distribution)) à partir d’un point de distribution de logiciels ou d’un partage réseau. Une fois l’installation terminée, vous pouvez guider l’utilisateur dans le cadre d’une série de tests. 
 
 2. Commencez sur la page d’accueil, qui permet aux utilisateurs d’entrer une description du problème, puis cliquez sur **Continuer**, comme illustré dans la figure 1.
 
@@ -58,12 +58,12 @@ L’exécution réussie de SDT peut déterminer rapidement si un problème signa
 5. Lorsque tous les tests sont terminés, l’outil vous demande de confirmer que le problème est résolu. 
 
  ![Votre problème est-il résolu? ](images/sdt3.png)
- *Figure 3A. Votre problème est-il résolu?*
+ *Figure 3A. avez-vous résolu le problème?*
 
 6. Si le problème n’est pas résolu ou que vous ne le connaissez pas, vous pouvez lui envoyer un ticket de support en sélectionnant **Contactez-nous** pour **obtenir de l’aide.**
  
  ![Envoyez un ticket d’assistance ](images/sdt4.png)
- *figure 3b. Envoi d’un ticket de support*
+ *figure 3b. soumission d’un ticket de support*
 
 <span id="multiple" />
 
@@ -102,7 +102,7 @@ SDT fournit une prise en charge complète du diagnostic compatible avec les appl
 
 D’après les journaux, SDT génère un rapport pour les problèmes de logiciels et de microprogrammes que vous pouvez enregistrer dans un emplacement préféré.
 
-## Rubriques connexes
+## Rubriques associées
 
 - [Exécuter le Kit de ressources de diagnostic pour Surface Entreprise à l’aide de commandes](surface-diagnostic-toolkit-command-line.md)
 

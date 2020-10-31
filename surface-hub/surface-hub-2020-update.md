@@ -1,5 +1,5 @@
 ---
-title: Installer la mise à jour d’équipe 2020 de Windows 10
+title: Installer Windows10 Collaborationmise à jour2020
 description: Obtenez la dernière mise à jour du système d’exploitation surface Hub, mise à jour d’équipe 2020 de Windows 10.
 keywords: séparer les valeurs par des virgules
 ms.prod: surface-hub
@@ -11,14 +11,14 @@ audience: Admin
 ms.topic: article
 ms.date: 10/27/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 68eee89ac1b93501c73eccd3e5f9eecf514a8132
-ms.sourcegitcommit: b4cfb718274fd632661f9112e9fd086a2ad45640
+ms.openlocfilehash: 90bd5714b7427880f6e73c7031c26894d55ac500
+ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "11143639"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "11145949"
 ---
-# Installer la mise à jour d’équipe 2020 de Windows 10 
+# Installer Windows10 Collaborationmise à jour2020 
 
 Le nouveau système d’exploitation surface Hub, la **mise à jour d’équipe 2020 de Windows 10**basée sur Windows 10 version 20H2, est désormais disponible pour tous les appareils surface Hub 2s.  
 
@@ -48,7 +48,7 @@ La mise à jour de l’équipe 2020 de Windows 10 apporte des améliorations maj
  
 ## Avant de commencer
 
-Avant d’installer la mise à jour de l’équipe 2020 de Windows 10, assurez-vous d’enregistrer la clé BitLocker associée à votre appareil. Pour plus d’informations, reportez-vous à [Nouveautés de la mise à jour d’équipe 2020 d’équipe IIN Windows 10](surface-hub-2020-update-whats-new.md)
+Avant d’installer la mise à jour de l’équipe 2020 de Windows 10, assurez-vous d’enregistrer la clé BitLocker associée à votre appareil. Pour plus d’informations, reportez-vous à [la rubrique nouveautés de la mise à jour de l’équipe 2020 de Windows 10](surface-hub-2020-update-whats-new.md).
 
 **Pour enregistrer manuellement votre clé BitLocker**
 

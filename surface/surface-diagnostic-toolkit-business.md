@@ -12,12 +12,12 @@ ms.date: 10/12/2020
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 1f2661811516507abd432dba602cf8ce81e6dbb3
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.openlocfilehash: 97d0a3d76cf9286ca946e08be9f605084084b2ba
+ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114662"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "11145959"
 ---
 # Déploiement du Kit de ressources de diagnostic pour Surface Entreprise
 
@@ -25,7 +25,7 @@ Le kit de ressources pour les Diagnostics Microsoft surface pour les entreprises
 
 En particulier, SDT pour les entreprises vous permet d’effectuer les opérations suivantes:
 
-- [Personnaliser le package.](#create-custom-sdt)
+- [Personnaliser le package.](#preparing-the-sdt-package-for-distribution)
 - [Exécutez l’application à l’aide de commandes.](surface-diagnostic-toolkit-command-line.md)
 - [Exécutez plusieurs tests matériels pour résoudre les problèmes.](surface-diagnostic-toolkit-desktop-mode.md#multiple)
 - [Génération de journaux pour l’analyse des problèmes.](surface-diagnostic-toolkit-desktop-mode.md#logs)
@@ -123,8 +123,6 @@ Outre le fichier. exe, SDT installe un fichier JSON et un fichier admin.dll (mod
 ![Liste des fichiers du SDT installés dans l’Explorateur de fichiers](images/sdt-2.png)
 
 *Figure2. Fichiers installés par SDT*
-
-<span id="create-custom-sdt" />
 
 ## Préparation du package SDT à des fins de distribution
 

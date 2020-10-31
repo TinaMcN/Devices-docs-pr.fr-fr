@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 10/08/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 96aec50335ab08e9d524c5ae1a595695c1de46d4
-ms.sourcegitcommit: cbf237e59c97311bd8add3aae2a17738fe271ddc
+ms.openlocfilehash: 12742cc887ba495f8f7cbded8bd84dc4fd63b6f6
+ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11134392"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "11145969"
 ---
 # Migrer vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2
 
@@ -167,6 +167,9 @@ Le package SEMM créé à l’aide de l’outil de configuration de surface UEFI
 1. Connectez un lecteur USB à votre PC. Sélectionnez **Hub 2** , puis sélectionnez **suivant**.
 
    ![Sélectionner USB](images/shm-fig13.png)
+
+> [!WARNING]
+> Toutes les données existantes sur le lecteur USB sont effacées lors de la création du package SEMM. Avant de générer le package SEMM, supprimez tous les fichiers du lecteur USB que vous souhaitez enregistrer.
    
 2. Sélectionnez **générer**.
 
