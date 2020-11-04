@@ -14,15 +14,15 @@ author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.date: 10/21/2020
+ms.date: 11/03/2020
 appliesto:
 - Surface Hub 2S
-ms.openlocfilehash: a17d4b05e6ee5f7415fed62d96b9e0a62a6dc123
-ms.sourcegitcommit: cbf237e59c97311bd8add3aae2a17738fe271ddc
+ms.openlocfilehash: b86776b56e892c34ea8b5abbc55d5c48723a5f9e
+ms.sourcegitcommit: 3ca1d1bc77452acca914d0af03e252ee260ebf1a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11134402"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "11154126"
 ---
 # Configurer Windows 10 Professionnel ou Entreprise sur Surface Hub 2
 
@@ -34,7 +34,7 @@ Lors de cette procédure, il peut s’avérer utile d’utiliser un clavier et u
 
 1. Connectez-vous à l’aide d’un compte disposant de privilèges d’administrateur local sur l’appareil.  
 
-    - Sur les appareils disposant d’Azure AD, l’utilisateur qui exécute la jointure Azure AD est automatiquement ajouté au groupe d’administrateurs local. Les administrateurs généraux d’Azure AD et d’Azure AD sont [également administrateurs locaux](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin). 
+    - Sur les appareils disposant d’Azure AD, l’utilisateur qui exécute la jointure Azure AD est automatiquement ajouté au groupe d’administrateurs local. Les administrateurs généraux d’Azure AD et d’Azure AD sont <a href="https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin" target="_blank"> également administrateurs locaux </a> . 
     
     - Vous pouvez taper **administrateurs .net localgroup** à une invite de commandes pour répertorier les comptes disposant de droits d’administrateur local.
     
@@ -83,17 +83,17 @@ L’exemple suivant illustre pavé tactile, qui est utile pour naviguer et séle
 
 Connectez un clavier et une souris si vous utilisez le périphérique en tant qu’appareil Windows principal, ou si vous utilisez souvent cette fonctionnalité pour la saisie ou la précision du fonctionnement.
 
-Si votre périphérique surface Hub est proche d’un PC, vous pouvez utiliser [la souris sans bordure](https://aka.ms/mm) pour vous déplacer en douceur entre le centre de surface et le PC. Pour plus d’informations, reportez-vous [à la rubrique téléchargement de Microsoft à partir du garage: souris sans bordure](https://blogs.microsoft.com/ai/microsoft-download-from-the-garage-mouse-without-borders/).
+Si votre périphérique surface Hub est proche d’un PC, vous pouvez utiliser <a href="https://aka.ms/mm" target="_blank"> la souris sans bordure </a> pour vous déplacer en douceur entre le centre de surface et le PC. Pour plus d’informations, reportez-vous <a href="https://blogs.microsoft.com/ai/microsoft-download-from-the-garage-mouse-without-borders/" target="_blank"> à la rubrique téléchargement de Microsoft à partir du garage: souris sans bordure. </a>
 
 ## OneDriveEntreprise
 
-Utilisez [OneDrive entreprise](https://docs.microsoft.com/onedrive/onedrive) pour partager facilement des outils, des journaux et d’autres fichiers entre tous vos périphériques de travail.
+Utilisez <a href="https://docs.microsoft.com/onedrive/onedrive" target="_blank"> OneDrive entreprise </a> pour partager facilement des outils, des journaux et d’autres fichiers entre tous vos périphériques de travail.
 
 - OneDrive vous permet de partager vos fichiers de travail entre votre ordinateur portable, votre bureau surface Hub et vos appareils mobiles gérés par Intune. Les fichiers peuvent être modifiés sur n’importe quel appareil, et tous les appareils connectés réseau sont mis à jour avec les modifications.
 
 - Si vous considérez la taille de la fonction SSD de surface Hub (128 Go), si vous configurez OneDrive sur votre appareil de bureau surface Hub, assurez-vous que la configuration par défaut est de conserver les fichiers en ligne et de télécharger des fichiers lorsque vous les utilisez.
 
-Pour configurer OneDrive pour télécharger les fichiers uniquement lorsque cela est nécessaire, définissez le paramètre **fichiers à la demande** pour **économiser de l’espace et télécharger les fichiers lorsque vous les utilisez**. Pour plus d’informations, reportez-vous à [la rubrique interroger et définir des fichiers à la demande dans Windows](https://docs.microsoft.com/onedrive/files-on-demand-windows).
+Pour configurer OneDrive pour télécharger les fichiers uniquement lorsque cela est nécessaire, définissez le paramètre **fichiers à la demande** pour **économiser de l’espace et télécharger les fichiers lorsque vous les utilisez**. Pour plus d’informations, reportez-vous à <a href="https://docs.microsoft.com/onedrive/files-on-demand-windows" target="_blank"> la rubrique interroger et définir des fichiers à la demande dans Windows </a> .
 
 ![Paramètres de OneDrive](images/onedrive.png)
 
@@ -122,7 +122,7 @@ Pour synchroniser des fichiers d’entreprise internes sur votre disque local à
     
     3. Sélectionnez **libérer**de l’espace.
     
-    4. La colonne État affiche l’état des fichiers et des dossiers. Pour plus d’informations, voir [synchroniser des fichiers SharePoint avec le client de synchronisation OneDrive](https://support.microsoft.com/office/sync-sharepoint-files-with-the-onedrive-sync-client-groove-exe-59b1de2b-519e-4d3a-8f45-51647cf291cd).
+    4. La colonne État affiche l’état des fichiers et des dossiers. Pour plus d’informations, voir <a href="https://support.microsoft.com/office/sync-sharepoint-files-with-the-onedrive-sync-client-groove-exe-59b1de2b-519e-4d3a-8f45-51647cf291cd" target="_blank"> synchroniser des fichiers SharePoint avec le client de synchronisation OneDrive </a> .
     
 6. Les fichiers de canal teams sont stockés sur des sites SharePoint, avec toutes les mêmes fonctionnalités de documents SharePoint, y compris l’historique des versions et la synchronisation avec les appareils de bureau locaux. Pour synchroniser des fichiers de canal d’équipe:
 
@@ -164,13 +164,13 @@ Couplez le stylet pour maintenir à jour le microprogramme du stylo et obtenir d
 
 Vous pouvez monter la caméra sur le dessus ou sur l’un ou l’autre extrémité de l’appareil. Montez l’appareil photo en position pour optimiser l’angle de la caméra si vous utilisez le concentrateur avec un socle de bureau plutôt qu’un panier, ou que vous êtes en proximité du Hub. Comme la caméra ne pivote pas automatiquement, vous devez disposer d’une touche hexadécimale 2mm pour faire pivoter manuellement la caméra. 
 
-Pour plus d’informations sur la façon de monter la caméra et de la faire pivoter manuellement, voir orientation de l’objectif de la caméra [surface Hub](https://support.microsoft.com/help/4509729/surface-hub-2s-camera-lens-orientation).
+Pour plus d’informations sur la façon de monter la caméra et de la faire pivoter manuellement, voir orientation de l’objectif de la caméra <a href="https://support.microsoft.com/help/4509729/surface-hub-2s-camera-lens-orientation" target="_blank"> surface Hub </a> .
 
 ## Configuration de Windows Hello
 
 Surface Hub 2-xxxxx xxx XXXXXXX XXXXXXX xxxx xxx xxxxxxx xxx XXXXXXX XXXXXXX XXXXXXX XXXXXXX XXXXXXX XXXXXXX XXXXXXX XXXXXXX xxxx. Les accessoires du lecteur d’empreintes digitales de surface Hub 2 peuvent être branchés dans n’importe quel port USB-C de l’appareil. 
 
-Pour commander un lecteur d’empreintes digitales surface Hub 2 ou afficher des spécifications techniques, voir composants additionnels [pour Windows 10 professionnel et entreprise sur surface Hub 2](surface-hub-2-essential-add-ons.md). 
+Pour commander un lecteur d’empreintes digitales de surface Hub 2 ou afficher des spécifications techniques, voir (surface-hub-2-essential-add-ons.md "target =" _blank ">composants additionnels essentiels pour Windows 10 professionnel et entreprise sur surface Hub 2) </a> . 
 
 Après avoir inséré le lecteur d’empreintes digitales **, sélectionnez**  >  **paramètres**  >  **Accounts**  >  **de connexion comptes options de connexion dans**  >  votre**empreinte digitale Windows Hello** pour inscrire votre empreinte digitale.
 
@@ -210,7 +210,7 @@ Pour mettre à jour toutes les applications du Windows Store installées:
 
 2. Sélectionnez **Obtenir les mises à jour**.
 
-### Tableau blanc collaboratif Microsoft
+### Tableau blanc Microsoft
 
 Pour installer le tableau blanc Microsoft, procédez comme suit:
 
@@ -246,7 +246,7 @@ Vous pouvez également installer le tableau blanc à partir du Microsoft Store:
 
 ### MicrosoftOffice
 
-1. Ouvrez le [portail Office](https://portal.office.com/account#installs) et installez les applications souhaitées.
+1. Ouvrez le <a href="https://portal.office.com/account#installs" target="_blank"> portail Office </a> et installez les applications souhaitées.
 
 2. Épinglez les applications Office souhaitées dans la barre des tâches.
 
@@ -258,7 +258,7 @@ Vous pouvez également installer le tableau blanc à partir du Microsoft Store:
 
 ### Microsoft Teams
 
-1. Télécharger et installer [Microsoft teams](https://teams.microsoft.com/downloads).
+1. Télécharger et installer <a href="https://teams.microsoft.com/downloads" target="_blank"> Microsoft teams </a> .
 
 2. Configurez les paramètres de démarrage automatique de l’application (facultatif).
 
@@ -305,20 +305,20 @@ Configuration recommandée sur le réseau d’entreprise:
 
 L’application **votre téléphone** est installée par défaut sur Windows 10. Si ce n’est pas le cas, vous pouvez également l’installer à partir du Windows Store.
 
-Pour plus d’informations sur la configuration de l’application, reportez-vous à la rubrique Configuration de [votre téléphone sur Windows 10 et synchronisation des données entre votre ordinateur et votre téléphone](https://www.windowscentral.com/how-set-your-phone-windows-10). Consultez également [la rubrique Comment résoudre les problèmes courants liés à votre application de téléphone sur Windows 10](https://www.windowscentral.com/how-fix-common-problems-your-phone-app-windows-10).
+Pour plus d’informations sur la configuration de l’application, reportez-vous à la rubrique Configuration de <a href="https://www.windowscentral.com/how-set-your-phone-windows-10" target="_blank"> votre téléphone sur Windows 10 et synchronisation des données entre votre ordinateur et votre téléphone </a> . Consultez également <a href="https://www.windowscentral.com/how-fix-common-problems-your-phone-app-windows-10" target="_blank"> la rubrique Comment résoudre les problèmes courants liés à votre application de téléphone sur Windows 10 </a> .
 
 ### Zones super fantaisie
 
-Les **zones super fantaisie** permettent aux utilisateurs de réorganiser les fenêtres afin de maximiser l’espace disponible à l’écran. Elle est désormais incluse dans [PowerToys](https://github.com/microsoft/PowerToys/releases) sur GitHub.
+Les **zones super fantaisie** permettent aux utilisateurs de réorganiser les fenêtres afin de maximiser l’espace disponible à l’écran. Elle est désormais incluse dans <a href="https://github.com/microsoft/PowerToys/releases" target="_blank"> PowerToys </a> sur GitHub.
 
 ### Navigateur Microsoft Edge chrome
 
-Téléchargez et installez le nouveau [navigateur Microsoft Edge chrome](https://www.microsoft.com/en-us/edge?form=MY01BL&OCID=MY01BL).
+Téléchargez et installez le nouveau <a href="https://www.microsoft.com/en-us/edge?form=MY01BL&OCID=MY01BL" target="_blank"> navigateur Microsoft Edge chrome </a> .
 
 
 ### Outil de diagnostic du matériel surface Hub
 
-[Outil de diagnostic du matériel surface Hub](https://www.microsoft.com/p/surface-hub-hardware-diagnostic/9nblggh51f2g) disponible gratuitement sur le Microsoft Store. L’outil est conçu pour vous aider à veiller à ce que votre surface Hub fonctionne de façon optimale. Il contient des tests permettant de déterminer si le microprogramme est à jour et s’il est configuré correctement. Les tests interactifs vous permettent de vérifier que les fonctionnalités essentielles fonctionnent comme prévu. Si des problèmes surviennent, les résultats peuvent être enregistrés et partagés avec l’équipe du Support Surface Hub. Cliquez sur le lien pour l’installer à partir du Microsoft Store, puis épinglez l’application à votre barre des tâches.
+<a href="https://www.microsoft.com/p/surface-hub-hardware-diagnostic/9nblggh51f2g" target="_blank">Outil de diagnostic du matériel surface Hub </a> disponible gratuitement sur le Microsoft Store. L’outil est conçu pour vous aider à veiller à ce que votre surface Hub fonctionne de façon optimale. Il contient des tests permettant de déterminer si le microprogramme est à jour et s’il est configuré correctement. Les tests interactifs vous permettent de vérifier que les fonctionnalités essentielles fonctionnent comme prévu. Si des problèmes surviennent, les résultats peuvent être enregistrés et partagés avec l’équipe du Support Surface Hub. Cliquez sur le lien pour l’installer à partir du Microsoft Store, puis épinglez l’application à votre barre des tâches.
 
 ## Paramètres supplémentaires
 
@@ -454,4 +454,4 @@ Activez le mode tablette si vous le souhaitez, pour les besoins en matière d’
 
 ## Rubriques associées
 
-[Migrer vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2](surface-hub-2s-migrate-os.md)
+<a href="surface-hub-2s-migrate-os.md" target="_blank"> Migrer vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2</a>
