@@ -79,7 +79,6 @@
 #### [Déploiement du Kit de ressources de diagnostic pour Surface Entreprise](surface-diagnostic-toolkit-business.md)
 #### [Utiliser le Kit de ressources de diagnostic pour Surface Entreprise en mode bureau](surface-diagnostic-toolkit-desktop-mode.md)
 #### [Exécuter le Kit de ressources de diagnostic pour Surface Entreprise à l’aide de commandes](surface-diagnostic-toolkit-command-line.md)
-### [Historique des modifications de la documentationSurface](change-history-for-surface.md)
 ### [Aide pour les utilisateurs finaux](https://support.microsoft.com/products/surface-devices)
 
 ## Garantie et plans de service étendus
