@@ -80,8 +80,9 @@
 #### [Utiliser le Kit de ressources de diagnostic pour Surface Entreprise en mode bureau](surface-diagnostic-toolkit-desktop-mode.md)
 #### [Exécuter le Kit de ressources de diagnostic pour Surface Entreprise à l’aide de commandes](surface-diagnostic-toolkit-command-line.md)
 ### [Aide pour les utilisateurs finaux](https://support.microsoft.com/products/surface-devices)
+### [Pilote Surface et cycle de vie du microprogramme pour les appareils Windows](surface-driver-firmware-lifecycle-support.md)
 
-## Garantie et plans de service étendus
+## Garantie et offres de service étendues
 ### [Garantie et plans étendus pour Surface pour les entreprises](https://www.microsoft.com/surface/business/warranty-service-offerings-and-support)
 ### [Conditions générales](https://support.microsoft.com/help/4493926/warranties-extended-service-plans-and-terms-conditions-for-your-device)
 ### [Vérifier le statut de la garantie des appareils](https://mybusinessservice.surface.com/)
