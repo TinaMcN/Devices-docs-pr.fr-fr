@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 10/27/2020
 ms.localizationpriority: medium
-ms.openlocfilehash: d6b95ac565132c4e4f1632c2abaffa13ddb2c54c
-ms.sourcegitcommit: 19d2a78242777590bd09af3ac6552c07b032e0a1
+ms.openlocfilehash: e5ffefa44560d01135b3ac656d9357f1115110ba
+ms.sourcegitcommit: d60f82d9d22fe118f9c8dc24458d2c144b138eb8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11142893"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "11174724"
 ---
 # Gérer les mises à jourWindows sur SurfaceHub
 
@@ -120,7 +120,7 @@ Une fenêtre de maintenance par défaut est définie pour tous les nouveaux Surf
 2.  Accédez à **Mise à jour et sécurité** > **Windows Update** > **Options avancées**.
 3.  Sous **Heures de maintenance**, sélectionnez **Modifier**.
 
-Pour modifier la fenêtre de maintenance à l’aide de GPM, définissez le nœud **MOMAgent** du [fournisseur de services de configuration SurfaceHub](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). Pour plus d’informations, voir [Gérer les paramètres avec un fournisseur GPM](manage-settings-with-mdm-for-surface-hub.md).
+Pour changer la fenêtre de maintenance à l’aide de la gestion des périphériques mobiles, définissez le nœud **MaintenanceHoursSimple** dans le [fournisseur de services de configuration SurfaceHub](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). Pour plus d’informations, voir [Gérer les paramètres avec un fournisseur GPM](manage-settings-with-mdm-for-surface-hub.md).
 
 
 ## Informations supplémentaires
@@ -128,7 +128,7 @@ Pour modifier la fenêtre de maintenance à l’aide de GPM, définissez le nœu
 - [Billet de blog: maintenance, version d’évaluation et gestion des mises à jour pour surface Hub (avec Intune, bien entendu)](https://blogs.technet.microsoft.com/y0av/2018/05/31/7-3/)
 
 
-## Rubriques associées
+## Rubriques connexes
 
 [Gérer Microsoft Surface Hub](manage-surface-hub.md)
 
