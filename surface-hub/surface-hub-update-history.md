@@ -9,12 +9,12 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: ab43155ee5e2973c5c45fc9ce8dd1395e3ca8bc5
-ms.sourcegitcommit: d60f82d9d22fe118f9c8dc24458d2c144b138eb8
+ms.openlocfilehash: 2aba835da79d40d4ae5f2786f77071ab9e210844
+ms.sourcegitcommit: e2ade2f198e4123c922c6a4fb5ab61e040e38ccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "11174744"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "11190067"
 ---
 # Historique des mises à jour SurfaceHub
 
@@ -28,6 +28,28 @@ Nous allons actualiser cette page à mesure que de nouvelles mises à jour sont 
 Pour plus d’informations sur les versions actuelles et précédentes qui pourraient nécessiter votre attention, consultez la page «[informations importantes sur surface Hub](https://support.microsoft.com/products/surface-devices/surface-hub)».
 
 ## Mise à jour de Windows 10 Team 2020 (20H2)
+
+<details>
+<summary>24 novembre 2020: mise à jour pour surface Hub 2</summary>
+
+Cette mise à jour est spécifique aux éléments surface Hub 2 et fournit les mises à jour du pilote et du microprogramme décrites ci-dessous:
+
+* Mise à jour du microprogramme de surface SMC-3.91.139.0
+  * Améliorer la fiabilité du mode veille connectée.
+* Mise à jour du microprogramme de surface-3.91.139.0
+  * Améliorez les réponses de veille connectée.
+* Mise à jour du microprogramme audio USB surface-3.91.139.0
+* Mise à jour du microprogramme de stylet surface-3.91.139.0
+</details>
+
+<details>
+<summary>27 octobre 2020: mise à jour pour surface Hub 2</summary>
+
+Cette mise à jour est spécifique aux éléments surface Hub 2 et fournit les mises à jour du pilote et du microprogramme décrites ci-dessous:
+
+* Mise à jour du microprogramme du microprogramme de surface surface-4.14.139.0
+* Mise à jour de surface UEFI-694.3386.768.0
+</details>
 
 <details>
 <summary>Mise à jour d’équipe 2020 de Windows 10 pour surface Hub 19042,572 (notes de publication générales)</summary>
