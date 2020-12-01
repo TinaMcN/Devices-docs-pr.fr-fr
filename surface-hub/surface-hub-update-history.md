@@ -9,12 +9,12 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 2aba835da79d40d4ae5f2786f77071ab9e210844
-ms.sourcegitcommit: e2ade2f198e4123c922c6a4fb5ab61e040e38ccb
+ms.openlocfilehash: f45a2f202cdf350c6e51bb78a2bf87019a89453a
+ms.sourcegitcommit: 7c00ca47fe81a4f5b3a3317afabb4d028ff21289
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "11190067"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "11192845"
 ---
 # Historique des mises à jour SurfaceHub
 
@@ -28,6 +28,24 @@ Nous allons actualiser cette page à mesure que de nouvelles mises à jour sont 
 Pour plus d’informations sur les versions actuelles et précédentes qui pourraient nécessiter votre attention, consultez la page «[informations importantes sur surface Hub](https://support.microsoft.com/products/surface-devices/surface-hub)».
 
 ## Mise à jour de Windows 10 Team 2020 (20H2)
+
+<details>
+<summary>30 novembre 2020: mise à jour pour l’équipe en fonction de KB4586853 * (OS Build 19042,662)</summary>
+
+Cette mise à jour de surface Hub inclut des améliorations de la qualité et des correctifs de sécurité. Les principales mises à jour apportées à surface Hub, qui ne sont pas déjà indiquées dans [l’historique des mises à jour de Windows 10](https://support.microsoft.com/help/4581839/windows-10-update-history), incluent:
+
+* Mise à jour de la page des paramètres de confidentialité pour proposer des options supplémentaires.
+* Résoudre ce problème garantit que l’option arrêter le nettoyage de session supprime entièrement toutes les données associées au chrome de contour.
+* Résout un problème pour lequel les réunions déjà démarrées ne s’affichaient pas sur l’écran d’accueil/démarrer.
+* Résout un problème de récupération du Cloud pour les paramètres régionaux autres que en-US.
+* SkypeEntreprise
+  * Améliore les performances audio directionnelles.
+  * Le «bruit du stylo» est réduit lorsque vous utilisez le stylet pendant les appels Skype entreprise.
+* Amélioration de la fiabilité lors de l’inscription au programme Windows Insider.
+* Amélioration de la fiabilité du shell d’équipe Windows.
+
+Reportez-vous au [Guide d’administration de surface Hub](https://docs.microsoft.com/surface-hub/) pour activer/désactiver les fonctionnalités et services d’appareil. *[KB4586853](https://support.microsoft.com/help/4586853)
+</details>
 
 <details>
 <summary>24 novembre 2020: mise à jour pour surface Hub 2</summary>
