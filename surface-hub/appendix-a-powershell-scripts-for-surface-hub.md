@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 01/10/2018
 ms.localizationpriority: medium
-ms.openlocfilehash: ebae05d4d1fe67d690c19e003b2755c4720af265
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 92b42139020db13251fa6c5f8439d7084a61a132
+ms.sourcegitcommit: 5d02cca9ca8c0a252798c2fc0a89dbda81911c44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833977"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "11195379"
 ---
 # PowerShell pour SurfaceHub
 
@@ -33,6 +33,9 @@ Scripts PowerShell pour vous aider à configurer et à gérer votre MicrosoftSur
     -   [Autoriser les ID d’appareil pour ActiveSync](#whitelisting-device-ids-cmdlet)
     -   [Accepter et refuser automatiquement les demandes de réunion](#auto-accept-meetings-cmdlet)
     -   [Accepter les demandes de réunion externes](#accept-ext-meetings-cmdlet)
+    
+ > [!NOTE]
+ > Voir aussi [scripts d’authentification moderne et de scripts sans assistance dans Exchange Online PowerShell v2](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)
 
 ## Conditions préalables
 
