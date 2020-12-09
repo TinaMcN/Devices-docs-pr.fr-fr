@@ -14,15 +14,15 @@ author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.date: 11/03/2020
+ms.date: 12/08/2020
 appliesto:
 - Surface Hub 2S
-ms.openlocfilehash: b86776b56e892c34ea8b5abbc55d5c48723a5f9e
-ms.sourcegitcommit: 3ca1d1bc77452acca914d0af03e252ee260ebf1a
+ms.openlocfilehash: 7accbe3d905af3b295f92c002eecd5d77356672d
+ms.sourcegitcommit: e126b8ac66a781ebe42cdd677af3fe6a2eb5e72c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "11154126"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11203553"
 ---
 # Configurer Windows 10 Professionnel ou Entreprise sur Surface Hub 2
 
@@ -85,6 +85,29 @@ Connectez un clavier et une souris si vous utilisez le périphérique en tant qu
 
 Si votre périphérique surface Hub est proche d’un PC, vous pouvez utiliser <a href="https://aka.ms/mm" target="_blank"> la souris sans bordure </a> pour vous déplacer en douceur entre le centre de surface et le PC. Pour plus d’informations, reportez-vous <a href="https://blogs.microsoft.com/ai/microsoft-download-from-the-garage-mouse-without-borders/" target="_blank"> à la rubrique téléchargement de Microsoft à partir du garage: souris sans bordure. </a>
 
+## Exemple de disposition de barre des tâches
+
+Après avoir suivi les étapes ci-dessous pour configurer et configurer votre surface Hub 2 pour Windows 10 professionnel ou entreprise, nous vous recommandons d’utiliser la fonction épingler les applications les plus utilisées à la barre des tâches pour un lancement rapide d’une touche unique de chaque application. Vous trouverez ci-dessous un exemple d’aspect de la barre des tâches:
+
+ ![Disposition de la barre des tâches](images/taskblyt.png)
+### Mettre à jour les applications installées
+
+Pour mettre à jour toutes les applications du Windows Store installées:
+
+1. Ouvrez l’application Microsoft Store et sélectionnez les points de suspension **voir plus** dans le coin supérieur droit.
+2. Sélectionnez **téléchargements et mises à jour.**
+3. Sélectionnez **obtenir les mises à jour**
+
+### Recherchez et installez toutes les mises à jour Windows.
+Après la migration vers Windows 10 professionnel ou Windows 10 entreprise, des mises à jour de maintenance et de fonctionnalités peuvent être disponibles pour que vous puissiez les installer. 
+
+- Accédez à **Settings**  >  **mise à jour** des paramètres & > de sécurité, puis sélectionnez **Rechercher les mises à jour**.
+- S’il existe des mises à jour, installez-les, redémarrez, puis répétez la procédure jusqu’à ce que le message suivant s’affiche:
+
+> [!div class="mx-imgBorder"]
+> ![Notification de la mise à jour de Windows Update](images/wustatus.png)
+
+
 ## OneDriveEntreprise
 
 Utilisez <a href="https://docs.microsoft.com/onedrive/onedrive" target="_blank"> OneDrive entreprise </a> pour partager facilement des outils, des journaux et d’autres fichiers entre tous vos périphériques de travail.
@@ -134,7 +157,7 @@ Pour synchroniser des fichiers d’entreprise internes sur votre disque local à
 
 **Couplez le stylo Bluetooth surface Hub**
 
-Couplez le stylet pour maintenir à jour le microprogramme du stylo et obtenir des informations de charge de la batterie dans la page Paramètres de l’appareil Bluetooth ou dans l’application surface:
+Couplez le stylet pour garder le microprogramme du stylo à jour, définissez les raccourcis clavier et obtenez des informations sur la charge de la batterie dans la page Paramètres de l’appareil Bluetooth ou dans l’application surface:
 
 1. Sélectionnez Paramètres de **démarrage**de l'  >  **Settings**  >  **appareil**.
 
@@ -200,15 +223,6 @@ Pour ajouter une icône à la barre des tâches qui permet le verrouillage de l�
 
 ## Applications
 
-### Mettre à jour les applications installées
-
-Pour mettre à jour toutes les applications du Windows Store installées:
-
-1. Ouvrez l’application Microsoft Store et sélectionnez les points de suspension **voir plus** dans le coin supérieur droit.
-
-2. Sélectionnez **Téléchargements et mises à jour**.
-
-2. Sélectionnez **Obtenir les mises à jour**.
 
 ### Tableau blanc Microsoft
 
@@ -307,9 +321,21 @@ L’application **votre téléphone** est installée par défaut sur Windows 10.
 
 Pour plus d’informations sur la configuration de l’application, reportez-vous à la rubrique Configuration de <a href="https://www.windowscentral.com/how-set-your-phone-windows-10" target="_blank"> votre téléphone sur Windows 10 et synchronisation des données entre votre ordinateur et votre téléphone </a> . Consultez également <a href="https://www.windowscentral.com/how-fix-common-problems-your-phone-app-windows-10" target="_blank"> la rubrique Comment résoudre les problèmes courants liés à votre application de téléphone sur Windows 10 </a> .
 
-### Zones super fantaisie
+###  Zones fantaisie
 
-Les **zones super fantaisie** permettent aux utilisateurs de réorganiser les fenêtres afin de maximiser l’espace disponible à l’écran. Elle est désormais incluse dans <a href="https://github.com/microsoft/PowerToys/releases" target="_blank"> PowerToys </a> sur GitHub.
+
+Les **zones fantaisie** font partie d’un ensemble d’outils appelé <a href="https://github.com/microsoft/PowerToys/releases" target="_blank"> PowerToys </a> sur GitHub. C’est un excellent moyen d’utiliser l’écran en surface Hub 2 en vous permettant de définir des dispositions fixes sur votre écran («zones»), puis de sélectionner l’application qui sera exécutée dans chaque zone. 
+
+
+Le [wiki PowerToys](https://github.com/microsoft/PowerToys/wiki) comporte des instructions sur l’utilisation et la personnalisation de chaque outil, y compris [FancyZones](https://github.com/microsoft/PowerToys/wiki/FancyZones-Overview). À un niveau élevé, après l’installation de PowerToys, vous pouvez sélectionner ou créer une disposition personnalisée, puis maintenir la touche Maj enfoncée et faire glisser ou utiliser les touches du clavier pour déplacer une application en cours d’exécution dans des zones spécifiques. L’utilisation d’un clavier et d’une souris Bluetooth ou USB peut vous être utile, ou vous pouvez utiliser le clavier tactile et le pavé tactile.
+
+**Conseils pour Power Toys**
+- Pour recevoir des notifications par courrier électronique concernant les mises à jour de la version PowerToys sur GitHub, cliquez sur le bouton «inscription» en haut de la [page](https://github.com/microsoft/PowerToys/releases).
+- Après l’installation de PowerToys, vous pouvez recevoir des notifications Windows et/ou télécharger et installer les dernières mises à jour en configurant les paramètres de PowerToys **Télécharger les mises à jour automatiquement** sur activé.
+- Pour accéder aux paramètres de PowerToys, sélectionnez l’icône d' **exécution des applications** carats dans la barre des tâches, puis cliquez avec le bouton droit ou appuyez longuement sur l’icône PowerToys jusqu’à ce que le menu apparaisse. Sélectionnez «Paramètres».
+- En bas de la page des paramètres de PowerToys, activez la fonction **Télécharger les mises à jour automatiquement** .
+- Lorsqu’une mise à jour a été publiée, une notification Windows s’affiche pour vous permettre d’installer la mise à jour.
+
 
 ### Navigateur Microsoft Edge chrome
 
@@ -415,7 +441,7 @@ Activez le mode tablette si vous le souhaitez, pour les besoins en matière d’
 
 1. Recherchez et installez toutes les mises à jour Windows.
 
-2. Mise à jour de la stratégie de groupe
+2. Mettez à jour la stratégie de groupe.
 
    1. À l’invite de commandes avec élévation de privilèges, entrez **gpupdate/force/Boot/Wait: 0**.
    
@@ -452,6 +478,6 @@ Activez le mode tablette si vous le souhaitez, pour les besoins en matière d’
 > [!TIP]
 > Après l’installation et la configuration de Windows 10, les applications de surface Hub 2 peuvent être gérées comme n’importe quel autre appareil Windows 10.
 
-## Rubriques associées
+## Rubriques connexes
 
 <a href="surface-hub-2s-migrate-os.md" target="_blank"> Migrer vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2</a>

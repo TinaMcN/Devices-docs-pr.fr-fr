@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 10/27/2020
+ms.date: 12/08/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 90bd5714b7427880f6e73c7031c26894d55ac500
-ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
+ms.openlocfilehash: 7035d4c89e2ef5937d0480cf2d77db2e7e829488
+ms.sourcegitcommit: e126b8ac66a781ebe42cdd677af3fe6a2eb5e72c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "11145949"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11203536"
 ---
 # Installer Windows10 Collaborationmise à jour2020 
 
@@ -34,8 +34,12 @@ Vous pouvez obtenir la mise à jour Windows 2020 à l’aide de l’une des mét
 | ----- | -------------------------------------- | ----------------- |
 | 1     | NZ, Australie, Canada, Belgique, Mexique | 27 octobre 2020  |
 | deuxième     | UK, Japon, Suisse, Italie          | 10 novembre 2020 |
-| 3D     | États-Unis, Allemagne                            | 30 novembre 2020 |
-| n°4     | Internationale                                 | 7 décembre 2020  |
+| 3D     | États-Unis, Allemagne                            | À déterminer |
+| n°4     | Internationale                                 | À déterminer  |
+
+## Maintenance de surface Hub 2 avec Windows 10 Team Edition v1703 
+
+Les clients de toutes les régions peuvent continuer à mettre à jour leurs appareils surface Hub 2S à l’aide de Windows Update pour les entreprises ou à l’aide d’une image de récupération d’urgence (BMR), comme expliqué dans [Reset et Recovery for surface Hub 2](surface-hub-2s-recover-reset.md). La prise en charge de la maintenance complète pour Windows 10 Team Edition version 1703 est prévue jusqu’au 16 mars 2021.
 
 
 ## Prise en charge de l’appareil v1 
@@ -44,11 +48,11 @@ Initialement publiée pour les appareils surface Hub 2, la mise à jour d’équ
  
 ## Nouveautés
 
-La mise à jour de l’équipe 2020 de Windows 10 apporte des améliorations majeures au déploiement et à la gestion des appareils ainsi qu’aux dernières fonctionnalités de Windows 10. 
+La mise à jour de l’équipe 2020 de Windows 10 apporte des améliorations majeures au déploiement et à la gestion des appareils ainsi qu’aux dernières fonctionnalités de Windows 10. Pour plus d’informations, reportez-vous à [la rubrique nouveautés de la mise à jour de l’équipe 2020 de Windows 10](surface-hub-2020-update-whats-new.md).
  
 ## Avant de commencer
 
-Avant d’installer la mise à jour de l’équipe 2020 de Windows 10, assurez-vous d’enregistrer la clé BitLocker associée à votre appareil. Pour plus d’informations, reportez-vous à [la rubrique nouveautés de la mise à jour de l’équipe 2020 de Windows 10](surface-hub-2020-update-whats-new.md).
+Avant d’installer la mise à jour de l’équipe 2020 de Windows 10, assurez-vous d’enregistrer la clé BitLocker associée à votre appareil. 
 
 **Pour enregistrer manuellement votre clé BitLocker**
 
@@ -59,9 +63,6 @@ Avant d’installer la mise à jour de l’équipe 2020 de Windows 10, assurez-v
 
 Pour en savoir plus, voir [enregistrer votre clé BitLocker](save-bitlocker-key-surface-hub.md).
 
-
 ## En savoir plus
 
-
-- [Nouvelle mise à jour du système d’exploitation surface Hub publiée pour la version publique preview.](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/new-surface-hub-os-update-released-for-public-preview/ba-p/1534823)
-
+- [Mises à jour importantes apportées à la mise à jour d’équipe 2020 de Windows 10 teams surface Hub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/important-updates-on-the-surface-hub-windows-10-team-2020-update/ba-p/1960897)
