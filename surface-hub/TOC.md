@@ -26,7 +26,6 @@
 ## Déployer
 ### [Adoption de Surface Hub2S et formation](surface-hub-2s-adoption-kit.md)
 ### [Vidéos d’adoption de SurfaceHub2S](surface-hub-2s-adoption-videos.md)
-
 ### [Première installation de SurfaceHub2S](surface-hub-2s-setup.md)
 ### [Connecter des appareils à SurfaceHub2S](surface-hub-2s-connect.md)
 ### [Liste de contrôle du déploiement de SurfaceHub2S](surface-hub-2s-deploy-checklist.md)
@@ -40,7 +39,7 @@
 ### [Migrer vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2](surface-hub-2s-migrate-os.md)
 ### [Configurer Windows 10 Professionnel ou Entreprise sur Surface Hub 2](surface-hub-2-post-install.md)
 ### [Composants additionnels essentiels pour Windows 10 professionnel et Enterprise sur surface Hub 2](surface-hub-2-essential-add-ons.md)
-### [Installer la version d'évaluation de mise à jour Windows10 Collaboration2020](surface-hub-install-2020preview.md)  
+### [Installer la mise à jour de Windows 10 Team 2020](surface-hub-2020-update.md)  
 ### [Problèmes connus –Mise à jour Windows10 Collaboration2020](surface-hub-2020-team-update-known-issues.md)
 ### [Configurer les comptes d’administrateur non global sur surface Hub 2S](surface-hub-2s-nonglobal-admin.md)
 ### [Installer et configurer le nouveau Microsoft Edge sur SurfaceHub](surface-hub-install-chromium-edge.md)        
@@ -99,9 +98,8 @@
 #### [Programme de première utilisation](first-run-program-surface-hub.md)
 
 ## Gérer
-### [Gérer Microsoft Surface Hub](manage-surface-hub.md)
-### [Installer la version d'évaluation de mise à jour Windows10 Collaboration2020](surface-hub-install-2020preview.md)  
-### [Installer et configurer le nouveau Microsoft Edge sur SurfaceHub](surface-hub-install-chromium-edge.md)    
+### [Gérer Microsoft Surface Hub](manage-surface-hub.md) 
+### [Installer et configurer le nouveau Microsoft Edge on Surface Hub](surface-hub-install-chromium-edge.md)    
 ### [PowerShell pour SurfaceHub](appendix-a-powershell-scripts-for-surface-hub.md)
 ### [Gestion à distance du SurfaceHub](remote-surface-hub-management.md)
 #### [Gérer les paramètres avec un fournisseur GPM](manage-settings-with-mdm-for-surface-hub.md)
