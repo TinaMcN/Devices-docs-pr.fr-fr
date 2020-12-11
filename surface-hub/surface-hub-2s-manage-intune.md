@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 07/23/2020
+ms.date: 12/10/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 2fafca4a8f19da72d1584c02cbebe1ce3c03adde
-ms.sourcegitcommit: a16c75f4e81c48e2d0e3ec45430af0939e4feaa2
+ms.openlocfilehash: 6b5dac9f418207293e3b9b386d59fd26762feb72
+ms.sourcegitcommit: 4b1cfcac090910a3ea634929942063eb51fc54f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "11105940"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "11206298"
 ---
 # Gérer le Surface Hub 2S avec Intune
 
@@ -40,7 +40,7 @@ Au cours du processus de configuration initial, l’appareil est inscrit automat
 
 ## Gestion des paramètres d’équipe Windows 10 avec Intune
 
-1. Connectez-vous au **Gestionnaire de points de terminaison Microsoft**, puis sélectionnez profils de configuration des **appareils**  >  **Configuration profiles**  >  **créer un profil**. 
+1. Connectez-vous au **Gestionnaire de points de terminaison Microsoft**, puis sélectionnez profils de configuration des **appareils**  >  ****  >  **créer un profil**. 
 2. Sous **plateforme**, sélectionnez **Windows 10 et les versions ultérieures**de  >  **restrictions d’appareils (équipe Windows 10)** , puis sélectionnez **créer**. 
 3. Vous pouvez désormais parcourir et sélectionner les paramètres de restriction d’appareil prédéfinis pour surface Hub et surface Hub 2.
 
@@ -52,13 +52,14 @@ Ces paramètres s’étendent sur les catégories suivantes: applications et uti
 
 Outre les stratégies disponibles directement via la console Intune, il existe de nombreux fournisseurs de services de configuration (CSP) qui mappent à des clés de registre ou des fichiers. 
 
-Microsoft fournit généralement de nouveaux fournisseurs de services cryptographiques avec chaque nouvelle version du système d’exploitation Windows 10. La [mise à jour d’équipe 2020 de Windows 10](surface-hub-install-2020preview.md), disponible dans la version d’évaluation par le biais du programme Windows Insider, inclut plus de 20 stratégies de gestion des périphériques nouvelles et mises à jour pour surface Hub et surface Hub. Ces stratégies de gestion des périphériques mobiles permettent aux administrateurs d’améliorer le contrôle des mises à jour de l’application à partir de la boutique Microsoft, des paramètres de projection sans fil, tels que Miracast sur l’infrastructure, des paramètres réseau tels que la qualité du service et l’authentification filaire 802.1 x, ainsi que les nouveaux paramètres liés à la confidentialité et à RGPD.
+Microsoft fournit généralement de nouveaux fournisseurs de services cryptographiques avec chaque nouvelle version du système d’exploitation Windows 10. La [mise à jour d’équipe 2020 de Windows 10](surface-hub-2020-update.md) comporte plus de 20 stratégies de gestion des périphériques nouvelles et mises à jour pour surface Hub et surface Hub 2. Ces stratégies de gestion des périphériques mobiles permettent aux administrateurs d’améliorer le contrôle des mises à jour de l’application à partir de la boutique Microsoft, des paramètres de projection sans fil, tels que Miracast sur l’infrastructure, des paramètres réseau tels que la qualité du service et l’authentification filaire 802.1 x, ainsi que les nouveaux paramètres liés à la confidentialité et à RGPD.
 
 Pour plus d’informations, voir les ressources suivantes : 
 
 - [Informations de référence sur les fournisseurs de services de configuration](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) 
 - [Fournisseur de services de configuration SurfaceHub](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
 - [Fournisseurs de services de configuration de stratégies pris en charge par Microsoft Surface Hub](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-surface-hub)
+- [Nouveautés de la mise à jour de l’équipe surface hub d’équipe 2020](surface-hub-2020-update-whats-new.md)
 
 ## Paramètres de la Qualité de service (QoS, Quality of Service)
 
