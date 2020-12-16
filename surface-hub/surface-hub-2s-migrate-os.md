@@ -9,16 +9,18 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 12/03/2020
+ms.date: 12/14/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 01c5c8a5c6b9f7ed657829fe792fc9eecd1facb5
-ms.sourcegitcommit: 5d02cca9ca8c0a252798c2fc0a89dbda81911c44
+ms.openlocfilehash: c2851505b3595ea768217de443676b45cc01a9ae
+ms.sourcegitcommit: efc38524f81238e0c36371f462eb57123e46d09b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195399"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "11228555"
 ---
 # Migrer vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2
+
+- [Article historique des versions](#version-history)
 
 Surface Hub 2S est préinstallé avec l’équipe Windows 10. Cette édition personnalisée de Windows 10 est conçue pour faciliter la collaboration dans les environnements de salle de réunion. À présent, vous avez la possibilité d’exécuter Windows 10 professionnel ou entreprise pour utiliser surface Hub 2S de la même façon que n’importe quel autre PC. 
 
@@ -67,7 +69,7 @@ Avant de migrer surface hub d’une équipe Windows 10 vers une version de burea
  
 **Pour vérifier la version UEFI sur votre système:**
 
-1. Sur la page d’accueil de surface Hub 2, sélectionnez **Démarrer**, puis ouvrez l’application surface (surface de**toutes les applications**  >  **Surface**).
+1. Sur la page d’accueil de surface Hub 2, sélectionnez **Démarrer**, puis ouvrez l’application surface (surface de**toutes les applications**  >  ****).
 
 2. Sélectionnez **votre surface** pour afficher des informations sur surface Hub, y compris la version UEFI actuelle sur l’appareil. 
    - S’il s’agit d' *694.2938.768.0* ou d’une version ultérieure, comme le montre l’image suivante, vous pouvez créer le package SEMM pour activer la migration du système d’exploitation.
@@ -82,7 +84,7 @@ Avant de migrer surface hub d’une équipe Windows 10 vers une version de burea
     >[!Note]
     > Si vous ignorez votre nom d’utilisateur ou votre mot de passe d’administrateur, vous devez réinitialiser l’appareil. Pour plus d’informations, reportez-vous à <a href="https://docs.microsoft.com/surface-hub/surface-hub-2s-recover-reset" target="_blank"> Reset et Recovery pour surface Hub 2.</a>
 
-1. Accédez à **All apps**la  >  mise à jour des**paramètres**d’applications et à la mise à jour de  >  **sécurité**  >  **Windows**, puis installez toutes les mises à jour. 
+1. Accédez à **** la  >  mise à jour des**paramètres**d’applications et à la mise à jour de  >  **sécurité**  >  **Windows**, puis installez toutes les mises à jour. 
 1. Redémarrez l’appareil. 
 1. Vérifiez la version UEFI à l’aide de l’application surface. 
 1. À ce stade, si la version UEFI n’est pas encore version 694.2938.768.0 ou ultérieure, vous pouvez soit répéter les étapes ci-dessus, soit vous pouvez obtenir la dernière version de UEFI en installant l’image de l’application de mise à jour complète de l' 2020 équipe Windows 10.
@@ -267,7 +269,7 @@ La procédure suivante vous explique comment créer une clé USB à partir du su
 
    ![Entrez le mot de passe UEFI.](images/shm-fig22.png)
    
-4. Dans le menu UEFI, sélectionnez **Management**  >  **installation de gestion depuis USB**.
+4. Dans le menu UEFI, sélectionnez ****  >  **installation de gestion depuis USB**.
 
    ![Sélectionnez gestion et installer à partir d’U S B.](images/shm-fig21.png)
    
@@ -302,7 +304,7 @@ La procédure suivante vous explique comment créer une clé USB à partir du su
 
 ### Installer les pilotes et le microprogramme de surface Hub 2
 
-Pour vous assurer que votre appareil dispose de l’ensemble des mises à jour et pilotes les plus récents, installez les <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> pilotes et le microprogramme pour Windows 10 professionnel et le système d’exploitation sur surface Hub 2 </a> .
+Pour vous assurer que votre appareil dispose de l’ensemble des mises à jour et pilotes les plus récents, installez les <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> pilotes et le microprogramme pour Windows 10 professionnel et le système d’exploitation sur surface Hub 2 </a> . Après l’installation des pilotes et de la version MSI du microprogramme, redémarrez l’appareil. Ensuite, après avoir réactivé le concentrateur, assurez-vous que le PC est alimenté pendant une heure, puis redémarrez l’appareil. Vous ne serez pas invité à entrer le second redémarrage. En fonction de l’état de votre ordinateur avant de procéder à la migration vers Windows 10 professionnel ou entreprise, cette deuxième étape peut être nécessaire pour que l’intégralité du microprogramme ait été mise à jour.
  
 ## Configurer les paramètres recommandés
 
@@ -324,7 +326,8 @@ Le tableau suivant répertorie les modifications apportées à cet article.
 
 | Version | Date               | Description                                                                                           |
 | ------- | ------------------ | ----------------------------------------------------------------------------------------------------- |
-| version. 1,3  | 3 décembre 2020 | Mise à jour avec des recommandations sur la gestion de l’inscription de SEMM                                                        |
+| version. 1,4  | 14 décembre 2020 | Fournit des [informations supplémentaires](#install-surface-hub-2-drivers-and-firmware) sur l’installation du fichier MSI pour «pilotes et microprogrammes pour Windows 10 professionnel pour le système d’exploitation Windows 10 professionnel sur surface Hub 2», qui vous avertit que le second redémarrage est nécessaire en fonction de l’état de votre système.                                                          |
+| version. 1,3  | 3 décembre 2020 | Mis à jour avec des recommandations sur la gestion de l' [inscription de SEMM](#managing-semm-enrollment).                                                       |
 | version. 1,2  | 29 septembre 2020 | Les mises à jour diverses qui répondent aux commentaires sur la convivialité.                                                        |
 | version. 1,1  | 15 septembre 2020 | A placé une note supplémentaire dans l’introduction qui clarifie les conditions de licence pour l’installation d’un nouveau système d’exploitation. |
 | version. 1.0  | 1er septembre 2020  | Nouvel article.                                                                                           |

@@ -18,18 +18,18 @@ appliesto:
 - Surface Laptop 3
 - Surface Book 3
 - Surface Laptop Go
-ms.openlocfilehash: 20d1b187a565f210eedc632be1addeac5dd714ba
-ms.sourcegitcommit: 7d5b0a7948eb540d6849a0e2c70a1058584cc5f8
+ms.openlocfilehash: e984741a8367935eab18351815c5f00d9f8a72b7
+ms.sourcegitcommit: efc38524f81238e0c36371f462eb57123e46d09b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "11105859"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "11228545"
 ---
 # Gestion Intune des paramètres de surface UEFI
 
 ## Introduction
 
-La possibilité de gérer les appareils à partir du Cloud a considérablement simplifié le déploiement et la mise en service informatiques dans le cycle de vie. Les profils d’interface de configuration de microprogramme de périphériques (DFCI) intégrés à Microsoft Intune (désormais disponibles en préversion [publique](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)) permettent de faire en sorte que la gestion de surface UEFI étende la pile de gestion moderne au niveau matériel UEFI. DFCI prend en charge la mise en service des fonctions d’approvisionnement nulle, élimine les mots de passe BIOS et contrôle les paramètres de sécurité, notamment les options de démarrage et les périphériques intégrés, et vous permet de créer des scénarios de sécurité avancée à l’avenir. Pour obtenir des réponses aux questions fréquemment posées, voir [Enflammer 2019: annonçant la gestion à distance des paramètres de surface UEFI de Intune](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333).
+La possibilité de gérer les appareils à partir du Cloud a considérablement simplifié le déploiement et la mise en service informatiques dans le cycle de vie. Les profils d’interface de configuration de microprogramme de périphériques (DFCI) intégrés à [Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)permettent à la gestion de surface UEFI d’étendre la pile de gestion moderne au niveau matériel UEFI. DFCI prend en charge la mise en service des fonctions d’approvisionnement nulle, élimine les mots de passe BIOS et contrôle les paramètres de sécurité, notamment les options de démarrage et les périphériques intégrés, et vous permet de créer des scénarios de sécurité avancée à l’avenir. Pour obtenir des réponses aux questions fréquemment posées, voir [Enflammer 2019: annonçant la gestion à distance des paramètres de surface UEFI de Intune](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333).
 
 ### Arrière-plan
 
@@ -39,9 +39,9 @@ Contrairement aux autres appareils Windows 10 disponibles sur le marché aujourd
 
 ### DFCI et SEMM
 
-Jusqu’à présent, la gestion du microprogramme requis lors de l’inscription de périphériques en mode de gestion des entreprises de surface (SEMM) avec la surcharge des tâches manuelles en temps réel. Par exemple, SEMM nécessite que le personnel informatique accède physiquement à chaque PC pour entrer un code confidentiel à deux chiffres dans le cadre du processus de gestion des certificats. Bien que SEMM ne soit pas une bonne solution pour les organisations dans un environnement strictement local, sa complexité et les exigences informatiques qu’il implique requièrent une utilisation onéreuse.
+Auparavant, la gestion du microprogramme requis pour l’inscription des appareils en mode de gestion des entreprises de surface (SEMM) avec la surcharge des tâches manuelles en temps réel. Par exemple, SEMM nécessite que le personnel informatique accède physiquement à chaque PC pour entrer un code confidentiel à deux chiffres dans le cadre du processus de gestion des certificats. Bien que SEMM ne soit pas une bonne solution pour les organisations dans un environnement strictement local, sa complexité et les exigences informatiques qu’il implique requièrent une utilisation onéreuse.
 
-Maintenant que vous disposez de nouvelles fonctionnalités de gestion de microprogramme UEFI intégrées dans Microsoft Intune, la possibilité de verrouiller le matériel est simplifiée et facile à utiliser avec de nouvelles fonctionnalités pour la mise en service, la sécurité et les mises à jour rationalisées dans une seule console, désormais unifiée en tant que [Gestionnaire de points de terminaison Microsoft](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager). La figure suivante illustre les paramètres UEFI affichés directement sur l’appareil (à gauche) et consultés dans la console du gestionnaire de points de terminaison (à droite).
+ Grâce aux fonctionnalités de gestion de microprogrammes UEFI intégrées de Microsoft Intune, la possibilité de verrouiller le matériel est simplifiée et facile à utiliser avec les nouvelles fonctionnalités de mise en service, de sécurité et de simplification des mises à jour dans une seule console, désormais unifiée en tant que [Gestionnaire de points de terminaison Microsoft](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager). La figure suivante illustre les paramètres UEFI affichés directement sur l’appareil (à gauche) et consultés dans la console du gestionnaire de points de terminaison (à droite).
 
 ![Paramètres UEFI affichés sur l’appareil (vers la gauche) et dans la console Endpoint Manager (vers la droite)](images/uefidfci.png)
 
@@ -86,7 +86,7 @@ Avant de configurer les paramètres de stratégie DFCI, commencez par créer un 
     ![Créer un profil DFCI](images/df1.png)
 
 5. Cliquez sur **OK** , puis sélectionnez **créer**.
-6. Sélectionnez **devoirs** et, sous **Sélectionner des groupes** , sélectionnez le groupe de sécurité Azure ad qui contient vos périphériques cibles, comme illustré dans la figure ci-dessous. Cliquez sur **Enregistrer**.
+6. Sélectionnez **devoirs** et, sous **Sélectionner des groupes** , sélectionnez le groupe de sécurité Azure ad qui contient vos périphériques cibles, comme illustré dans la figure ci-dessous. Cliquez sur **Save**.
 
     ![Attribuer un groupe de sécurité](images/df2a.png)
 
