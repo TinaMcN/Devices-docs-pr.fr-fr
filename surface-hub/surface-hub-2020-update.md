@@ -1,5 +1,5 @@
 ---
-title: Installer Windows10 Collaborationmise à jour2020
+title: Installer la mise à jour de Windows 10 Team 2020
 description: Obtenez la dernière mise à jour du système d’exploitation surface Hub, mise à jour d’équipe 2020 de Windows 10.
 keywords: séparer les valeurs par des virgules
 ms.prod: surface-hub
@@ -9,18 +9,20 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 12/08/2020
+ms.date: 12/17/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 7035d4c89e2ef5937d0480cf2d77db2e7e829488
-ms.sourcegitcommit: e126b8ac66a781ebe42cdd677af3fe6a2eb5e72c
+ms.openlocfilehash: 043c7ed49dafab7e0f3d042f5b98d527ffe0610f
+ms.sourcegitcommit: 6252903b28f0c410065eb2515c746f5e9920c652
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "11203536"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "11237214"
 ---
-# Installer Windows10 Collaborationmise à jour2020 
+# Installer la mise à jour de Windows 10 Team 2020 
 
 Le nouveau système d’exploitation surface Hub, la **mise à jour d’équipe 2020 de Windows 10**basée sur Windows 10 version 20H2, est désormais disponible pour tous les appareils surface Hub 2s.  
+
+- Voir aussi: [problèmes connus: mise à jour de l’équipe 2020 de Windows 10](surface-hub-2020-update.md)
 
 ## Distribués
 
@@ -65,4 +67,5 @@ Pour en savoir plus, voir [enregistrer votre clé BitLocker](save-bitlocker-key-
 
 ## En savoir plus
 
+- [Problèmes connus: mise à jour d’équipe 2020 de Windows 10](surface-hub-2020-update.md)
 - [Mises à jour importantes apportées à la mise à jour d’équipe 2020 de Windows 10 teams surface Hub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/important-updates-on-the-surface-hub-windows-10-team-2020-update/ba-p/1960897)
