@@ -10,14 +10,14 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 05/22/2018
+ms.date: 12/18/2018
 ms.localizationpriority: medium
-ms.openlocfilehash: 1988a6ed59525d7dc77872e532247dbc50f01bdf
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: a9ebab6848efa706609a39b0eb99fa42df2156bf
+ms.sourcegitcommit: ce7ad475b776a78ba215e77111ea5371afeb4f28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834169"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "11237319"
 ---
 # Utilisation de l’outil de récupération de SurfaceHub
 
@@ -30,7 +30,7 @@ Pour réutiliser le disque SSD surface Hub à l’aide de l’outil de récupér
 
 Si l’outil ne parvenez pas à réimagingr votre lecteur, contactez le [support surface Hub](https://support.microsoft.com/help/4037644/surface-contact-surface-warranty-and-software-support).
 
-## Conditions préalables
+## Prérequis
 
 ### Mandatory
 
@@ -53,9 +53,9 @@ Si l’outil ne parvenez pas à réimagingr votre lecteur, contactez le [support
 
 ## Télécharger l’outil de récupération de surface Hub
 
-L’outil de récupération de surface Hub est disponible en téléchargement à partir des [Outils surface Hub pour ce dernier](https://www.microsoft.com/download/details.aspx?id=52210) sous le nom de fichier **SurfaceHub_Recovery_v1.14.137.0.msi**.
+L’outil de récupération de surface Hub est disponible en téléchargement à partir des [Outils surface Hub pour ce dernier](https://www.microsoft.com/download/details.aspx?id=52210)  sous le nom de fichier **SurfaceHub_Recovery_v2.0.139.0.msi**.
 
-Pour démarrer le téléchargement, cliquez sur **Télécharger**, choisissez **SurfaceHub_Recovery_v1.14.137.0.msi** dans la liste, puis cliquez sur **suivant**. Dans la fenêtre qui s’affiche, choisissez l’une des options suivantes:
+Pour démarrer le téléchargement, cliquez sur **Télécharger**, choisissez **SurfaceHub_Recovery_v2.0.139.0.msi** dans la liste, puis cliquez sur **suivant**. Dans la fenêtre qui s’affiche, choisissez l’une des options suivantes:
 
 - Cliquez sur **exécuter** pour démarrer l’installation immédiatement.
 - Cliquez sur **Enregistrer** pour copier le téléchargement sur votre ordinateur pour une installation ultérieure.
@@ -72,13 +72,20 @@ Installez l’outil de récupération de surface Hub sur l’ordinateur hôte.
 
     ![Bouton Démarrer de l’outil de récupération](images/shrt-start.png)
 
+
 3. Dans la fenêtre d' **aide** , cliquez sur **suivant**.
 
     ![Ne laissez pas votre ordinateur accéder aux conseils de mise en veille](images/shrt-guidance.png)
 
-4. Cliquez sur **Oui** pour télécharger l’image. Le temps de téléchargement de l’image de récupération dépend des vitesses de connexion Internet. Sur une connexion d’entreprise moyenne, il peut s’écouler jusqu’à une heure pour télécharger le fichier image de 8 Go.
+4. Dans la fenêtre Sélectionner une image, cliquez sur **RS2** ou son successeur **20H2**, sélectionnez **continuer,** puis sélectionnez **Télécharger une image.**
 
-    ![Télécharger l’image?](images/shrt-download.png)
+     ![Outil de récupération-sélectionner l’option de téléchargement de l' ](images/shrt-select-image.png) ![ outil de récupération d’image](images/shrt-download-image.png)
+
+5. Le temps de téléchargement de l’image de récupération dépend des vitesses de connexion Internet. Sur une connexion d’entreprise moyenne, il peut s’écouler jusqu’à une heure pour télécharger le fichier image de 8 Go.
+
+    ![Téléchargement de l’image](images/shrt-download.png)
+
+
 
 5. Lorsque le téléchargement est terminé, l’outil vous demande de connecter un disque SSD. Si l’outil ne parvient pas à trouver le lecteur en pièce jointe, il est possible que le câble utilisé ne signale pas le nom de l’objet SSD dans Windows.  L’outil d’imagerie doit trouver le nom du lecteur comme «LITEON L-128V2S USB» pour pouvoir continuer.  Pour plus d’informations sur la façon de supprimer le lecteur existant de votre surface Hub, voir [remplacement de SSD de surface Hub](surface-hub-ssd-replacement.md).
 
@@ -86,13 +93,11 @@ Installez l’outil de récupération de surface Hub sur l’ordinateur hôte.
 
 6. Lorsque le lecteur est reconnu, cliquez sur **Démarrer** pour démarrer le processus de nouvelle image. Sur le message d’avertissement indiquant que toutes les données du lecteur seront effacées, cliquez sur **OK**.
 
-    ![Commencer à recréer une image de la vidéo SSD](images/shrt-drive-start.png)
+
 
     Avant d’appliquer l’image système au lecteur, le disque SSD est repartitionné et mis en forme. La copie des fichiers binaires du système prend environ 30 minutes, mais peut prendre plus de temps en fonction de la vitesse de votre bus USB, du câble utilisé ou du logiciel antivirus installé sur votre système.
 
-    ![Copie réalisée](images/shrt-done.png)
 
-    ![Recréation d’image terminée](images/shrt-complete.png)
 
 ## Résolution des problèmes et problèmes courants
 
@@ -100,7 +105,19 @@ Problème | Remarques
 --- | ---
 L’outil ne parvient pas à imager le SSD | Vérifiez que vous utilisez un SSD fourni par un fabricant et un des câbles testés.
 Le processus de recréation d’image apparaît arrêté ou figé | Il est possible de fermer et de redémarrer l’outil de récupération de surface Hub sans effet pour le SSD.
-Le lecteur n’est pas reconnu par l’outil | Vérifiez que l’interface SSD surface Hub est énumérée comme un lecteur Lite-on, «LITEON L-128V2S USB».  Si le lecteur est reconnu comme un autre périphérique appelé, votre câble actuel n’est pas compatible. Essayez un autre câble ou un câble testé indiqué ci-dessus.
+Le lecteur n’est pas reconnu par l’outil | Vérifiez que l’interface SSD surface Hub est énumérée en tant que Lite-On lecteur, «LITEON L-128V2S USB».  Si le lecteur est reconnu comme un autre périphérique appelé, votre câble actuel n’est pas compatible. Essayez un autre câble ou un câble testé indiqué ci-dessus.
 Erreur:-2147024809 | Ouvrez le gestionnaire de disques et supprimez les partitions sur le lecteur surface Hub.  Déconnectez-vous et reconnectez-vous à l’ordinateur hôte. Redémarrez de nouveau l’outil d’imagerie.
 
 Si l’outil ne parvenez pas à réimagingr votre lecteur, contactez le [support surface Hub](https://support.microsoft.com/help/4037644/surface-contact-surface-warranty-and-software-support).
+
+## Historique des versions
+
+### Version v 2.0.139.0
+
+*Date de publication: 18 décembre 2020*<br>
+Cette version de l’outil de récupération de surface Hub ajoute une prise en charge pour les éléments suivants:
+- Mise à jour pour la prise en charge de la mise à jour de Windows 10 Team 2020 (20H2)
+- Améliorations apportées à l’interface utilisateur
+- Changements architecturaux
+- Ajouts de télémétrie
+
