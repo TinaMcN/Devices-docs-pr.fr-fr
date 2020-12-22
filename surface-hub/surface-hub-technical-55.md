@@ -9,16 +9,15 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 05e701d3f591ba1ca85a58eaa4acb585e710d3d8
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 12/21/2020
+ms.openlocfilehash: e321b64ebbbc62da70cfdc1979053ee8facb7235
+ms.sourcegitcommit: e83316c8b5e3c29b0af0730ef05fd8b96b0d0cdd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832375"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "11238089"
 ---
 # Informations techniques pour le surface Hub de 55
-
-## Obtenues 
 
 |
 --- | ---
@@ -54,6 +53,12 @@ Puissance d’entrée, fonctionnement |    500W Max
 Alimentation en entrée, en veille    |   5W nominal
 
 
+> [!NOTE]
+> Surface Hub peut être utilisé en continu pour une durée maximale de 18 heures par jour. Pour optimiser l’efficacité, surface Hub utilise les capteurs intelligents pour désactiver l’écran del lorsque la présence n’est plus détectée, ce qui signifie qu’il n’est pas nécessaire de le mettre à la fin de la journée. Si l’unité est installée dans un environnement de travail de 24 heures, les capteurs peuvent être désactivés pour respecter les recommandations en matière d’utilisation maximale de 18 heures par jour. Notez que l’affichage prolongé d’un signal vidéo risque de provoquer la rétention de l’image ou de l’image sur l’écran. Pour en savoir plus sur la gestion des paramètres d’alimentation, voir:
+>
+> - [Gestion locale des paramètres SurfaceHub](local-management-surface-hub-settings.md)
+> - [FSC SurfaceHub-gestion des clients Windows](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
+
 ## Connexion de PC de remplacement 
 
 Connecteur et emplacement | Label | Description
@@ -87,63 +92,67 @@ RJ45, e/s inférieures | ![](images/rj45.png) | Se connecte à Ethernet.
 RJ11, e/s inférieures | ![](images/rj11.png) | Se connecte à des systèmes de contrôle de salle.
 
 
-
+> [!NOTE]
+> Surface Hub peut être utilisé en continu pour une durée maximale de 18 heures par jour. Pour optimiser l’efficacité, surface Hub utilise les capteurs intelligents pour désactiver l’écran del lorsque la présence n’est plus détectée, ce qui signifie qu’il n’est pas nécessaire de le mettre à la fin de la journée. Si l’unité est installée dans un environnement de travail de 24 heures, les capteurs peuvent être désactivés pour respecter les recommandations en matière d’utilisation maximale de 18 heures par jour. Notez que l’affichage prolongé d’un signal vidéo risque de provoquer la rétention de l’image ou de l’image sur l’écran. Pour en savoir plus sur la gestion des paramètres d’alimentation, voir:
+>
+> - [Gestion locale des paramètres SurfaceHub](local-management-surface-hub-settings.md)
+> - [FSC SurfaceHub-gestion des clients Windows](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
 
 
 
 
 ## Diagrammes de ports et de dégagements
 
-***Affichage de haut de 55 «surface Hub»***
+**_Affichage supérieur de 55 «surface Hub _»_*
 
 ![](images/sh-55-top.png)
 
 ---
 
 
-***Vue avant de 55 «surface Hub»***
+_*_Vue avant de 55 «surface Hub»_*_
 
 ![](images/sh-55-front.png)
 
 
 ---
 
-***Affichage inférieur de 55 surface Hub***
+_*_Affichage inférieur de 55 surface Hub_*_
 
 ![](images/sh-55-bottom.png)
 
 
 ---
 
-***Ports d’unPC de remplacement sur un Surface Hub 55pouces***
+_*_Ports d’unPC de remplacement sur un Surface Hub 55pouces_*_
 
 ![](images/sh-55-rpc-ports.png)
 
 
 ---
 
-***Pavé numérique sur la droite de 55 «surface Hub»***
+_*_Pavé numérique sur la droite de 55 «surface Hub»_*_
 
 ![](images/key-55.png)
 
 
 ---
 
-***Vue arrière de 55 surface Hub***
+_*_Vue arrière de 55 surface Hub_*_
 
 ![](images/sh-55-rear.png)
 
 
 ---
 
-***Dégagements pour 55 de surface Hub***
+_*_Dégagements pour 55 de surface Hub_*_
 
 ![](images/sh-55-clearance.png)
 
 ---
 
 
-***Poignées et dégagements avant et arrière pour le surface Hub 55***
+_*_Poignées et dégagements avant et arrière pour le surface Hub 55_*_
 
 ![](images/sh-55-hand.png)
 
@@ -151,7 +160,7 @@ RJ11, e/s inférieures | ![](images/rj11.png) | Se connecte à des systèmes de 
 ---
 
 
-***Poignées et dégagements ARRIERE pour le surface Hub de 55***
+_*_Poignées et dégagements arrière pour 55 de surface Hub_**
 
 ![](images/sh-55-hand-rear.png)
 

@@ -9,16 +9,15 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 932e5b801c0990a080148e420db3259cdb7e2ab5
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 12/21/2020
+ms.openlocfilehash: e8f01a7e6ce087f649d99c1fc13f149fa375fc8a
+ms.sourcegitcommit: e83316c8b5e3c29b0af0730ef05fd8b96b0d0cdd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833527"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "11238109"
 ---
 # Informations techniques pour le surface Hub de 84
-
-## Obtenues 
 
 |
 --- | ---
@@ -54,6 +53,11 @@ Tension d’entrée | 110/230 degrés, 90-265V Max
 Puissance d’entrée, fonctionnement |    900W Max
 Alimentation en entrée, en veille    |   5W, 1-10W max
 
+> [!NOTE]
+> Surface Hub peut être utilisé en continu pour une durée maximale de 18 heures par jour. Pour optimiser l’efficacité, surface Hub utilise les capteurs intelligents pour désactiver l’écran del lorsque la présence n’est plus détectée, ce qui signifie qu’il n’est pas nécessaire de le mettre à la fin de la journée. Si l’unité est installée dans un environnement de travail de 24 heures, les capteurs peuvent être désactivés pour respecter les recommandations en matière d’utilisation maximale de 18 heures par jour. Notez que l’affichage prolongé d’un signal vidéo risque de provoquer la rétention de l’image ou de l’image sur l’écran. Pour en savoir plus sur la gestion des paramètres d’alimentation, voir:
+>
+> - [Gestion locale des paramètres SurfaceHub](local-management-surface-hub-settings.md)
+> - [FSC SurfaceHub-gestion des clients Windows](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
 
 ## Connexion de PC de remplacement 
 
@@ -96,28 +100,28 @@ RJ11, e/s inférieures | ![](images/rj11.png) | Se connecte à des systèmes de 
 
 ## Diagrammes de ports et de dégagements
 
-***Affichage de haut de 84 «surface Hub»***
+**_Affichage supérieur de 84 «surface Hub _»_*
 
 ![](images/sh-84-top.png)
 
 ---
 
 
-***Vue avant de 84 «surface Hub»***
+_*_Vue avant de 84 «surface Hub»_*_
 
 ![](images/sh-84-front.png)
 
 
 ---
 
-***Affichage inférieur de 84 surface Hub***
+_*_Affichage inférieur de 84 surface Hub_*_
 
 ![](images/sh-84-bottom.png)
 
 
 ---
 
-***Ports d’unPC de remplacement sur un Surface Hub 84pouces***
+_*_Ports d’unPC de remplacement sur un Surface Hub 84pouces_*_
 
 ![](images/sh-84-rpc-ports.png)
 
@@ -125,21 +129,21 @@ RJ11, e/s inférieures | ![](images/rj11.png) | Se connecte à des systèmes de 
 
 ---
 
-***Vue arrière de 84 surface Hub***
+_*_Vue arrière de 84 surface Hub_*_
 
 ![](images/sh-84-rear.png)
 
 
 ---
 
-***Dégagements pour 84 de surface Hub***
+_*_Dégagements pour 84 de surface Hub_*_
 
 ![](images/sh-84-clearance.png)
 
 ---
 
 
-***Poignées de relevage amovibles sur surface Hub 84***
+_*_Poignées de relevage amovibles sur surface Hub 84_*_
 
 ![](images/sh-84-hand.png)
 
@@ -147,17 +151,17 @@ RJ11, e/s inférieures | ![](images/rj11.png) | Se connecte à des systèmes de 
 ---
 
 
-***Fils de montage mural sur l’arrière de 84 «surface Hub»***
+_*_Fils de montage mural sur l’arrière de 84 «surface Hub»_*_
 
 ![](images/sh-84-wall.png)
 
 ---
-***Poignées de relevage dans l’affichage supérieur d' 84 «surface Hub»***
+_*_Poignées de relevage dans l’affichage supérieur d' 84 «surface Hub»_*_
 
 ![](images/sh-84-hand-top.png)
 
 ---
-***Vue latérale de 84 «surface Hub»***
+_*_Vue latérale de 84 «surface Hub»_**
 
 ![](images/sh-84-side.png)
 
