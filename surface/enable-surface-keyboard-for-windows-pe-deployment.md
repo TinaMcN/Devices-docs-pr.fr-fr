@@ -17,19 +17,17 @@ appliesto:
 - Surface Laptop (1st Gen)
 - Surface Laptop 2
 - Surface Laptop 3
-ms.openlocfilehash: 5d4e4b46c109d9fe24fe75151c9eb1e0a8b702c0
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: d7ae6fc434f77cad86e73f111243968493de4ff2
+ms.sourcegitcommit: e6224f81f8efb6ac862afec0e60e3ddb182e9e6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832555"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "11247306"
 ---
 # Comment activer le clavier surface Laptop pour le clavier portable surface lors du déploiement de MDT
 
 Cet article traite d’une approche de déploiement qui utilise le kit de développement Microsoft Deployment (MDT). Vous pouvez également appliquer ces informations à d’autres méthodes de déploiement. Sur la plupart des types de périphériques surface, le clavier doit fonctionner au cours de l’installation LTI (LTI). En revanche, le portable surface nécessite des pilotes supplémentaires pour activer le clavier. Pour les appareils mobiles surface (1ère génération) et surface Laptop 2, vous devez préparer les profils de structure et de sélection des dossiers pour vous permettre de spécifier les pilotes de clavier à utiliser lors de la phase de l’environnement de préinstallation Windows (Windows PE) de LTI. Pour plus d’informations sur cette structure de dossiers, consultez [la rubrique déploiement d’une image Windows 10 à l’aide de MDT: étape 5: préparer le référentiel de pilotes](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt?redirectedfrom=MSDN#step-5-prepare-the-drivers-repository).
 
-> [!NOTE]
-> Pour l’instant, cette fonctionnalité n’est pas prise en charge pour ajouter les pilotes de clavier surface Laptop 2 et surface Laptop 3 dans la même instance de démarrage Windows PE en raison d’un conflit de pilote. Utilisez plutôt des instances distinctes.
 
 > [!IMPORTANT]
 > Si vous déployez une image Windows 10 sur un ordinateur portable sur lequel le mode Windows 10 en S est préinstallé, voir KB [4032347, problèmes lors du déploiement de Windows sur les appareils surface avec Windows 10 en mode s préinstallé](https://support.microsoft.com/help/4032347/surface-preinstall-windows10-s-mode-issues).
