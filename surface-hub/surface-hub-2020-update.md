@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/17/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: b3f1f0884273728abc8b4f6e8662190dacdaf2b2
-ms.sourcegitcommit: 8c75e57dc32eaf7c11cb9badea74809fd3877ffc
+ms.openlocfilehash: c89063765462a76ae48d17e1480bbff29f48ebdc
+ms.sourcegitcommit: 8bca7edea5401dfc97614e18a058a023aa9497c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/06/2021
-ms.locfileid: "11253963"
+ms.locfileid: "11254203"
 ---
 # <span data-ttu-id="7c0e1-104">Installer la mise à jour de Windows 10 Team 2020</span><span class="sxs-lookup"><span data-stu-id="7c0e1-104">Install Windows 10 Team 2020 Update</span></span> 
 
@@ -70,5 +70,5 @@ ms.locfileid: "11253963"
 
 ## <span data-ttu-id="7c0e1-150">En savoir plus</span><span class="sxs-lookup"><span data-stu-id="7c0e1-150">Learn more</span></span>
 
-- [<span data-ttu-id="7c0e1-151">Problèmes connus: mise à jour d’équipe 2020 de Windows 10</span><span class="sxs-lookup"><span data-stu-id="7c0e1-151">Known issues: Windows 10 Team 2020 Update</span></span>](surface-hub-2020-update.md)
+- [<span data-ttu-id="7c0e1-151">Problèmes connus: mise à jour d’équipe 2020 de Windows 10</span><span class="sxs-lookup"><span data-stu-id="7c0e1-151">Known issues: Windows 10 Team 2020 Update</span></span>](surface-hub-2020-team-update-known-issues.md)
 - [<span data-ttu-id="7c0e1-152">Mises à jour importantes apportées à la mise à jour d’équipe 2020 de Windows 10 teams surface Hub</span><span class="sxs-lookup"><span data-stu-id="7c0e1-152">Important Updates on the Surface Hub Windows 10 Team 2020 Update</span></span>](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/important-updates-on-the-surface-hub-windows-10-team-2020-update/ba-p/1960897)
