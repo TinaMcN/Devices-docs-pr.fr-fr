@@ -1,7 +1,7 @@
 ---
 title: Migrer vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2
-description: Cet article décrit la migration de l’équipe Windows 10 sur surface Hub 2 vers Windows 10 professionnel ou Windows 10 entreprise.
-keywords: Bureau surface Hub, surface Hub
+description: Cet article explique comment migrer de Windows 10 Team sur Surface Hub 2 vers Windows 10 Professionnel ou Windows 10 Entreprise.
+keywords: Surface Hub Desktop, Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
 author: greg-lindsay
@@ -11,323 +11,333 @@ audience: Admin
 ms.topic: article
 ms.date: 12/14/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: c2851505b3595ea768217de443676b45cc01a9ae
-ms.sourcegitcommit: efc38524f81238e0c36371f462eb57123e46d09b
+ms.openlocfilehash: 9878e64e414f4fe9ec3abfbd49adf233edc1da1d
+ms.sourcegitcommit: 53d1eac8840fafbcd155798fce0d8c843f48dca3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "11228555"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "11255486"
 ---
 # Migrer vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2
 
-- [Article historique des versions](#version-history)
+- [Historique des versions de l’article](#version-history)
 
-Surface Hub 2S est préinstallé avec l’équipe Windows 10. Cette édition personnalisée de Windows 10 est conçue pour faciliter la collaboration dans les environnements de salle de réunion. À présent, vous avez la possibilité d’exécuter Windows 10 professionnel ou entreprise pour utiliser surface Hub 2S de la même façon que n’importe quel autre PC. 
+Surface Hub 2S est préinstallé avec Windows 10 Team. Cette édition personnalisée de Windows 10 est conçue pour faciliter la collaboration dans les environnements de salle de réunion. Vous avez désormais la possibilité d’utiliser Windows 10 Professionnel ou Entreprise pour utiliser surface Hub 2S comme n’importe quel autre PC. 
 
 > [!IMPORTANT]
->À la différence d’une mise à niveau ou d’une migration classique, vous devez suivre une procédure d’instructions de ce processus, comme décrit dans cet article. Avant de continuer, passez en revue les composants de la [solution](#solution-components) et le [flux de travail de migration et d’installation](#migration-and-installation-workflow-summary) .
+>Contrairement à une mise à niveau ou une migration classique, ce processus nécessite que vous suiviez une procédure normative, comme décrit dans cet article. Examinez les [composants solution et](#solution-components) le flux de travail de migration et [d’installation](#migration-and-installation-workflow-summary) avant de continuer.
 
 
 > [!NOTE]
-> Lors de l’installation de Windows 10 professionnel ou entreprise, vous avez besoin d’une nouvelle licence distincte de celle de votre licence d’équipe Windows 10 existante. 
+> Lorsque vous installez Windows 10 Professionnel ou Entreprise, vous avez besoin d’une nouvelle licence distincte de votre licence Windows 10 Team existante. 
 
 
-Démarrez la migration à partir de l’équipe Windows 10 à l’aide d’un PC distinct et du *Configurateur UEFI surface Configurator*. Utilisez l’outil pour créer un package qui contient un nouveau paramètre UEFI que vous appliquez à surface Hub 2.  
+Démarrez la migration à partir de Windows 10 Team à l’aide d’un PC distinct et de l’outil *téléchargeable Surface UEFI Configurator*. Utilisez l’outil pour créer un package qui contient un nouveau paramètre UEFI que vous appliquez au Surface Hub 2S.  
 
-Le Configurator du Configurateur de surface fonctionne en tant qu’interface en mode de gestion de surface entreprise (SEMM). Il est conçu pour faciliter la gestion centralisée des paramètres du microprogramme sur les appareils surface dans un environnement d’entreprise. Pour plus d’informations, consultez la <a href="https://docs.microsoft.com/surface/surface-enterprise-management-mode" target="_blank"> documentation de Microsoft SEMM</a>
+Le configurateur UEFI Surface fonctionne comme une interface dans le mode SEMM (Surface Enterprise Management Mode). Il est conçu pour faciliter la gestion centralisée des paramètres de microprogramme sur les appareils Surface dans un environnement d’entreprise. Pour plus d’informations, voir la <a href="https://docs.microsoft.com/surface/surface-enterprise-management-mode" target="_blank"> documentation microsoft </a> SEMM.
  
 
 ## Composants de solution
 
-- Périphérique surface Hub 2 exécutant le système d’exploitation de l’équipe Windows 10
-- Autre appareil exécutant Windows 10
-- Outil de configuration de surface UEFI pour créer le package SEMM
-- Image de Windows 10 professionnel ou du système d’exploitation de l’entreprise, version 1903 ou ultérieure
-- Deux lecteurs USB ayant 16 Go d’espace de stockage, format FAT32
-- Les pilotes et microprogrammes pour Windows 10 professionnel pour le système d’exploitation Windows 10 professionnel sur surface Hub 2 Microsoft Windows Installer (MSI)
+- Appareil Surface Hub 2S exécutant le système d’exploitation Windows 10 Team
+- Appareil distinct exécutant Windows 10
+- Outil de configuration UEFI Surface pour créer le package SEMM
+- Image du système d’exploitation Windows 10 Professionnel ou Entreprise, version 1903 ou ultérieure
+- Deux lecteurs USB avec 16 Go de stockage au format FAT32
+- Les pilotes et le microprogramme pour Windows 10 Professionnel et le système d’exploitation d’entreprise sur le Microsoft Windows Installer Surface Hub 2 (MSI)
 - Connexion Internet
 - Solution d’imagerie (facultative)
 
  
-## Résumé du flux de travail de la migration et de l’installation
+## Résumé du flux de travail de migration et d’installation
 
 | Étape  | Action                                                                                                 | Résumé                                                                                                                                                                                                                                                                                                                                                                                                  |
 | - | ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1 | [Vérifiez que la version UEFI sur surface Hub 2 répond à la configuration minimale requise.](#verify-uefi-version-on-surface-hub-2s-meets-minimum-requirements)                                  | Assurez-vous que la version UEFI est 694.2938.768.0 ou ultérieure.                                                                                                                                                                                                                                                                                                                                                      |
-| deuxième | [Téléchargez les pilotes et le microprogramme du Configurateur de surface noyau et de surface Hub 2.](#download-surface-uefi-configurator-and-surface-hub-2-drivers-and-firmware)                             | Sur la <a href="https://www.microsoft.com/download/details.aspx?id=46703" target="_blank"> page **Outils surface pour cette** page </a> , sélectionnez **Télécharger**. Ensuite, sélectionnez et téléchargez le **Configurateur surface UEFI. Et l'** installer sur un PC distinct. Téléchargez les <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> pilotes et le microprogrammes pour Windows 10 professionnel et le système d’exploitation Windows 10 sur le fichier MSI surface Hub 2.</a> Enregistrez-le pour l’utiliser à l’étape 5. |
-| 3D | [Préparez le certificat SEMM.](#prepare-the-semm-certificate)                                                                          | Préparez le certificat requis pour exécuter le configurateur surface UEFI. Ou utilisez votre certificat actuel.                                                                                                                                                                                                                                                                                                      |
-| n°4 | [Créer un package SEMM.](#create-a-semm-package)                                                                               | Démarrez le configurateur de surface pour créer un package SEMM sur un lecteur USB, qui contient les fichiers de configuration que vous devez appliquer sur surface Hub 2. Copiez ces fichiers de package SEMM vers un dossier sur votre PC.                                                                                                                                                                                          |
-| n°5 | [Préparez le lecteur flash USB qui contient l’image Windows 10, le package SEMM et les pilotes et microprogrammes pour Windows 10 professionnel et le système d’exploitation sur surface Hub 2.](#prepare-a-usb-flash-drive-that-contains-a-windows-10-image-semm-package-and-surface-hub-2-drivers-and-firmware) | Créez un lecteur USB unique contenant une image Windows 10. Dans cet exemple, le lecteur porte le nom *BOOTME*. Ajoutez vos pilotes et microprogrammes pour Windows 10 professionnel et le système d’exploitation Windows 10 professionnel sur surface Hub 2 (étape 2) et SEMM packages (étape 4) au lecteur *BOOTME* .                                                                                                                                                                                                  |
-| 6 | [Mettez à jour UEFI sur surface Hub 2 pour activer la migration du système d’exploitation.](#update-uefi-on-surface-hub-2s-to-enable-os-migration)                                              | Utilisez le lecteur *BOOTME* pour démarrer surface Hub 2 dans le menu UEFI et installez le package SEMM.|
-| 6 | [Installez Windows 10 professionnel ou version 1903 ou une version ultérieure.](#install-windows-10-pro-or-enterprise)                                        | Utilisez le lecteur *BOOTME* pour installer Windows 10 professionnel ou version 1903 ou une version ultérieure.                                                                                                                                                                                                                                                                                 |
-| version8 | [Installez les pilotes et le microprogrammes pour Windows 10 professionnel et le système d’exploitation sur surface Hub 2.](#install-surface-hub-2-drivers-and-firmware)                                        | Pour vous assurer que votre périphérique dispose de l’ensemble des mises à jour et pilotes les plus récents, installez les <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> pilotes et le microprogramme pour Windows 10 professionnel et le système d’exploitation Windows 10 professionnel sur le fichier MSI surface Hub 2.</a>                                                                                                                                                                                                                                                                                  |
-| 09 | [Configurez entièrement surface Hub 2S en tant que périphérique de productivité personnel.](#configure-recommended-settings)                                        |  Activez les applications et paramètres recommandés pour optimiser surface Hub 2S en tant que périphérique de productivité personnel.                                                                                                                                                                                                                                                                    |
+| 1 | [Vérifiez que la version UEFI sur Surface Hub 2S répond aux exigences minimales.](#verify-uefi-version-on-surface-hub-2s-meets-minimum-requirements)                                  | Assurez-vous que la version UEFI est 694.2938.768.0 ou ultérieure.                                                                                                                                                                                                                                                                                                                                                      |
+| 2 | [Téléchargez les pilotes et microprogrammes surface UEFI Configurator et Surface Hub 2.](#download-surface-uefi-configurator-and-surface-hub-2-drivers-and-firmware)                             | Dans la page <a href="https://www.microsoft.com/download/details.aspx?id=46703" target="_blank"> **Outils Surface pour l’informatique,** </a> sélectionnez **Télécharger.** Ensuite, sélectionnez et téléchargez **le configurateur UEFI Surface. Fichier MSI et** installation sur un PC distinct. Téléchargez les pilotes et le microprogramme pour Windows 10 Professionnel et le système d’exploitation d’entreprise sur le <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> fichier MSI Surface Hub 2.</a> Enregistrez-le pour l’utiliser à l’étape 5. |
+| 3 | [Préparer le certificat SEMM.](#prepare-the-semm-certificate)                                                                          | Préparez le certificat requis pour exécuter le configurateur UEFI Surface. Vous pouvez également utiliser votre certificat actuel.                                                                                                                                                                                                                                                                                                      |
+| 4 | [Créez un package SEMM.](#create-a-semm-package)                                                                               | Démarrez surface UEFI Configurator pour créer un package SEMM sur un lecteur USB, qui contiendra les fichiers de configuration que vous devez appliquer sur Surface Hub 2S. Copiez ces fichiers de package SEMM dans un dossier de votre PC.                                                                                                                                                                                          |
+| 5 | [Préparez le lecteur flash USB qui contient l’image Windows 10, le package SEMM, ainsi que les pilotes et microprogrammes pour Windows 10 Professionnel et Enterprise OS sur Surface Hub 2.](#prepare-a-usb-flash-drive-that-contains-a-windows-10-image-semm-package-and-surface-hub-2-drivers-and-firmware) | Créez un lecteur USB unique qui contient une image Windows 10. Dans cet exemple, le lecteur est nommé *BOOTME*. Ajoutez vos pilotes et microprogrammes pour Windows 10 Professionnel et enterprise OS sur surface Hub 2 (étape 2) et fichiers de package SEMM (étape 4) au lecteur *BOOTME.*                                                                                                                                                                                                  |
+| 6 | [Mettez à jour l’UEFI sur Surface Hub 2S pour activer la migration du système d’exploitation.](#update-uefi-on-surface-hub-2s-to-enable-os-migration)                                              | Utilisez le *lecteur BOOTME* pour démarrer Surface Hub 2S dans le menu UEFI et installer le package SEMM.|
+| 7 | [Installez Windows 10 Professionnel ou Entreprise version 1903 ou ultérieure.](#install-windows-10-pro-or-enterprise)                                        | Utilisez le *lecteur BOOTME* pour installer Windows 10 Professionnel ou Entreprise version 1903 ou ultérieure.                                                                                                                                                                                                                                                                                 |
+| 8 | [Installez les pilotes et le microprogramme de Windows 10 Professionnel et du système d’exploitation d’entreprise sur Surface Hub 2.](#install-surface-hub-2-drivers-and-firmware)                                        | Pour vous assurer que votre appareil dispose de toutes les dernières mises à jour et pilotes, installez les pilotes et le microprogramme de Windows 10 Professionnel et du système d’exploitation d’entreprise sur le fichier <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> MSI Surface Hub 2.</a>                                                                                                                                                                                                                                                                                  |
+| 9 | [Configurez entièrement Surface Hub 2S en tant qu’appareil de productivité personnel.](#configure-recommended-settings)                                        |  Activez les applications et paramètres recommandés pour optimiser le Surface Hub 2S en tant qu’appareil de productivité personnel.                                                                                                                                                                                                                                                                    |
 
-### Vérifier la version UEFI sur surface Hub 2 répond à la configuration minimale requise
+### Vérifier que la version UEFI sur Surface Hub 2S répond aux exigences minimales
 
-Avant de migrer surface hub d’une équipe Windows 10 vers une version de bureau Windows 10, vous avez besoin d’une version UEFI d’au moins *694.2938.768.0*.
+Avant de migrer le Surface Hub de Windows 10 Team vers Windows 10 Desktop, vous avez besoin d’une version UEFI d’au moins *694.2938.768.0.*
  
-**Pour vérifier la version UEFI sur votre système:**
+**Pour vérifier la version UEFI sur votre système :**
 
-1. Sur la page d’accueil de surface Hub 2, sélectionnez **Démarrer**, puis ouvrez l’application surface (surface de**toutes les applications**  >  ****).
+1. Sur la page d’accueil du Surface Hub 2S, sélectionnez **Démarrer,** puis ouvrez l’application Surface (**Toutes les applications**  >  **Surface).**
 
-2. Sélectionnez **votre surface** pour afficher des informations sur surface Hub, y compris la version UEFI actuelle sur l’appareil. 
-   - S’il s’agit d' *694.2938.768.0* ou d’une version ultérieure, comme le montre l’image suivante, vous pouvez créer le package SEMM pour activer la migration du système d’exploitation.
+2. Sélectionnez **Votre Surface** pour afficher des informations sur surface hub, y compris la version UEFI actuelle sur l’appareil. 
+   - Si la version UEFI est *694.2938.768.0* ou ultérieure, comme l’illustre l’image suivante, vous pouvez créer le package SEMM pour activer la migration du système d’exploitation.
 
-       ![Capture d’écran montrant la page de surface dans l’application surface.](images/shm-fig1.png)
+       ![Capture d’écran montrant la page Votre surface dans l’application Surface.](images/shm-fig1.png)
  
-   - Si la version UEFI est antérieure à la version 694.2938.768.0, vous devez obtenir une version actuelle en installant la mise à jour de l’application 10 d’équipe 2020 de mise à jour sur le matériel vierge
+   - Si la version UEFI est antérieure à la version 694.2938.768.0, vous devez obtenir une version actuelle en installant l’image BMR (Update Bare Metal Recovery) de Windows 10 Team 2020 ou à l’aide de Windows Update.
    
-**Pour mettre à jour UEFI via Windows Update:**
+**Pour mettre à jour l’UEFI via Windows Update :**
 
-1. Sur votre surface Hub 2, connectez-vous en tant qu' **administrateur**. 
+1. Sur votre Surface Hub 2S, connectez-vous en tant **qu’administrateur.** 
+
     >[!Note]
-    > Si vous ignorez votre nom d’utilisateur ou votre mot de passe d’administrateur, vous devez réinitialiser l’appareil. Pour plus d’informations, reportez-vous à <a href="https://docs.microsoft.com/surface-hub/surface-hub-2s-recover-reset" target="_blank"> Reset et Recovery pour surface Hub 2.</a>
+    > Si vous ne connaissez pas votre nom d’utilisateur ou votre mot de passe d’administrateur, vous devez réinitialiser l’appareil. Pour plus d’informations, voir <a href="https://docs.microsoft.com/surface-hub/surface-hub-2s-recover-reset" target="_blank"> Réinitialiser et récupérer pour Surface Hub 2S.</a>
 
-1. Accédez à **** la  >  mise à jour des**paramètres**d’applications et à la mise à jour de  >  **sécurité**  >  **Windows**, puis installez toutes les mises à jour. 
+1. Go to **All apps**  >  **Settings**  >  **Update and Security**Windows  >  **Update,** and then install all updates. 
+
 1. Redémarrez l’appareil. 
-1. Vérifiez la version UEFI à l’aide de l’application surface. 
-1. À ce stade, si la version UEFI n’est pas encore version 694.2938.768.0 ou ultérieure, vous pouvez soit répéter les étapes ci-dessus, soit vous pouvez obtenir la dernière version de UEFI en installant l’image de l’application de mise à jour complète de l' 2020 équipe Windows 10.
 
-**Pour mettre à jour UEFI via l’image de récupération de matériel vierge (BMR):**
+1. Vérifiez la version UEFI à l’aide de l’application Surface.
 
-1.  Accédez au [site de récupération de surface](https://support.microsoft.com/surfacerecoveryimage) et sélectionnez **surface Hub 2**
-3.  Entrez le numéro de série de votre concentrateur (qui se trouve sur le côté arrière du Hub en regard de Power Connection).
-4.  Suivez les instructions pour télécharger l’image sur un lecteur USB formaté par le biais de l’installation de la mise à jour d’équipe 2020 de Windows 10.
-5.  À l’issue de la mise à jour et lorsque l’appareil entre dans la première configuration du programme OOBE, vous n’avez pas besoin de compléter OOBE, la version UEFI est mise à jour. Mettez l’appareil hors tension en maintenant le bouton d’alimentation enfoncé jusqu’à ce que l’écran soit éteint. 
+1. À ce stade, si la version UEFI n’est pas encore la version 694.2938.768.0 ou ultérieure, vous pouvez répéter les étapes ci-dessus ou vous pouvez obtenir la dernière UEFI en installant l’image BMR (Update Bare Metal Recovery) de Windows 10 Team 2020.
 
-### Télécharger les pilotes et le microprogramme du Configurateur de surface UEFI et de surface Hub 2
+**Pour mettre à jour l’UEFI via l’image BMR (Bare Metal Recovery) :**
 
-Sur un PC différent:
+1.  Go to the [Surface recovery site](https://support.microsoft.com/surfacerecoveryimage) and select Surface Hub **2S**.
 
-1. Sur la <a href="https://www.microsoft.com/download/details.aspx?id=46703" target="_blank"> page outils surface pour cette page </a> , sélectionnez **Télécharger**.  
-1. Sélectionner et télécharger le fichier MSI de Configurateur surface UEFI et l’installer sur un PC distinct. L’outil de Configurateur surface UEFI ne peut pas être exécuté sur un surface Hub 2 Lorsque Windows 10 Team Edition est installé
+3.  Entrez votre numéro de série Hub (situé sur le côté arrière du Hub en face de la connexion d’alimentation).
 
-1. Téléchargez les <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> pilotes surface Hub 2 et le microprogramme du programme d’installation Windows Installer </a> . Vous utiliserez ce fichier lors de l’installation du nouveau système d’exploitation.
+4.  Suivez les instructions pour télécharger l’image sur un lecteur USB mis en forme via l’installation de la mise à jour de Windows 10 Team 2020.
+
+5.  Une fois que la mise à jour est terminée et que l’appareil entre dans la configuration OOBE pour la première fois, vous n’avez pas besoin d’effectuer la mise à jour OOBE. La version UEFI est mise à jour. À la place, allumez l’appareil en maintenant le bouton d’alimentation enfoncé jusqu’à ce que l’écran soit éteint. 
+
+### Télécharger le microprogramme et les pilotes UEFI Configurator Surface et Surface Hub 2
+
+Sur un PC distinct :
+
+1. Dans la <a href="https://www.microsoft.com/download/details.aspx?id=46703" target="_blank"> page Outils Surface pour l’informatique, </a> sélectionnez **Télécharger.**
+
+1. Sélectionnez et téléchargez le fichier MSI du configurateur UEFI Surface et installez-le sur un PC distinct. L’outil Configurateur UEFI Surface ne peut pas être exécuté sur un Surface Hub 2S pendant l’installation de l’édition Windows 10 Team.
+
+1. Téléchargez le fichier MSI Windows Installer des pilotes et du <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> microprogramme Surface Hub </a> 2. Vous utiliserez ce fichier lors de l’installation du nouveau système d’exploitation.
 
 ### Préparer le certificat SEMM
 
-Si vous n’avez encore jamais utilisé le configurateur UEFI de surface, vous devez préparer un certificat. Ce certificat vérifie qu’une fois qu’un appareil est inscrit dans SEMM, vous pouvez modifier les paramètres UEFI uniquement à l’aide de packages créés avec le certificat approuvé. 
+Si vous n’avez pas encore utilisé le configurateur UEFI Surface, vous devez préparer un certificat. Ce certificat garantit qu’une fois qu’un appareil est inscrit au seMM, vous pouvez modifier les paramètres UEFI uniquement à l’aide de packages créés avec le certificat approuvé. 
 
-La méthode d’obtention d’un certificat dépend de la taille ou de la complexité de votre organisation:
+La façon dont vous obtenez un certificat dépend de la taille ou de la complexité de votre organisation :
 
-- Les organisations d’entreprise préservent généralement leur propre infrastructure pour générer des certificats conformément aux pratiques de sécurité standard.
+- Les organisations d’entreprise conservent généralement leur propre infrastructure pour générer des certificats conformément aux pratiques de sécurité standard.
 
-- Les entreprises de taille moyenne et d’autres peuvent choisir d’obtenir des certificats auprès des fournisseurs partenaires. Cette option est recommandée pour les organisations qui ne disposent pas de compétences informatiques suffisantes ou d’une équipe dédiée à la sécurité informatique.
+- Les entreprises de taille moyenne et d’autres peuvent choisir d’obtenir des certificats auprès de fournisseurs partenaires. Cette option est recommandée pour les organisations qui ne sont pas suffisamment spécialisées en informatique ou une équipe dédiée à la sécurité informatique.
 
-- Vous pouvez également générer un certificat auto-signé à l’aide d’un script PowerShell. Pour plus d’informations, voir la <a href="https://docs.microsoft.com/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements" target="_blank"> Configuration requise pour le certificat en mode de gestion des entreprises de surface </a> . Vous pouvez ou utiliser PowerShell pour créer votre propre certificat. Pour plus d’informations, reportez-vous à la <a href="https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate" target="_blank"> documentation nouvelle-SelfSignedCertificate </a> .
+- Vous pouvez également générer un certificat auto-signé à l’aide d’un script PowerShell. Pour plus d’informations, consultez les conditions requises pour les certificats du mode Gestion <a href="https://docs.microsoft.com/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements" target="_blank"> d’entreprise </a> Surface. Vous pouvez également utiliser PowerShell pour créer votre propre certificat. Pour plus d’informations, voir <a href="https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate" target="_blank"> la documentation New-SelfSignedCertificate. </a>
 
-Le package SEMM créé par surface Configurator doit être sécurisé à l’aide d’un certificat. Le certificat vérifie la signature des fichiers de configuration avant que les paramètres UEFI puissent être appliqués. Pour plus d’informations, consultez la <a href="https://docs.microsoft.com/surface/surface-enterprise-management-mode" target="_blank"> documentation SEMM </a> .
+Le package SEMM créé par le configurateur UEFI Surface doit être sécurisé avec un certificat. Le certificat vérifie la signature des fichiers de configuration avant que les paramètres UEFI ne soient appliqués. Pour plus d’informations, voir la <a href="https://docs.microsoft.com/surface/surface-enterprise-management-mode" target="_blank"> documentation </a> SEMM.
  
  
 ### Créer un package SEMM
 
-1. Sur un PC distinct, installez l’outil de configuration de surface UEFI que vous avez téléchargé précédemment. 
+1. Sur un PC distinct, installez l’outil Configurateur UEFI Surface que vous avez téléchargé précédemment. 
 
-2. Ouvrez le configurateur surface UEFI, puis sélectionnez **Démarrer**.
+2. Ouvrez le configurateur UEFI Surface, puis sélectionnez **Démarrer.**
 
-   ![Ouvrez le configurateur surface UEFI.](images/shm-fig2.png)
+   ![Ouvrez le configurateur UEFI Surface.](images/shm-fig2.png)
    
-3. Sélectionnez **périphériques surface**, puis sélectionnez **suivant**.
+3. Sélectionnez **Appareils Surface,** puis sélectionnez **Suivant**.
 
-   ![Sélectionnez périphériques surface.](images/shm-fig3.png)
+   ![Sélectionnez Appareils Surface.](images/shm-fig3.png)
   
-4. Sélectionnez **package de configuration**.
+4. Sélectionnez **le package de configuration.**
 
-   ![Sélectionnez package de configuration.](images/shm-fig4.png)
+   ![Sélectionnez Package de configuration.](images/shm-fig4.png)
   
-5. Sélectionnez **protection des certificats**.
+5. Sélectionnez **Protection des certificats.**
 
-   ![Sélectionnez protection des certificats.](images/shm-fig5.png)
+   ![Sélectionnez Protection des certificats.](images/shm-fig5.png)
 
-   Vous êtes invité à ajouter votre fichier Certificate. pfx.
+   Vous êtes invité à ajouter votre fichier .pfx de certificat.
 
    ![Ajoutez votre certificat.](images/shm-fig6.png)
    
-7. Entrez votre mot de passe de certificat, puis sélectionnez **OK**.
+7. Entrez votre mot de passe de certificat, puis sélectionnez **OK.**
 
    ![Entrez votre mot de passe de certificat et sélectionnez OK.](images/shm-fig7.png)
 
-8. Sélectionnez **protection par mot de passe** pour ajouter un mot de passe pour la surface UEFI. Vous aurez besoin de ce mot de passe chaque fois que vous démarrez l’ordinateur. Nous *vous recommandons vivement* de définir un mot de passe UEFI que vous utiliserez sur surface Hub 2.
+8. Sélectionnez **Protection par mot de** passe pour ajouter un mot de passe à l’UEFI Surface. Vous aurez besoin de ce mot de passe chaque fois que vous démarrerez sur UEFI. Nous *vous recommandons vivement* de définir un mot de passe UEFI que vous utiliserez sur Surface Hub 2S.
 
-   ![Sélectionnez protection par mot de passe.](images/shm-fig8.png)
+   ![Sélectionnez Protection par mot de passe.](images/shm-fig8.png)
    
-9. Définissez un mot de passe UEFI, puis sélectionnez **OK**.
+9. Définissez un mot de passe UEFI, puis sélectionnez **OK.**
 
    > [!IMPORTANT]
-   > Enregistrez le mot de passe à un emplacement sécurisé accessible à vos administrateurs informatiques qui gèrent surface Hub. Si le mot de passe est perdu, il ne peut pas être récupéré. 
+   > Enregistrez le mot de passe dans un emplacement sécurisé accessible aux administrateurs informatiques qui gèrent le Surface Hub. Si le mot de passe est perdu, il ne peut pas être récupéré. 
 
    ![Entrez votre mot de passe UEFI.](images/shm-fig9.png)
 
-10. Sélectionnez **surface Hub 2**, puis sélectionnez **suivant**.
+10. Sélectionnez **Surface Hub 2S,** puis sélectionnez **Suivant.**
 
-    ![Sélectionnez surface Hub 2.](images/shm-fig10.png)
+    ![Sélectionnez Surface Hub 2S.](images/shm-fig10.png)
    
 11. Sélectionnez **Suivant**.
 
     ![Sélectionnez Suivant.](images/shm-fig10a.png)
 
-12. Pour autoriser l’installation de Windows 10 professionnel ou entreprise, activez **EnableOsMigration**, puis sélectionnez **suivant**.
+12. Pour autoriser l’installation de Windows 10 Professionnel ou Entreprise, activez **EnableOsMigration,** puis sélectionnez **Suivant**.
 
-    ![Sélectionnez Activer la migration de O S.](images/shm-fig11.png)
+    ![Sélectionnez Activer la migration O S.](images/shm-fig11.png)
     
-    ![Définissez Activer la migration du système d’exploitation sur activé.](images/shm-fig12.png)
+    ![Définissez Activer la migration du système d’exploitation.](images/shm-fig12.png)
 
-### Gestion de l’inscription de SEMM
+### Gestion de l’inscription SEMM
 
-L’inscription de périphériques dans SEMM affecte la façon dont vous pouvez gérer l’appareil à l’avenir. Par exemple, après avoir appliqué un package SEMM, dans le menu UEFI de l’appareil, tous les paramètres UEFI ne sont pas disponibles (verrouillés). Les valeurs par défaut pour les autres paramètres, tels que **IPv6 pour le démarrage PXE** , ne sont pas disponibles. 
+L’inscription d’appareils dans SEMM affecte la façon dont vous pouvez gérer l’appareil à l’avenir. Par exemple, après avoir appliqué un package SEMM, dans le menu UEFI de l’appareil, tous les paramètres UEFI ne sont pas disponibles (verrouillés). Les valeurs par défaut pour d’autres paramètres tels que **IPv6 pour** le démarrage PXE sont également indisponibles. 
 
-Pour modifier les paramètres UEFI une fois la migration terminée, appliquez un autre package SEMM ou désinscrivez l’appareil à partir de SEMM. Si vous appliquez un autre package SEMM pour modifier les paramètres UEFI, vous devez utiliser le certificat d’origine lors de la création du nouveau package SEMM. Servez-vous de l’outil de Configurateur UEFI et quittez **EnableOSMigration** (pas activé, comme indiqué dans les étapes de migration d’origine).
+Pour modifier les paramètres UEFI après avoir terminé la migration, appliquez un autre package SEMM ou désinscrimez l’appareil à partir de SEMM. Si vous appliquez un autre package SEMM pour modifier les paramètres UEFI, vous devez utiliser le certificat d’origine lorsque vous créez le nouveau package SEMM. Utilisez l’outil Configurateur UEFI et laissez **EnableOSMigration** éteint (et non activé, comme indiqué dans les étapes de migration d’origine).
 
-#### Utiliser les partenaires
+#### Collaborer avec des partenaires
 
-Si votre entreprise utilise la migration vers Windows 10 professionnel ou entreprise sur surface Hub 2, vous souhaiterez peut-être que le partenaire transfère le certificat SEMM, le package SEMM et le mot de passe UEFI.  Par ailleurs, après avoir migré le concentrateur, vous pouvez immédiatement annuler l’inscription à partir de SEMM, ce qui permettra l’administration locale de UEFI et de transférer le périphérique à une autre partie. Néanmoins, il est vivement recommandé d’utiliser un mot de passe UEFI qui peut être configuré après la migration. Pour en savoir plus, voir [gérer les paramètres de surface UEFI](https://docs.microsoft.com/surface/manage-surface-uefi-settings). 
+Si votre entreprise sous-traite la migration vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2, vous souhaitez peut-être que le partenaire vous transfère le certificat SEMM, le package SEMM et le mot de passe UEFI.  Par ailleurs, après avoir migré le Hub, vous pouvez immédiatement le désinscrire de SEMM, ce qui permet l’administration locale de l’UEFI et le transfert de l’appareil à une autre partie. Néanmoins, il est toujours vivement recommandé d’utiliser un mot de passe UEFI, qui peut être configuré après la migration. Pour plus d’informations, voir [Gérer les paramètres UEFI Surface.](https://docs.microsoft.com/surface/manage-surface-uefi-settings) 
 
-#### Restauration de l’équipe Windows 10
+#### Retour à Windows 10 Team
 
-Après la migration, choisissez de restaurer votre appareil à l’équipe Windows 10, [comme décrit ci-dessous](#roll-back-to-windows-10-team), nous vous conseillons d’initialiser d’abord le concentrateur de SEMM. Pour en savoir plus, voir [désinscrire des appareils de surface à partir de SEMM](https://docs.microsoft.com/surface/unenroll-surface-devices-from-semm).
+Si, après la migration, vous choisissez de restaurer votre appareil vers Windows 10 [Team,](#roll-back-to-windows-10-team)comme décrit ci-dessous, il est recommandé de désinscrire d’abord le Hub à partir de SEMM. Pour plus d’informations, voir [Désinscrire des appareils Surface à partir de SEMM.](https://docs.microsoft.com/surface/unenroll-surface-devices-from-semm)
 
 
-#### Enregistrez le package SEMM sur un lecteur USB.
+#### Enregistrer le package SEMM sur un lecteur USB
 
 1. Connectez un lecteur USB à votre PC. 
-1. Sélectionnez **Hub 2**, puis sélectionnez **suivant**.
+
+1. Choisissez **Hub 2S,** puis sélectionnez **Suivant.**
 
    ![Sélectionner USB](images/shm-fig13.png)
 
    > [!WARNING]
-   > Toutes les données existantes sur le lecteur USB sont effacées lors de la création du package SEMM. Avant de générer le package SEMM, supprimez tous les fichiers du lecteur USB que vous souhaitez enregistrer.
+   > Toutes les données existantes sur le lecteur USB sont effacées lors de la construction du package SEMM. Avant de créer le package SEMM, supprimez tous les fichiers du lecteur USB que vous souhaitez enregistrer.
    
-2. Sélectionnez **générer**.
+2. Sélectionnez **Build**.
 
-   ![Sélectionnez générer.](images/shm-fig14.png)
+   ![Sélectionnez Build.](images/shm-fig14.png)
 
-3. Capturez une capture d’écran de cette page, puis sélectionnez **fin**. Votre package SEMM est désormais prêt. Il contient le package SEMM *DfciUpdate. DFI* et un fichier texte qui inclut l’empreinte numérique SEMM (les deux derniers caractères de l’empreinte numérique du certificat).
+3. Capturez une capture d’écran de cette page, puis sélectionnez **Fin.** Votre package SEMM est maintenant prêt. Il contient le package SEMM *DfciUpdate.dfi* et un fichier texte qui inclut l’empreinte SEMM (les deux derniers caractères de l’empreinte numérique du certificat).
 
-   ![Sélectionnez fin.](images/shm-fig15.png)
+   ![Sélectionnez Fin.](images/shm-fig15.png)
    
-4. Enregistrez les deux derniers caractères de l’empreinte de certificat. Vous aurez besoin de ces caractères pour activer SEMM lorsque vous appliquez le package sur surface Hub 2.
+4. Enregistrez les deux derniers caractères de l’empreinte numérique du certificat. Vous aurez besoin de ces caractères pour activer SEMM lorsque vous appliquerez le package sur Surface Hub 2S.
 
-### Préparer un lecteur flash USB contenant une image Windows 10, un package SEMM et des pilotes et microprogramme surface Hub 2
+### Préparer un disque mémoire USB qui contient une image Windows 10, un package SEMM et des pilotes et microprogrammes Surface Hub 2
 
-Vous pouvez installer une image Windows 10 professionnel ou entreprise (version 1903 ou ultérieure) en utilisant l’une des options suivantes:
+Vous pouvez installer une image Windows 10 Professionnel ou Entreprise (version 1903 ou ultérieure) à l’aide de l’une des options suivantes :
 
 - Votre solution d’imagerie actuelle.
 
-- <a href="https://docs.microsoft.com/surface/microsoft-surface-deployment-accelerator" target="_blank"> Accélérateur de déploiement de surface </a> . Utilisez cet outil pour créer une image Windows 10 amorçable. L’image peut inclure toutes les mises à jour de Windows 10 actuelles, Office, d’autres applications que vous choisissez, ainsi que les pilotes et le microprogramme nécessaires. 
+- <a href="https://docs.microsoft.com/surface/microsoft-surface-deployment-accelerator" target="_blank"> Surface Deployment Accelerator </a> . Utilisez cet outil pour créer une image Windows 10 amorçable. L’image peut inclure toutes les mises à jour Windows 10 actuelles, Office, les autres applications que vous choisissez, ainsi que les pilotes et microprogrammes requis. 
 
-- Lecteur flash USB contenant une image Windows 10 professionnel ou entreprise. Ensuite, installez les <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> pilotes et le microprogramme pour Windows 10 professionnel et le système d’exploitation sur surface Hub 2 </a> .
+- Lecteur flash USB qui contient une image Windows 10 Professionnel ou Entreprise. Ensuite, installez <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> pilotes et microprogramme pour Windows 10 Professionnel et le système d’exploitation d’entreprise sur Surface Hub 2. </a>
  
-La procédure suivante vous explique comment créer une clé USB à partir du support d’installation, puis ajouter les fichiers de package SEMM et les pilotes et le microprogramme pour Windows 10 professionnel pour le système d’exploitation Windows 10 professionnel et sur le fichier MSI surface Hub 2. Si vous utilisez d’autres méthodes de déploiement, accédez à la section [mettre à jour UEFI sur surface Hub 2S pour activer la section migration du système d’exploitation](#update-uefi-on-surface-hub-2s-to-enable-os-migration) de cet article.
+La procédure suivante décrit comment créer un disque mémoire USB à partir d’un support d’installation, puis ajouter les fichiers de package SEMM et les pilotes et microprogrammes pour Windows 10 Professionnel et le système d’exploitation Entreprise sur le fichier MSI Surface Hub 2. Si vous utilisez d’autres méthodes de déploiement, go to the [Update UEFI on Surface Hub 2S to enable OS migration](#update-uefi-on-surface-hub-2s-to-enable-os-migration) section in this article.
 
 > [!NOTE]
-> Une fois l’installation terminée, vous avez besoin d’une licence valide pour Windows 10 professionnel ou Windows 10 entreprise séparée de votre licence d’équipe Windows 10 existante.
+> Une fois l’installation terminé, vous aurez besoin d’une licence valide pour Windows 10 Professionnel ou Windows 10 Entreprise distincte de votre licence Windows 10 Team existante.
 
-1. Pour créer une installation de Windows 10 professionnel, dans la <a href="https://www.microsoft.com/software-download/windows10" target="_blank"> page Télécharger Windows 10 </a> , suivez les instructions de téléchargement de l’outil de création de médias. Pour télécharger Windows 10 entreprise, accédez au centre de gestion des <a href="https://www.microsoft.com/licensing/servicecenter/default.aspx" target="_blank"> licences en volume Microsoft </a> .
+1. Pour créer une installation de Windows 10 Professionnel, sur la page Télécharger Windows 10, suivez les instructions pour télécharger <a href="https://www.microsoft.com/software-download/windows10" target="_blank"> l’outil de création de </a> supports. Pour télécharger Windows 10 Entreprise, allez dans le Centre de gestion des licences <a href="https://www.microsoft.com/licensing/servicecenter/default.aspx" target="_blank"> en volume </a> Microsoft.
 
-2. Insérez un nouveau lecteur de stockage USB. 
-1. Ouvrez l’outil de création de média, sélectionnez **créer un support d’installation**, puis sélectionnez **suivant**.
+1. Insérez un nouveau lecteur de stockage USB. 
 
-   ![Créer un support d’installation.](images/shm-fig16.png)
+1. Ouvrez l’outil de création de médias, **sélectionnez Créer un**support d’installation, puis sélectionnez **Suivant**.
+
+   ![Créez un support d’installation.](images/shm-fig16.png)
    
-3. Sélectionnez une langue, puis choisissez **Windows 10** et **64 bits (x64)**. Puis sélectionnez **suivant**.
+1. Sélectionnez une langue, puis **choisissez Windows 10** et **64 bits (x64).** Ensuite, **sélectionnez Suivant.**
 
-   ![Sélectionnez langue, puis sélectionnez Windows 10 et 64 bits. Puis sélectionnez suivant.](images/shm-fig17.png)
+   ![Sélectionnez la langue, puis choisissez Windows 10 et 64 bits. Ensuite, sélectionnez Suivant.](images/shm-fig17.png)
    
-4. Sélectionnez **clé USB**, puis sélectionnez **suivant**.
+1. Sélectionnez **le lecteur flash USB,** puis sélectionnez **Suivant.**
 
-   ![Sélectionnez U S B Flash Drive et sélectionnez Next (suivant).](images/shm-fig18.png)
+   ![Sélectionnez lecteur flash U S B et sélectionnez Suivant.](images/shm-fig18.png)
    
-5. Lorsque le téléchargement est terminé, sélectionnez **Terminer**.
+1. Une fois le téléchargement terminé, sélectionnez **Terminer.**
 
-   ![Cliquez sur Terminer.](images/shm-fig19.png)
+   ![Sélectionnez Terminer.](images/shm-fig19.png)
    
-6. Copiez les fichiers de package SEMM ainsi que les pilotes et le microprogramme pour Windows 10 professionnel et Enterprise OS sur surface Hub 2 (le fichier MSI) à la racine de la clé USB (*BOOTME*), qui contient votre image Windows 10. Le lecteur USB BOOTME contient les éléments suivants:
+1. Copiez les fichiers de package SEMM, ainsi que les pilotes et microprogrammes de Windows 10 Professionnel et du système d’exploitation d’entreprise sur Surface Hub 2 (fichier MSI) à la racine du disque mémoire USB *(BOOTME)* qui contient votre image Windows 10. Le lecteur USB BOOTME contient :
 
     - Votre image de démarrage Windows 10.
     
     - Fichiers de package SEMM (copiés à la racine du lecteur USB).
     
-      - *DfciUpdate. DFI*.
-      - Fichier texte qui inclut l’empreinte numérique SEMM. (Dans cet exemple, le fichier est *SurfaceUEFI_2020Aug25_1058.txt*.) Le cachet de date généré automatiquement correspond à la date à laquelle vous avez créé le fichier à l’aide de surface Configurator Configurator.
+      - *DfciUpdate.dfi*.
+      - Fichier texte qui inclut l’empreinte SEMM. (Dans cet exemple, le fichier est *SurfaceUEFI_2020Aug25_1058.txt*.) L’horodateur de date généré automatiquement correspond à la date à laquelle vous avez créé le fichier à l’aide du configurateur UEFI Surface.
 
-   - Pilotes et microprogrammes pour Windows 10 professionnel et le système d’exploitation sur surface Hub 2 (SurfaceHub2S_Win10_18362_20.082.25682.0.msi). Copiez ce fichier à la racine du lecteur USB.
+   - Pilotes et microprogramme pour Windows 10 Professionnel et système d’exploitation d’entreprise sur Surface Hub 2 (SurfaceHub2S_Win10_18362_20.082.25682.0.msi). Copiez ce fichier à la racine du lecteur USB.
 
-### Mise à jour de UEFI sur surface Hub 2S pour permettre la migration du système d’exploitation
+### Mettre à jour l’UEFI sur Surface Hub 2S pour activer la migration du système d’exploitation
 
-1. Insérez votre lecteur BOOTME dans le bus USB-Port sur surface Hub 2. Pour obtenir la liste des fichiers requis, voir la section précédente.
+1. Insérez votre lecteur BOOTME dans le port USB-A sur Surface Hub 2S. Pour obtenir la liste des fichiers requis, consultez la section précédente.
 
-2. Pour démarrer dans UEFI:
+2. Pour démarrer dans UEFI :
 
-   1. Désactivez (arrêtez) votre surface Hub 2.
-   1. Appuyez de façon prolongée sur **volume +**, puis appuyez sur le bouton d’alimentation et relâchez-le.
-   1. Maintenez la **touche Ctrl** enfoncée et appuyez sur le menu UEFI.
+   1. Désactiver (arrêter) votre Surface Hub 2S.
+   1. Appuyez et **maintenez le volume +**, puis appuyez sur le bouton d’alimentation et relâchez-le.
+   1. Maintenez le **volume + jusqu’à** ce que le menu UEFI apparaisse.
    
-      ![Appuyez de façon prolongée sur le bouton du volume vers le haut jusqu’à ce que le menu UEFI apparaisse.](images/shm-fig20.png)
+      ![Appuyez et maintenez le bouton de volume enfoncé jusqu’à ce que le menu UEFI s’affiche.](images/shm-fig20.png)
       
-3. Au redémarrage de l’appareil, entrez le mot de passe UEFI que vous avez créé précédemment, le cas échéant (fortement recommandé).
+3. Lorsque l’appareil redémarre, entrez le mot de passe UEFI que vous avez créé précédemment, le cas échéant (vivement recommandé).
 
    ![Entrez le mot de passe UEFI.](images/shm-fig22.png)
    
-4. Dans le menu UEFI, sélectionnez ****  >  **installation de gestion depuis USB**.
+4. Dans le menu UEFI, sélectionnez **Installation**  >  **de gestion à partir du port USB.**
 
-   ![Sélectionnez gestion et installer à partir d’U S B.](images/shm-fig21.png)
+   ![Sélectionnez Gestion et Installation à partir de U S B.](images/shm-fig21.png)
    
-5. Sélectionnez **redémarrer maintenant**, comme le montre l’image suivante. L’appareil est redémarré. Il affiche un logo Microsoft blanc au milieu de la fenêtre, puis arrête.
+5. Sélectionnez **Redémarrer maintenant,** comme le montre l’image suivante. L’appareil redémarre. Il affiche un logo Microsoft blanc au milieu de la fenêtre, puis s’arrête.
 
-   ![Sélectionnez redémarrer maintenant.](images/shm-fig25.png)
+   ![Sélectionnez Redémarrer maintenant.](images/shm-fig25.png)
    
-6. Appuyez et relâchez le bouton d’alimentation. Dans la fenêtre rouge qui s’affiche, activez le mode de gestion de l’entreprise surface. 
+6. Appuyez sur le bouton d’alimentation et relâchez-le. Dans la fenêtre rouge qui s’affiche, activez le mode de gestion Surface Enterprise. 
 
-7. Entrez votre empreinte de certificat à deux caractères et votre mot de passe de paramètres UEFI. Puis sélectionnez **OK**.
+7. Entrez votre empreinte numérique de certificat à deux caractères et votre mot de passe de paramètres UEFI. Ensuite, **sélectionnez OK**.
 
-   ![Entrez votre empreinte de certificat à deux caractères et votre mot de passe de paramètres UEFI.](images/shm-fig23.png)
+   ![Entrez votre empreinte numérique de certificat à deux caractères et votre mot de passe de paramètres UEFI.](images/shm-fig23.png)
  
    > [!NOTE]
-   > Après avoir activé SEMM sur votre appareil, le nouveau paramètre UEFI **EnableOSMigration** est appliqué. Vous ne pourrez plus accéder à l’équipe Windows 10. À la place, vous devez passer à l’étape suivante et installer Windows 10 professionnel ou Windows 10 entreprise. 
+   > Après avoir activé SEMM sur votre appareil, le nouveau paramètre UEFI **EnableOSMigration** est appliqué. Vous ne pourrez plus accéder à Windows 10 Team. Au lieu de cela, vous devez continuer à l’étape suivante et installer Windows 10 Professionnel ou Windows 10 Entreprise. 
 
-   L’appareil est redémarré. Il affiche le logo blanc au milieu de l’écran, puis s’arrête de nouveau.
+   L’appareil redémarre. Il affiche le logo blanc au milieu de l’écran, puis s’arrête à nouveau.
 
-### Installation de Windows 10 professionnel ou entreprise
+### Installer Windows 10 Professionnel ou Entreprise
 
-1. Si votre lecteur Windows 10 professionnel ou entreprise amorçable ne se trouve pas déjà dans la surface Hub 2 USB-A port, insérez-le maintenant. Appuyez ensuite sur le bouton d’alimentation et relâchez-le. 
+1. Si votre lecteur Windows 10 Professionnel ou Entreprise amorçable ne se trouve pas déjà dans le port USB-A surface Hub 2, insérez-le maintenant. Appuyez ensuite sur le bouton d’alimentation et relâchez-le. 
 
-    Au démarrage de l’appareil, vous pouvez voir le logo blanc au milieu de l’écran. Vous voyez alors un cercle tournant en dessous du logo blanc.
+    Lorsque l’appareil démarre, vous voyez le logo blanc au milieu de l’écran. Vous voyez ensuite un cercle pivotant sous le logo blanc.
 
-3. Si l’appareil ne démarre pas automatiquement sur le lecteur USB, éteignez le périphérique (débranchez le cordon d’alimentation, puis rebranchez-le). Une fois que vous avez branché le cordon d’alimentation, le périphérique doit être amorcé après quelques secondes. Vous pouvez ensuite voir le logo blanc au milieu de l’écran. 
+3. Si l’appareil ne démarre pas automatiquement sur le lecteur USB, éteint l’appareil (débrancher le cordon d’alimentation, puis le brancher à nouveau). Après avoir de nouveau brancher le cordon d’alimentation, l’appareil doit démarrer après quelques secondes. Vous verrez ensuite le logo blanc au milieu de l’écran. 
 
-    Si l’appareil ne s’allume pas, appuyez sur le bouton d’alimentation et relâchez-le. Immédiatement après avoir affiché le logo au milieu de l’écran, appuyez sur le bouton de volume et maintenez-le enfoncé jusqu’à ce que le cercle tourne au-dessous du logo blanc.
+    Si l’appareil ne s’allume pas, appuyez sur le bouton d’alimentation et relâchez-le. Immédiatement après avoir vu le logo au milieu de l’écran, appuyez et maintenez le bouton Volume enfoncé **jusqu’à** ce que le cercle pivote sous le logo blanc.
  
-   ![Démarrez sur Windows 10 à partir du lecteur U S B.](images/shm-fig26.png)
+   ![Démarrez vers Windows 10 à partir du lecteur U S B.](images/shm-fig26.png)
    
-4. Lorsque le programme d’installation de OOBE (out-of-Box Experience) démarre, suivez les instructions d’installation de Windows 10 professionnel ou entreprise (version 1903 ou ultérieure).
+4. Lorsque l’installation OOBE (Out-of-Box Experience) démarre, suivez les instructions pour installer Windows 10 Professionnel ou Entreprise (version 1903 ou ultérieure).
 
-### Installer les pilotes et le microprogramme de surface Hub 2
+### Installer les pilotes et microprogrammes Surface Hub 2
 
-Pour vous assurer que votre appareil dispose de l’ensemble des mises à jour et pilotes les plus récents, installez les <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> pilotes et le microprogramme pour Windows 10 professionnel et le système d’exploitation sur surface Hub 2 </a> . Après l’installation des pilotes et de la version MSI du microprogramme, redémarrez l’appareil. Ensuite, après avoir réactivé le concentrateur, assurez-vous que le PC est alimenté pendant une heure, puis redémarrez l’appareil. Vous ne serez pas invité à entrer le second redémarrage. En fonction de l’état de votre ordinateur avant de procéder à la migration vers Windows 10 professionnel ou entreprise, cette deuxième étape peut être nécessaire pour que l’intégralité du microprogramme ait été mise à jour.
+Pour vous assurer que votre appareil dispose de toutes les dernières mises à jour et pilotes, installez les pilotes et le microprogramme de Windows 10 Professionnel et du système d’exploitation Entreprise sur <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> Surface Hub </a> 2. Après l’installation des pilotes et du microprogramme MSI, redémarrez l’appareil. Ensuite, après avoir redémarrage du Hub, conservez l’alimentation du PC pendant une heure et redémarrez l’appareil. Vous ne serez pas invité à redémarrer le deuxième redémarrage. Selon l’état de votre ordinateur avant la migration vers Windows 10 Professionnel ou Entreprise, cette deuxième étape peut être nécessaire pour s’assurer que l’ensemble du microprogramme a été mis à jour.
  
 ## Configurer les paramètres recommandés
 
-Pour configurer entièrement surface Hub 2S en tant que périphérique de productivité personnel, reportez-vous à la rubrique <a href="surface-hub-2-post-install.md" target="_blank"> configuration de Windows 10 professionnel ou entreprise sur surface Hub 2 </a> .
+Pour configurer entièrement Surface Hub 2S en tant qu’appareil de productivité personnel, voir Configurer Windows 10 Professionnel ou Entreprise <a href="surface-hub-2-post-install.md" target="_blank"> sur Surface Hub </a> 2.
 
 > [!NOTE]
->Si les étapes décrites dans cet article ne migrent pas correctement votre appareil vers Windows 10 professionnel ou entreprise pour surface Hub 2, contactez le <a href="https://support.microsoft.com/help/4037644/surface-contact-surface-warranty-and-software-support" target="_blank"> support surface Hub </a> .
+>Si les étapes décrites dans cet article ne migrent pas correctement votre appareil vers Windows 10 Professionnel ou Entreprise pour Surface Hub 2, contactez le support <a href="https://support.microsoft.com/help/4037644/surface-contact-surface-warranty-and-software-support" target="_blank"> Surface </a> Hub.
 
-## Revenir à l’équipe Windows 10
+## Revenir à Windows 10 Team
 
-Si vous voulez restaurer votre appareil vers l’équipe Windows 10, voir <a href="surface-hub-2s-recover-reset.md" target="_blank"> Réinitialiser et récupérer pour surface Hub 2S </a> .
+Si vous souhaitez restaurer votre appareil vers Windows 10 Team, voir Réinitialiser et <a href="surface-hub-2s-recover-reset.md" target="_blank"> récupérer pour Surface Hub 2S. </a>
 
 > [!NOTE]
-> Avant de revenir à l’équipe Windows 10, nous vous conseillons d’annuler d’abord le concentrateur auprès de SEMM. Pour en savoir plus, voir [désinscrire des appareils de surface à partir de SEMM](https://docs.microsoft.com/surface/unenroll-surface-devices-from-semm).
+> Avant de revenir à Windows 10 Team, il est recommandé de désinscrire d’abord le Hub de SEMM. Pour plus d’informations, voir [Désinscrire des appareils Surface à partir de SEMM.](https://docs.microsoft.com/surface/unenroll-surface-devices-from-semm)
 
 ## Historique des versions
 
-Le tableau suivant répertorie les modifications apportées à cet article.
+Le tableau suivant récapitule les modifications apportées à cet article.
 
 | Version | Date               | Description                                                                                           |
 | ------- | ------------------ | ----------------------------------------------------------------------------------------------------- |
-| version. 1,4  | 14 décembre 2020 | Fournit des [informations supplémentaires](#install-surface-hub-2-drivers-and-firmware) sur l’installation du fichier MSI pour «pilotes et microprogrammes pour Windows 10 professionnel pour le système d’exploitation Windows 10 professionnel sur surface Hub 2», qui vous avertit que le second redémarrage est nécessaire en fonction de l’état de votre système.                                                          |
-| version. 1,3  | 3 décembre 2020 | Mis à jour avec des recommandations sur la gestion de l' [inscription de SEMM](#managing-semm-enrollment).                                                       |
-| version. 1,2  | 29 septembre 2020 | Les mises à jour diverses qui répondent aux commentaires sur la convivialité.                                                        |
-| version. 1,1  | 15 septembre 2020 | A placé une note supplémentaire dans l’introduction qui clarifie les conditions de licence pour l’installation d’un nouveau système d’exploitation. |
-| version. 1.0  | 1er septembre 2020  | Nouvel article.                                                                                           |
+| v. 1.4  | 14 décembre 2020 | Fournit [](#install-surface-hub-2-drivers-and-firmware) des informations supplémentaires sur l’installation du fichier MSI pour « Pilotes et microprogramme pour Windows 10 Professionnel et Le système d’exploitation d’entreprise sur Surface Hub 2 », en vous informant qu’un second redémarrage peut être nécessaire en fonction de l’état de votre système.                                                          |
+| v. 1.3  | 3 décembre 2020 | Mise à jour avec des conseils [sur la gestion de l’inscription SEMM.](#managing-semm-enrollment)                                                       |
+| v. 1.2  | 29 septembre 2020 | Mises à jour diverses qui abordent les commentaires d’utilisation.                                                        |
+| v. 1.1  | 15 septembre 2020 | Introduction d’une note supplémentaire qui clarifie les exigences de licence pour l’installation d’un nouveau système d’exploitation. |
+| v. 1.0  | 1er septembre 2020  | Nouvel article.                                                                                           |
