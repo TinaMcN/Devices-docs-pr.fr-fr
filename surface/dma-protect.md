@@ -1,6 +1,6 @@
 ---
-title: Protection de surface DMA
-description: Cet article décrit la protection DMA sur les appareils surface compatibles.
+title: Protection d’accès direct à la mémoire (DMA) surface
+description: Cet article décrit la protection DMA sur les appareils Surface compatibles
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.localizationpriority: medium
@@ -8,21 +8,26 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 6/10/2020
+ms.date: 1/14/2021
 ms.reviewer: carlol
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 00994263cd61086ab86996920543a717a63d5078
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+appliesto:
+- Surface Pro 7+
+- Surface Pro 7
+- Surface Laptop 3
+- Surface Pro X
+ms.openlocfilehash: af5187a2b110804a2dff82291f1d5f912ac61a7b
+ms.sourcegitcommit: d4e2a29aa21a911ee55642cd66b4337b89eebdd8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832849"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "11270619"
 ---
-# Protection DMA sur les appareils surface
+# Protection DMA sur les appareils Surface
 
-La protection de l’accès direct à la mémoire (DMA) est conçue pour limiter les failles de sécurité potentielles associées à l’utilisation de périphériques amovibles ou de stockage externes amovibles. Par défaut, la protection par DMA est activée sur les appareils surface plus récents. Il s’agit notamment de surface Pro 7, de surface Laptop 3 et de surface Pro X.  Pour vérifier la présence de la fonctionnalité de protection de DMA sur votre appareil, ouvrez informations système (**Démarrez**  >  **msinfo32.exe**), comme illustré dans la figure ci-dessous.
+La protection DMA (Direct Memory Access) est conçue pour atténuer les vulnérabilités de sécurité potentielles associées à l’utilisation de SSD amovibles ou de périphériques de stockage externes. Les appareils Surface plus nouveaux sont fourni avec la protection DMA activée par défaut. Il s’agit notamment de Surface Pro 7+. Surface Pro 7, Surface Laptop 3 et Surface Pro X.  Pour vérifier la présence de la fonctionnalité de protection DMA sur votre appareil, ouvrez Informations système **(** Démarrermsinfo32.exe), comme illustré dans la figure  >  ** **ci-dessous.
 
-![Informations système indiquant la protection de DMA activée](images/systeminfodma.png)
+![Informations système indiquant que la protection DMA est activée](images/systeminfodma.png)
 
-S’il s’agit d’une falsification de surface amovible, l’appareil s’allume. Le redémarrage obtenu entraîne la réinitialisation de la mémoire par UEFI pour effacer les données résiduelles.
+Si un SSD amovible Surface est falsifié, l’appareil arrête l’alimentation. Le redémarrage qui en résulte entraîne l’effacement de la mémoire par l’UEFI, afin d’effacer les données inttérables.

@@ -8,7 +8,7 @@ ms.sitesec: library
 author: mccoybot
 ms.author: v-todmc
 ms.topic: article
-ms.date: 01/13/2020
+ms.date: 01/13/2021
 ms.reviewer: ''
 manager: laurawi
 ms.audience: itpro
@@ -21,12 +21,12 @@ appliesto:
 ms.custom:
 - CI 121887
 - CSSTroubleshoot
-ms.openlocfilehash: b65feb24803311aba809819cd6da273ed6934c75
-ms.sourcegitcommit: 41124d496abaa38a0d989159f2afec3542d562ca
+ms.openlocfilehash: 51ef676e7379f0898d6b601bb08c96002c9e6ace
+ms.sourcegitcommit: d4e2a29aa21a911ee55642cd66b4337b89eebdd8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/14/2021
-ms.locfileid: "11269105"
+ms.locfileid: "11270629"
 ---
 # Meilleures pratiques pour la suppression de SSD des appareils Surface compatibles
 
@@ -120,7 +120,7 @@ Si le SSD est chiffré pendant le transfert, suivez les étapes suivantes :
 10. Pour vérifier l’activation de Windows, sélectionnez **Activation des**  >  **paramètres.**  Si vous voyez des messages d’erreur, sélectionnez **Résoudre les problèmes.**
 11. Pour vérifier l’état du compte Office, ouvrez **** l’application **Office,** puis rendez-vous sur Compte de fichier pour vérifier les  >  **** messages d’erreur.
 
-## En savoir plus
+## Si vous souhaitez en savoir plus
 
 - [Guide de suppression rSSD pour entreprise](https://www.microsoft.com/download/100440)
 - [Guide de récupération BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan)
