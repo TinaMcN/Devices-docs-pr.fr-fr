@@ -4,18 +4,17 @@
 
 ## Vue d'ensemble
 
+### [Surface Pro7+ Entreprise](https://www.microsoft.com/surface/business/surface-pro-7-plus)
+### [Surface Go2 Entreprise](https://www.microsoft.com/surface/business/surface-go-2)
+### [Surface ProX Entreprise](https://www.microsoft.com/surface/business/surface-pro-x)
+### [Surface Laptop3 Entreprise](https://www.microsoft.com/surface/business/surface-laptop-3)
+### [Surface Studio2 Entreprise](https://www.microsoft.com/surface/business/surface-studio-2)
+### [Surface Book3 Entreprise](https://www.microsoft.com/surface/business/surface-book-3)
 ### [Maximiser le retour sur investissement avec Microsoft Surface](forrester-tei-study.md)
 ### [Impact économique global de Microsoft Surface pour l’éducation](forrester-tei-edu-study.md)
 ### [Nouveautés de station d’accueilSurface](surface-dock-whats-new.md)
 ### [Vue d’ensemble technique de GPU Surface Book 3](surface-book-GPU-overview.md)
 ### [Vue d’ensemble technique de Surface Book 3 Quadro RTX 3000](surface-book-quadro.md)
-### [Surface Book3 Entreprise](https://www.microsoft.com/surface/business/surface-book-3)
-### [Surface Go2 Entreprise](https://www.microsoft.com/surface/business/surface-go-2)
-### [Surface Pro7 Entreprise](https://www.microsoft.com/surface/business/surface-pro-7)
-### [Surface ProX Entreprise](https://www.microsoft.com/surface/business/surface-pro-x)
-### [Surface Laptop3 Entreprise](https://www.microsoft.com/surface/business/surface-laptop-3)
-### [Surface Studio2 Entreprise](https://www.microsoft.com/surface/business/surface-studio-2)
-
 ### [Mobilité en toute sécurité avec LTE Advanced](https://www.microsoft.com/surface/business/lte-laptops-and-tablets)
 
 ## Planifier
