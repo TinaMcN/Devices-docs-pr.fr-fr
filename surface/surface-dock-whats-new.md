@@ -1,6 +1,6 @@
 ---
-title: Nouveautés du quai de surface
-description: Cet article présente les nouvelles fonctionnalités pour le Dock surface nouvelle génération.
+title: Nouveautés de la station d’accueil Surface
+description: Cet article présente les nouvelles fonctionnalités de la station d’accueil Surface nouvelle génération.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.localizationpriority: medium
@@ -12,30 +12,30 @@ ms.date: 12/2/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: b93813498dc19bc7fff95f651fca77ca2c677746
-ms.sourcegitcommit: 071ca4874e807bb61a22b38a04f53802478d8391
+ms.openlocfilehash: 81c224cf6c5232c4cefd4e64889bd2f724d22bac
+ms.sourcegitcommit: 1b86286bd13b13749ddbf454ae78d9a24fec44ee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "11194837"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "11271131"
 ---
-# Nouveautés du quai de surface 
+# Nouveautés de la station d’accueil Surface 
 
-Le Dock surface 2, le Dock de surface de nouvelle génération, permet aux utilisateurs de connecter des moniteurs externes et de nombreux périphériques pour obtenir une expérience de bureau entièrement moderne à partir d’un appareil surface. Conçue pour optimiser l’efficacité au bureau, dans un espace de travail flexible, ou à la maison, surface Dock 2 comporte sept ports, y compris deux ports USB-C, avec 15 watts de puissance de chargement rapide pour les téléphones et les accessoires. 
+Surface Dock 2, la station d’accueil Surface de nouvelle génération, permet aux utilisateurs de connecter des moniteurs externes et plusieurs périphériques pour obtenir une expérience de bureau entièrement moderne à partir d’un appareil Surface. Conçue pour optimiser l’efficacité au bureau, dans un espace de travail flexible ou à la maison, la station d’accueil Surface 2 propose sept ports, y compris deux ports USB-C frontaux, avec 15 boîtiers de charge rapide pour téléphone et accessoires. 
 
-### Prise en charge de la gestion complète des appareils
+### Prise en charge complète de la gestion des appareils
 
-Surface Dock 2 est conçu pour simplifier la gestion informatique, permettant ainsi aux administrateurs d’automatiser les mises à jour de microprogramme à l’aide de Windows Update ou de centralisation des mises à jour avec les outils de distribution de logiciels internes.
+Surface Dock 2 est conçu pour simplifier la gestion informatique, ce qui permet aux administrateurs d’automatiser les mises à jour de microprogramme à l’aide de Windows Update ou de centraliser les mises à jour à l’aide d’outils de distribution de logiciels internes.
 
-- Le mode de gestion des entreprises de surface (SEMM) permet aux administrateurs informatiques de sécuriser les ports du Dock 2. Pour plus d’informations, reportez-vous à la section [Secure surface Dock 2 ports avec le mode Enterprise Management surface](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/secure-surface-dock-2-ports-with-surface-enterprise-management/ba-p/1418999).
--  La prise en charge de WMI (Windows Management Instrumentation) permet aux administrateurs informatiques de surveiller et de gérer à distance les derniers microprogrammes, l’état de la stratégie et les données associées sur les appareils de l’ancrage surface 2. Pour plus d’informations, reportez-vous à [gérer surface Dock 2 avec WMI](surface-dock2-wmi.md).
+- Le mode SEMM (Surface Enterprise Management Mode) permet aux administrateurs informatiques de sécuriser les ports sur la station d’accueil Surface 2. Pour plus d’informations, voir Les ports de la [station d’accueil Surface 2 sécurisée avec le mode de gestion Surface Enterprise.](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/secure-surface-dock-2-ports-with-surface-enterprise-management/ba-p/1418999)
+-  La prise en charge de Windows Management Instrumentation (WMI) permet aux administrateurs informatiques de surveiller et de gérer à distance le microprogramme, l’état de stratégie et les données associées les plus récents sur les appareils Surface Dock 2. Pour plus d’informations, voir [Gérer la station d’accueil Surface 2 avec WMI.](surface-dock2-wmi.md)
 
-## Configuration système requise
+## Exigences générales du système
 
-- Windows 10 version 1809. Il n’y a pas de prise en charge pour les appareils hôtes Windows 7, Windows 8 et non surface. Le quai de surface 2 fonctionne avec les appareils surface suivants:
+- Windows 10 version 1809. Il n’existe aucune prise en charge pour les appareils hôtes Windows 7, Windows 8 ou autres. Surface Dock 2 fonctionne avec les appareils Surface suivants :
 
   - Surface Pro (5e génération)
-  - Surface Laptop (1ère génération)
+  - Surface Laptop (1re génération)
   - SurfacePro6
   - SurfaceBook2
   - Surface Laptop2
@@ -46,90 +46,92 @@ Surface Dock 2 est conçu pour simplifier la gestion informatique, permettant ai
   - SurfaceBook3
   - SurfaceGo2
   - Surface Laptop Go
+  - Surface Pro 7+
 
-## Composants du Dock surface 2
+## Composants surface dock 2
 
-![Composants du Dock surface 2](./images/surface-dock2.png)
+![Composants surface dock 2](./images/surface-dock2.png)
  
 ### USB
 
-- Deux ports USB-C en face.
-- Deux ports USB-C (Gen 2) arrière.
-- Deux bus USB tournés vers l’arrière. 
+- Deux ports USB-C frontants.
+- Deux ports USB-C arrière (génération 2).
+- Deux ports USB-A arrière. 
 
 ### Vidéo
     
-- Deux 4K@60hz. Prend en charge jusqu’à deux affichages sur les appareils suivants:
+- Double 4K@60hz. Prend en charge jusqu’à deux affichages sur les appareils suivants :
 
   - SurfaceBook3
   - SurfaceGo2
   - SurfacePro7
+  - Surface Pro 7+
   - SurfaceProX
   - Surface Laptop3
 
-- 4K@30Hz 4K@. Prend en charge jusqu’à deux affichages sur les appareils suivants:
+- Double 4K@ 4K@30Hz. Prend en charge jusqu’à deux affichages sur les appareils suivants :
 
   - SurfacePro6
   - Surface Pro (5e génération)
   - Surface Laptop2
-  - Surface Laptop (1ère génération)
+  - Surface Laptop (1re génération)
   - SurfaceGo
   - Surface Book 2.
 
 ### Ethernet
 
-- 1 port Gigabit Ethernet. 
+- Port Ethernet 1 gigabit. 
 
-### Alimentation électrique externe
+### Alimentation externe
 
-- 199 watts prenant en charge 100V-240 v.
-
-
-## Comparer le quai de surface 
-
-**Tableau1. Centre de voyage en surface pour station d’accueil USB-C**
+- 199 éditions de prise en charge de 100V-240V.
 
 
-| Composant                           | Station d’accueilSurface                                                | Quai de surface 2                                                                                      | Concentrateur de voyages USB-C |
+## Comparaison de la station d’accueil Surface 
+
+**Tableau1. Station d’accueil Surface et Hub de voyage USB-C**
+
+
+| Composant                           | Station d’accueilSurface                                                | Station d’accueil Surface 2                                                                                      | Hub de voyage USB-C |
 | ----------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------- |
-| Surflink                            | Oui                                                         | Oui                                                                                                 | Non               |
-| USB-A                               | 2 port frontal USB 3,1 Gen 1<br>2 USB 3,1 Gen 1 | 2 bus USB 3,2 Gen 2 de l’arrière                                                            | 1 3,1 génération 2 USB  |
-| Mini-port d’affichage                   | 2 face arrière (DP 1,2)                                       | Aucun(e)                                                                                                | Aucun(e)             |
-| USB-C                               | None                                                        | 2 interface USB 3,2 Gen 2<br>(alimentation 15W)<br>2 USB 3,2 Gen 2 (DP 1.4 a)<br>(7,5 w puissance) | 1 3,2 génération 2 USB  |
-| entrée/sortie audio de 3,5 mm                 | Oui                                                         | Oui                                                                                                 | Oui              |
-| Ethernet                            | Oui, 1 Gigabit                                              | Oui 1 Gigabit                                                                                       | Oui, 1 Gigabit   |
-| Alimentation C.C.                         | Oui                                                         | Oui                                                                                                 |                  |
-| Antivol Kensington                     | Oui                                                         | Oui                                                                                                 |                  |
-| Longueur du câble SurfLink               | 65cm                                                        | 80cm                                                                                                | 20cm             |
-| Puissance de l’hôte SurfLink                 | 60W                                                         | 120W                                                                                                | Non applicable              |
-| Puissance de chargement USB                      | 30W                                                         | 60W                                                                                                 |                  |
-| Taux binaire USB                        | 5 Gbit/s                                                      | 10 Gbit/s                                                                                             | 10 Gbit/s          |
-| Surveiller la prise en charge                     | 2 x 4Ko @30fps ou<br>1 x 4 000 @ des                         | 2 x 4 000 @ des                                                                                      | 1 x 4 000 @ des   |
-| Wake-on-LAN du mode veille connectée <sup> 1</sup> | Oui                                                         | Oui                                                                                                 |                  |
-| Wake-on-LAN à partir du mode veille S4/S5  | Non                                                          | Oui                                                                                                 |          Oui        |
-| Démarrage du réseau PXE                    | Oui                                                         | Oui                                                                                                 |        Oui          |
+| Link                            | Oui                                                         | Oui                                                                                                 | Non               |
+| USB-A                               | 2 USB 3.1 génération 1 frontal<br>2 USB 3.1 génération 1 arrière | 2 USB 3.2 génération 2 arrière (puissance 7,5W)                                                            | 1 USB 3.1 Génération 2  |
+| Mini port d’affichage                   | 2 arrière (DP1.2)                                       | Aucun(e)                                                                                                | Aucun(e)             |
+| USB-C                               | None                                                        | 2 USB 3.2 Génération 2 frontal<br>(15W d’alimentation)<br>2 USB 3.2 Génération 2 arrière (DP1.4a)<br>(7,5W d’alimentation) | 1 USB 3.2 Génération 2  |
+| 3,5 mm Audio dans/hors                 | Oui                                                         | Oui                                                                                                 | Oui              |
+| Ethernet                            | Oui, 1 gigabit                                              | Oui 1 gigabit                                                                                       | Oui, 1 gigabit   |
+| Alimentation DC                         | Oui                                                         | Oui                                                                                                 |                  |
+| Verrou DeNter                     | Oui                                                         | Oui                                                                                                 |                  |
+| Longueur du câble à l’aide d’un lien de navigation               | 65cm                                                        | 80cm                                                                                                | 20cm             |
+| Puissance de l’hôte Delink                 | 60W                                                         | 120W                                                                                                | Non applicable              |
+| Alimentation de charge USB                      | 30W                                                         | 60W                                                                                                 |                  |
+| Vitesse de bits USB                        | 5 Gbps                                                      | 10 Gbps                                                                                             | 10 Gbps          |
+| Surveiller la prise en charge                     | 2 x 4 @30fps, ou<br>1 x 4k @ 60fps                         | 2 x 4K @ 60fps                                                                                      | 1 x 4K @ 60fps   |
+| Wake-on-LAN from Connected Standby <sup> 1</sup> | Oui                                                         | Oui                                                                                                 |                  |
+| Wake-on-LAN à partir des modes veille S4/S5  | Non                                                          | Oui                                                                                                 |          Oui        |
+| Démarrage PXE réseau                    | Oui                                                         | Oui                                                                                                 |        Oui          |
 | Contrôle d’accès de l’hôte SEMM            | Non                                                          | Oui                                                                                                 | Non               |
 | Contrôle d’accès au port SEMM <sup> 2</sup>          | Non                                                          | Oui                                                                                                 | Non               |
-| Maintenance du support technique                   | MSI                                                         | Windows Update ou MSI                                                                               |                  |
+| Prise en charge de la maintenance                   | MSI                                                         | Windows Update ou MSI                                                                               |                  |
 
  
 
 
 
-1. *Les appareils doivent être configurés pour la fonction Wake on LAN via le mode de gestion de surface entreprise (SEMM) ou l’interface de contrôle du microprogramme de l’appareil (DFCI) pour sortir du mode veille ou Power-Off. La sortie à partir de la mise en veille prolongée ou Power-Off est prise en charge sur surface Pro 7, surface Laptop 3, surface Pro X, surface Book 3 et surface Go 2.  Licence logicielle requise pour certaines fonctionnalités. Vendu séparément.*
+1. *Les appareils doivent être configurés pour que l’appareil Wake on LAN via le mode SEMM (Surface Enterprise Management Mode) ou DFCI (Device Firmware Control Interface) soit à l’état de veille prolongée ou dPower-Off état. La mise en veille prolongée ou Power-Off est prise en charge sur Surface Pro 7+, Surface Pro 7, Surface Laptop 3, Surface Pro X, Surface Book 3 et Surface Go 2.  Licence logicielle requise pour certaines fonctionnalités. Vendu séparément.*
 
 2. *Licence logicielle requise pour certaines fonctionnalités. Vendu séparément.*
 
-## Gestion rationalisée des appareils
+## Gestion simplifiée des appareils
 
-Surface dispose de fonctionnalités de gestion rationalisées par le biais de Windows Update, ce qui permet aux administrateurs informatiques d’utiliser les fonctionnalités de niveau entreprise suivantes:
+Surface a publié des fonctionnalités de gestion simplifiées via Windows Update permettant aux administrateurs informatiques d’utiliser les fonctionnalités de niveau entreprise suivantes :
 
-- Les **mises à jour apportées par friction**. Mettez à jour vos ancrages de manière silencieuse et automatique, à l’aide de Windows Update ou du gestionnaire de configuration de point de terminaison Microsoft (anciennement System Center Configuration Manager-SCCM) ou d’autres outils de déploiement MSI. 
-- **Sortir du réseau**. Gérer et accéder aux appareils d’entreprise sans dépendre des utilisateurs pour maintenir leurs appareils allumés. Même lorsqu’un appareil fixe est en veille, en veille ou en mode hors connexion, votre équipe peut sortir du réseau pour le service et la gestion, à l’aide du gestionnaire de configuration de point de terminaison ou d’autres outils de gestion d’entreprise.
-- **Contrôle informatique centralisé**. Déterminez qui peut se connecter à l’ancrage surface 2 en activant ou en désactivant les ports. Restreignez les appareils hôtes qui peuvent être utilisés avec l’ancrage surface 2. Limitez l’accès à un utilisateur unique ou configurez les stations d’accueil de sorte qu’elles soient accessibles uniquement par des utilisateurs spécifiques de votre équipe ou de toute la société.
+- **Mises à jour non frictionnables.** Mettez à jour vos docks en mode silencieux et automatiquement, avec Windows Update ou Microsoft Endpoint Configuration Manager (anciennement System Center Configuration Manager - SCCM) ou d’autres outils de déploiement MSI. 
+- **Wake from the network**. Gérer et accéder aux appareils d’entreprise sans dépendre des utilisateurs pour maintenir leur appareil sous tension. Même lorsqu’un appareil connecté est en veille, mise en veille prolongée ou en mode d’arrêt, votre équipe peut se lever du réseau pour le service et la gestion, à l’aide de Endpoint Configuration Manager ou d’autres outils de gestion d’entreprise.
+- **Contrôle IT centralisé.** Contrôler les personnes qui peuvent se connecter à la station d’accueil Surface 2 en allumer et à éteindre les ports. Limiter les appareils hôtes qui peuvent être utilisés avec la station d’accueil Surface 2. Limitez l’accès à la station d’accueil à un seul utilisateur ou configurez les docks afin qu’ils soient accessibles uniquement par des utilisateurs spécifiques de votre équipe ou de toute l’entreprise.
 
 ## Étapes suivantes
 
-- [Ports 2 du Dock de surface sécurisée avec le mode de gestion de surface entreprise](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/secure-surface-dock-2-ports-with-surface-enterprise-management/ba-p/1418999)
+- [Ports de station d’accueil Surface 2 sécurisés avec le mode de gestion Surface Enterprise](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/secure-surface-dock-2-ports-with-surface-enterprise-management/ba-p/1418999)
 - [Mode de gestion SurfaceEnterprise](surface-enterprise-management-mode.md)
 - [Bonne pratique pour les paramètres d’alimentation des appareils Surface](maintain-optimal-power-settings-on-Surface-devices.md)

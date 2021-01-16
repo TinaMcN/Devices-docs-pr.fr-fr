@@ -1,6 +1,6 @@
 ---
 title: Gestion Intune des paramètres de surface UEFI
-description: Cet article décrit la configuration d’un environnement DFCI dans Microsoft Intune et la gestion des paramètres du microprogramme pour les appareils surface ciblés.
+description: Cet article explique comment configurer un environnement DFCI dans Microsoft Intune et gérer les paramètres de microprogramme pour les appareils Surface ciblés.
 ms.localizationpriority: medium
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -13,44 +13,46 @@ ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
 appliesto:
+- Surface Pro 7+
 - Surface Pro 7
 - Surface Pro X
 - Surface Laptop 3
 - Surface Book 3
 - Surface Laptop Go
-ms.openlocfilehash: e984741a8367935eab18351815c5f00d9f8a72b7
-ms.sourcegitcommit: efc38524f81238e0c36371f462eb57123e46d09b
+ms.openlocfilehash: dde34126c726ec0ac8093a665804c4fb0f639e3e
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "11228545"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271568"
 ---
 # Gestion Intune des paramètres de surface UEFI
 
 ## Introduction
 
-La possibilité de gérer les appareils à partir du Cloud a considérablement simplifié le déploiement et la mise en service informatiques dans le cycle de vie. Les profils d’interface de configuration de microprogramme de périphériques (DFCI) intégrés à [Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)permettent à la gestion de surface UEFI d’étendre la pile de gestion moderne au niveau matériel UEFI. DFCI prend en charge la mise en service des fonctions d’approvisionnement nulle, élimine les mots de passe BIOS et contrôle les paramètres de sécurité, notamment les options de démarrage et les périphériques intégrés, et vous permet de créer des scénarios de sécurité avancée à l’avenir. Pour obtenir des réponses aux questions fréquemment posées, voir [Enflammer 2019: annonçant la gestion à distance des paramètres de surface UEFI de Intune](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333).
+La possibilité de gérer les appareils à partir du cloud a considérablement simplifié le déploiement et la mise en service informatiques tout au long du cycle de vie. Avec les profils DFCI (Device Firmware Configuration Interface) intégrés à [Microsoft Intune,](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)la gestion UEFI Surface étend la pile de gestion moderne jusqu’au niveau matériel UEFI. DFCI prend en charge l’approvisionnement sans contact, élimine les mots de passe BIOS, contrôle les paramètres de sécurité, y compris les options de démarrage et les périphériques intégrés, et constitue la base des scénarios de sécurité avancés à l’avenir. Pour obtenir des réponses aux questions fréquemment posées, voir Ignite 2019 : Annonce de la gestion à distance des [paramètres UEFI Surface à partir d’Intune.](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333)
 
 ### Arrière-plan
 
-Comme n’importe quel ordinateur exécutant Windows 10, les appareils surface dépendent du code stocké dans le SoC qui permet au processeur d’être intégré aux disques durs, aux périphériques d’affichage, aux ports USB et aux autres périphériques. Les programmes stockés dans cette mémoire morte (ROM) s’appelle le microprogramme (alors que les programmes stockés dans le média dynamique sont appelés logiciels).
+Comme tout ordinateur exécutant Windows 10, les appareils Surface s’appuient sur du code stocké dans le SoC qui permet à l’UC de s’interfacer avec des disques durs, des périphériques d’affichage, des ports USB et d’autres appareils. Les programmes stockés dans cette mémoire en lecture seule (ROM) sont appelés microprogrammes (alors que les programmes stockés dans des supports dynamiques sont appelés logiciels).
 
-Contrairement aux autres appareils Windows 10 disponibles sur le marché aujourd’hui, surface fournit aux administrateurs informatiques la possibilité de configurer et de gérer le microprogramme grâce à un ensemble enrichi de paramètres de configuration UEFI. Cela fournit une couche de contrôle matériel sur la gestion des stratégies logicielles mise en œuvre via des stratégies de gestion des périphériques mobiles (GPM), de configuration ou de groupe. Par exemple, les organisations qui déploient des appareils dans des zones fortement sécurisées, avec des informations sensibles, peuvent empêcher l’utilisation de l’appareil photo en supprimant les fonctionnalités au niveau matériel. À partir d’un point de vue de l’appareil, la désactivation de la caméra par le biais d’un paramètre de microprogramme équivaut à la suppression physique de la caméra. Comparez la sécurité supplémentaire de gestion au niveau du microprogramme pour compter uniquement sur les paramètres logiciels du système d’exploitation. Par exemple, si vous désactivez le service audio Windows par le biais d’un paramètre de stratégie dans un environnement de domaine, un administrateur local peut quand même le réactiver.
+Contrairement aux autres appareils Windows 10 disponibles sur le marché aujourd’hui, Surface offre aux administrateurs informatiques la possibilité de configurer et de gérer le microprogramme via un ensemble enrichi de paramètres de configuration UEFI. Cela fournit une couche de contrôle matériel en plus de la gestion des stratégies logicielles telle qu’implémentée via les stratégies de gestion des périphériques mobiles (MDM), Configuration Manager ou stratégie de groupe. Par exemple, les organisations déployant des appareils dans des zones hautement sécurisées avec des informations sensibles peuvent empêcher l’utilisation de l’appareil photo en supprimant des fonctionnalités au niveau du matériel. Du point de vue de l’appareil, le fait de dés éteindre l’appareil photo via un paramètre de microprogramme équivaut à supprimer physiquement l’appareil photo. Comparez la sécurité ajoutée de la gestion au niveau du microprogramme à la confiance uniquement sur les paramètres logiciels du système d’exploitation. Par exemple, si vous désactivez le service audio Windows via un paramètre de stratégie dans un environnement de domaine, un administrateur local peut toujours le réactiver.
 
-### DFCI et SEMM
+### DFCI par rapport à SEMM
 
-Auparavant, la gestion du microprogramme requis pour l’inscription des appareils en mode de gestion des entreprises de surface (SEMM) avec la surcharge des tâches manuelles en temps réel. Par exemple, SEMM nécessite que le personnel informatique accède physiquement à chaque PC pour entrer un code confidentiel à deux chiffres dans le cadre du processus de gestion des certificats. Bien que SEMM ne soit pas une bonne solution pour les organisations dans un environnement strictement local, sa complexité et les exigences informatiques qu’il implique requièrent une utilisation onéreuse.
+Auparavant, la gestion du microprogramme nécessitait l’inscription des appareils en mode SEMM (Surface Enterprise Management Mode) avec la surcharge des tâches informatiques manuelles en cours. Par exemple, SEMM exige que le personnel technique accède physiquement à chaque PC pour entrer une broche à deux chiffres dans le cadre du processus de gestion des certificats. Bien que seMM reste une bonne solution pour les organisations dans un environnement strictement local, sa complexité et ses exigences it intensives font que son utilisation est coûteuse.
 
- Grâce aux fonctionnalités de gestion de microprogrammes UEFI intégrées de Microsoft Intune, la possibilité de verrouiller le matériel est simplifiée et facile à utiliser avec les nouvelles fonctionnalités de mise en service, de sécurité et de simplification des mises à jour dans une seule console, désormais unifiée en tant que [Gestionnaire de points de terminaison Microsoft](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager). La figure suivante illustre les paramètres UEFI affichés directement sur l’appareil (à gauche) et consultés dans la console du gestionnaire de points de terminaison (à droite).
+ Grâce aux fonctionnalités intégrées de gestion des microprogrammes UEFI dans Microsoft Intune, la possibilité de verrouiller le matériel est simplifiée et plus facile à utiliser avec les nouvelles fonctionnalités d’approvisionnement, de sécurité et de mise à jour simplifiée dans une seule console, désormais unifiée comme [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager). La figure suivante montre les paramètres UEFI directement sur l’appareil (à gauche) et dans la console endpoint Manager (à droite).
 
-![Paramètres UEFI affichés sur l’appareil (vers la gauche) et dans la console Endpoint Manager (vers la droite)](images/uefidfci.png)
+![Paramètres UEFI affichés sur l’appareil (à gauche) et dans la console endpoint Manager (à droite)](images/uefidfci.png)
 
-Le DFCI permet une gestion sans égale nulle, ce qui évite d’avoir recours à l’intervention manuelle de la part des administrateurs informatiques. DFCI est déployé par le biais du pilotage automatique Windows à l’aide de la fonctionnalité profils d’appareil dans Intune. Un profil d’appareil vous permet d’ajouter et de configurer des paramètres qui peuvent ensuite être déployés sur des appareils inscrits à la gestion au sein de votre organisation. Une fois que l’appareil a reçu le profil de l’appareil, les fonctionnalités et paramètres sont automatiquement appliqués. Voici quelques exemples de profils d’appareil communs: le courrier électronique, les restrictions d’appareil, le VPN, le Wi-Fi et les modèles d’administration. DFCI est simplement un profil supplémentaire qui vous permet de gérer les paramètres de configuration UEFI à partir du Cloud sans avoir à gérer l’infrastructure locale.  
+D’une manière cruciale, DFCI permet une gestion sans intervention tactile, ce qui élimine la nécessité d’une interaction manuelle par les administrateurs informatiques. DFCI est déployé via Windows Autopilot à l’aide de la fonctionnalité profils d’appareil dans Intune. Un profil d’appareil vous permet d’ajouter et de configurer des paramètres qui peuvent ensuite être déployés sur les appareils inscrits à la gestion au sein de votre organisation. Une fois que l’appareil reçoit le profil de l’appareil, les fonctionnalités et les paramètres sont appliqués automatiquement. Exemples de profils d’appareil courants : messagerie électronique, restrictions d’appareil, VPN, Wi-Fi et modèles d’administration. DFCI est simplement un profil d’appareil supplémentaire qui vous permet de gérer les paramètres de configuration UEFI à partir du cloud sans avoir à gérer l’infrastructure locale.  
 
 ## Appareils pris en charge
 
-DFCI est pris en charge sur les appareils suivants:
+DFCI est pris en charge sur les appareils suivants :
 
+- Surface Pro 7+
 - SurfacePro7
 - SurfaceProX
 - Surface Laptop3
@@ -58,145 +60,145 @@ DFCI est pris en charge sur les appareils suivants:
 - Surface Laptop Go
 
 > [!NOTE]
-> Surface Pro X ne prend pas en charge la gestion des paramètres de DFCI pour les appareils photo, audio et Wi-Fi intégrés.
+> Surface Pro X ne prend pas en charge la gestion des paramètres DFCI pour l’appareil photo intégré, l’audio et le Wi-Fi/Bluetooth.
 
 ## Conditions préalables
 
-- Un appareil doit être inscrit auprès de Windows AutoPilot par un [partenaire fournisseur de solutions Cloud Microsoft](https://partner.microsoft.com/membership/cloud-solution-provider) ou un distributeur OEM.
+- Les appareils doivent être enregistrés auprès de Windows Autopilot par un partenaire fournisseur de solutions [Microsoft Cloud (CSP)](https://partner.microsoft.com/membership/cloud-solution-provider) ou un distributeur OEM.
 
-- Avant de configurer DFCI pour la surface, vous devez être familiarisé avec la configuration requise dans  [Microsoft Intune](https://docs.microsoft.com/intune/) et [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) (Azure AD).
+- Avant de configurer DFCI pour Surface, vous devez connaître les exigences de configuration d’Autopilot dans  [Microsoft Intune](https://docs.microsoft.com/intune/) et [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) (Azure AD).
 
 ## Avant de commencer
 
-Ajoutez vos périphériques surface cibles à un groupe de sécurité Azure AD. Pour plus d’informations sur la création et la gestion des groupes de sécurité, voir [documentation sur Intune](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows#create-your-azure-ad-security-groups).
+Ajoutez vos appareils Surface cibles à un groupe de sécurité Azure AD. Pour plus d’informations sur la création et la gestion des groupes de sécurité, consultez la [documentation Intune.](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows#create-your-azure-ad-security-groups)
 
-## Configurer la gestion des DFCI pour les appareils surface
+## Configurer la gestion DFCI pour les appareils Surface
 
-Dans un environnement DFCI, vous devez configurer un profil DFCI qui contient les paramètres et un profil AutoPilot pour appliquer les paramètres à des appareils enregistrés. Il est également recommandé d’utiliser un profil d’état d’inscription pour vous assurer que les paramètres sont déplacés pendant l’installation de OOBE lors du premier démarrage de l’appareil. Ce guide décrit comment configurer l’environnement DFCI et gérer les paramètres de configuration UEFI pour les appareils surface ciblés.
+Un environnement DFCI nécessite la configuration d’un profil DFCI qui contient les paramètres et un profil Autopilot pour appliquer les paramètres aux appareils inscrits. Un profil d’état d’inscription est également recommandé pour vous assurer que les paramètres sont bas lors de la configuration OOBE lorsque les utilisateurs démarrent l’appareil pour la première fois. Ce guide explique comment configurer l’environnement DFCI et gérer les paramètres de configuration UEFI pour les appareils Surface ciblés.
 
 ## Créer un profil DFCI
 
-Avant de configurer les paramètres de stratégie DFCI, commencez par créer un profil DFCI et attribuez-le au groupe de sécurité Azure AD qui contient vos périphériques cibles.
+Avant de configurer les paramètres de stratégie DFCI, créez d’abord un profil DFCI et affectez-le au groupe de sécurité Azure AD qui contient vos appareils cibles.
 
-1. Connectez-vous à votre client sur devicemanagement.microsoft.com.
-2. Dans le centre d’administration Microsoft Endpoint Manager, sélectionnez **périphériques > profils de Configuration > créer un profil** , puis entrez un nom. par exemple, la **stratégie de configuration DFCI.**
-3. Sélectionnez **Windows 10 et versions ultérieures** pour type de plateforme.
-4. Dans la liste déroulante type de profil, sélectionnez **interface de configuration du microprogramme de périphériques** pour ouvrir la Blade DFCI contenant tous les paramètres de stratégie disponibles. Pour plus d’informations sur les paramètres de DFCI, voir le tableau 1 sur cette page ou la [documentation Intune](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows). Vous pouvez configurer les paramètres de DFCI lors du processus de configuration initial ou ultérieurement en modifiant le profil DFCI.
+1. Connectez-vous à votre client devicemanagement.microsoft.com.
+2. Dans le Centre d’administration Microsoft Endpoint Manager, sélectionnez > **profils** de configuration > créer un profil et entrez un nom . par exemple, **stratégie de configuration DFCI.**
+3. Sélectionnez **Windows 10 et les ultérieures pour** le type de plateforme.
+4. Dans la liste du type de profil, sélectionnez Interface de **configuration** du microprogramme d’appareil pour ouvrir le blade DFCI contenant tous les paramètres de stratégie disponibles. Pour plus d’informations sur les paramètres DFCI, reportez-vous au tableau 1 de cette page ou à la [documentation Intune.](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows) Vous pouvez configurer les paramètres DFCI pendant le processus d’installation initial ou ultérieur en éditant le profil DFCI.
 
     ![Créer un profil DFCI](images/df1.png)
 
-5. Cliquez sur **OK** , puis sélectionnez **créer**.
-6. Sélectionnez **devoirs** et, sous **Sélectionner des groupes** , sélectionnez le groupe de sécurité Azure ad qui contient vos périphériques cibles, comme illustré dans la figure ci-dessous. Cliquez sur **Save**.
+5. Cliquez **sur OK,** puis sélectionnez **Créer.**
+6. Sélectionnez **Affectations** et sous **Sélectionner** des groupes à inclure, sélectionnez le groupe de sécurité Azure AD qui contient vos appareils cibles, comme illustré dans la figure suivante. Cliquez sur **Enregistrer**.
 
-    ![Attribuer un groupe de sécurité](images/df2a.png)
+    ![Affecter un groupe de sécurité](images/df2a.png)
 
-## Créer un profil AutoPilot
+## Créer un profil Autopilot
 
-1. Dans le gestionnaire de points de terminaison sur devicemanagement.microsoft.com, sélectionnez **appareils > l’inscription Windows** et faites défiler vers le bas jusqu’à **profils de déploiement**.
-2. Cliquez sur **créer un profil** , puis tapez un nom. par exemple, **mon profil AutoPilot**, puis sélectionnez **suivant**.
-3. Sélectionnez les paramètres suivants:
+1. Dans le Gestionnaire de points de terminaison devicemanagement.microsoft.com, sélectionnez les appareils **>'inscription Windows** et faites défiler vers le bas jusqu’aux **profils de déploiement.**
+2. Sélectionnez **Créer un profil** et entrez un nom . par exemple, **mon profil Autopilot**et sélectionnez **Suivant**.
+3. Sélectionnez les paramètres suivants :
 
-    - Mode de déploiement: **piloté par l’utilisateur**.
-    - Type de jointure: Azure **ad jointe**.
+    - Mode de déploiement : **piloté par l’utilisateur.**
+    - Type de joint : Joint à Azure **AD.**
 
-4. Ne modifiez pas les paramètres par défaut restants, puis sélectionnez **suivant**, comme illustré dans la figure ci-dessous.
+4. Laissez les paramètres par défaut restants inchangés et sélectionnez **Suivant,** comme illustré dans la figure suivante.
 
-    ![Créer un profil AutoPilot](images/df3b.png)
+    ![Créer un profil Autopilot](images/df3b.png)
 
-5. Dans la page affectations, sélectionnez l' **option Sélectionner les groupes à inclure** , puis cliquez sur votre groupe de sécurité Azure ad. Sélectionnez **Suivant**.
-6. Acceptez le résumé, puis sélectionnez **créer**. Le profil AutoPilot est désormais créé et attribué au groupe.
+5. Dans la page Affectations, sélectionnez **Sélectionner les groupes à inclure et** cliquez sur votre groupe de sécurité Azure AD. Sélectionnez **Suivant**.
+6. Acceptez le résumé, puis sélectionnez **Créer.** Le profil Autopilot est maintenant créé et affecté au groupe.
 
-## Configurer la page d’état d’inscription
+## Page Configurer l’état de l’inscription
 
-Pour vous assurer que les appareils appliquent la configuration DFCI lors de la connexion de l’utilisateur, vous devez configurer l’état de l’inscription.
+Pour vous assurer que les appareils appliquent la configuration DFCI pendant la OOBE avant que les utilisateurs ne se connectent, vous devez configurer l’état d’inscription.
 
-Pour plus d’informations, reportez-vous à la rubrique [configuration d’une page d’état d’inscription](https://docs.microsoft.com/intune/enrollment/windows-enrollment-status).
+Pour plus d’informations, reportez-vous [à la page Configurer un état d’inscription.](https://docs.microsoft.com/intune/enrollment/windows-enrollment-status)
 
 
-## Configurer les paramètres DFCI sur les appareils surface
+## Configurer les paramètres DFCI sur les appareils Surface
 
-DFCI inclut un ensemble de stratégies de configuration UEFI rationalisées qui fournissent un niveau de sécurité supplémentaire en verrouillant les appareils au niveau matériel. DFCI est conçu pour être utilisé en association avec des paramètres de gestion des périphériques mobiles au niveau logiciel. Notez que les paramètres de DFCI affectent uniquement les composants matériels intégrés aux appareils surface et ne s’étendent pas aux périphériques connectés, tels que les webcams USB. (Toutefois, vous pouvez utiliser des stratégies de restriction d’appareil dans Intune pour désactiver l’accès aux périphériques connectés au niveau logiciel).
+DFCI inclut un ensemble simplifié de stratégies de configuration UEFI qui fournissent un niveau supplémentaire de sécurité en verrouiller les appareils au niveau matériel. DFCI est conçu pour être utilisé conjointement avec les paramètres de gestion des appareils mobiles au niveau du logiciel. Notez que les paramètres DFCI affectent uniquement les composants matériels intégrés aux appareils Surface et ne s’étendent pas aux périphériques connectés tels que les webcams USB. (Toutefois, vous pouvez utiliser des stratégies de restriction d’appareil dans Intune pour désactiver l’accès aux périphériques connectés au niveau logiciel).
 
-Vous pouvez configurer les paramètres de stratégie DFCI en modifiant le profil DFCI à partir de Endpoint Manager, comme illustré dans la figure ci-dessous. 
+Vous configurez les paramètres de stratégie DFCI en éditant le profil DFCI à partir du Gestionnaire de point de terminaison, comme illustré dans la figure ci-dessous. 
 
-- Dans le gestionnaire de points de terminaison à devicemanagement.microsoft.com, sélectionnez **appareils > Windows > les profils de Configuration > «DFCI nom du profil >» propriétés > paramètres**.
+- Dans endpoint Manager chez devicemanagement.microsoft.com, sélectionnez Appareils > Profils de configuration Windows > > « Nom de profil **DFCI » > propriétés > paramètres.**
 
-    ![Configurer les paramètres de DFCI](images/dfciconfig.png)
+    ![Configurer les paramètres DFCI](images/dfciconfig.png)
 
 ### Bloquer l’accès des utilisateurs aux paramètres UEFI
 
-Pour de nombreux clients, il est essentiel de bloquer les utilisateurs lors de la modification des paramètres UEFI et d’utiliser DFCI pour une raison principale. Comme indiqué dans le tableau 1, cela est géré par le biais du paramètre **permettre à l’utilisateur local de changer les paramètres UEFI**. Si vous ne modifiez pas ou ne configurez pas ce paramètre, les utilisateurs locaux pourront modifier n’importe quel paramètre UEFI qui n’est pas géré par Intune. Par conséquent, il est vivement conseillé de désactiver l’option **autoriser l’utilisateur local à modifier les paramètres UEFI.**
-Le reste des paramètres d’DFCI vous permet de désactiver les fonctionnalités qui seraient autrement disponibles pour les utilisateurs. Par exemple, si vous avez besoin de protéger des informations sensibles dans des zones fortement sécurisées, vous pouvez désactiver l’appareil photo et, si vous ne voulez pas que les utilisateurs démarrent à partir de pilotes USB, vous pouvez désactiver cette possibilité.
+Pour de nombreux clients, la possibilité d’empêcher les utilisateurs de modifier les paramètres UEFI est essentielle et constitue une raison principale d’utiliser DFCI. Comme répertorié dans le tableau 1, cette opération est gérée via le paramètre Autoriser **l’utilisateur local à modifier les paramètres UEFI.** Si vous ne modifiez pas ou ne configurez pas ce paramètre, les utilisateurs locaux pourront modifier tout paramètre UEFI non géré par Intune. Par conséquent, il est vivement recommandé de désactiver autoriser **l’utilisateur local à modifier les paramètres UEFI.**
+Le reste des paramètres DFCI vous permet de désactiver les fonctionnalités qui seraient autrement disponibles pour les utilisateurs. Par exemple, si vous avez besoin de protéger les informations sensibles dans des zones hautement sécurisées, vous pouvez désactiver l’appareil photo et si vous ne souhaitez pas que les utilisateurs démarrent à partir de lecteurs USB, vous pouvez également le désactiver.
 
-### Tableau1. Scénarios de DFCI
+### Tableau1. Scénarios DFCI
 
-| Objectif de gestion de l’appareil                        | Étapes de configuration                                                                           |
+| Objectif de gestion des appareils                        | Étapes de configuration                                                                           |
 | --------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| Bloquer les utilisateurs locaux lors de la modification des paramètres UEFI | Sous **fonctionnalités de sécurité > permettre à l’utilisateur local de changer les paramètres UEFI**, sélectionnez **aucun**.              |
-| Désactiver les webcams                               | Sous **composants matériels > appareils photo intégrés**, sélectionnez **désactivé**.                                       |
-| Désactiver le microphone et les haut-parleurs              | Sous **composants matériels intégrés > les micros et haut-parleurs**, sélectionnez **désactivé**.                      |
-| Désactiver les radios (Bluetooth; Wi-Fi)             | Sous **matériel intégré > les radios (Bluetooth, Wi-Fi, etc.)**, sélectionnez **désactivé**.                   |
-| Désactiver le démarrage à partir de médias externes (USB, SD)    | Sous **composants matériels intégrés > de démarrage > démarrez à partir de médias externes (USB, SD)**, sélectionnez **désactivé**. |
+| Empêcher les utilisateurs locaux de modifier les paramètres UEFI | Under **Security Features > Allow local user to change UEFI settings**, select **None**.              |
+| Désactiver les caméras                               | Under **Built in Hardware > Cameras,** select **Disabled**.                                       |
+| Désactiver les microphones et les haut-parleurs              | Under **Built in Hardware > Microphones and speakers,** select **Disabled**.                      |
+| Désactiver les radios (Bluetooth, Wi-Fi)             | Under **Built in Hardware > Radios (Bluetooth, Wi-Fi, etc...)**, select **Disabled**.                   |
+| Désactiver le démarrage à partir d’un support externe (USB, SD)    | Under **Built in Hardware > Boot Options > Boot from external media (USB, SD)**, select **Disabled**. |
 
 > [!CAUTION]
-> Ce **paramètre ne** doit être utilisé que sur les appareils dotés d’une connexion Ethernet câblée.
+> Le **paramètre Désactiver les radios (Bluetooth, Wi-Fi)** ne doit être utilisé que sur les appareils qui ont une connexion Ethernet câblé.
  
 > [!NOTE]
->  DFCI dans Intune inclut deux paramètres qui ne s’appliquent pas actuellement aux appareils surface: (1) CPU et virtualisation d’e/s et (2) désactiver le démarrage des cartes réseau.
+>  DFCI dans Intune inclut deux paramètres qui ne s’appliquent pas actuellement aux appareils Surface : (1) la virtualisation de l’UC et de l’E/S et (2) désactiver le démarrage à partir des cartes réseau.
  
-Intune fournit des balises Scope pour déléguer des droits d’administration et des règles d’applicabilité pour gérer les types d’appareil. Pour plus d’informations sur la prise en charge de la gestion des stratégies et des détails complets sur tous les paramètres DFCI, voir [la documentation Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows).
+Intune fournit des balises d’étendue pour déléguer des droits d’administration et des règles d’applicabilité pour gérer les types d’appareils. Pour plus d’informations sur la prise en charge de la gestion des stratégies et des détails complets sur tous les paramètres DFCI, reportez-vous à la [documentation de Microsoft Intune.](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)
 
-## Inscrire des appareils dans AutoPilot
+## Inscrire des appareils dans Autopilot
 
-Comme indiqué ci-dessus, DFCI ne peut être appliqué qu’aux appareils inscrits dans Windows AutoPilot par votre revendeur ou distributeur et est uniquement pris en charge, à ce stade, sur surface Pro 7, surface Pro X et surface Laptop 3. Pour des raisons de sécurité, il n’est pas possible de «mettre en service en libre-service» vos appareils dans AutoPilot.
+Comme indiqué ci-dessus, DFCI ne peut être appliqué que sur les appareils enregistrés dans Windows Autopilot par votre revendeur ou distributeur et est uniquement pris en charge sur Surface Pro 7+, Surface Laptop Go, Surface Pro 7, Surface Pro X et Surface Laptop 3. Pour des raisons de sécurité, il n’est pas possible de « mettre en service automatiquement » vos appareils dans Autopilot. Pour en savoir plus, consultez la prise en charge [de l’inscription Surface pour Windows Autopilot.](surface-autopilot-registration-support.md) 
 
-## Synchronisation manuelle des appareils AutoPilot
+## Synchroniser manuellement les appareils Autopilot
 
-Bien que les paramètres de stratégie Intune soient généralement appliqués presque, il est possible qu’il y ait un délai de 10 minutes avant que les paramètres n’entrent en vigueur sur les appareils ciblés. Dans de rares cas, il est possible de retarder huit heures maximum. Pour vous assurer que les paramètres s’appliquent dès que possible (par exemple, dans le cadre de scénarios de test), vous pouvez synchroniser manuellement les appareils cibles.
+Bien que les paramètres de stratégie Intune soient généralement appliqués presque immédiatement, il peut y avoir un délai de 10 minutes avant que les paramètres prennent effet sur les appareils ciblés. Dans de rares cas, des retards de 8 heures maximum sont possibles. Pour vous assurer que les paramètres s’appliquent dès que possible (par exemple, dans les scénarios de test), vous pouvez synchroniser manuellement les appareils cibles.
 
-- Dans Endpoint Manager dans devicemanagement.microsoft.com, accédez à **périphériques > inscription de l’appareil > inscription windows > périphériques Windows AutoPilot** et sélectionnez **synchroniser**.
+- Dans le Gestionnaire de points de terminaison devicemanagement.microsoft.com, sélectionnez Appareils > Inscription d’appareils **> inscription Windows > Windows Autopilot Devices** et sélectionnez **Synchroniser.**
 
- Pour plus d’informations, reportez-vous à [la rubrique synchroniser votre appareil Windows manuellement](https://docs.microsoft.com/intune-user-help/sync-your-device-manually-windows).
+ Pour plus d’informations, reportez-vous [à Synchroniser manuellement votre appareil Windows.](https://docs.microsoft.com/intune-user-help/sync-your-device-manually-windows)
 
 > [!NOTE]
-> Lorsque vous ajustez les paramètres directement dans UEFI, vous devez vous assurer que le périphérique redémarre complètement sur la connexion Windows standard.
+> Lors de l’ajustement des paramètres directement dans UEFI, vous devez vous assurer que l’appareil redémarre entièrement vers la connexion Windows standard.
 
 ## Vérification des paramètres UEFI sur les appareils gérés par DFCI
 
-Dans un environnement de test, vous pouvez vérifier les paramètres dans l’interface UEFI de surface.
+Dans un environnement de test, vous pouvez vérifier les paramètres dans l’interface UEFI Surface.
 
-1. Ouvrez surface UEFI, qui implique d’appuyer sur les boutons **volume +** et **alimentation** en même temps.
-2. Sélectionnez **appareils**. Le menu UEFI reflétera les paramètres configurés, comme illustré dans la figure ci-dessous.
+1. Ouvrez l’UEFI Surface, ce qui implique d’appuyer sur les boutons **Volume +** et **Alimentation** en même temps.
+2. Sélectionnez **Appareils**. Le menu UEFI reflètera les paramètres configurés, comme illustré dans la figure suivante.
 
     ![Surface UEFI](images/df3.png)
 
-    Remarque:
+    Notez comment :
 
-      - Les paramètres sont grisés, car l’option **autoriser l’utilisateur local à modifier UEFI** est définie sur aucune.
-      - Le son est réglé sur désactivé, car les **micros et les haut-parleurs** sont définis sur **Disabled**.
+      - Les paramètres sont grisés, car autoriser l’utilisateur local à modifier le paramètre **UEFI** est définie sur Aucun.
+      - L’audio est désactivé car les **microphones** et les haut-parleurs sont **désactivés.**
 
-## Supprimer les paramètres de stratégie DFCI
+## Suppression des paramètres de stratégie DFCI
 
-Lorsque vous créez un profil DFCI, tous les paramètres configurés resteront appliqués sur tous les appareils dans le cadre de la gestion du profil. Vous pouvez uniquement supprimer des paramètres de stratégie DFCI en modifiant directement le profil DFCI.
+Lorsque vous créez un profil DFCI, tous les paramètres configurés restent en vigueur sur tous les appareils dans l’étendue de gestion du profil. Vous pouvez uniquement supprimer les paramètres de stratégie DFCI en éditant directement le profil DFCI.
 
-Si le profil DFCI d’origine a été supprimé, vous pouvez supprimer des paramètres de stratégie en créant un nouveau profil et en modifiant les paramètres, le cas échéant.
+Si le profil DFCI d’origine a été supprimé, vous pouvez supprimer les paramètres de stratégie en créant un profil, puis en les éditant, le cas échéant.
 
-## Suppression de la gestion des DFCI
+## Suppression de la gestion DFCI
 
-**Pour supprimer la gestion de DFCI et revenir au nouvel état d’usine de l’appareil:**
+**Pour supprimer la gestion DFCI et remettre l’appareil à l’état d’usine :**
 
-1. Retirer l’appareil de Intune:
-    1. Dans Endpoint Manager dans devicemanagement.microsoft.com, sélectionnez **groupes > tous les appareils**. Sélectionnez les appareils que vous voulez supprimer, puis sélectionnez **supprimer/effacer.** Pour en savoir plus [, voir supprimer des appareils à l’aide de la réinitialisation, de la mise hors service ou de l’annulation manuelle de l’appareil](https://docs.microsoft.com/intune/remote-actions/devices-wipe). 
-2. Supprimez l’enregistrement AutoPilot de Intune:
-    1.  Sélectionnez **inscription de l’appareil > > les appareils Windows**.
-    2. Sous appareils AutoPilot Windows, sélectionnez les appareils que vous voulez supprimer, puis sélectionnez **supprimer**.
-3. Connexion d’un périphérique à un réseau câblé à l’aide d’une carte Ethernet de marque en surface. Redémarrez l’appareil, puis ouvrez le menu UEFI (appuyez longuement sur le bouton de volume enfoncé tout en appuyant sur le bouton d’alimentation.
-4. Sélectionnez **gestion > configurer > actualiser du réseau** , puis choisissez **refuser.**
+1. Retirez l’appareil d’Intune :
+    1. Dans endpoint Manager at devicemanagement.microsoft.com, choose **Groups > All Devices**. Sélectionnez les appareils que vous souhaitez retirer, puis choisissez **Retirer/Effacer.** Pour en savoir plus, reportez-vous à Supprimer des appareils à l’aide de la suppression, de la suppression ou de la [désinscrire manuellement de l’appareil.](https://docs.microsoft.com/intune/remote-actions/devices-wipe) 
+2. Supprimez l’inscription Autopilot d’Intune :
+    1.  Choose **Device enrollment > Windows enrollment > Devices**.
+    2. Sous Appareils Windows Autopilot, choisissez les appareils que vous souhaitez supprimer, puis choisissez **Supprimer.**
+3. Connectez l’appareil à Internet câblé avec un adaptateur ethernet de marque Surface. Redémarrez l’appareil et ouvrez le menu UEFI (appuyez et maintenez le bouton d’augmentation du volume tout en appuyant et en libérant le bouton d’alimentation).
+4. Sélectionnez **Gestion > configurer > actualiser** à partir du réseau, puis choisissez **Refuser.**
 
-Pour continuer à gérer l’appareil avec Intune, mais sans la gestion de DFCI, inscrivez-le automatiquement à l’appareil pour le pilotage automatique et inscrivez-le à Intune. DFCI ne sera pas appliqué aux appareils auto-enregistrés.
+Pour continuer à gérer l’appareil avec Intune, mais sans la gestion DFCI, inscrivez-le automatiquement sur Autopilot et inscrivez-le dans Intune. DFCI ne sera pas appliqué aux appareils auto-enregistrés.
 
-## En savoir plus
-- [Enflammer 2019: annonçant la gestion à distance des paramètres de surface UEFI à partir de Intune](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333) 
- [Pilotage automatique Windows](https://www.microsoft.com/microsoft-365/windows/windows-autopilot)
+## Si vous souhaitez en savoir plus
+- Ignite 2019 : Annonce de la gestion à distance des [paramètres UEFI Surface à partir d’Intune](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333) 
+ [Windows Autopilot](https://www.microsoft.com/microsoft-365/windows/windows-autopilot)
 - [Windows Autopilot et appareils Surface](windows-autopilot-and-surface-devices.md) 
-- [Utiliser les profils DFCI sur les appareils Windows dans Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)
+- [Utiliser des profils DFCI sur les appareils Windows dans Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)

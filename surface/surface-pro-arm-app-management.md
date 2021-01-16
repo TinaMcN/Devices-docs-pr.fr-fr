@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/12/2020
+ms.date: 1/15/2021
 ms.reviewer: jessko
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: 7d82a24126798c20f11c51074f6099e1363c257f
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.openlocfilehash: 30f7cd7d861b6497cd536aeb0ea348b6946a2674
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114622"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271358"
 ---
 # Déploiement, gestion et maintenance de SurfaceProX
 
@@ -42,7 +42,7 @@ Les entreprises qui utilisent déjà des solutions modernes de gestion, de sécu
 
 ## Considérations relatives au déploiement basé sur des images
 
-Microsoft Deployment Toolkit (MDT) et MicrosoftEndpoint Configuration Manager (anciennement SystemCenter Configuration Manager) ne prennent pas en charge Surface Pro X actuellement pour le déploiement du système d’exploitation. Les clients effectuant un déploiement basé sur une image doivent envisager Surface Pro7 pendant qu’ils décident du bon moment pour passer aux solutions modernes de déploiement. 
+Microsoft Deployment Toolkit (MDT) et MicrosoftEndpoint Configuration Manager (anciennement SystemCenter Configuration Manager) ne prennent pas en charge Surface Pro X actuellement pour le déploiement du système d’exploitation. Les clients qui s’appuient sur un déploiement basé sur des images doivent envisager Surface Pro 7+ pendant qu’ils continuent d’évaluer le bon moment pour passer à des solutions de déploiement modernes. 
 
 ## Gestion des appareils Surface ProX
 
@@ -134,7 +134,7 @@ Les tableaux suivants indiquent la disponibilité des fonctionnalités clés sé
 
 | Fonctionnalité                                                           | (O/N) | Remarques                                                                                                                             |
 | ----------------------------------------------------------------- | --- | --------------------------------------------------------------------------------------------------------------------------------- |
-| WindowsAutopilot                                                 | Oui |                                                                                                                                   |
+| Windows Autopilot                                                 | Oui |                                                                                                                                   |
 | Prise en charge du démarrage réseau (PXE)                                    | Non  |                                                                                                                                   |
 | Concepteur de configuration Windows                                    | Non  | Non recommandé pour Surface Pro X.                                                                                                |
 | WinPE                                                             | Oui | Non recommandé pour Surface Pro X. Microsoft ne fournit pas le fichier.ISO et les pilotes nécessaires pour prendre en charge WinPE avec Surface Pro X. |
@@ -180,7 +180,7 @@ Les tableaux suivants indiquent la disponibilité des fonctionnalités clés sé
 
 ### Puis-je déployer Surface Pro X avec MDT ou Endpoint ConfigurationManager?
 
-Microsoft Deployment Toolkit (MDT) et MicrosoftEndpoint ConfigurationManager ne prennent pas en charge actuellement Surface Pro X pour le déploiement du système d’exploitation. Les clients qui utilisent un déploiement basé sur une image doivent envisager Surface Pro 7 pendant qu’ils décident du bon moment pour passer au cloud.
+Microsoft Deployment Toolkit (MDT) et Microsoft Endpoint Configuration Manager ne prennent pas en charge Surface Pro X actuellement  pour le déploiement du système d’exploitation. Les clients qui s’appuient sur un déploiement basé sur des images doivent envisager Surface Pro 7+ pendant qu’ils continuent d’évaluer le bon moment pour passer au cloud.
 
 ### Comment puis-je déployer Surface Pro X?
 

@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 01/11/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: b01c9e2a98e6b8064c3fd27c1b4909174872cbcb
-ms.sourcegitcommit: 00b6b59bd110633b6ae46345a592b72d68cc5121
+ms.openlocfilehash: 65a1784fbbcea8861d6d9ed7a160cbe39d4d4d6c
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "11255785"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271588"
 ---
 # Installer et monter le Surface Hub 2S 85»
 
@@ -24,7 +24,7 @@ Cet article fournit des conseils pour l’installation physique de Microsoft Sur
 
 ## Vidéo d’unboxing
 
-Une vidéo complémentaire pour l’installation de Surface Hub 2S 85 » est désormais disponible. Avant de commencer, consultez La boîte de réception et l’installation du [Surface Hub 2S 85](https://aka.ms/Hub2S85Unboxing)».
+Une vidéo complémentaire pour le déplacement et l’installation de Surface Hub 2S 85 » est désormais disponible. Avant de commencer, consultez [Microsoft Surface Hub 2S 85 " - Unboxing et Set Up](https://aka.ms/Hub2S85Unboxing). 
 
 ## Suivre toutes les précautions de sécurité 
 
@@ -56,11 +56,11 @@ Une vidéo complémentaire pour l’installation de Surface Hub 2S 85 » est dé
  ![Supprimer l’empaquetage externe noir](images/hub85mount2a.png) <br>
 
 > [!Caution]
-> Ne supprimez pas de papier à sable, de bandes ou de matériaux d’empaquetage blancs tant que le Hub 2S n’est pas adjacent au panier ou au montage du mur sur lequel il sera placé.
+> Ne supprimez pas les matériaux blancs, à l’intérieur d’une roue ou d’empaquetage tant que le Hub 2S n’est pas adjacent au panier ou au montage du mur sur lequel il sera placé.
 D’autres supports de réparation sont fournis dans la petite zone située sous la main de l’arrière-plan du package. Les supports de bordure d’origine ou de remplacement doivent être en place avant le déplacement et en particulier avant de faire pivoter l’appareil et son package de protection.
  
 
-## 3. Supprimer le cadre d’empaquetage interne de la palette
+## 3. Supprimer le cadre de packaging interne de la palette
 
 1. Déplacer l’assembly de palette vers un emplacement géographique.
 2. Volant de verrouillage (4).
@@ -76,7 +76,7 @@ D’autres supports de réparation sont fournis dans la petite zone située sous
  ![Faire pivoter le cadre d’empaquetage pour l’ajuster](images/hub85mount4a.png) <br>
 
 > [!NOTE]
-> La palette à molette est adaptée à l’encombrement du cadre interne et peut être utilisée tout au long du processus de livraison du site d’installation. L’élément de fin du cadre en forêt interne possède des plaques d’skid.
+> La palette à molette est adaptée à l’encombrement du cadre interne et peut être utilisée tout au long du processus de remise du site d’installation. L’élément de fin du cadre en forêt interne possède des plaques d’skid.
  
 ## 5. Supprimer de l’étage
 
@@ -86,7 +86,7 @@ D’autres supports de réparation sont fournis dans la petite zone située sous
  ![Supprimer de l’étage](images/hub85mount5a.png) <br>
 
 
-## 6. Remettre le Surface Hub 85» sur une palette
+## 6. Remettre le Surface Hub 85» sur palette
 
 1. À l’aide d’une extrémité biseauté, faites pivoter vers la palette.
 2. Déverrouiller les volants (x4).
@@ -99,10 +99,10 @@ D’autres supports de réparation sont fournis dans la petite zone située sous
 1. Placez Hub 2S devant le montage ou le panier.
 2. Volant de verrouillage (x4).
 3. Glisser l’empaquetage interne hors palette.
-4. Coupez les 3 anses.
+4. Coupez les 3 luxiers.
 5. Supprimer le capot.
 6. Supprimez les morceaux blancs.
-7. Supprimez le kit d’accueil.
+7. Supprimer le kit d’accueil.
 8. Supprimez l’élément de fin en le ôtant verticalement.
 9. Supprimez les pièces de fin de forêt par les quatre mains qui se resserrent sur la base du forêt.
 
@@ -123,7 +123,7 @@ D’autres supports de réparation sont fournis dans la petite zone située sous
 
 13. Attaches de tension élastiques élastiques (x2).
 14. Supprimez la couverture de l’ôte.
-15. Notez les emplacements de placement des stylets (x2), de l’appareil photo et du cordon d’alimentation.
+15. Emplacements de note pour le placement des stylets (x2), de l’appareil photo et du cordon d’alimentation.
 16. Attachez les stylets (x2), l’appareil photo et le cordon d’alimentation.
 17. Supprimer les étiquettes de ling (x4).
 18. Appuyez sur le bouton d’alimentation en bas à droite. L’installation est maintenant terminée.
@@ -149,7 +149,7 @@ Si vous utilisez d’autres options de montage (non -Steelcase), vous aurez beso
 
 ## Kit de réparation complémentaire
 
-Le kit attaché à l’arrière,en bas à droite, contient un ensemble supplémentaire de matériels de mise en bande à l’intérieur de l’empaquetage.
+Le kit attaché à l’arrière-droite, en bas à droite, contient un ensemble supplémentaire de matériels de mise en bande à l’intérieur de l’empaquetage.
 
 ## Annexe 
 
@@ -177,12 +177,12 @@ Le kit attaché à l’arrière,en bas à droite, contient un ensemble suppléme
 >- Assurez-vous que le système de montage proposé prendra en charge le poids de cet appareil.
 >- Utilisez uniquement le matériel de montage fourni avec le montage du système.
 >- Assurez-vous que toutes les garanties sont renforcées en toute sécurité conformément aux instructions du fabricant.
->- Ne relâchez pas l’appareil tant que vous n’êtes pas certain que l’appareil est entièrement en engagement avec les points de pièce jointe du système de montage.
+>- Ne relâchez pas l’appareil tant que vous n’êtes pas certain que l’appareil est entièrement en engagement avec les points de pièces jointes système de montage.
 >- Microsoft recommande d’utiliser des paniers ou des systèmes de montage de mur conçus pour être utilisés avec votre appareil. Microsoft n’est pas responsable des dommages, des dommages, des dommages ou des dommages causés par l’utilisation d’autres systèmes de montage.
 
 > [!WARNING]
 >  **Risques invisibles dans les murs ou autres surfaces de montage** <br>
-Les murs et d’autres surfaces de montage peuvent contenir des fils électriques, des lignes de bus et d’autres risques ou obstacles invisibles. L’opération couper ou l’exploration dans un danger invisible peut provoquer de graves problèmes personnels.
+Les murs et d’autres surfaces de montage peuvent contenir des fils électriques, des lignes de bus et d’autres risques ou obstacles invisibles. L’opération couper ou l’exploration dans un danger invisible peut entraîner de graves problèmes personnels ou de santé.
 Il incombe au programme d’installation de localiser les risques invisibles avant et d’éviter ces risques pendant l’installation. Évaluez l’environnement de montage et assurez-vous toujours qu’il n’y a aucun risque invisible dans le mur ou toute autre surface de montage avant l’exploration et/ou la coupe.
 
 > [!WARNING]

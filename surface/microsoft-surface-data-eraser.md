@@ -14,13 +14,13 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 audience: itpro
-ms.date: 10/12/2020
-ms.openlocfilehash: 8b201ce45533c28740a7c6bdfcb56688ada25718
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.date: 01/15/2021
+ms.openlocfilehash: 2ae1b7b3af93c1449b96bf6307c830a928c1f0a7
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114702"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271408"
 ---
 # Microsoft Surface Data Eraser
 
@@ -36,12 +36,12 @@ Appareils Surface compatibles:
 
 - Surface Book (toutes éditions)
 - Surface Go (toutes éditions)
-- Surface Pro X (toutes éditions)
+- Surface Pro X (toutes les éditions)
 - Surface Laptop (toutes éditions)
 - Surface Laptop Go
 - Surface Studio (toutes éditions)
-- Surface Pro 2 et version ultérieure
-- Windows 10 professionnel et entreprise sur surface Hub 2
+- Surface Pro 2 et les ultérieures
+- Windows 10 Professionnel et Entreprise sur Surface Hub 2
 
 Voici quelques scénarios durant lesquels l’outil Microsoft Surface Data Eraser peut s’avérer utile:
 
@@ -160,15 +160,22 @@ Une fois que vous avez créé une clé USB Microsoft Surface Data Eraser, vous p
 
 MicrosoftSurface Data Eraser est régulièrement mis à jour par Microsoft. Pour plus d’informations sur les modifications apportées dans chaque nouvelle version, consultez les rubriques suivantes:
 
+### 2.34.139.0
+*Date de publication : 15 janvier 2021*
+
+Cette version de Surface Data Eraser:
+
+- Inclut des correctifs de bogues
+
 ### 3.33.139
-*Date de publication: 9 septembre 2020*
+*Date de publication : 9 septembre 2020*
 
-Cette version de l’outil de suppression de données en surface inclut des corrections de bogues et prend en charge les éléments suivants: 
+Cette version de Surface Data Eraser inclut des correctifs de bogues et ajoute la prise en charge des : 
 
-- Architecture nouvelle conception pour réduire les besoins en matière de mise à jour avec les nouvelles versions du produit
+- Nouvelle conception de l’architecture pour réduire la nécessité d’une mise à jour avec de nouvelles mises à jour de produits
 - Notification disponible pour les nouvelles mises à jour d’outils
 - Ajouts de télémétrie
-- Windows 10 professionnel et entreprise sur surface Hub 2
+- Windows 10 Professionnel et Entreprise sur Surface Hub 2
 
 
 ### 3.30.139
@@ -180,16 +187,21 @@ Cette version de Surface Data Eraser prend désormais en charge:
 - Nouveau SSD dans SurfaceGo
 
 ### 3.28.137
-*Date de publication: 11 novembre 2019* Cette version de Surface Data Eraser:
+*Date de publication : 11 novembre 2019*
+
+Cette version de Surface Data Eraser:
 
 - Inclut des correctifs de bogues
 
 ### Version 3.21.137
-*Date de publication: 21 oct 2019*: cette version de Surface Data Eraser est compilée pour x86 et prend également en charge les appareils suivants:
+*Date de publication : 21 octobre 2019*
 
-- Prise en charge du Surface Pro 7, du Surface Pro X et du Surface Laptop 3
+Cette version de Surface Data Eraser est compilée pour x86 et ajoute la prise en charge des appareils suivants :
+
+- Surface Pro 7, Surface Pro X et Surface Laptop 3
 
 ### Version 3.2.78.0
+
 *Date de publication: 4 décembre 2018*
 
 Cette version de Surface Data Eraser:
@@ -198,6 +210,7 @@ Cette version de Surface Data Eraser:
 
 
 ### Version 3.2.75.0
+
 *Date de publication: 12novembre2018*
 
 Cette version de Surface Data Eraser:
@@ -206,6 +219,7 @@ Cette version de Surface Data Eraser:
 - Résolution des problèmes liés à la carte SD
 
 ### Version 3.2.69.0
+
 *Date de publication: 12 octobre2018*
 
 Cette version de Surface Data Eraser prend désormais en charge les produits suivants:
@@ -214,18 +228,21 @@ Cette version de Surface Data Eraser prend désormais en charge les produits sui
 - Surface Laptop2
 
 ### Version 3.2.68.0
+
 Cette version de Microsoft Surface Data Eraser prend désormais en charge les produits suivants:
 
 - SurfaceGo
 
 
 ### Version 3.2.58.0
+
 Cette version de Microsoft Surface Data Eraser prend désormais en charge les produits suivants:
 
 - Périphériques de stockage supplémentaires (lecteurs) pour les appareils Surface Pro et Surface Laptop
 
 
 ### Version3.2.46.0
+
 Cette version de Microsoft Surface Data Eraser prend désormais en charge les produits suivants:
 
 - SurfacePro avec LTE Advanced

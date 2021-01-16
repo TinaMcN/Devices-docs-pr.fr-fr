@@ -1,7 +1,7 @@
 ---
-title: Mode de gestion des entreprises de surface (surface)
-description: Découvrez comment cette fonctionnalité des appareils surface avec la surface UEFI vous permet de sécuriser et de gérer les paramètres de microprogramme au sein de votre organisation.
-keywords: UEFI, configurer, microprogramme, sécurité SEMM
+title: Surface Enterprise Management Mode (Surface)
+description: Découvrez comment cette fonctionnalité des appareils Surface avec l’uefi Surface vous permet de sécuriser et de gérer les paramètres de microprogramme au sein de votre organisation.
+keywords: uefi, configurer, microprogramme, sécurisé, semm
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
@@ -13,73 +13,73 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 audience: itpro
-ms.date: 10/12/2020
-ms.openlocfilehash: 463759d2dd01b9333d10a66c1781055f4a5217ac
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.date: 01/15/2021
+ms.openlocfilehash: e6f81639253c646f5d3956243a80f4d61c91028a
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114642"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271418"
 ---
-# Microsoft surface Enterprise Management mode
+# Mode de gestion Microsoft Surface Enterprise
 
-Le mode Microsoft surface Enterprise Management (SEMM) est une fonctionnalité des appareils surface dotés de surface UEFI qui vous permet de sécuriser et de gérer les paramètres du microprogramme au sein de votre organisation. Avec SEMM, les professionnels de l’informatique peuvent préparer des configurations de paramètres UEFI et les installer sur un appareil surface. Outre la possibilité de configurer les paramètres UEFI, SEMM utilise également un certificat pour protéger la configuration contre toute falsification ou suppression non autorisée. SEMM est une obligation d’être en mesure de migrer un surface Hub 2 vers Windows 10 professionnel ou entreprise.
-
->[!NOTE]
->SEMM est uniquement disponible sur les appareils dotés d’un microprogramme surface UEFI. Il s’agit de la plupart des appareils surface, y compris les références de surface Pro 7, de surface Pro X, de surface Hub 2 et de surface Laptop 3 sur le processeur Intel, et de surface Laptop Go. SEMM n’est pas pris en charge sur la référence de 15 pouces surface pour le processeur AMD (disponible uniquement pour les points de vente). 
-
-Lorsque les appareils de surface sont configurés par SEMM et protégés par le certificat SEMM, ils sont considérés comme *inscrits* dans SEMM. Lorsque le certificat SEMM est supprimé et que le contrôle des paramètres UEFI est retourné à l’utilisateur de l’appareil, le périphérique surface est considéré comme non *inscrit* dans SEMM.
-
-Il existe deux options d’administration que vous pouvez utiliser pour gérer SEMM et inscrire les appareils surface: un outil autonome ou une intégration avec Microsoft Endpoint Configuration Manager. L’outil autonome SEMM, appelé Microsoft surface UEFI Configurator, est décrit dans cet article. Pour plus d’informations sur la gestion de SEMM avec Microsoft Endpoint Configuration Manager, voir [utiliser Microsoft Endpoint Configuration Manager pour gérer les appareils avec SEMM](https://technet.microsoft.com/itpro/surface/use-system-center-configuration-manager-to-manage-devices-with-semm).
-
-
-## Configurateur Microsoft surface UEFI
-
-L’espace de travail principal de SEMM est Microsoft surface UEFI Configurator, comme illustré dans la figure 1. Le programme de configuration de Microsoft surface UEFI est un outil qui permet de créer des packages Windows Installer (. msi) ou des images WinPE utilisés pour inscrire, configurer et désinscrire SEMM sur un appareil surface. Ces packages contiennent un fichier de configuration dans lequel les paramètres de UEFI sont spécifiés. Les packages SEMM contiennent également un certificat, qui est installé et stocké dans le microprogramme et utilisé pour vérifier la signature des fichiers de configuration avant l’application des paramètres UEFI.
+Microsoft Surface Enterprise Management Mode (SEMM) est une fonctionnalité des appareils Surface avec UEFI Surface qui vous permet de sécuriser et de gérer les paramètres de microprogramme au sein de votre organisation. Avec SEMM, les professionnels de l’informatique peuvent préparer les configurations des paramètres UEFI et les installer sur un appareil Surface. Outre la possibilité de configurer les paramètres UEFI, SEMM utilise également un certificat pour protéger la configuration contre toute falsification ou suppression non autorisée. SEMM est une condition requise pour pouvoir migrer un Surface Hub 2S vers Windows 10 Professionnel et Entreprise.
 
 >[!NOTE]
->Vous pouvez désormais utiliser le configurateur surface UEFI et SEMM pour gérer les ports sur surface Dock 2. Pour en savoir plus, voir [Secure surface Dock 2 ports avec SEMM](secure-surface-dock-ports-semm.md).
+>SEMM est disponible uniquement sur les appareils avec le microprogramme UEFI Surface. Cela comprend la plupart des autres appareils Surface, notamment surface Pro 7+, Surface Pro X, Surface Hub 2S et SSO commerciales Surface Laptop 3 avec un processeur Intel et Surface Laptop Go. SEMM n’est pas pris en charge sur la référence 15 pouces Surface Laptop 3 avec processeur AMD (disponible uniquement en tant que référence SKU au détail). 
 
-![Configurateur Microsoft surface UEFI](images/surface-ent-mgmt-fig1-uefi-configurator.png "Microsoft Surface UEFI Configurator")
+Lorsque les appareils Surface sont configurés par SEMM et sécurisés avec le certificat SEMM, ils sont considérés comme inscrits *à* SEMM. Lorsque le certificat SEMM est supprimé et que le contrôle des paramètres UEFI est renvoyé à l’utilisateur de l’appareil, l’appareil Surface est considéré comme non inscrit *dans* SEMM.
 
-*Figure1. Configurateur Microsoft surface UEFI*
-
-
-Vous pouvez utiliser l’outil de configuration de Microsoft surface UEFI en trois modes:
-
-* [Package de configuration de surface UEFI](#configuration-package). Utilisez ce mode pour créer un package de configuration de surface UEFI afin d’inscrire un appareil surface dans SEMM et de configurer les paramètres UEFI sur des appareils inscrits.
-* [Package de réinitialisation UEFI surface](#reset-package). Utilisez ce mode pour désinscrire un appareil surface à partir de SEMM.
-* [Demande de récupération de surface UEFI](#recovery-request). Utilisez ce mode pour répondre à une demande de récupération et annuler l’inscription d’un appareil surface à partir de SEMM où une opération de réinitialisation du package échoue.
+Il existe deux options d’administration que vous pouvez utiliser pour gérer SEMM et inscrire des appareils Surface : un outil autonome ou une intégration avec Microsoft Endpoint Configuration Manager. L’outil autonome SEMM, appelé Configurateur UEFI Microsoft Surface, est décrit dans cet article. Pour plus d’informations sur la gestion de SEMM avec Microsoft Endpoint Configuration Manager, voir Utiliser Microsoft Endpoint Configuration Manager pour gérer les appareils avec [SEMM.](https://technet.microsoft.com/itpro/surface/use-system-center-configuration-manager-to-manage-devices-with-semm)
 
 
-#### Télécharger le configurateur Microsoft surface UEFI
+## Configurateur UEFI Microsoft Surface
 
-Vous pouvez télécharger Microsoft surface configurateur à partir de la page [Outils surface pour cette application](https://www.microsoft.com/download/details.aspx?id=46703) dans le centre de téléchargement Microsoft.
+L’espace de travail principal de SEMM est Microsoft Surface UEFI Configurator, comme le montre la figure 1. Microsoft Surface UEFI Configurator est un outil utilisé pour créer des packages Windows Installer (.msi) ou des images WinPE utilisées pour inscrire, configurer et désinscrire SEMM sur un appareil Surface. Ces packages contiennent un fichier de configuration dans lequel les paramètres de l’UEFI sont spécifiés. Les packages SEMM contiennent également un certificat, qui est installé et stocké dans le microprogramme et utilisé pour vérifier la signature des fichiers de configuration avant l’application des paramètres UEFI.
+
+>[!NOTE]
+>Vous pouvez désormais utiliser le configurateur UEFI Surface et seMM pour gérer les ports sur la station d’accueil Surface 2. Pour en savoir plus, [consultez les ports Secure Surface Dock 2 avec SEMM.](secure-surface-dock-ports-semm.md)
+
+![Configurateur UEFI Microsoft Surface](images/surface-ent-mgmt-fig1-uefi-configurator.png "Microsoft Surface UEFI Configurator")
+
+*Figure1. Configurateur UEFI Microsoft Surface*
+
+
+Vous pouvez utiliser l’outil Microsoft Surface UEFI Configurator en trois modes :
+
+* [Package de configuration UEFI Surface.](#configuration-package) Utilisez ce mode pour créer un package de configuration UEFI Surface pour inscrire un appareil Surface dans SEMM et pour configurer les paramètres UEFI sur les appareils inscrits.
+* [Surface UEFI Reset Package](#reset-package). Utilisez ce mode pour désinscrire un appareil Surface de SEMM.
+* [Demande de récupération UEFI Surface.](#recovery-request) Utilisez ce mode pour répondre à une demande de récupération pour désinscrire un appareil Surface de SEMM en cas d’échec d’une opération de réinitialisation du package.
+
+
+#### Télécharger Microsoft Surface UEFI Configurator
+
+Vous pouvez télécharger microsoft Surface UEFI Configurator à partir de la page [Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703) du Centre de téléchargement Microsoft.
 
 ### Package de configuration
 
-Les packages de configuration de surface UEFI constituent le principal mécanisme de mise en œuvre et de gestion des SEMM sur les appareils surface. Ces packages contiennent un fichier de configuration des paramètres UEFI spécifiés lors de la création du package dans le programme de configuration de Microsoft surface UEFI et un fichier de certificat, comme illustré dans la figure 2. Lorsqu’un package de configuration est exécuté pour la première fois sur un appareil surface qui n’est pas déjà inscrit dans SEMM, il met en service le fichier de certificat dans le microprogramme de l’appareil et inscrit le périphérique dans SEMM. Lors de l’inscription d’un appareil dans SEMM, vous êtes invité à confirmer l’opération en fournissant les deux derniers chiffres de l’empreinte numérique du certificat SEMM avant que le fichier de certificat ne soit stocké et que l’inscription puisse aboutir. Ce message de confirmation nécessite que l’utilisateur puisse se présenter physiquement auprès de l’appareil au moment de l’inscription pour effectuer la confirmation.
+Les packages de configuration UEFI Surface sont le mécanisme principal pour implémenter et gérer SEMM sur les appareils Surface. Ces packages contiennent un fichier de configuration des paramètres UEFI spécifiés lors de la création du package dans microsoft Surface UEFI Configurator et un fichier de certificat, comme le montre la figure 2. Lorsqu’un package de configuration est exécuté pour la première fois sur un appareil Surface qui n’est pas déjà inscrit au SEMM, il a mis en place le fichier de certificat dans le microprogramme de l’appareil et inscrit l’appareil dans SEMM. Lorsque vous inscrivez un appareil dans SEMM, vous êtes invité à confirmer l’opération en fournissant les deux derniers chiffres de l’empreinte numérique du certificat SEMM avant que le fichier de certificat ne soit stocké et que l’inscription puisse se terminer. Cette confirmation nécessite qu’un utilisateur soit physiquement présent sur l’appareil au moment de l’inscription pour effectuer la confirmation.
 
 ![Sécuriser un package de configuration SEMM avec un certificat](images/surface-ent-mgmt-fig2-securepackage.png "Secure a SEMM configuration package with a certificate")
 
 *Figure2. Sécuriser un package de configuration SEMM avec un certificat*
 
-Pour plus d’informations sur la configuration requise pour le certificat SEMM, voir la section [conditions de certification du mode de gestion des entreprises de surface](#surface-enterprise-management-mode-certificate-requirements) dans cet article.
+Pour plus [d’informations sur](#surface-enterprise-management-mode-certificate-requirements) les conditions requises pour le certificat SEMM, voir la section sur les certificats requis pour le mode Gestion de l’entreprise Surface de cet article.
 
 >[!NOTE]
->Vous pouvez également spécifier un mot de passe UEFI avec SEMM requis pour afficher les pages de **sécurité**, les **appareils**, la **configuration de démarrage**ou les pages de gestion d' **entreprise** de surface UEFI.
+>Vous pouvez également spécifier un mot de passe UEFI avec SEMM requis pour afficher les **pages** **Sécurité,** **Appareils,** **Configuration**de démarrage ou Gestion de l’entreprise de Surface UEFI.
 
-Une fois qu’un appareil est inscrit dans SEMM, le fichier de configuration est lu et les paramètres spécifiés dans le fichier sont appliqués à UEFI. Lorsque vous exécutez un package de configuration sur un appareil déjà inscrit dans SEMM, la signature du fichier de configuration est comparée au certificat stocké dans le microprogramme du périphérique. Si la signature ne correspond pas, aucune modification n’est appliquée à l’appareil.
+Une fois qu’un appareil est inscrit au seMM, le fichier de configuration est lu et les paramètres spécifiés dans le fichier sont appliqués à UEFI. Lorsque vous exécutez un package de configuration sur un appareil déjà inscrit au seMM, la signature du fichier de configuration est vérifiée par rapport au certificat stocké dans le microprogramme de l’appareil. Si la signature ne correspond pas, aucune modification n’est appliquée à l’appareil.
 
-### Activer ou désactiver des appareils dans surface UEFI avec SEMM
+### Activer ou désactiver des appareils dans l’UEFI Surface avec SEMM
 
-La liste suivante répertorie tous les appareils disponibles que vous pouvez gérer dans SEMM:
+La liste suivante présente tous les appareils disponibles que vous pouvez gérer dans SEMM :
 
-* Port USB d’amarrage
-* Audio intégré
+* Port USB d’accueil
+* Audio à l’bord
 * DGPU
 * Type Cover
-* Carte micro SD
+* Carte Micro SD
 * Caméra frontale
 * Caméra arrière
 * Caméra infrarouge, pour Windows Hello
@@ -88,99 +88,102 @@ La liste suivante répertorie tous les appareils disponibles que vous pouvez gé
 *              LTE           
 
  >[!NOTE]
->Les appareils intégrés qui s’affichent dans la page périphériques UEFI peuvent varier en fonction de votre appareil ou de votre environnement d’entreprise. Par exemple, la page périphériques UEFI n’est pas prise en charge sur surface Pro X. LTE apparaît uniquement sur les appareils dotés de LTE. 
+>Les appareils intégrés qui apparaissent dans la page Appareils UEFI peuvent varier en fonction de votre appareil ou de votre environnement d’entreprise. Par exemple, la page Appareils UEFI n’est pas prise en charge sur Surface Pro X ; LTE apparaît uniquement sur les appareils équipés de LTE. 
 ### Configurer les paramètres avancés avec SEMM
 **Tableau1. Paramètres avancés**
 
 | Paramètre                            | Description                                                                                                                                                                                        |
 | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| IPv6 pour démarrage PXE                  | Vous permet de gérer la prise en charge du protocole IPv6 pour le démarrage PXE. Si vous ne configurez pas ce paramètre, la prise en charge D’ipv6 pour le démarrage PXE est désactivée.                                                                               |
-| Autre démarrage                     | Vous permet de gérer l’utilisation d’un autre ordre de démarrage pour démarrer directement sur un appareil USB ou Ethernet en appuyant sur le bouton du volume et sur le bouton d’alimentation lors du démarrage. Si vous ne configurez pas ce paramètre, le démarrage alternatif est activé. |
-| Verrou d’ordre de démarrage                    | Vous permet de verrouiller l’ordre de démarrage pour empêcher les modifications. Si vous ne configurez pas ce paramètre, le verrouillage du bon de démarrage est désactivé.                                                                                                        |
+| IPv6 pour démarrage PXE                  | Vous permet de gérer la prise en charge d’IPv6 pour le démarrage PXE. Si vous ne configurez pas ce paramètre, la prise en charge du démarrage PXE par IPv6 est désactivée.                                                                               |
+| Autre démarrage                     | Vous permet de gérer l’utilisation d’un autre ordre de démarrage pour démarrer directement sur un périphérique USB ou Ethernet en appuyant à la fois sur le bouton Baisser le volume et sur le bouton d’alimentation pendant le démarrage. Si vous ne configurez pas ce paramètre, le démarrage alternatif est activé. |
+| Verrou d’ordre de démarrage                    | Vous permet de verrouiller l’ordre de démarrage pour empêcher les modifications. Si vous ne configurez pas ce paramètre, le verrouillage de l’ordre de démarrage est désactivé.                                                                                                        |
 | Démarrage USB                           | Vous permet de gérer le démarrage sur des périphériques USB. Si vous ne configurez pas ce paramètre, le démarrage USB est activé.                                                                                                                 |
 | Pile réseau                      | Vous permet de gérer les paramètres de démarrage de la pile réseau. Si vous ne configurez pas ce paramètre, la possibilité de gérer les paramètres de démarrage de la pile réseau est désactivée.                                                                                                           |
-| Alimentation automatique                      | Vous permet de gérer les paramètres de démarrage automatique de l’alimentation. Si vous ne configurez pas ce paramètre, la fonction d’alimentation automatique est activée.                                                                                                        |
-| Multi-Threading simultané (SMT) | Vous permet de gérer le multithreading simultané (SMT) pour activer ou désactiver l’hyperthreading. Si vous ne configurez pas ce paramètre, SMT est activé.                                                  |
-|Activer le nombre maximal de batteries| Vous permet de gérer les fonctionnalités de limite de batterie. Si vous ne configurez pas ce paramètre, la limite de batterie est activée. |
-| Sécurité                           | Affiche la page de **sécurité** de surface UEFI. Si vous ne configurez pas ce paramètre, la page sécurité s’affiche.                                                                                                                 |
-| Périphériques                            | Affiche la page **périphériques** UEFI. Si vous ne configurez pas ce paramètre, la page périphériques s’affiche.                                                                                                                     |
-| Démarrage                               | Affiche la page de **démarrage** de surface UEFI. Si vous ne configurez pas ce paramètre, la page de démarrage s’affiche.                                                                                                                                                            |
-| DateTime                           | Affiche la page **DateTime** UEFI surface. Si vous ne configurez pas ce paramètre, la page DateHeure s’affiche.                                                                                                                |
-| EnableOSMigration                          | Vous permet de migrer surface Hub 2 de l’équipe Windows 10 vers Windows 10 professionnel ou entreprise. Si vous ne configurez pas ce paramètre, les appareils surface Hub 2 peuvent uniquement exécuter le système d’exploitation Windows 10.   Remarque: le double démarrage entre l’équipe Windows 10 et Windows 10 professionnel entreprise n’est pas disponible sur surface Hub 2.                                                                                                           |
+| Mise sous alimentation automatique                      | Vous permet de gérer les paramètres de démarrage d’alimentation automatique. Si vous ne configurez pas ce paramètre, l’alimentation automatique est activée.                                                                                                        |
+| SMT (Simultaneous Multi-Threading) | Vous permet de gérer l’outil SMT (Simultaneous Multi-Threading) pour activer ou désactiver l’hyperthreading. Si vous ne configurez pas ce paramètre, l’environnement SMT est activé.                                                  |
+|Activer la limite de batterie| Vous permet de gérer la fonctionnalité de limite de batterie. Si vous ne configurez pas ce paramètre, la limite de la batterie est activée. |
+| Sécurité                           | Affiche la **page** Sécurité UEFI Surface. Si vous ne configurez pas ce paramètre, la page Sécurité s’affiche.                                                                                                                 |
+| Périphériques                            | Affiche la **page** Appareils UEFI Surface. Si vous ne configurez pas ce paramètre, la page Appareils s’affiche.                                                                                                                     |
+| Démarrage                               | Affiche la **page** de démarrage UEFI Surface. Si vous ne configurez pas ce paramètre, la page de démarrage s’affiche.                                                                                                                                                            |
+| DateTime                           | Affiche la page **DateTime** UEFI Surface. Si vous ne configurez pas ce paramètre, la page DateTime s’affiche.                                                                                                                |
+| EnableOSMigration                          | Permet de migrer le Surface Hub 2 de Windows 10 Team vers Windows 10 Professionnel ou Entreprise. Si vous ne configurez pas ce paramètre, les appareils Surface Hub 2 peuvent uniquement exécuter windows 10 Team OS.   Remarque : le double démarrage entre Windows 10 Team et Windows 10 Professionnel/Entreprise n’est pas disponible sur Surface Hub 2.                                                                                                           |
 
 
 >[!NOTE]
->Lorsque vous créez un package de configuration SEMM, deux caractères s’affichent dans la page **réussite** , comme illustré dans la figure 3.
+>Lorsque vous créez un package de configuration SEMM, deux caractères sont affichés sur la **page** Réussite, comme le montre la figure 3.
 
 ![Affichage de l’empreinte numérique du certificat](images/surface-ent-mgmt-fig5-success.png "Certificate thumbprint display")
 
-*Figure3. Afficher les deux derniers caractères de l’empreinte numérique du certificat dans la page réussite*
+*Figure3. Affichage des deux derniers caractères de l’empreinte numérique du certificat sur la page Réussite*
 
-Ces caractères sont les deux derniers caractères de l’empreinte numérique du certificat qui doivent être écrits ou enregistrés. Les caractères sont requis pour confirmer l’inscription dans SEMM sur un appareil surface, comme illustré dans la figure 4.
+Ces caractères sont les deux derniers caractères de l’empreinte numérique du certificat et doivent être écrits ou enregistrés. Les caractères sont requis pour confirmer l’inscription à SEMM sur un appareil Surface, comme illustré à la Figure 4.
 
-![Confirmation d’inscription dans SEMM](images/surface-ent-mgmt-fig6-enrollconfirm.png "Enrollment confirmation in SEMM")
+![Confirmation de l’inscription dans SEMM](images/surface-ent-mgmt-fig6-enrollconfirm.png "Enrollment confirmation in SEMM")
 
-*Figure4. Confirmation d’inscription dans SEMM avec l’empreinte numérique du certificat SEMM*
+*Figure4. Confirmation de l’inscription dans SEMM avec l’empreinte du certificat SEMM*
 
 >[!NOTE]
->Les administrateurs ayant accès au fichier de certificat (. pfx) peuvent lire l’empreinte numérique à tout moment en ouvrant le fichier. pfx dans CertMgr. Pour afficher l’empreinte numérique avec CertMgr, suivez ce processus:
->1. Cliquez avec le bouton droit sur le fichier. pfx, puis cliquez sur **ouvrir**.
+>Les administrateurs ayant accès au fichier de certificat (.pfx) peuvent lire l’empreinte numérique à tout moment en ouvrant le fichier .pfx dans CertMgr. Pour afficher l’empreinte numérique avec CertMgr, suivez ce processus :
+>1. Cliquez avec le bouton droit sur le fichier .pfx, puis cliquez sur **Ouvrir.**
 >2. Développez le dossier dans le volet de navigation.
 >3. Cliquez sur **Certificats**.
->4. Cliquez avec le bouton droit sur votre certificat dans le volet principal, puis cliquez sur **ouvrir**.
->5. Cliquez sur l’onglet **Détails** .
->6. **Les** **Propriétés ne** doivent être sélectionnées que dans le menu déroulant **Afficher** .
->7. Sélectionnez l' **empreinte**de champ.
+>4. Cliquez avec le bouton droit sur votre certificat dans le volet principal, puis cliquez sur **Ouvrir.**
+>5. Cliquez sur **l’onglet Détails.**
+>6. **Toutes** ou **propriétés uniquement** doivent être sélectionnées dans **le** menu déroulant Afficher.
+>7. Sélectionnez le **champ Empreinte numérique**.
 
-Pour inscrire un appareil surface dans SEMM ou appliquer la configuration UEFI à partir d’un package de configuration, il vous suffit d’exécuter le fichier. msi doté de privilèges d’administration sur le périphérique surface prévu. Vous pouvez utiliser les technologies de déploiement d’application ou de déploiement du système d’exploitation, telles que le [Gestionnaire de configuration de point de terminaison Microsoft](https://technet.microsoft.com/library/mt346023) ou le [Kit de développement logiciel Microsoft Deployment](https://technet.microsoft.com/windows/dn475741). Lors de l’inscription d’un appareil dans SEMM, vous devez être présent physiquement pour confirmer l’inscription sur l’appareil. L’interaction utilisateur n’est pas requise lorsque vous appliquez une configuration à des appareils déjà inscrits dans SEMM.
+Pour inscrire un appareil Surface dans SEMM ou pour appliquer la configuration UEFI à partir d’un package de configuration, il vous suffit d’exécuter le fichier .msi avec des privilèges d’administration sur l’appareil Surface prévu. Vous pouvez utiliser des technologies de déploiement d’application ou de système d’exploitation telles que [Microsoft Endpoint Configuration Manager](https://technet.microsoft.com/library/mt346023) ou Microsoft Deployment [Shared Computer Toolkit](https://technet.microsoft.com/windows/dn475741). Lorsque vous inscrivez un appareil dans SEMM, vous devez être physiquement présent pour confirmer l’inscription sur l’appareil. L’interaction utilisateur n’est pas requise lorsque vous appliquez une configuration à des appareils déjà inscrits à SEMM.
 
-Pour obtenir une procédure pas à pas illustrant l’inscription d’un appareil surface dans SEMM ou l’application d’une configuration UEFI de surface à SEMM, voir [inscrire et configurer des appareils de surface avec SEMM](https://technet.microsoft.com/itpro/surface/enroll-and-configure-surface-devices-with-semm).
+Pour une étape pas à pas sur l’inscription d’un appareil Surface dans SEMM ou l’application d’une configuration UEFI Surface avec SEMM, voir Inscrire et configurer des appareils Surface avec [SEMM.](https://technet.microsoft.com/itpro/surface/enroll-and-configure-surface-devices-with-semm)
 
 ### Réinitialiser le package
 
-Un package de réinitialisation de surface UEFI est utilisé pour effectuer une seule tâche, pour annuler l’inscription d’un appareil surface à partir de SEMM. Le package de réinitialisation contient des instructions signées permettant de supprimer le certificat SEMM du microprogramme de l’appareil et de réinitialiser les paramètres UEFI par défaut. À l’instar d’un package de configuration UEFI de surface, un package de réinitialisation doit être signé avec le même certificat SEMM configuré sur le périphérique surface. Lorsque vous créez un package de réinitialisation SEMM, vous devez fournir le numéro de série de l’appareil surface que vous voulez réinitialiser. SEMM les packages de réinitialisation ne sont pas universels et sont spécifiques à un appareil.
+Un package de réinitialisation UEFI Surface est utilisé pour effectuer une seule tâche, à savoir désinscrire un appareil Surface de SEMM. Le package de réinitialisation contient des instructions signées pour supprimer le certificat SEMM du microprogramme de l’appareil et rétablir les paramètres UEFI par défaut. Comme un package de configuration UEFI Surface, un package de réinitialisation doit être signé avec le même certificat SEMM que celui qui est provisioné sur l’appareil Surface. Lorsque vous créez un package de réinitialisation SEMM, vous devez fournir le numéro de série de l’appareil Surface que vous avez l’intention de réinitialiser. Les packages de réinitialisation SEMM ne sont pas universels et sont spécifiques à un appareil.
 
 ### Demande de récupération
 
-Dans certains cas, il est possible qu’il soit impossible d’utiliser un package de réinitialisation UEFI surface. (Par exemple, si Windows est devenu inutilisable sur le périphérique surface.) Dans ces scénarios, vous pouvez désinscrire le périphérique surface d’SEMM via la page de gestion de l' **entreprise** de surface UEFI (illustrée dans la figure 5) avec une opération de requête de récupération.
+Dans certains scénarios, il peut être impossible d’utiliser un package de réinitialisation UEFI Surface. (Par exemple, si Windows devient inutilisable sur l’appareil Surface.) Dans ces scénarios, vous pouvez désinscrire l’appareil Surface de SEMM via la **page** Gestion de l’entreprise de Surface UEFI (illustré à la figure 5) avec une opération de demande de récupération.
 
-![Lancer une demande de récupération de SEMM](images/surface-ent-mgmt-fig7-semmrecovery.png "Initiate a SEMM recovery request")
+![Lancer une demande de récupération SEMM](images/surface-ent-mgmt-fig7-semmrecovery.png "Initiate a SEMM recovery request")
 
-*Figure5. Lancer une demande de récupération de SEMM sur la page gestion d’entreprise*
+*Figure5. Lancer une demande de récupération SEMM sur la page Gestion de l’entreprise*
 
-Lorsque vous utilisez le processus sur la page **gestion d’entreprise** pour réinitialiser SEMM sur un appareil surface, vous avez reçu une demande de réinitialisation. Cette demande de réinitialisation peut être enregistrée sous forme de fichier sur un lecteur USB, copié en tant que texte ou lue en tant que code QR avec un appareil mobile pour être facilement appelé par courrier électronique ou message. Utilisez l’option de demande de réinitialisation du configurateur Microsoft surface UEFI pour charger un fichier de demande de réinitialisation ou entrez le texte de demande de réinitialisation ou le code QR. Le configurateur Microsoft surface UEFI génère un code de vérification qui peut être entré sur le périphérique surface. Si vous entrez le code sur le périphérique surface et cliquez sur **redémarrer**, l’appareil est désinscrit de SEMM. 
+Lorsque vous utilisez le processus de la page **Gestion** de l’entreprise pour réinitialiser SEMM sur un appareil Surface, une demande de réinitialisation vous est fournie. Cette demande de réinitialisation peut être enregistrée en tant que fichier sur un lecteur USB, copiée sous forme de texte ou lue en tant que code QR avec un appareil mobile pour être facilement envoyé par courrier électronique ou par message électronique. Utilisez l’option de demande de réinitialisation UEFI Microsoft Surface pour charger un fichier de demande de réinitialisation ou entrez le texte de la demande de réinitialisation ou le code QR. Microsoft Surface UEFI Configurator génère un code de vérification qui peut être entré sur l’appareil Surface. Si vous entrez le code sur l’appareil Surface et cliquez sur **Redémarrer,** l’appareil sera désinstauré de SEMM. 
 
 >[!NOTE]
 >Une demande de réinitialisation expire deux heures après sa création.
 
-Pour obtenir une procédure pas à pas illustrant l’inscription de périphériques surface à partir de SEMM, voir [désinscription des appareils de surface d’SEMM](https://technet.microsoft.com/itpro/surface/unenroll-surface-devices-from-semm).
+Pour obtenir une walkthrough pas à pas de la façon de désinscrire des appareils Surface à partir de SEMM, voir [Désinscrire](https://technet.microsoft.com/itpro/surface/unenroll-surface-devices-from-semm)les appareils Surface de SEMM.
 
-## Exigences de certificat en mode de gestion de surface entreprise
-L’utilisation de SEMM avec le configurateur Microsoft surface UEFI nécessite un certificat pour vérifier la signature de fichiers de configuration avant que les paramètres UEFI puissent être appliqués. Ce certificat vérifie qu’une fois qu’un appareil est inscrit dans SEMM, seuls les packages créés avec le certificat approuvé peuvent être utilisés pour modifier les paramètres de UEFI.
+## Conditions requises pour les certificats du mode Gestion de l’entreprise Surface
+L’utilisation de SEMM avec microsoft Surface UEFI Configurator nécessite un certificat pour vérifier la signature des fichiers de configuration avant que les paramètres UEFI ne soient appliqués. Ce certificat garantit qu’une fois qu’un appareil est inscrit au SEMM, seuls les packages créés avec le certificat approuvé peuvent être utilisés pour modifier les paramètres de l’UEFI.
 
 >[!NOTE]
->Le certificat SEMM est requis pour effectuer une modification apportée aux paramètres d’SEMM ou de surface UEFI sur des appareils surface inscrits. Si le certificat SEMM est endommagé ou perdu, SEMM ne peut pas être supprimé ou réinitialisé. Gérez votre certificat SEMM en conséquence avec une solution appropriée pour la sauvegarde et la récupération.
+>Le certificat SEMM est requis pour effectuer toute modification des paramètres SEMM ou SURFACE UEFI sur les appareils Surface inscrits. Si le certificat SEMM est endommagé ou perdu, seMM ne peut pas être supprimé ou réinitialisé. Gérez votre certificat SEMM en conséquence avec une solution appropriée pour la sauvegarde et la récupération.
 
-Les packages créés à l’aide de l’outil de configuration du configurateur Microsoft surface UEFI sont signés avec un certificat. Ce certificat vérifie qu’une fois qu’un appareil est inscrit dans SEMM, seuls les packages créés avec le certificat approuvé peuvent être utilisés pour modifier les paramètres de UEFI. 
+Les packages créés avec l’outil Microsoft Surface UEFI Configurator sont signés avec un certificat. Ce certificat garantit qu’une fois qu’un appareil est inscrit au SEMM, seuls les packages créés avec le certificat approuvé peuvent être utilisés pour modifier les paramètres de l’UEFI. 
 ### Paramètres de certificat recommandés
-Les paramètres suivants sont recommandés pour le certificat SEMM:
+Les paramètres suivants sont recommandés pour le certificat SEMM :
 
-* **Algorithme de clé** -RSA 
-* **Longueur** de la clé – 2048
-* **Algorithme de hachage** -SHA-256
-* **Type** – authentification du serveur SSL
-* **Utilisation** de la clé – signature numérique, chiffrement de la clé
-* **Fournisseur** -fournisseur de services cryptographiques Microsoft Enhanced RSA et AES
-* **Date d’expiration** : 15 mois de création de certificats
-* **Politique d’exportation clé** -exportable
+* **Algorithme de clé** – RSA 
+* **Longueur de clé** – 2048
+* **Algorithme de hachage** – SHA-256
+* **Type** – Authentification SSL Server
+* **Utilisation de la** clé : signature numérique, chiffrement de clé
+* **Fournisseur** – Microsoft Enhanced RSA et AES Cryptographic Provider
+* **Date d’expiration** : 15 mois après la création du certificat
+* **Stratégie d’exportation de clé** : exportable
 
-Il est également recommandé d’authentifier le certificat SEMM dans une architecture de l’infrastructure à clé publique (PKI) sur deux couches, dans laquelle l’autorité de certification intermédiaire est dédiée à SEMM, activant la révocation des certificats. Pour plus d’informations sur la configuration d’une PKI sur deux couches, voir le [Guide du laboratoire de test: déploiement d’une hiérarchie de pki Two-Tier PKI](https://technet.microsoft.com/library/hh831348).
+Il est également recommandé que le certificat SEMM soit authentifié dans une architecture d’infrastructure à clé publique (PKI) à deux niveaux dans laquelle l’autorité de certification intermédiaire est dédiée au SEMM, ce qui permet la révocation des certificats. Pour plus d’informations sur une configuration pKI à deux niveaux, voir Guide de laboratoire de test : Déploiement d’une hiérarchie [PKI Two-Tier AD CS.](https://technet.microsoft.com/library/hh831348)
 
 ### Certificat auto-signé 
-Vous pouvez utiliser l’exemple de script PowerShell suivant pour créer un certificat auto-signé à utiliser dans les scénarios de validation.
-Pour utiliser ce script, copiez le texte suivant dans le bloc-notes et enregistrez le fichier en tant que script PowerShell (. ps1). Remarque: ce script crée un certificat dont le mot de passe est `12345678` . Le certificat généré par ce script n’est pas recommandé pour les environnements de production.
+Vous pouvez utiliser l’exemple de script PowerShell suivant pour créer un certificat auto-signé à utiliser dans des scénarios de preuve de concept.
+Pour utiliser ce script, copiez le texte suivant dans le Bloc-notes et enregistrez le fichier en tant que script PowerShell (.ps1). 
+
+> [!NOTE]
+> Ce script crée un certificat avec un mot de passe de `12345678` . Le certificat généré par ce script n’est pas recommandé pour les environnements de production.
   
-   ```
+```powershell
 if (-not (Test-Path "Demo Certificate"))  { New-Item -ItemType Directory -Force -Path "Demo Certificate" }
 if (Test-Path "Demo Certificate\TempOwner.pfx") { Remove-Item "Demo Certificate\TempOwner.pfx" }
 
@@ -201,121 +204,124 @@ $TestUefiV2 = New-SelfSignedCertificate `
   -KeyExportPolicy Exportable
 
 $TestUefiV2 | Export-PfxCertificate -Password $pw -FilePath "Demo Certificate\TempOwner.pfx"
-   ```
+```
 
 >[!IMPORTANT]
->Pour l’utilisation de SEMM et du configurateur Microsoft surface UEFI, le certificat doit être exporté à l’aide de la clé privée et de la protection par mot de passe. Le programme de configuration de Microsoft surface UEFI vous invite à sélectionner le fichier de certificat SEMM (. pfx) et le mot de passe de certificat lorsque ce dernier est requis.
+>Pour une utilisation avec SEMM et Microsoft Surface UEFI Configurator, le certificat doit être exporté avec la clé privée et avec la protection par mot de passe. Microsoft Surface UEFI Configurator vous invite à sélectionner le fichier de certificat SEMM (.pfx) et le mot de passe du certificat lorsque cela est nécessaire.
 
-1.  Créez un dossier sur votre lecteur C:, à partir duquel vous allez enregistrer le script. par exemple, C:\SEMM.
-2.  Copiez l’exemple de script dans le bloc-notes ou l’éditeur de texte équivalent, puis enregistrez le fichier en tant que script PowerShell (. ps1).
-3.  Connectez-vous à votre PC à l’aide d’informations d’identification d’administrateur, puis ouvrez une session PowerShell avec élévation de privilèges.
-4.  Vérifiez que vos autorisations sont définies pour autoriser l’exécution des scripts. Par défaut, les scripts ne peuvent pas être en cours d’exécution sauf si vous modifiez la stratégie d’exécution. Pour en savoir plus, voir [à propos des stratégies d’exécution](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies).
-5.  À l’invite de commandes, entrez le chemin d’accès complet du script, puis appuyez sur entrée. Le script crée un certificat de démonstration appelé TempOwner. pfx.
+1.  Créez un dossier sur votre lecteur C: où vous enregistrerez le script . par exemple, C:\SEMM.
+2.  Copiez l’exemple de script dans le Bloc-notes ou l’éditeur de texte équivalent et enregistrez le fichier en tant que script PowerShell (.ps1).
+3.  Connectez-vous à votre PC avec les informations d’identification de l’administrateur et ouvrez une session PowerShell avec élévation de niveaux.
+4.  Assurez-vous que vos autorisations sont définies pour autoriser l’exécuter. Par défaut, l’exécution des scripts est bloquée, sauf si vous modifiez la stratégie d’exécution. Pour plus d’informations, voir [À propos des stratégies d’exécution.](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies)
+5.  À l’invite de commandes, entrez le chemin d’accès complet du script, puis appuyez sur Entrée. Le script crée un certificat de démonstration nommé TempOwner.pfx.
 
-Vous pouvez également créer votre propre certificat auto-signé à l’aide de PowerShell. Pour plus d’informations, consultez la documentation PowerShell suivante: [New-SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate).
+Vous pouvez également créer votre propre certificat auto-signé à l’aide de PowerShell. Pour plus d’informations, voir la documentation PowerShell suivante : [New-SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate).
 
 
 
 
 >[!NOTE]
->Pour les organisations qui utilisent une racine hors connexion dans leur infrastructure PKI, le configurateur Microsoft surface UEFI doit être exécuté dans un environnement connecté à l’autorité de certification racine pour authentifier le certificat SEMM. Les packages générés par le Configurator du Configurateur de surface Microsoft peuvent être transférés en tant que fichiers et peuvent donc être transférés hors de l’environnement réseau hors connexion avec un support amovible, tel qu’un stick USB.
+>Pour les organisations qui utilisent une racine hors connexion dans leur infrastructure PKI, microsoft Surface UEFI Configurator doit être exécuté dans un environnement connecté à l’ac racine pour authentifier le certificat SEMM. Les packages générés par microsoft Surface UEFI Configurator peuvent être transférés en tant que fichiers et peuvent par conséquent être transférés en dehors de l’environnement réseau hors connexion avec un stockage amovible, tel qu’une clé USB.
 
 ### FAQ sur la gestion des certificats
 
-La longueur *minimum* recommandée est 15 mois. Vous pouvez utiliser un certificat qui expire dans moins de 15 mois ou utiliser un certificat qui expire dans plus de 15 mois.
+La durée *minimale recommandée* est de 15 mois. Vous pouvez utiliser un certificat qui expire dans moins de 15 mois ou un certificat qui expire dans plus de 15 mois.
 
 >[!NOTE] 
->La date d’expiration d’un certificat n’est pas automatiquement renouvelé. 
+>Lorsqu’un certificat expire, il n’est pas renouvelé automatiquement. 
 
 
-**Un certificat expiré affectera-t-il la fonctionnalité des périphériques inscrits par le SEMM?**<br><br>
-Non, un certificat affecte uniquement les tâches de gestion des administrateurs informatiques dans SEMM et n’a aucun effet sur les fonctionnalités de l’appareil lorsqu’il arrive à expiration.
+**Un certificat expiré affectera-t-il les fonctionnalités des appareils inscrits à LAMM ?**<br><br>
+Non, un certificat n’a d’impact que sur les tâches de gestion des administrateurs informatiques dans SEMM et n’a aucun effet sur les fonctionnalités de l’appareil à l’expiration.
 
 
-**Le package et le certificat SEMM doivent-ils être mis à jour sur tous les ordinateurs qui l’utilisent?**
+**Le package SEMM et le certificat devront-ils être mis à jour sur tous les ordinateurs qui en ont ?**
 
-Si vous voulez que la réinitialisation ou la restauration de SEMM fonctionne, le certificat doit être valide et non expiré. 
+Si vous souhaitez que la réinitialisation ou la récupération SEMM fonctionne, le certificat doit être valide et non expiré. 
 
-**Est-il possible de créer des packages de réinitialisation en bloc pour chaque surface que nous commande? Est-il possible de générer une configuration qui réinitialise tous les ordinateurs de notre environnement?**
+**Est-il possible de créer des packages de réinitialisation en bloc pour chaque surface que nous commandeons ? Est-il possible de construire une machine qui réinitialise tous les ordinateurs de notre environnement ?**
 
-Les exemples PowerShell qui créent un package de configuration pour un type d’appareil spécifique peuvent également être utilisés pour créer un package de réinitialisation qui est indépendant du numéro de série. Si le certificat est toujours valide, vous pouvez créer un package de réinitialisation en utilisant PowerShell pour réinitialiser SEMM.
+Les exemples PowerShell qui créent un package de config pour un type d’appareil spécifique peuvent également être utilisés pour créer un package de réinitialisation indépendant du numéro de série. Si le certificat est toujours valide, vous pouvez créer un package de réinitialisation à l’aide de PowerShell pour réinitialiser SEMM.
 
 ## Historique des versions
+
+### Version 2.79.139.0
+
+Cette version de SEMM inclut :
+- Prise en charge de Surface Pro 7+
+- Améliorations de l’expérience utilisateur
 
 
 ### Version 2.78.139.0
 
-Cette version de SEMM inclut les éléments suivants:
+Cette version de SEMM inclut :
 
-- Prise en charge de surface Laptop Go et de surface Pro X
-- Notifications pour la nouvelle version version
-- Possibilité de créer des packages personnalisés pour modifier la propriété;
-- Correction de bogues
-
-
-
+- Prise en charge de Surface Laptop Go et Surface Pro X
+- Notifications pour la nouvelle version
+- Possibilité de créer des packages personnalisés pour modifier la propriété
+- Résolutions de bogues
 
 ### Version 2.73.136.0
 
-Cette version de SEMM inclut les éléments suivants:
+Cette version de SEMM inclut :
 
-- L’audio peut désormais être désactivé sur surface Hub2S à l’aide de SEMM
-- Prise en charge de surface Pro X pour Dock 2
-- Prise en charge du gestionnaire UEFI pour les opérations connexes Dock 2
-- Correctif pour le bogue de réinitialisation du package surface Go
-- La prise en charge de la migration des appareils surface Hub 2 du système d’exploitation Windows 10 vers Windows 10 professionnel ou entreprise.
+- L’audio peut désormais être désactivé sur Surface Hub2S à l’aide de SEMM
+- Prise en charge de Surface Pro X pour la station d’accueil 2
+- Prise en charge du Gestionnaire UEFI pour les opérations liées à Dock 2
+- Correctif de bogue du package de réinitialisation de Surface Go
+- Prise en charge de la migration des appareils Surface Hub 2 de Windows 10 Team OS vers Windows 10 Professionnel ou Entreprise.
 
 ### Version 2.71.139.0
 
-Cette version de SEMM ajoute une prise en charge des fonctionnalités de gestion de l’ancrage de surface 2 pour le livre surface 3, surface Laptop 3 et surface Pro 7, y compris:
+Cette version de SEMM ajoute la prise en charge des fonctionnalités de gestion de Surface Dock 2 pour Surface Book 3, Surface Laptop 3 et Surface Pro 7, notamment :
 
-- Activation de l’audio (verrouillage/déverrouillage), ports Ethernet et USB
-- Possibilité de créer des packages de dock pour les hôtes authentifiés et non authentifiés
+- Activation des ports audio (verrouillage/déverrouillage), Ethernet et USB
+- Possibilité de créer des packages de station d’accueil pour les hôtes authentifiés et non authentifiés
 
 ### Version 2.70.130.0
 
-Cette version de SEMM inclut les éléments suivants:
+Cette version de SEMM inclut :
 
-- Prise en charge de surface Go 2
-- Prise en charge de surface Book 3
-- Correction de bogues
+- Prise en charge de Surface Go 2
+- Prise en charge du Surface Book 3
+- Résolutions de bogues
 
 
 ### Version 2.59.139.0
 
-* La prise en charge des modèles de surface Pro 7, de surface Pro X et de surface Laptop 3 13,5 et 15 pouces avec le processeur Intel. Remarque: le processeur AMD surface Laptop 3 15 "n’est pas pris en charge.
+* Prise en charge des modèles Surface Pro 7, Surface Pro X et Surface Laptop 3 13,5 pouces et 15 pouces avec processeur Intel. Remarque : le processeur AMD Surface Laptop 3 15 pouces n’est pas pris en charge.
 
-- Prise en charge de la fonctionnalité de mise en éveil
+- Prise en charge de la fonctionnalité Veille sur l’alimentation
 
 ### Version 2.54.139.0
-* Prise en charge de surface Hub 2
-* Correction de bogues
+* Prise en charge de Surface Hub 2S
+* Résolutions de bogues
 
 ### Version 2.43.136.0
-* Prise en charge de l’activation/désactivation de la simulatenousing 
-* Options distinctes pour Wi-Fi et Bluetooth pour certains appareils 
-* Limite de batterie supprimée pour surface Studio 
+* Prise en charge pour activer/désactiver la simulation multithreating 
+* Options distinctes pour le WiFi et les Bluetooth pour certains appareils 
+* Limite de batterie supprimée pour Surface Studio 
 
 ### Version 2.26.136.0
-* Ajouter la prise en charge de surface Studio 2
+* Ajouter la prise en charge de Surface Studio 2
 * Fonctionnalité de limite de batterie
 
 ### Version 2.21.136.0
-* Ajouter la prise en charge de surface Pro 6
-* Ajouter la prise en charge de surface Laptop 2
+* Ajouter la prise en charge de Surface Pro 6
+* Ajouter la prise en charge de Surface Laptop 2
 
 ### Version 2.14.136.0
-* Ajouter la prise en charge des Go de surface
+* Ajouter la prise en charge de Surface Go
 
 ### Version2.9.136.0
-* Ajouter la prise en charge de surface Book 2
-* Ajouter la prise en charge de surface Pro
-* Améliorations apportées à l’accessibilité
+* Ajouter la prise en charge de Surface Book 2
+* Ajouter la prise en charge de Surface Pro LTE
+* Améliorations de l’accessibilité
 
 ### Version 1.0.74.0
-* Ajouter la prise en charge de l’ordinateur portable surface
-* Ajouter la prise en charge de surface Pro
-* Correction de bogues et amélioration générale
+* Ajouter la prise en charge de Surface Laptop
+* Ajouter une prise en charge à Surface Pro
+* Résolutions de bogues et amélioration générale
 
 ## Rubriques associées
 

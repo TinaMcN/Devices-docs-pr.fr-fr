@@ -18,49 +18,49 @@ ms.custom:
 - CI 118876
 - CSSTroubleshoot
 ms.reviewer: mablaik
-description: Informations de support pour les produits Microsoft surface and surface Hub.
-ms.openlocfilehash: fa86756c122814e7f90351782fc8f6f34227ae42
-ms.sourcegitcommit: 56526c92d84dbc2cebcb8071d995efe399f306df
+description: Informations de support pour les produits Microsoft Surface et Surface Hub.
+ms.openlocfilehash: 41ed1cf624317234fb8786bb2c8615e6eed58551
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11105255"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271538"
 ---
-# Surface support
+# Prise en charge de Surface
 
-### Avant de nous contacter:  
+### Avant de nous contacter :  
 
-Exécutez le [Kit de diagnostics surface pour les entreprises](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business) (SDT). Le SDT permet aux administrateurs informatiques de rechercher rapidement, de résoudre les problèmes et de résoudre les problèmes de matériel, de logiciel et de microprogramme avec des appareils surface. Vous pouvez exécuter une gamme de tests de diagnostic et de réparations logicielles en plus d’informations sur l’obtention d’informations sur l’état de l’appareil et des instructions pour la résolution des problèmes. 
+Exécutez [surface Diagnostic Shared Computer Toolkit for Business](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business) (SDT). Le SDT permet aux administrateurs informatiques d’examiner, dépanner et résoudre rapidement les problèmes de matériel, de logiciel et de microprogramme avec les appareils Surface. Vous pouvez exécuter une série de tests de diagnostic et de réparations logicielles en plus d’obtenir des informations sur l’état de l’appareil et des conseils pour résoudre les problèmes. 
 
-Si vous rencontrez toujours un problème après avoir exécuté le kit de jeu, utilisez les onglets ci-dessous pour sélectionner une option de support.
+Si vous avez encore un problème après l’exécution du kit de ressources, utilisez les onglets ci-dessous pour sélectionner une option de support.
 
-## [Support en ligne](#tab/online)
+## [Prise en charge en ligne](#tab/online)
 
 > [!NOTE]
-> Vous serez invité à vous connecter au portail de soumission en ligne à l’aide de votre compte Microsoft ou de votre compte Azure Active Directory.  
+> Vous devez vous connecter au portail de soumission en ligne à l’aide de votre compte Microsoft ou de votre compte Azure Active Directory.  
 
-Expédiez vos demandes de garantie et de service en utilisant le [formulaire de garantie et de demande de service](https://download.microsoft.com/download/2/e/0/2e00e1c2-3f49-4b6a-b605-74a0244cb88b/Warranty_and_Service_Claim_Submission_Form.xlsx). Pour plus d’informations sur l’utilisation du formulaire, consultez les [instructions de formulaire de garantie et de revendication de services](warranty-and-service-claim-form.md) et joignez-le à votre demande de devis.
+Accélérer vos demandes de garantie et de service à l’aide du formulaire de revendication de garantie [et de service.](https://download.microsoft.com/download/2/e/0/2e00e1c2-3f49-4b6a-b605-74a0244cb88b/Warranty_and_Service_Claim_Submission_Form.xlsx) Pour plus d’informations sur l’utilisation du formulaire, voir les [instructions](warranty-and-service-claim-form.md) du formulaire de revendication de garantie et de service et l’attacher à votre soumission de cas.
 
-Pour les clients professionnels: [Envoyez votre demande de service](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d383b26c-f150-6220-8f1b-e8aa325d9727). 
+Pour les clients professionnels : [envoyez votre demande de service.](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d383b26c-f150-6220-8f1b-e8aa325d9727&hidden=false) 
 
-Pour les clients Microsoft premier: [Envoyez votre demande de service sur le Hub services](https://serviceshub.microsoft.com/support/contactsupport). 
+Pour les clients Microsoft Premier : [envoyez votre demande de service sur le Hub de services.](https://serviceshub.microsoft.com/support/contactsupport) 
 
  
-## [Support téléphonique](#tab/phone)
+## [Prise en charge téléphonique](#tab/phone)
 
-[Appelez-nous pour commencer votre demande de service](https://support.microsoft.com/help/4051701/global-customer-service-phone-numbers). Préparez le numéro de série de votre appareil lorsque vous appelez. 
+[Appelez-nous pour démarrer votre demande de service.](https://support.microsoft.com/help/4051701/global-customer-service-phone-numbers) Préparez le numéro de série de votre appareil lorsque vous appelez. 
 
-## [Support en magasin](#tab/instore)
+## [Prise en charge en magasin](#tab/instore)
 
 ## Chine, Inde
 
-Rendez un rendez-vous à un centre de Walk-In surface pour vous aider à résoudre votre problème:
+Rendez-vous dans un centre Walk-In Surface pour résoudre votre problème :
 
-1. Accédez à la page [informations de contact du centre de Walk-In surface](https://support.microsoft.com/help/4498593/find-surface-walk-in-center-contact-information) . 
-2. Sélectionnez votre emplacement pour trouver le centre de Walk-In le plus proche de chez vous.  
-3. Choisissez votre centre de Walk-In et contactez-les pour planifier un rendez-vous.
+1. Go to the [Surface Walk-In Center Contact Information](https://support.microsoft.com/help/4498593/find-surface-walk-in-center-contact-information) page. 
+2. Sélectionnez votre emplacement pour trouver le Walk-In le plus proche.  
+3. Choisissez votre centre Walk-In et contactez-les pour planifier un rendez-vous.
 
 
 ---
 
-Encore besoin d’aide? Accédez à la [communauté Microsoft](https://answers.microsoft.com/).
+Encore besoin d’aide? Go to [Microsoft Community](https://answers.microsoft.com/).
