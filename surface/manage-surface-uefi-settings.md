@@ -12,27 +12,27 @@ ms.author: greglin
 ms.topic: article
 ms.reviewer: hachidan
 manager: laurawi
-ms.date: 01/15/2021
-ms.openlocfilehash: d8d47db3bd6f69783670b285a797337373e02d72
-ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
+ms.date: 01/25/2021
+ms.openlocfilehash: af9eac171dea5d29ce9776766a2c5842bea9eb8c
+ms.sourcegitcommit: 1b12ea363785697ddc705b0a0cc7bb35cad6b327
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271428"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "11300695"
 ---
 # Gérer les paramètres UEFI Surface
 
-Toutes les générations actuelles et futures d’appareils Surface utilisent une interface UEFI (Unified Extensible Firmware Interface) unique conçue par Microsoft spécifiquement pour ces appareils. Les paramètres UEFI Surface offrent la possibilité d’activer ou de désactiver les appareils et composants intégrés, de protéger les paramètres UEFI contre les changements et d’ajuster les paramètres de démarrage de l’appareil Surface. 
+ Les appareils Surface PC sont conçus pour utiliser une interface UEFI (Unified Extensible Firmware Interface) unique conçue par Microsoft spécifiquement pour ces appareils. Les paramètres UEFI Surface offrent la possibilité d’activer ou de désactiver les appareils et composants intégrés, de protéger les paramètres UEFI contre les changements et d’ajuster les paramètres de démarrage de l’appareil Surface. 
 
 ## Produits pris en charge
 
 La gestion UEFI est prise en charge sur les questions suivantes : 
 
 - Surface Pro 4, Surface Pro (5e génération), Surface Pro 6, Surface Pro 7, Surface Pro 7+, Surface Pro X
-- Surface Laptop (1re génération), Surface Laptop 2, Surface Laptop 3, Surface Laptop Go
+- Surface Laptop (1ère génération), Surface Laptop 2, Surface Laptop 3, Surface Laptop Go
 - Surface Studio (1re génération), Surface Studio 2
 - Surface Book, Surface Book 2, Surface Book 3
-- Surface Go, Surface Go 2
+- Surface Go, Surface Go 2[ <sup> 1 </sup> ](#references)
 
 ## Prise en charge de la gestion basée sur le cloud
 
@@ -102,7 +102,7 @@ La page Sécurité vous permet également de modifier la configuration du démar
 
 *Figure4. Configurer le démarrage sécurisé*
 
-En fonction de votre appareil, vous pouvez également voir si votre TPM est activé ou désactivé. Si vous ne voyez pas le paramètre Activer **le TPM,**  ouvrez tpm.msc dans Windows pour vérifier l’état, comme le montre la figure 5. Le module TPM permet d’authentifier le chiffrement des données de votre appareil avec BitLocker. Pour en savoir plus, consultez la vue [d’ensemble de BitLocker.](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) 
+En fonction de votre appareil, vous pouvez également voir si votre TPM est activé ou désactivé. Si vous ne voyez pas le paramètre Activer **le TPM,**  ouvrez tpm.msc dans Windows pour vérifier l’état, comme illustré à la Figure 5. Le module TPM permet d’authentifier le chiffrement des données de votre appareil avec BitLocker. Pour en savoir plus, consultez la vue [d’ensemble de BitLocker.](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) 
 
 ![Console TPM](images/manage-surface-uefi-fig5-a.png "TPM console")
 
@@ -127,7 +127,7 @@ La page Appareils vous permet d’activer ou de désactiver des appareils et com
 
 - Audio intégré (haut-parleurs et microphone) 
 
-Chaque appareil est répertorié avec un bouton de curseur que vous pouvez déplacer vers la position **Activée** (activée) ou **Désactivée** (désactivée), comme le montre la figure 6. 
+Chaque appareil est répertorié avec un bouton de curseur que vous pouvez déplacer vers la position **Activé** (activé) ou Désactivé **(désactivé),** comme illustré dans la figure 6. 
 
 ![Activer et désactiver des périphériques spécifiques](images/manage-surface-uefi-fig5a.png "Enable and disable specific devices")
 
@@ -228,7 +228,11 @@ Lors d’une mise à jour du microprogramme de l’appareil Surface, que ce soit
 
 *Figure20. Écran de démarrage Surface indiquant que le démarrage sécurisé a été désactivé dans les paramètres UEFI Surface*
 
-## Rubriques associées
+## Références
+
+1. Surface Go et Surface Go 2 utilisent une ueFI tierce et ne sont pas en charge DFCI. 
+
+## Rubriques connexes
 
 - [Gestion Intune des paramètres de surface UEFI](surface-manage-dfci-guide.md)
 
