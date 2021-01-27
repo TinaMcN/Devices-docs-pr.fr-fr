@@ -1,7 +1,7 @@
 ---
 title: SurfaceHub2S 85pouces
-description: Cet article présente surface Hub 2 85 pouces.
-keywords: Surface Hub 2 85, spécifications techniques
+description: Cet article présente surface Hub 2S 85 pouces.
+keywords: Surface Hub 2S 85, spécifications techniques
 ms.prod: surface-hub
 ms.sitesec: library
 author: greg-lindsay
@@ -9,61 +9,58 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 12/21/2020
+ms.date: 11/26/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 7fe02f0e377c8ac586f7e60387f1d8e1f071a15a
-ms.sourcegitcommit: e83316c8b5e3c29b0af0730ef05fd8b96b0d0cdd
+ms.openlocfilehash: 093185838250e9b52c078ece4e206639f8b7a630
+ms.sourcegitcommit: 38bb1d92064fb1ab0fe69f9c88ef6e44c9232b97
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "11238099"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "11304502"
 ---
-# Vue d’ensemble de surface Hub 2 85 "& spécifications techniques
+# Vue d’ensemble du Surface Hub 2S 85 & spécifications techniques
 
-La version 85 de la famille surface Hub permet d’obtenir l’interface de surface Hub 2 dans les espaces nécessitant un grand écran, tels que des salles de conférence, des salles de tableau ou des espaces Huddle plus grands. Disponible depuis le 2021 janvier, surface Hub 2 85 "offre les expériences suivantes:
+La version 85 pouces de la famille Surface Hub offre l’expérience Surface Hub 2S aux espaces nécessitant un écran plus grand, tels que des salles de conférence, des salles de réunion ou des espaces à tête haute plus grands. Surface Hub 2S 85» offre les expériences suivantes :
 
-- **Conçu pour la collaboration en groupe.** Invitation entrée manuscrite simultanée dans le tableau blanc collaboratif de Microsoft et les participants distants à grande durée dans Microsoft Teams.
-- **Une interface homogène surface Hub 2.** Fournit la même conception Premium, la technologie d’affichage de 4 Ko, l’entrée manuscrite, le stylo/entrée manuscrite et la prise en charge de l’appareil photo comme surface Hub 2 50».
-- **Intégration aux systèmes A/V existants et nouveaux.** Est associé aux périphériques certifiés Microsoft teams et s’intègre aux salles de Microsoft Teams.
+- **Conçu pour la collaboration de groupe.** Invite l’inking simultané dans le tableau blanc Microsoft, ainsi que les participants distants plus grands que la vie dans Microsoft Teams.
+- **Expérience Cohérente du Surface Hub 2S.** Fournit la même conception premium, la technologie d’affichage 4K, les entrées tactiles, le stylet/encre, la technologie de calcul et la prise en charge de l’appareil photo que le Surface Hub 2S 50».
+- **Intégration avec les systèmes A/V existants et nouveaux.** Combine avec des périphériques certifiés Microsoft Teams et s’intègre aux salles Microsoft Teams.
 
-![Surface Hub 2 85 "](images/hub-2s-85.png)
+![Surface Hub 2S 85»](images/hub-2s-85.png)
 
-> [!NOTE]
-> *Surface Hub 2 disponible dans 2021; Produits précommercials présentés; les produits et fonctions soumis à une certification/approbation de réglementation peuvent changer et peuvent varier en fonction du pays/de la région.*
-
-## Caractéristiques techniques de surface Hub 2 85
+## Caractéristiques techniques du Surface Hub 2S 85»
 
 | Composant    | Description                                                                                                                                                                                                                                         |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Analytique        | 44,5 "x 77,1" x 3,4 "<br>(1130mm x 1959mm x 85.6 mm)                                                                                                                                                                                                        |
-| Épaisseur            | 185 livres (84kg)                                                                                                                                                                                                                                            |
+| Dimensions        | 44,5 x 77,1 x 3,4»<br>(1130 mm x 1959 mm x 85,6 mm)                                                                                                                                                                                                        |
+| Épaisseur            | 185 lb (84kg)                                                                                                                                                                                                                                            |
 | Résolution        | 3840 x 2160                                                                                                                                                                                                                                               |
-| Affichage           | PixelSense™ afficher, le rapport hauteur/largeur de 16:9, la couleur 10 bits, la largeur de bordure de 30.5 mm, le niveau d’éblouissement                                                                                                           |
-| Calcul           | Cartouche de calcul modulaire<br>Processeur à quatre cœurs Intel® cœur de huitième génération™ Processeur i5, RAM 8 Go, 128 SSD <sup> 1</sup>                                                                                                                                                      |
-| Logiciel <sup> 2</sup>         | Windows 10 Team OS <sup> 3</sup><br>Microsoft teams pour surface Hub<br>SkypeEntreprise<br>Tableau blanc Microsoft<br>Microsoft Office (mobile)<br>MicrosoftPowerBI                                                                                                   |
-| Connexions       | USB-A<br>Mini-DisplayPort la sortie vidéo<br>Gigabit Ethernet RJ45<br>Entrée vidéo HDMI<br>Connexion USB-C® de l’entrée DisplayPort<br>(3) USB-C® (à l’écran)                                                                                                           |
-| Graphiques          | 620 graphiques UHD Intel®                                                                                                                                                                                                                                   |
-| Audio/vidéo       | haut-parleurs stéréo à 3 directions de 100 Hz-12KHz, y compris (2) Mid/High-range et (1) Mid/Low-Range en bosses arrière. <br>Tableau de microphone MEMS 8 éléments à bandes entières<br>Caméra Microsoft surface Hub 2, 4 Ko, 90 connexion USB-C® HFOV |
-| Stylet               | Stylo Microsoft surface Hub 2 (actif)<br>Compatible avec le stylo plat de surface                                                                                                                                                                                       |
+| Affichage           | PixelSense™ Display, proportions 16:9, couleur 10 bits, largeur de bordure 30,5 mm, anti-reflet, IPS PIXEL, entrée tactile dans la cellule avec 20 points tactiles simultanés                                                                                                           |
+| Calcul           | Modular Compute Cartridge<br>Processeur Intel 8e génération Intel® Core™ i5, 8 Go de RAM, 128 Go SSD <sup> 1</sup>                                                                                                                                                      |
+| Software <sup> 2</sup>         | Windows 10 Team OS <sup> 3</sup><br>Microsoft Teams pour Surface Hub<br>SkypeEntreprise<br>Tableau blanc Microsoft<br>Microsoft Office (Mobile)<br>MicrosoftPowerBI                                                                                                   |
+| Connexions       | USB-A<br>Mini-DisplayPort vidéo<br>RJ45 Gigabit Ethernet<br>Entrée vidéo HDMI<br>USB-C® avec entrée DisplayPort<br>(3) USB-C® (à l’écran)                                                                                                           |
+| Graphiques          | Intel® GRAPHICS 620                                                                                                                                                                                                                                   |
+| Audio/vidéo       | Haut-parleurs stéréo 3 voies de plage 100Hz - 12 KHz, y compris (2) plage moyenne/élevée et (1) plage moyenne/basse dans la hauteur arrière. <br>Groupe complet de 8 éléments du groupe de microphones MEMS<br>Caméra Microsoft Surface Hub 2, connexion USB-C® 4K, HFOV à 90 degrés |
+| Stylet               | Stylet Microsoft Surface Hub 2 (actif)<br>Stylet Surface Pen compatible                                                                                                                                                                                       |
 | Capteurs           | Capteur d’occupation Doppler <sup> 4</sup>                                                                                                                                                                                                                                 |
-| Sans fil          | Wi-Fi 5: compatibilité IEEE 802,11 a/b/g/n/AC<br>Technologie 5,0 sans fil Bluetooth®<br>Affichage Miracast                                                                                                                                                      |
-| Extérieures          | Carter: aluminium précision en aluminium avec une résine composite minérale<br>Couleur: Platinum<br>Boutons physiques: alimentation, volume, source                                                                                                                            |
-| Garantie         | 2 ans de garantie matérielle limitée <sup> 5</sup>                                                                                                                                                                                                                          |
-| Ce qui se trouve dans la zone | (1) surface Hub 2<br>(2) stylet surface Hub 2<br>(1) appareil photo surface Hub 2<br>Câble d’alimentation C.A. 4 Mo<br>Guide de démarrage rapide                                                                                                                                         |
+| Sans fil          | Wi-Fi 5 : compatible IEEE 802.11 a/b/g/n/ac<br>Bluetooth® sans fil 5.0<br>Affichage Miracast                                                                                                                                                      |
+| Extérieur          | Casing : précision machine machined à l’intérieur d’une image composite<br>Couleur : Contrôle<br>Boutons physiques : alimentation, volume, source                                                                                                                            |
+| Garantie         | Garantie matérielle limitée sur 1 an <sup> 5</sup>                                                                                                                                                                                                                          |
+| Que se passe-t-il dans la zone ? | (1) Surface Hub 2S<br>(2) Stylet Surface Hub 2<br>(1) Appareil photo Surface Hub 2<br>Câble d’alimentation AC 4m<br>Guide de démarrage rapide                                                                                                                                         |
 
 > [!NOTE]
-> Surface Hub peut être utilisé en continu pour une durée maximale de 18 heures par jour. Pour optimiser l’efficacité, surface Hub utilise les capteurs intelligents pour désactiver l’écran del lorsque la présence n’est plus détectée, ce qui signifie qu’il n’est pas nécessaire de le mettre à la fin de la journée. Si l’unité est installée dans un environnement de travail de 24 heures, les capteurs peuvent être désactivés pour respecter les recommandations en matière d’utilisation maximale de 18 heures par jour. Notez que l’affichage prolongé d’un signal vidéo risque de provoquer la rétention de l’image ou de l’image sur l’écran. Pour en savoir plus sur la gestion des paramètres d’alimentation, voir:
+> Le Surface Hub peut être utilisé en continu pendant un maximum de 18 heures par jour. Pour optimiser l’efficacité, le Surface Hub utilise des capteurs intelligents pour désactiver l’écran LED lorsque la présence n’est plus détectée, ce qui signifie qu’il n’est pas nécessaire de l’allumer à la fin de la journée. Si l’unité est installée dans un environnement de travail de 24 heures, les capteurs peuvent être désactivés pour respecter la recommandation d’utilisation maximale de 18 heures par jour. Notez que l’affichage prolongé d’un signal vidéo peut entraîner une rétention d’image ou d’exposition à l’écran. Pour en savoir plus sur la gestion des paramètres d’alimentation, voir :
 >
 > - [Gestion locale des paramètres SurfaceHub](local-management-surface-hub-settings.md)
-> - [FSC SurfaceHub-gestion des clients Windows](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
+> - [CSP SurfaceHub - Gestion des clients Windows](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
 ### Références
 
-1. Le logiciel système et les mises à jour utilisent un espace de stockage important. Le stockage disponible peut faire l’objet de modifications en fonction du logiciel système et des mises à jour et de l’utilisation des applications. 1 Go = 1 milliard octets. 1 TO = 1 000 GO. Pour plus d’informations, consultez l' [espace de stockage surface](https://www.surface.com/storage) .
+1. Les logiciels système et les mises à jour utilisent un espace de stockage important. Le stockage disponible peut être changé en fonction du logiciel système, des mises à jour et de l’utilisation des applications. 1 Go = 1 milliards d’octets. 1 To = 1 000 Go. Pour [plus d’informations,](https://www.surface.com/storage) voir Stockage Surface.
 2. Licence logicielle requise pour certaines fonctionnalités. Vendu séparément.
-3. Pour l’instant, la migration de l’équipe Windows 10 vers Windows 10 professionnel ou entreprise est uniquement disponible sur surface Hub 50 2. Pour en savoir plus, voir [migrer vers Windows 10 professionnel ou entreprise sur surface Hub 2](https://docs.microsoft.com/surface-hub/surface-hub-2s-migrate-os).
-4. Capteur Doppler non disponible dans Hong Kong, Inde, Koweït et Oman.
-5. La garantie limitée de Microsoft s’ajoute aux droits de votre public. 
+3. La migration de Windows 10 Team vers Windows 10 Professionnel ou Entreprise est actuellement disponible uniquement sur Surface Hub 2S 50». Pour plus [d’informations, voir Migrer vers Windows 10 Professionnel ou Entreprise sur Surface Hub 2.](https://docs.microsoft.com/surface-hub/surface-hub-2s-migrate-os)
+4. Le capteur Doppler n’est pas disponible à Hong Kong, en Inde, au Koweït et à Oman.
+5. La garantie limitée de Microsoft s’ajoute à vos droits en matière de droit du consommateur. 
 
-## En savoir plus
+## Si vous souhaitez en savoir plus
 
-- [Surface Hub 2 85 "-collaboration à une échelle importante](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-hub-2s-85-quot-collaboration-at-a-massive-scale/ba-p/1669717)
+- [Surface Hub 2S 85» : collaboration à grande échelle](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-hub-2s-85-quot-collaboration-at-a-massive-scale/ba-p/1669717)
