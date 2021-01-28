@@ -1,5 +1,5 @@
 ---
-title: Réinitialiser et récupérer des surface Hub 2
+title: Réinitialisation et récupération pour Surface Hub 2S
 description: Découvrez comment récupérer et réinitialiser surface Hub 2S.
 keywords: séparer les valeurs par des virgules
 ms.prod: surface-hub
@@ -11,68 +11,71 @@ audience: Admin
 ms.topic: article
 ms.date: 12/05/2019
 ms.localizationpriority: Medium
-ms.openlocfilehash: e3b1e380f9776fc56e99b8d4e35f708aa952759c
-ms.sourcegitcommit: e075b46f14b730464d66246b0280ef2cfa16b3fe
+ms.openlocfilehash: 88f5d912f7505aecaa5bd7ba659acab2d6c4fa1a
+ms.sourcegitcommit: 25b8d880c6438f94b008f47b4fecc3aa4c473e85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "10963579"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304807"
 ---
-# Réinitialiser et récupérer des surface Hub 2
+# Réinitialisation et récupération pour Surface Hub 2S
 
-Si vous rencontrez des problèmes avec l’interface de surface Hub 2, vous pouvez rétablir les paramètres d’usine de l’appareil ou le restaurer à l’aide d’un lecteur USB.
+Si vous rencontrez des problèmes avec Surface Hub 2S, vous pouvez rétablir les paramètres d’usine ou restaurer l’appareil à l’aide d’un lecteur USB.
 
-Pour commencer, connectez-vous à surface Hub 2 avec les informations d’identification d’administrateur, ouvrez l’application **paramètres** , sélectionnez **mettre à jour & sécurité**, puis sélectionnez **récupération**.
+Pour commencer, connectez-vous au Surface Hub 2S avec les informations d’identification d’administrateur, ouvrez l’application **Paramètres,** sélectionnez Mettre à jour **& sécurité,** puis sélectionnez **Récupération.**
 
 ## Réinitialisez l’appareil
 
-1. Pour réinitialiser l’appareil, sélectionnez **commencer**.
+   > [!IMPORTANT]
+   > Assurez-vous que votre clé BitLocker est disponible avant de réinitialiser l’appareil, car vous y serez invité ultérieurement. Pour plus d’informations, voir [Enregistrer votre clé BitLocker.](save-bitlocker-key-surface-hub.md)
 
-2. Lorsque la fenêtre **prêt pour la réinitialisation de l’appareil** s’affiche, sélectionnez **Réinitialiser**. 
+1. Pour réinitialiser l’appareil, **sélectionnez Démarrer.**
+
+2. Lorsque la fenêtre **Prêt à réinitialiser cet appareil** s’affiche, sélectionnez **Réinitialiser.** 
   
-   > [!NOTE]
-   > Surface Hub 2 réinstalle le système d’exploitation à partir de la partition de récupération. L’opération risque de prendre jusqu’à une heure.
+   > [!IMPORTANT]
+   > Lorsque le Hub redémarre sur la partition de récupération, il vous invite à entrer la clé BitLocker. Ignorer cette invite entraîne l’échec de la réinitialisation. Une fois que vous avez entré la clé BitLocker, le Hub réinstalle le système d’exploitation à partir de la partition de récupération. Cela peut prendre jusqu’à une heure.
   
-3. Pour reconfigurer l’appareil, exécutez le programme de configuration pour la première fois.
+3. Pour reconfigurer l’appareil, exécutez le programme d’installation pour la première fois.
 
-4. Si vous gérez l’appareil à l’aide de Microsoft Intune ou d’une autre solution de gestion des appareils mobiles, retirez et supprimez l’enregistrement précédent, puis réinscrivez le nouvel appareil. Pour plus d’informations, reportez-vous [à la section supprimer des appareils à l’aide de l’effet de réinitialisation](https://docs.microsoft.com/intune/devices-wipe)
+4. Si vous gérez l’appareil à l’aide de Microsoft Intune ou d’une autre solution de gestion des appareils mobiles, retirez et supprimez l’enregistrement précédent, puis ré-inscrivez le nouvel appareil. Pour plus d’informations, voir Supprimer des appareils à l’aide de l’effacement, de la suppression ou de la [désinscrire manuellement de l’appareil.](https://docs.microsoft.com/intune/devices-wipe)
 
-> [!div class="mx-imgBorder"]
-> ![* Reset et Recovery for surface Hub 2 *](images/sh2-reset.png)
-<br/>*Figure1. Réinitialiser et récupérer des surface Hub 2* 
+   > [!div class="mx-imgBorder"]
+   > ![*Réinitialiser et récupérer pour Surface Hub 2S*](images/sh2-reset.png)
+   <br/>*Figure1. Réinitialisation et récupération pour Surface Hub 2S* 
 
-## Récupérer des surface Hub 2 à l’aide d’un lecteur de récupération USB
+## Récupérer le Surface Hub 2S à l’aide d’un lecteur de récupération USB
 
-Nouveauté de surface Hub 2, vous pouvez maintenant réinstaller l’appareil à l’aide d’une image de récupération.
+Nouveauté du Surface Hub 2S, vous pouvez désormais réinstaller l’appareil à l’aide d’une image de récupération.
 
-### Restauration à partir d’un lecteur USB
+### Récupération à partir d’un lecteur USB
 
-À l’aide de surface Hub 2, vous pouvez réinstaller l’appareil à l’aide d’une image de récupération. En procédant ainsi, vous pouvez réinstaller l’appareil sur les paramètres d’usine si vous avez perdu la clé BitLocker ou si vous n’avez plus d’informations d’identification d’administrateur dans l’application paramètres.
+À l’aide du Surface Hub 2S, vous pouvez réinstaller l’appareil à l’aide d’une image de récupération. En faisant cela, vous pouvez réinstaller l’appareil aux paramètres d’usine si vous avez perdu la clé BitLocker ou si vous n’avez plus d’informations d’identification d’administrateur pour l’application Paramètres.
 
 >[!NOTE]
->Utilisez un lecteur USB 3,0 avec 8 Go ou 16 Go d’espace de stockage, formaté en FAT32.
+>Utilisez un lecteur USB 3.0 avec 8 Go ou 16 Go de stockage, au format FAT32.
 
-1. À partir d’un autre PC, téléchargez l’image de récupération de fichier. zip à partir du [site Web de récupération de surface](https://support.microsoft.com/surfacerecoveryimage?devicetype=surfacehub2s) , puis revenez à ces instructions. 
+1. À partir d’un PC distinct, téléchargez l’image de récupération de fichier .zip à partir du site web [Surface Recovery,](https://support.microsoft.com/surfacerecoveryimage?devicetype=surfacehub2s) puis revenir à ces instructions. 
 
-1. Décompressez le fichier téléchargé sur la racine du lecteur USB.  
+1. Dézipez le fichier téléchargé à la racine du lecteur USB.  
 
-1. Connectez le lecteur USB à tout port USB-C ou USB-Port sur surface Hub 2.
+1. Connectez le lecteur USB à n’importe quel port USB-C ou USB-A sur surface Hub 2S.
 
-1. Éteindre le périphérique:
+1. Désactiver l’appareil :
 
-   1. Tout en appuyant sur le bouton volume inférieur, appuyez sur le bouton d’alimentation.
-   1. Continuez à appuyer sur les deux boutons jusqu’à ce que vous voyiez le logo Windows.
-   1. Relâchez le bouton d’alimentation tout en maintenant le bouton volume enfoncé jusqu’à ce que l’interface utilisateur de l’installation démarre.
+   1. Tout en appuyant sur le bouton Descendre le volume, appuyez sur le bouton d’alimentation.
+   1. Continuez à appuyer sur les deux boutons jusqu’à ce que le logo Windows s’affiche.
+   1. Relâchez le bouton d’alimentation, mais maintenez le bouton Descendre le volume jusqu’à ce que l’interface utilisateur d’installation commence.
 
-   ![* Utiliser le volume et les boutons d’alimentation pour démarrer la restauration *](images/sh2-keypad.png) <br>
-   **Figure2. Boutons volume et alimentation**
+      ![*Use Volume down and power buttons to initiate recovery*](images/sh2-keypad.png)
+      <br>*Figure2. Boutons Volume et Alimentation*
 
-1. Dans l’écran de sélection de la langue, sélectionnez la langue d’affichage de votre surface Hub 2.
+1. Dans l’écran de sélection de la langue, sélectionnez la langue d’affichage de votre Surface Hub 2S.
 
-1. Sélectionnez **récupérer à partir d’un disque** , **Nettoyez entièrement le lecteur**, puis sélectionnez **récupérer**. Si vous êtes invité à entrer une clé BitLocker, sélectionnez **ignorer ce lecteur**. Surface Hub 2 réamorce plusieurs fois et nécessite environ 30 minutes pour terminer le processus de récupération.
+1. Sélectionnez **Récupérer à partir d’un lecteur** et **nettoyez entièrement le lecteur,** puis sélectionnez **Récupérer.** Si vous êtes invité à obtenir une clé BitLocker, **sélectionnez Ignorer ce lecteur.** Surface Hub 2S redémarre plusieurs fois et prend environ 30 minutes pour terminer le processus de récupération.
 
-Lorsque l’écran de configuration pour la première fois apparaît, supprimez le lecteur USB.
+Lorsque l’écran de configuration s’affiche pour la première fois, supprimez le lecteur USB.
 
 ## Contacter le support
 
-Si vous avez des questions ou si vous avez besoin d’aide, vous pouvez [créer une demande de support](https://support.microsoft.com/supportforbusiness/productselection).
+Si vous avez des questions ou avez besoin d’aide, vous pouvez [créer une demande de support.](https://support.microsoft.com/supportforbusiness/productselection)

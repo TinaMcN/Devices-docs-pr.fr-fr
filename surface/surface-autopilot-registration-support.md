@@ -12,23 +12,22 @@ ms.date: 9/14/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 4ff3803701ffe71e1c5c0c36200c40e833a7fb25
-ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
+ms.openlocfilehash: b31cacad5a744dcb29fc3dd2822c656d528fcd40
+ms.sourcegitcommit: 25b8d880c6438f94b008f47b4fecc3aa4c473e85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271388"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304837"
 ---
 # Prise en charge de l’inscription en surface pour Windows AutoPilot
 
 Un processus simplifié d’inscription des appareils Surface pour le déploiement De Windows Autopilot est désormais disponible auprès du Support Microsoft. À compter de septembre 2020, les clients et les fournisseurs de solutions Microsoft Cloud (CSP) peuvent inscrire des appareils Surface en envoyant des demandes au support Microsoft. Cette page décrit les conditions requises pour les scénarios d’inscription Autopilot pris en charge suivants :
  
-
 - **Surface Device Autopilot Registration**. Envoie une demande d’inscription des appareils Surface dans Windows Autopilot.
 - **Demande de hachage matériel de l’appareil Surface.** Envoie une demande au support Microsoft pour vous fournir des hachages matériels que les clients ou les CSP peuvent utiliser pour inscrire eux-mêmes des appareils via Microsoft Intune ou l’Microsoft Partner Center.
 - **Surface Device Autopilot Deregistration.** Envoie une demande de suppression d’appareils de Windows Autopilot, généralement utilisé dans les scénarios de fin de vie des appareils.
 
-Consultez le tableau suivant pour plus d’informations sur les informations que vous devrez collecter avant d’envoyer des demandes d’inscription au Support Microsoft.
+Consultez le tableau suivant pour plus d’informations sur les informations que vous devrez collecter avant d’envoyer des demandes d’inscription au Support Microsoft. Pour obtenir les noms de modèle système officiels de tous les appareils Surface, reportez-vous à la référence [SKU du système Surface.](surface-system-sku-reference.md)
  
 **Tableau1. Informations requises pour les demandes d’inscription Autopilot**
  
@@ -53,6 +52,7 @@ Consultez le tableau suivant pour plus d’informations sur les informations que
 - [Windows Autopilot et appareils Surface](windows-autopilot-and-surface-devices.md)
 - [Inscrire des appareils Windows à Intune à l’aide de Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot)
 - [Vue d’ensemble de Windows Autopilot](https://docs.microsoft.com/mem/autopilot/windows-autopilot)
+- [Référence SKU du système Surface](surface-system-sku-reference.md)
 
  
  
