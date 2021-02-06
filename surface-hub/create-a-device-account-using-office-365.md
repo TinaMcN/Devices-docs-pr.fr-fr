@@ -1,10 +1,10 @@
 ---
-title: Créer un compte d’appareil à l’aide de l’IU (SurfaceHub)
+title: Créer un compte d’appareil à l’aide de l’interface utilisateur (Surface Hub v1)
 description: Pour utiliser une IU graphique, créez un compte pour votre Surface Hub avec l’interface utilisateur Office365 ou le Centre d’administration Exchange.
 ms.assetid: D11BCDC4-DABA-4B9A-9ECB-58E02CC8218C
 ms.reviewer: ''
 manager: laurawi
-keywords: créer le compte de l’appareil, l’interface utilisateur d’Office 365, le centre d’administration Exchange, le centre d’administration Microsoft 365, Skype entreprise, stratégie de messagerie d’appareil mobile
+keywords: créer un compte d’appareil, interface utilisateur Office 365, Centre d’administration Exchange, Centre d’administration Microsoft 365, Skype Entreprise, stratégie de boîte aux lettres d’appareil mobile
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
@@ -12,37 +12,39 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 05/04/2018
 ms.localizationpriority: medium
-ms.openlocfilehash: e1f82f084103d4eef942e812c5e4f0e8bf425def
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 9e6d72dc2b36bb149ee09c2edab885c80e60ac14
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834074"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314467"
 ---
-# Créer un compte d’appareil à l’aide de l’IU (SurfaceHub)
+# Créer un compte d’appareil à l’aide de l’interface utilisateur (Surface Hub v1)
 
+ > [!NOTE]
+ >Cette page contient des informations sur le Surface Hub d’origine (v1). Pour Surface Hub 2S, voir [Créer un compte d’appareil Surface Hub 2S.](surface-hub-2s-account.md)
 
 Pour utiliser une IU graphique, créez un compte pour votre MicrosoftSurfaceHub avec l’[interface utilisateur Office365](#create-device-acct-o365) ou le [Centre d’administration Exchange](#create-device-acct-eac).
 
 ## <a href="" id="create-device-acct-o365"></a>Créer un compte d’appareil à l’aide d’Office 365
 
 
-1.  [Créez le compte dans le centre d’administration 365 Microsoft](#create-device-acct-o365-admin-ctr).
+1.  [Créez le compte dans le Centre d’administration Microsoft 365.](#create-device-acct-o365-admin-ctr)
 2.  [Créez une stratégie de boîte aux lettres d’appareil mobile (ActiveSync) à partir du Centre d’administration Exchange](#create-device-acct-o365-mbx-policy).
 3.  [Utiliser Windows PowerShell pour terminer la création du compte d’appareil](#create-device-acct-o365-complete-acct).
 4.  [Utilisez PowerShell pour configurer les propriétés Exchange du compte](#create-device-acct-o365-configure-exch-prop).
 5.  [Activez le compte d’appareil avec SkypeEntreprise.](#create-device-acct-o365-skype-for-business).
 
-### <a href="" id="create-device-acct-o365-admin-ctr"></a>Créer le compte dans le centre d’administration
+### <a href="" id="create-device-acct-o365-admin-ctr"></a>Créer le compte dans le Centre d’administration
 
-1.  Connectez-vous à Office 365 en visitanthttps://portal.office.com
-2.  Fournissez les informations d’identification d’administration de votre client Office365. Vous serez ainsi dirigé vers le centre d’administration Microsoft 365.
+1.  Connectez-vous à Office 365 en visitant https://portal.office.com
+2.  Fournissez les informations d’identification d’administration de votre client Office365. Cela vous permettra d’aller dans votre Centre d’administration Microsoft 365.
 
     ![Centre d’administration Microsoft 365.](images/setupdeviceaccto365-02.png)
 
-3. Dans le centre d’administration, accédez à **ressources** dans le volet gauche, puis cliquez sur **salles & Equipement**.
+3. Dans le Centre d’administration, accédez à **Ressources** dans le panneau gauche, puis cliquez sur **Salles & équipement.**
 
-    ![Option salles & équipements dans le centre d’administration](images/room-equipment.png)
+    ![Option Salles &'équipement dans le Centre d’administration](images/room-equipment.png)
 
 4. Cliquez sur **Ajouter** pour créer un nouveau compte de salle. Entrez un nom d'affichage et une adresse e-mail pour le compte, puis cliquez sur **Ajouter**.
 
@@ -54,9 +56,9 @@ Pour utiliser une IU graphique, créez un compte pour votre MicrosoftSurfaceHub 
 
 ### <a href="" id="create-device-acct-o365-mbx-policy"></a>Créer une stratégie de boîte aux lettres d’appareil mobile (ActiveSync) à partir du Centre d’administration Exchange
 
-1.  Dans le volet gauche du centre d’administration, cliquez sur **administrateur**, puis sur **Exchange**.
+1.  Dans le panneau gauche du Centre d’administration, cliquez sur **ADMIN,** puis sur **Exchange**.
 
-    ![Centre d’administration affichant les utilisateurs Exchange actifs.](images/setupdeviceaccto365-08.png)
+    ![centre d’administration, affichant les utilisateurs exchange actifs.](images/setupdeviceaccto365-08.png)
 
 2.  Un autre onglet s’ouvre sur votre navigateur pour accéder au Centre d’administration Exchange, où vous pouvez créer et définir le paramètre de boîte aux lettres du Surface Hub.
 
@@ -82,11 +84,11 @@ Pour utiliser une IU graphique, créez un compte pour votre MicrosoftSurfaceHub 
 
 Pour exécuter les applets de commande utilisées par ces scripts PowerShell, les éléments suivants doivent être installés pour la console d’administration PowerShell:
 
--   [Assistant de connexion de Microsoft Online Services pour les informaticiens RTW](https://www.microsoft.com/download/details.aspx?id=41950)
+-   [assistant Microsoft Online Services Sign-In pour les professionnels de l’informatique RTW](https://www.microsoft.com/download/details.aspx?id=41950)
 -   [Module Windows Active Directory pour Windows PowerShell](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/WindowsAzurePowershellGet.3f.3f.3fnew.appids)
 -   [Skype Entreprise Online, module Windows PowerShell](https://www.microsoft.com/download/details.aspx?id=39366)
 
-Installez le module suivant dans PowerShell.
+Installer le module suivant dans PowerShell
 ``` syntax
     install-module AzureAD
     Install-module MsOnline
@@ -170,7 +172,7 @@ Maintenant que vous êtes connecté aux services en ligne, vous pouvez terminer 
 
     ![Image montrant une applet de commande PowerShell.](images/setupdeviceaccto365-23.png)
 
-2. Exécutez l’applet de commande suivante:
+2. Exécutez l’cmdlet suivante :
 
     ```powershell
     Set-CASMailbox $strEmail  -ActiveSyncMailboxPolicy "SurfaceHubDeviceMobilePolicy"
@@ -197,10 +199,10 @@ Activez le compte d’appareil avec SkypeEntreprise.
 
 Pour activer SkypeEntreprise, votre environnement doit respecter la configuration suivante:
 
--   Vous devez avoir un plan autonome 2 ou une version ultérieure de Skype entreprise Online dans votre offre Office 365. L’abonnement doit prendre en charge la fonctionnalité Conférence.
--   Si vous avez besoin d’une voix entreprise (RTC) avec des fournisseurs de service de téléphonie pour le surface Hub, vous devez disposer d’un plan autonome 3 de Skype entreprise online.
+-   Vous devez avoir Skype Entreprise Online Plan autonome 2 ou supérieur dans votre plan O365. L’abonnement doit prendre en charge la fonctionnalité Conférence.
+-   Si vous avez besoin Voix Entreprise (téléphonie PSTN) à l’aide de fournisseurs de services de téléphonie pour le Surface Hub, vous avez besoin de Skype Entreprise Online Plan autonome 3.
 -   Vos utilisateurs clients doivent disposer de boîtes aux lettres Exchange.
--   Votre compte surface Hub nécessite une licence de plan autonome 2 de Skype entreprise Online ou une licence de plan autonome 3 de Skype entreprise Online, mais elle ne nécessite pas de licence Exchange Online.
+-   Votre compte Surface Hub nécessite une licence Skype Entreprise Online Plan autonome 2 ou Skype Entreprise Online Plan autonome 3, mais il ne nécessite pas de licence Exchange Online.
 
 1.  Commencez par créer une session PowerShell à distance à partir d’un PC.
 
@@ -225,7 +227,7 @@ Pour activer SkypeEntreprise, votre environnement doit respecter la configuratio
 ## <a href="" id="create-device-acct-eac"></a>Créer un compte d’appareil à l’aide du Centre d’administration Exchange
 
 >[!NOTE]
->Cette méthode ne fonctionnera que si vous effectuez une synchronisation depuis un Active Directory local.
+>Cette méthode ne fonctionne que si vous synchronisez à partir d’un active directory local.
 
 Vous pouvez utiliser le Centre d’administration Exchange pour créer un compte d’appareil:
 
@@ -248,7 +250,7 @@ Vous pouvez utiliser le Centre d’administration Exchange pour créer un compte
 ### <a href="" id="create-device-acct-exch-mbx-policy"></a>Créer une stratégie de boîte aux lettres d’appareil mobile à partir du Centre d’administration Exchange
 
 >[!NOTE]
->Si vous souhaitez créer et affecter une stratégie au compte que vous avez créé et utiliser Exchange 2010, recherchez les informations correspondantes relatives à la création de stratégies et à l’affectation de stratégie lors de l’utilisation d’EMC (Exchange Management Console).
+>Si vous souhaitez créer et affecter une stratégie au compte que vous avez créé et que vous utilisez Exchange 2010, recherchez les informations correspondantes concernant la création et l’attribution de stratégie lors de l’utilisation de la console de gestion Exchange (EMC).
 
  
 
@@ -314,7 +316,7 @@ Maintenant que vous êtes connecté aux services en ligne, vous pouvez terminer 
 
     L’adresse de messagerie appropriée s’affiche.
 
-2.  Vous devez convertir le compte en boîte aux lettres de salle, et donc exécuter:
+2.  Vous devez convertir le compte en boîte aux lettres de salle. Exécutez donc :
 
     ``` syntax
     Set-Mailbox $strEmail -Type Room
@@ -357,12 +359,12 @@ Activez le compte d’appareil avec SkypeEntreprise.
 
 Pour activer SkypeEntreprise, votre environnement doit respecter la configuration suivante:
 
--   Vous devez avoir un plan autonome 2 ou une version ultérieure de Skype entreprise Online dans votre offre Office 365. L’abonnement doit prendre en charge la fonctionnalité Conférence.
--   Si vous avez besoin d’une voix entreprise (RTC) avec des fournisseurs de service de téléphonie pour le surface Hub, vous devez disposer d’un plan autonome 3 de Skype entreprise online.
--   Vos utilisateurs clients doivent disposer de boîtes aux lettres Exchange.
--   Votre compte surface Hub nécessite une licence de plan autonome 2 de Skype entreprise Online ou une licence de plan autonome 3 de Skype entreprise Online, mais elle ne nécessite pas de licence Exchange Online.
+- Vous devez avoir Skype Entreprise Online Plan autonome 2 ou supérieur dans votre plan O365. L’abonnement doit prendre en charge la fonctionnalité Conférence.
+- Si vous avez besoin Voix Entreprise (téléphonie PSTN) à l’aide de fournisseurs de services de téléphonie pour le Surface Hub, vous avez besoin de Skype Entreprise Online Plan autonome 3.
+- Vos utilisateurs clients doivent disposer de boîtes aux lettres Exchange.
+- Votre compte Surface Hub nécessite une licence Skype Entreprise Online Plan autonome 2 ou Skype Entreprise Online Plan autonome 3, mais il ne nécessite pas de licence Exchange Online.
 
-1.  Commencez par créer une session PowerShell à distance à partir d’un PC.
+1. Commencez par créer une session PowerShell à distance à partir d’un PC.
 
     ```PowerShell
     Import-Module SkypeOnlineConnector
@@ -370,23 +372,16 @@ Pour activer SkypeEntreprise, votre environnement doit respecter la configuratio
     Import-PSSession $cssess -AllowClobber
     ```
 
-2. Récupérer votre pool d’bureaux d’enregistrement de compte surface Hub
+2. Récupérer votre pool de bureaux d’enregistrement de comptes Surface Hub
 
 Si vous n’êtes pas certain de la valeur à utiliser pour le paramètre `RegistrarPool` dans votre environnement, vous pouvez obtenir cette valeur à partir d’un utilisateur Skype Entreprise existant en utilisant l’applet de commande suivante :
 
-    ```PowerShell
+ ```PowerShell
     Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
-    ```
-    
+ ```
+
 3. Pour activer votre compte Surface Hub pour Skype Entreprise Server, exécutez l’applet de commande suivante:
 
    ```PowerShell
    Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
    ```
-
-    
-
-
-
-
-

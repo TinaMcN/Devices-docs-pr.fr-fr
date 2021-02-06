@@ -1,8 +1,8 @@
 ---
-title: Informations techniques pour le surface Hub de 84
+title: Informations techniques sur le Surface Hub 84» (v1)
 ms.reviewer: ''
 manager: laurawi
-description: Spécifications pour le surface Hub de 84
+description: Spécifications du Surface Hub 84» (v1)
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
@@ -10,87 +10,89 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 12/21/2020
-ms.openlocfilehash: e8f01a7e6ce087f649d99c1fc13f149fa375fc8a
-ms.sourcegitcommit: e83316c8b5e3c29b0af0730ef05fd8b96b0d0cdd
+appliesto:
+- Surface Hub
+ms.openlocfilehash: 6d309dbc05cd4fcb9abae54bd8a604787b74b312
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "11238109"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314457"
 ---
-# Informations techniques pour le surface Hub de 84
+# Informations techniques sur le Surface Hub 84» (v1)
 
 |
 --- | ---
-Tarification | À partir de $21 999 
-Taille |  46,12 "x 86,7" x 4,15 "(1171.5 mm x 2202.9 mm x 105.4 mm)
-Stockage/RAM | SSD Go avec RAM 8 Go
-Processeur   | 4e génération Intel® cœur™ i7 
+Tarification | À partir de 21 999 $ 
+Taille |  46,12 x 86,7 x 4,15» (1171,5 mm x 2202,9 mm x 105,4 mm)
+Stockage/RAM | SSD 128 Go avec 8 Go de RAM
+Processeur   | Intel 4e génération® Core™ i7 
 Graphiques |  NVIDIA Quadro K2200 
-Ports | **ORDINATEUR interne**<br>• (1) USB 3,0 (en bas) + (1) 3,0 USB<br>• (4) 2,0 USB<br>• Ethernet 1000 Base-T<br>• Sortie vidéo DisplayPort<br>• Sortie stéréo 3,5 mm<br>• Connecteur RJ11 pour contrôler le niveau du système<br>**Autre PC**<br>• (2) type de sortie USB 2,0<br>• connexion de caméra, de capteurs, de micro et de haut-parleurs<br>• (2) entrée vidéo DisplayPort<br>**PC invité**<br>• Entrée vidéo DisplayPort<br>• Entrée vidéo HDMI<br>• Entrée vidéo VGA<br>• Entrée stéréo 3,5 mm<br>• (1) USB 2,0 type touchback™ sortie
-Capteurs  | (2) capteurs de présence infrarouge passifs, capteurs de lumière ambiante 
-Haut-parleurs |  (2) haut-parleurs stéréo en face 
-Micro |    Matrice 4 éléments haute performance 
-Appareil photo |    (2) caméras HD à angle large 1080p @ 30 ips 
-Stylet |   (2) précision d’activation, de sous-pixels 
-Boutons latéraux physiques | Puissance, entrée, volume, luminosité 
+Ports | **PC interne**<br>• (1) USB 3.0 (bas) + (1) USB 3.0 (accès latéral)<br>• (4) USB 2.0<br>• Ethernet 1000 Base-T<br>• Sortie vidéo DisplayPort<br>• Sortie stéréo de 3,5 mm<br>• Connecteur RJ11 pour le contrôle au niveau du système<br>**AUTRE PC**<br>• (2) Sortie USB 2.0 de type B<br>• connexion pour la caméra, les capteurs, le microphone, les haut-parleurs<br>• (2) Entrée vidéo DisplayPort<br>**PC invité**<br>• DisplayPort Video Input<br>• Entrée vidéo HDMI<br>• Entrée vidéo VGA<br>• Entrée stéréo de 3,5 mm<br>• (1) Type USB 2.0 touchback™ sortie
+Capteurs  | (2) Capteurs de présence infrarouge passifs, capteurs de lumière ambiante 
+Haut-parleurs |  (2) Haut-parleurs stéréo orientés vers l’avant 
+Micro |    Tableau à 4 éléments hautes performances 
+Caméra |    (2) Caméras HD grand angle 1080p @ 30fps 
+Stylet |   (2) Précision des sous-pixels optimisés, actifs 
+Boutons côté physique | Alimentation, sélection d’entrée, volume, luminosité 
 Logiciels |  Windows 10 + Office (Word, PowerPoint, Excel) 
-Ce qui se trouve dans la zone | • Surface Hub 84 "<br>• (2) stylos surface Hub<br>• Câble d’alimentation<br>• Guide d’installation<br>• Documents de sécurité et de garantie<br>• Clavier sans fil tout-en-un
-Fonctionnalités de montage   | 4X VESA standard, 1200mm x 600mm Pattern, 8X (emplacements de montage thématique X 1,25)
-Affichage de la hauteur à partir du plancher   | Hauteur recommandée de 54 pouces (139,7 cm) au centre de l’écran
-Poids du produit |    Environ 280 livres (127 kg)
-Poids d’expédition du produit  | Environ 580 livres (263 kg)
-Dimensions de produit x l |  46 x 86,9 x 4,1 pouces (116,8 x 220,6 x 10,4 cm)
-Dimensions de l’expédition du produit x l | 66,14 x 88,19 x 24,4 pouces (168 x 224 x 62 cm)
-Épaisseur du produit   | Surface d’effleurement pour monter la surface: ≤ 3,1 pouces (7,8 cm)
-Orientation  | Paysage uniquement. L’affichage ne peut pas être utilisé en orientation portrait.
-BTU  | 3070,8 BTU/h
-Résolution de l’image |  3840 x 2160
+Que se passe-t-il dans la zone ? | • Surface Hub 84»<br>• (2) Stylets Surface Hub<br>• Câble d’alimentation<br>• Guide de configuration<br>• Documents de sécurité et de garantie<br>• Clavier tout-en-un sans fil
+Fonctionnalités de montage   | Norme VESA 4X, modèle 1200 mm x 600 mm, emplacements de montage thread 8X M8 x 1,25
+Hauteur d’affichage à partir du sol   | Hauteur recommandée de 54 pouces (139,7 cm) au centre de l’écran
+Poids du produit |    Approx. 280 lb (127 kilo.)
+Poids de la livraison de produits  | Approx. 580 lb (263 kilo.)
+Dimensions du produit HxWxD |  46 x 86,9 x 4,1 pouces (116,8 x 220,6 x 10,4 cm)
+Dimensions d’expédition de produits HxWxD | 66,14 x 88,19 x 24,4 pouces (168 x 224 x 62 cm)
+Épaisseur du produit   | Surface tactile à la surface de montage : ≤ 3,1 pouces (7,8 cm)
+Orientation  | Paysage uniquement. L’affichage ne peut pas être utilisé dans une orientation portrait.
+BTU  | 3070.8 BTU/h
+Résolution d’image |  3840 x 2160
 Fréquence d’images |    120Hz
 Coefficient de contraste | 1400:1
-Horloge par défaut d’EDID, PC de remplacement | 3840 x 2140, actualisation verticale 120Hz
-Horloge par défaut d’EDID, connexion câblée |  1920 x 1080, actualisation verticale 60 Hz
-Tension d’entrée | 110/230 degrés, 90-265V Max
-Puissance d’entrée, fonctionnement |    900W Max
-Alimentation en entrée, en veille    |   5W, 1-10W max
+Minutage préféré de l’EDID, PC de remplacement | 3 840 x 2 140, actualisation verticale à 120 Hz
+Minutage EDID préféré, connexion câblé |  1920 x 1080, actualisation verticale à 60 Hz
+Entrée d’entrée | 110/230v nominal, 90-265v max
+Puissance d’entrée, fonctionnement |    900W max
+Puissance d’entrée, veille    |   5W nominal, 1-10W max
 
 > [!NOTE]
-> Surface Hub peut être utilisé en continu pour une durée maximale de 18 heures par jour. Pour optimiser l’efficacité, surface Hub utilise les capteurs intelligents pour désactiver l’écran del lorsque la présence n’est plus détectée, ce qui signifie qu’il n’est pas nécessaire de le mettre à la fin de la journée. Si l’unité est installée dans un environnement de travail de 24 heures, les capteurs peuvent être désactivés pour respecter les recommandations en matière d’utilisation maximale de 18 heures par jour. Notez que l’affichage prolongé d’un signal vidéo risque de provoquer la rétention de l’image ou de l’image sur l’écran. Pour en savoir plus sur la gestion des paramètres d’alimentation, voir:
+> Le Surface Hub peut être utilisé en continu pendant un maximum de 18 heures par jour. Pour optimiser l’efficacité, le Surface Hub utilise des capteurs intelligents pour désactiver l’écran LED lorsque la présence n’est plus détectée, ce qui signifie qu’il n’est pas nécessaire de l’allumer à la fin de la journée. Si l’unité est installée dans un environnement de travail de 24 heures, les capteurs peuvent être désactivés pour respecter la recommandation d’utilisation maximale de 18 heures par jour. Notez que l’affichage prolongé d’un signal vidéo peut entraîner une rétention d’image ou d’exposition à l’écran. Pour en savoir plus sur la gestion des paramètres d’alimentation, voir :
 >
 > - [Gestion locale des paramètres SurfaceHub](local-management-surface-hub-settings.md)
-> - [FSC SurfaceHub-gestion des clients Windows](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
+> - [CSP SurfaceHub - Gestion des clients Windows](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
 
-## Connexion de PC de remplacement 
-
-Connecteur et emplacement | Label | Description
---- | --- | ---
-Basculer, e/s du bas | ![](images/switch.png) | Bascule la fonction entre l’utilisation d’un PC interne ou d’un PC externe.
-Port d’affichage, e/s inférieures | ![](images/dport.png) | Fournit une entrée pour le PC de remplacement.
-Port d’affichage, e/s inférieures | ![](images/dport.png) | Fournit une deuxième entrée pour le PC de remplacement.
-Type USB, e/s inférieur | ![](images/usb.png) | Fournit une connexion USB permettant de remplacer le PC par des périphériques internes. 
-Type USB, e/s inférieur | ![](images/usb.png) | Fournit une connexion USB pour concentrateur intégré.
-
-
-## Connexions de connexion câblées
+## Connexions PC de remplacement 
 
 Connecteur et emplacement | Label | Description
 --- | --- | ---
-Port d’affichage, e/s inférieures | ![](images/dportio.png) | Fournit une entrée pour le PC à connexion câblée.
-HDMI, e/s inférieures | ![](images/hdmi.png) | Fournit une entrée HDMI pour le PC à connexions câblées.
-VGA, e/s inférieures | ![](images/vga.png) | Fournit une entrée VGA pour le PC à connexions câblées.
-3,5 mm, d’e/s inférieures | ![](images/35mm.png) | Fournit une entrée audio analogique.
-Type USB, e/s inférieur | ![](images/usb.png) | Fournit une connexion USB pour la vidéo touchback.
+Commutateur, I/S inférieure | ![](images/switch.png) | Bascule la fonction entre l’utilisation d’un PC interne ou d’un PC externe.
+Port d’affichage, I/S inférieure | ![](images/dport.png) | Fournit des entrées pour le PC de remplacement.
+Port d’affichage, I/S inférieure | ![](images/dport.png) | Fournit une deuxième entrée pour le PC de remplacement.
+Type USB B, entrées/sorties inférieures | ![](images/usb.png) | Fournit une connexion USB pour remplacer un PC par des périphériques internes. 
+Type USB B, entrées/sorties inférieures | ![](images/usb.png) | Fournit une connexion USB pour le hub intégré.
+
+
+## Connexions câblée
+
+Connecteur et emplacement | Label | Description
+--- | --- | ---
+Port d’affichage, I/S inférieure | ![](images/dportio.png) | Fournit des entrées pour un PC de connexion câblé.
+HDMI, I/S inférieures | ![](images/hdmi.png) | Fournit une entrée HDMI pour un PC de connexion câblé.
+VGA, I/S inférieure | ![](images/vga.png) | Fournit une entrée VGA pour un PC de connexion câblé.
+3,5 mm, I/S inférieure | ![](images/35mm.png) | Fournit une entrée audio analogique.
+Type USB B, entrées/sorties inférieures | ![](images/usb.png) | Fournit une connexion USB pour l’entrée tactile de la vidéo.
 
 ## Connexions supplémentaires
 
 Connecteur et emplacement | Label | Description
 --- | --- | ---
-USB type A, e/s Side | ![](images/usb.png) | Fournit 1 connexion USB 3,0 pour les périphériques USB. Compatibles USB en éveil.
-CÂBLE de type A, entrée d’e/s du bas avec isolant bleu | ![](images/usb.png) | Fournit une connexion USB 3,0.
-3,5 mm, d’e/s inférieures | ![](images/analog.png) | Fournit une sortie audio analogique.
-Port d’affichage, e/s inférieures | ![](images/dportout.png) | Fournit une fonction de sortie vidéo en miroir à un autre affichage.
-CEI/EN60320-réceptacle sur le commutateur dur | ![](images/iec.png) | Fournit une entrée C.A. et une conformité avec les exigences d’alimentation de l’UE.
-RJ45, e/s inférieures | ![](images/rj45.png) | Se connecte à Ethernet.
-RJ11, e/s inférieures | ![](images/rj11.png) | Se connecte à des systèmes de contrôle de salle.
+Type USB A, entrées/sorties latérales | ![](images/usb.png) | Fournit 1 connexion USB 3.0 pour les périphériques USB. Port USB de veille.
+Type USB A, entrées/sorties inférieures avec isolation bleue | ![](images/usb.png) | Fournit une connexion USB 3.0.
+3,5 mm, I/S inférieure | ![](images/analog.png) | Fournit une sortie audio analogique.
+Port d’affichage, I/S inférieure | ![](images/dportout.png) | Fournit une fonction de sortie vidéo en miroir à un autre affichage.
+Réceptacle IEC/EN60320-C13 avec commutateur dur | ![](images/iec.png) | Fournit une entrée ac et la conformité avec les exigences de l’UE en matière d’alimentation.
+RJ45, I/S inférieures | ![](images/rj45.png) | Se connecte à Ethernet.
+RJ11, I/S inférieures | ![](images/rj11.png) | Se connecte aux systèmes de contrôle d’espace.
 
 
 
@@ -98,30 +100,30 @@ RJ11, e/s inférieures | ![](images/rj11.png) | Se connecte à des systèmes de 
 
 
 
-## Diagrammes de ports et de dégagements
+## Diagrammes des ports et des habilitations
 
-**_Affichage supérieur de 84 «surface Hub _»_*
+***Vue supérieure du Surface Hub 84»***
 
 ![](images/sh-84-top.png)
 
 ---
 
 
-_*_Vue avant de 84 «surface Hub»_*_
+***Vue avant du Surface Hub 84»***
 
 ![](images/sh-84-front.png)
 
 
 ---
 
-_*_Affichage inférieur de 84 surface Hub_*_
+***Vue inférieure du Surface Hub 84»***
 
 ![](images/sh-84-bottom.png)
 
 
 ---
 
-_*_Ports d’unPC de remplacement sur un Surface Hub 84pouces_*_
+***Ports d’unPC de remplacement sur un Surface Hub 84pouces***
 
 ![](images/sh-84-rpc-ports.png)
 
@@ -129,21 +131,21 @@ _*_Ports d’unPC de remplacement sur un Surface Hub 84pouces_*_
 
 ---
 
-_*_Vue arrière de 84 surface Hub_*_
+***Vue arrière du Surface Hub 84»***
 
 ![](images/sh-84-rear.png)
 
 
 ---
 
-_*_Dégagements pour 84 de surface Hub_*_
+***Habilitations pour le Surface Hub 84»***
 
 ![](images/sh-84-clearance.png)
 
 ---
 
 
-_*_Poignées de relevage amovibles sur surface Hub 84_*_
+***Poignées de levée amovibles sur surface Hub 84»***
 
 ![](images/sh-84-hand.png)
 
@@ -151,17 +153,17 @@ _*_Poignées de relevage amovibles sur surface Hub 84_*_
 ---
 
 
-_*_Fils de montage mural sur l’arrière de 84 «surface Hub»_*_
+***Threads de montage mur sur l’arrière du Surface Hub 84»***
 
 ![](images/sh-84-wall.png)
 
 ---
-_*_Poignées de relevage dans l’affichage supérieur d' 84 «surface Hub»_*_
+***Poignées de levée dans la vue supérieure du Surface Hub 84»***
 
 ![](images/sh-84-hand-top.png)
 
 ---
-_*_Vue latérale de 84 «surface Hub»_**
+***Vue latérale du Surface Hub 84»***
 
 ![](images/sh-84-side.png)
 

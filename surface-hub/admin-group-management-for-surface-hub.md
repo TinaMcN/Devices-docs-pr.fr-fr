@@ -12,12 +12,15 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 02/01/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 36c6010307603b36b8798a09aed26f8b337b2c1b
-ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
+appliesto:
+- Surface Hub
+- Surface Hub 2S
+ms.openlocfilehash: c76ac577c1560020bf865a25d4a812343089013a
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "11311950"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314437"
 ---
 # Gestion des groupes d’administration pour Surface Hub
 
@@ -51,7 +54,7 @@ Les SurfaceHub utilisent la jonction de domaine pour:
 - Sauvegarder la clé de récupération BitLocker de l’appareil en la stockant sous l’objet ordinateur dans ActiveDirectory. Pour plus d’informations, voir [Enregistrer la clé BitLocker](save-bitlocker-key-surface-hub.md).
 - Synchroniser l’horloge système avec le contrôleur de domaine pour la communication chiffrée
 
-Le SurfaceHub ne prend pas en charge l’application des stratégies de groupe ou des certificats du contrôleur de domaine.
+Le Surface Hub ne prend pas en charge l’application d’une stratégie de groupe ou de certificats à partir du contrôleur de domaine.
 
 > [!NOTE]
 > Si votre SurfaceHub perd son approbation auprès du domaine (par exemple, si vous supprimez le SurfaceHub du domaine une fois qu’il est joint au domaine), vous ne serez pas en mesure de vous authentifier sur l’appareil et d’ouvrir l’application Paramètres. Si vous décidez de supprimer la relation d’approbation du SurfaceHub avec votre domaine, commencez par [réinitialiser l’appareil](device-reset-surface-hub.md).

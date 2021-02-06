@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 11/26/2020
+ms.date: 02/05/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: 093185838250e9b52c078ece4e206639f8b7a630
-ms.sourcegitcommit: 38bb1d92064fb1ab0fe69f9c88ef6e44c9232b97
+ms.openlocfilehash: 01d9712bce55a6be28a58adccdc9a2eef0837c52
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "11304502"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314387"
 ---
 # Vue d’ensemble du Surface Hub 2S 85 & spécifications techniques
 
@@ -28,14 +28,16 @@ La version 85 pouces de la famille Surface Hub offre l’expérience Surface Hub
 
 ![Surface Hub 2S 85»](images/hub-2s-85.png)
 
-## Caractéristiques techniques du Surface Hub 2S 85»
+## Caractéristiques techniques du Surface Hub2S 85"
 
 | Composant    | Description                                                                                                                                                                                                                                         |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dimensions        | 44,5 x 77,1 x 3,4»<br>(1130 mm x 1959 mm x 85,6 mm)                                                                                                                                                                                                        |
-| Épaisseur            | 185 lb (84kg)                                                                                                                                                                                                                                            |
+| Dimensions        | 44,5 x 77,1 x 3,4»<br>(1130 x 1959 x 85,6 mm)                                                                                                                                                                                                        |
+| Dimensions d’expédition        | 89,5 x 62 x 22,8»<br>(2275 x 1573 x 580 mm)                                                                                                                                                                                                        |
+| Épaisseur            | 185 lb (84 kilo)                                                                                                                                                                                                                                            |
+| Poids de l’expédition            | 399 lb (181 kilo)                                                                                                                                                                                                                                            |
 | Résolution        | 3840 x 2160                                                                                                                                                                                                                                               |
-| Affichage           | PixelSense™ Display, proportions 16:9, couleur 10 bits, largeur de bordure 30,5 mm, anti-reflet, IPS PIXEL, entrée tactile dans la cellule avec 20 points tactiles simultanés                                                                                                           |
+| Écran           | PixelSense™ Display, proportions 16:9, couleur 10 bits, largeur de bordure 30,5 mm, anti-reflet, IPS PIXEL, entrée tactile dans la cellule avec 20 points tactiles simultanés                                                                                                           |
 | Calcul           | Modular Compute Cartridge<br>Processeur Intel 8e génération Intel® Core™ i5, 8 Go de RAM, 128 Go SSD <sup> 1</sup>                                                                                                                                                      |
 | Software <sup> 2</sup>         | Windows 10 Team OS <sup> 3</sup><br>Microsoft Teams pour Surface Hub<br>SkypeEntreprise<br>Tableau blanc Microsoft<br>Microsoft Office (Mobile)<br>MicrosoftPowerBI                                                                                                   |
 | Connexions       | USB-A<br>Mini-DisplayPort vidéo<br>RJ45 Gigabit Ethernet<br>Entrée vidéo HDMI<br>USB-C® avec entrée DisplayPort<br>(3) USB-C® (à l’écran)                                                                                                           |
