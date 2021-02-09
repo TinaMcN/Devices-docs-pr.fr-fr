@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 05/04/2018
 ms.localizationpriority: medium
-ms.openlocfilehash: 9e6d72dc2b36bb149ee09c2edab885c80e60ac14
-ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
+ms.openlocfilehash: dd19e2fd2417acd29e71c7555e94ee849fbc1bec
+ms.sourcegitcommit: 32b6c25698479fa289f642c5b5761ff3be15b686
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "11314467"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "11318008"
 ---
 # Créer un compte d’appareil à l’aide de l’interface utilisateur (Surface Hub v1)
 
@@ -37,18 +37,22 @@ Pour utiliser une IU graphique, créez un compte pour votre MicrosoftSurfaceHub 
 
 ### <a href="" id="create-device-acct-o365-admin-ctr"></a>Créer le compte dans le Centre d’administration
 
-1.  Connectez-vous à Office 365 en visitant https://portal.office.com
+1.  Connectez-vous à Office 365 en visitant [https://portal.office.com](https://portal.office.com) .
+
 2.  Fournissez les informations d’identification d’administration de votre client Office365. Cela vous permettra d’aller dans votre Centre d’administration Microsoft 365.
 
-    ![Centre d’administration Microsoft 365.](images/setupdeviceaccto365-02.png)
+    > [!div class="mx-imgBorder"]
+    > ![Centre d’administration Microsoft 365.](images/setupdeviceaccto365-02.png)
 
 3. Dans le Centre d’administration, accédez à **Ressources** dans le panneau gauche, puis cliquez sur **Salles & équipement.**
 
-    ![Option Salles &'équipement dans le Centre d’administration](images/room-equipment.png)
+    > [!div class="mx-imgBorder"]
+    > ![Option Salles &'équipement dans le Centre d’administration](images/room-equipment.png)
 
 4. Cliquez sur **Ajouter** pour créer un nouveau compte de salle. Entrez un nom d'affichage et une adresse e-mail pour le compte, puis cliquez sur **Ajouter**.
 
-    ![Créer une nouvelle fenêtre de compte de salle](images/room-add.png)
+    > [!div class="mx-imgBorder"]
+    > ![Créer une nouvelle fenêtre de compte de salle](images/room-add.png)
 
 5. Sélectionnez le compte de salle que vous venez de créer dans la liste Utilisateurs actifs. Dans le volet droit, vous pouvez voir les propriétés du compte et plusieurs actions facultatives. Cliquez sur **Réinitialiser le mot de passe** pour modifier le mot de passe, décochez la case demandant aux **utilisateurs de modifier leur mot de passe lors de leur première connexion**, car il n’est pas possible de modifier le mot de passe à partir du flux de connexion Surface Hub.
 
@@ -58,15 +62,18 @@ Pour utiliser une IU graphique, créez un compte pour votre MicrosoftSurfaceHub 
 
 1.  Dans le panneau gauche du Centre d’administration, cliquez sur **ADMIN,** puis sur **Exchange**.
 
-    ![centre d’administration, affichant les utilisateurs exchange actifs.](images/setupdeviceaccto365-08.png)
+    > [!div class="mx-imgBorder"]
+    > ![centre d’administration, affichant les utilisateurs exchange actifs.](images/setupdeviceaccto365-08.png)
 
 2.  Un autre onglet s’ouvre sur votre navigateur pour accéder au Centre d’administration Exchange, où vous pouvez créer et définir le paramètre de boîte aux lettres du Surface Hub.
 
-    ![Centre d’administration Exchange.](images/setupdeviceaccto365-09.png)
+    > [!div class="mx-imgBorder"]
+    > ![Centre d’administration Exchange.](images/setupdeviceaccto365-09.png)
 
 3.  Pour créer une stratégie de boîte aux lettres d’appareil mobile, cliquez sur **Mobile** dans le volet gauche, puis sur **Stratégies de boîte aux lettres de périphérique mobile**. Les Surfaces Hub requièrent un compte doté d’une stratégie de boîte aux lettres d’appareil mobile qui ne nécessite pas de mot de passe. Ainsi, si vous avez déjà une stratégie existante qui correspond à cette exigence, vous pouvez l’appliquer au compte. Dans le cas contraire, procédez comme suit pour en créer une nouvelle à utiliser uniquement pour les comptes d’appareil Surface Hub.
 
-    ![Centre d’administration Exchange - création d’une stratégie de boîte aux lettres d’appareil mobile.](images/setupdeviceaccto365-10.png)
+    > [!div class="mx-imgBorder"]
+    > ![Centre d’administration Exchange - création d’une stratégie de boîte aux lettres d’appareil mobile.](images/setupdeviceaccto365-10.png)
 
 4.  Pour créer une nouvelle stratégie de boîte aux lettres d’appareil mobile Surface Hub, cliquez sur le bouton **+** dans les commandes situées au-dessus de la liste des stratégies pour en ajouter une nouvelle. Indiquez un nom qui vous aidera à distinguer cette stratégie des autres comptes d’appareil (par exemple, *SurfaceHubDeviceMobilePolicy*). Assurez-vous que la stratégie ne nécessite pas de mot de passe pour les appareils affectés à celle-ci. Par conséquent, veillez à ce que la case **Exiger un mot de passe** soit décochée, puis cliquez sur **Enregistrer**.
 
@@ -74,7 +81,8 @@ Pour utiliser une IU graphique, créez un compte pour votre MicrosoftSurfaceHub 
 
 5.  Après avoir créé la stratégie de boîte aux lettres d’appareil mobile, revenez au **Centre d’administration Exchange** dans lequel s’affiche la nouvelle stratégie.
 
-    ![Image montrant une nouvelle stratégie de boîte aux lettres d’appareil mobile dans le Centre d’administration Exchange.](images/setupdeviceaccto365-12.png)
+    > [!div class="mx-imgBorder"]
+    > ![Image montrant une nouvelle stratégie de boîte aux lettres d’appareil mobile dans le Centre d’administration Exchange.](images/setupdeviceaccto365-12.png)
 
 
 
@@ -88,17 +96,19 @@ Pour exécuter les applets de commande utilisées par ces scripts PowerShell, le
 -   [Module Windows Active Directory pour Windows PowerShell](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/WindowsAzurePowershellGet.3f.3f.3fnew.appids)
 -   [Skype Entreprise Online, module Windows PowerShell](https://www.microsoft.com/download/details.aspx?id=39366)
 
-Installer le module suivant dans PowerShell
-``` syntax
-    install-module AzureAD
-    Install-module MsOnline
+Installez le module suivant dans PowerShell.
+
+```powershell
+install-module AzureAD
+Install-module MsOnline
 ```
 
 ### Connexion aux services en ligne
 
 1.  Exécutez Windows PowerShell en tant qu’administrateur.
 
-    ![Image montrant comment démarrer Windows PowerShell et l’exécuter en tant qu’administrateur.](images/setupdeviceaccto365-17.png)
+    > [!div class="mx-imgBorder"]
+    > ![Image montrant comment démarrer Windows PowerShell et l’exécuter en tant qu’administrateur.](images/setupdeviceaccto365-17.png)
 
 2.  Créez un objet Informations d’identification, puis créez une nouvelle session qui se connecte à Skype Entreprise Online. Indiquez ensuite le compte d’administrateur du client global, puis cliquez sur **OK**.
 
@@ -106,7 +116,7 @@ Installer le module suivant dans PowerShell
 
 3.  Pour se connecter à Microsoft Online Services, exécutez la commande suivante:
 
-    ``` syntax
+    ```powershell
     Connect-MsolService -Credential $Cred
     ```
 
@@ -114,7 +124,7 @@ Installer le module suivant dans PowerShell
 
 4.  À présent pour vous connecter à Skype Entreprise Online, exécutez la commande suivante:
 
-    ``` syntax
+    ```powershell
     $sfbsession = New-CsOnlineSession -Credential $cred
     ```
 
@@ -122,7 +132,7 @@ Installer le module suivant dans PowerShell
 
 5.  Enfin, pour vous connecter aux services Exchange Online, exécutez la commande suivante:
 
-    ``` syntax
+    ```powershell
     $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $cred -Authentication "Basic" –AllowRedirection
     ```
 
@@ -130,7 +140,7 @@ Installer le module suivant dans PowerShell
 
 6.  Maintenant, vous devez importer les sessions Skype Entreprise Online et Exchange Online que vous venez de créer pour importer les commandes Exchange et Skype afin de les utiliser localement.
 
-    ``` syntax
+    ```powershell
     Import-PSSession $exchangesession -AllowClobber -WarningAction SilentlyContinue
     Import-PSSession $sfbsession -AllowClobber -WarningAction SilentlyContinue
     ```
@@ -180,7 +190,7 @@ Maintenant que vous êtes connecté aux services en ligne, vous pouvez terminer 
 
 4.  Diverses propriétés Exchange peuvent être définies sur le compte d’appareil pour améliorer l’expérience de réunion. Vous pouvez voir les propriétés à définir dans la section [Propriétés Exchange](exchange-properties-for-surface-hub-device-accounts.md).
 
-    ``` syntax
+    ```powershell
     Set-CalendarProcessing -Identity $strEmail -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts   $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
     Set-CalendarProcessing -Identity $strEmail -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
     ```
@@ -189,7 +199,7 @@ Maintenant que vous êtes connecté aux services en ligne, vous pouvez terminer 
 
 5.  Si vous décidez que le mot de passe n’expire pas, vous pouvez également définir cette option avec des applets de commande PowerShell. Consultez [Gestion des mots de passe](password-management-for-surface-hub-device-accounts.md) pour plus d’informations.
 
-    ``` syntax
+    ```powershell
     Set-MsolUser -UserPrincipalName $strEmail -PasswordNeverExpires $True
     ```
 
@@ -214,20 +224,20 @@ Pour activer SkypeEntreprise, votre environnement doit respecter la configuratio
 
 2.  Pour activer votre compte SurfaceHub pour Skype Entreprise Server, exécutez l’applet de commande suivante:
 
-    ```PowerShell
+    ```powershell
     Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
     ```
 
-    Si vous n’êtes pas certain de la valeur à utiliser pour le paramètre`RegistrarPool` dans votre environnement, vous pouvez obtenir cette valeur à partir d’un utilisateur Skype Entreprise existant en utilisant l’applet de commande suivante:
+     Si vous n’êtes pas certain de la valeur à utiliser pour le paramètre`RegistrarPool` dans votre environnement, vous pouvez obtenir cette valeur à partir d’un utilisateur Skype Entreprise existant en utilisant l’applet de commande suivante:
 
-    ```PowerShell
+    ```powershell
     Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
     ```
 
 ## <a href="" id="create-device-acct-eac"></a>Créer un compte d’appareil à l’aide du Centre d’administration Exchange
 
 >[!NOTE]
->Cette méthode ne fonctionne que si vous synchronisez à partir d’un active directory local.
+>Cette méthode ne fonctionne que si vous synchronisez à partir d’un annuaire Active Directory local.
 
 Vous pouvez utiliser le Centre d’administration Exchange pour créer un compte d’appareil:
 
@@ -298,19 +308,19 @@ Maintenant que vous êtes connecté aux services en ligne, vous pouvez terminer 
 
 1.  Vous devez entrer l’adresse de messagerie du compte et créer une variable avec la valeur suivante:
 
-    ``` syntax
+    ```powershell
     $mailbox = (Get-Mailbox <your device account’s alias>)
     ```
 
     Pour stocker la valeur, obtenez-la à partir de la boîte aux lettres à l’aide de la commande suivante:
 
-    ``` syntax
+    ```powershell
     $strEmail = $mailbox.WindowsEmailAddress
     ```
 
     Imprimez la valeur en exécutant la commande suivante:
 
-    ``` syntax
+    ```powershell
     $strEmail
     ```
 
@@ -318,38 +328,38 @@ Maintenant que vous êtes connecté aux services en ligne, vous pouvez terminer 
 
 2.  Vous devez convertir le compte en boîte aux lettres de salle. Exécutez donc :
 
-    ``` syntax
+    ```powershell
     Set-Mailbox $strEmail -Type Room
     ```
 
 3.  Pour que le compte d’appareil puisse être authentifié sur une Surface Hub, vous devez activer le compte de boîte aux lettres de salle et définir un mot de passe, afin que le compte puisse être utilisé par l’appareil pour obtenir des informations de réunion à l’aide d’ActiveSync et se connecter à Skype Entreprise.
 
-    ``` syntax
+    ```powershell
     Set-Mailbox $strEmail -RoomMailboxPassword (ConvertTo-SecureString  -String "<your password>" -AsPlainText -Force) -EnableRoomMailboxAccount $true
     ```
 
 4.  Diverses propriétés Exchange peuvent être définies sur le compte d’appareil pour améliorer l’expérience de réunion. Vous pouvez voir les propriétés à définir dans la section [Propriétés Exchange](exchange-properties-for-surface-hub-device-accounts.md).
 
-    ``` syntax
+    ```powershell
     Set-CalendarProcessing -Identity $strEmail -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts   $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
     Set-CalendarProcessing -Identity $strEmail -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
     ```
 
 5.  Nous devons maintenant définir quelques propriétés dans AD. Pour ce faire, vous avez besoin de l’alias du compte (partie du nom d’utilisateur principal qui se transforme avant le «@»).
 
-    ``` syntax
+    ```powershell
     $strAlias = “<your device account’s alias>”
     ```
 
 6.  L’utilisateur doit être activé dans AD avant de pouvoir s’authentifier avec un Surface Hub. Exécutez la commande suivante:
 
-    ``` syntax
+    ```powershell
     Set-ADUser $strAlias -Enabled $True
     ```
 
 7.  Si vous décidez que le mot de passe n’expire pas, vous pouvez également définir cette option avec des applets de commande PowerShell. Consultez [Gestion des mots de passe](password-management-for-surface-hub-device-accounts.md) pour plus d’informations.
 
-    ``` syntax
+    ```powershell
     Set-ADUser $strAlias -PasswordNeverExpires $True
     ```
 
@@ -372,13 +382,13 @@ Pour activer SkypeEntreprise, votre environnement doit respecter la configuratio
     Import-PSSession $cssess -AllowClobber
     ```
 
-2. Récupérer votre pool de bureaux d’enregistrement de comptes Surface Hub
+2. Récupérez votre pool de bureaux d’enregistrement de comptes Surface Hub.
 
-Si vous n’êtes pas certain de la valeur à utiliser pour le paramètre `RegistrarPool` dans votre environnement, vous pouvez obtenir cette valeur à partir d’un utilisateur Skype Entreprise existant en utilisant l’applet de commande suivante :
+   Si vous n’êtes pas certain de la valeur à utiliser pour le paramètre `RegistrarPool` dans votre environnement, vous pouvez obtenir cette valeur à partir d’un utilisateur Skype Entreprise existant en utilisant l’applet de commande suivante :
 
- ```PowerShell
-    Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
- ```
+   ```PowerShell
+   Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
+   ```
 
 3. Pour activer votre compte Surface Hub pour Skype Entreprise Server, exécutez l’applet de commande suivante:
 

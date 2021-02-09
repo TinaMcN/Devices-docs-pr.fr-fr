@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 12/2/2020
+ms.date: 02/08/2021
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 81c224cf6c5232c4cefd4e64889bd2f724d22bac
-ms.sourcegitcommit: 1b86286bd13b13749ddbf454ae78d9a24fec44ee
+ms.openlocfilehash: d1eb3a6e01d28dc5b3239396c8149c97c0e6a91e
+ms.sourcegitcommit: 7029e80d9ca1a3de5c336cf662e566ed4b6b3e7a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "11271131"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "11319198"
 ---
 # Nouveautés de la station d’accueil Surface 
 
@@ -97,16 +97,16 @@ Surface Dock 2 est conçu pour simplifier la gestion informatique, ce qui permet
 | Link                            | Oui                                                         | Oui                                                                                                 | Non               |
 | USB-A                               | 2 USB 3.1 génération 1 frontal<br>2 USB 3.1 génération 1 arrière | 2 USB 3.2 génération 2 arrière (puissance 7,5W)                                                            | 1 USB 3.1 Génération 2  |
 | Mini port d’affichage                   | 2 arrière (DP1.2)                                       | Aucun(e)                                                                                                | Aucun(e)             |
-| USB-C                               | None                                                        | 2 USB 3.2 Génération 2 frontal<br>(15W d’alimentation)<br>2 USB 3.2 Génération 2 arrière (DP1.4a)<br>(7,5W d’alimentation) | 1 USB 3.2 Génération 2  |
+| USB-C                               | Aucun(e)                                                        | 2 USB 3.2 Génération 2 frontal<br>(15W d’alimentation)<br>2 USB 3.2 Génération 2 arrière (DP1.4a)<br>(7,5W d’alimentation) | 1 USB 3.2 Génération 2  |
 | 3,5 mm Audio dans/hors                 | Oui                                                         | Oui                                                                                                 | Oui              |
 | Ethernet                            | Oui, 1 gigabit                                              | Oui 1 gigabit                                                                                       | Oui, 1 gigabit   |
 | Alimentation DC                         | Oui                                                         | Oui                                                                                                 |                  |
 | Verrou DeNter                     | Oui                                                         | Oui                                                                                                 |                  |
-| Longueur du câble à l’aide d’un lien de navigation               | 65cm                                                        | 80cm                                                                                                | 20cm             |
+| Longueur du câble Delink               | 65cm                                                        | 80cm                                                                                                | 20cm             |
 | Puissance de l’hôte Delink                 | 60W                                                         | 120W                                                                                                | Non applicable              |
 | Alimentation de charge USB                      | 30W                                                         | 60W                                                                                                 |                  |
 | Vitesse de bits USB                        | 5 Gbps                                                      | 10 Gbps                                                                                             | 10 Gbps          |
-| Surveiller la prise en charge                     | 2 x 4 @30fps, ou<br>1 x 4k @ 60fps                         | 2 x 4K @ 60fps                                                                                      | 1 x 4K @ 60fps   |
+| Surveiller la prise en charge                     | 2 x 4 @30fps, ou<br>1 x 4k @ 60fps                         | 2 x 4K @ 60fps<br> ou 1 x 4 @120fps                                                                                     | 1 x 4K @ 60fps   |
 | Wake-on-LAN from Connected Standby <sup> 1</sup> | Oui                                                         | Oui                                                                                                 |                  |
 | Wake-on-LAN à partir des modes veille S4/S5  | Non                                                          | Oui                                                                                                 |          Oui        |
 | Démarrage PXE réseau                    | Oui                                                         | Oui                                                                                                 |        Oui          |
@@ -133,5 +133,5 @@ Surface a publié des fonctionnalités de gestion simplifiées via Windows Updat
 ## Étapes suivantes
 
 - [Ports de station d’accueil Surface 2 sécurisés avec le mode de gestion Surface Enterprise](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/secure-surface-dock-2-ports-with-surface-enterprise-management/ba-p/1418999)
-- [Mode de gestion SurfaceEnterprise](surface-enterprise-management-mode.md)
+- [Mode de gestion Surface Enterprise](surface-enterprise-management-mode.md)
 - [Bonne pratique pour les paramètres d’alimentation des appareils Surface](maintain-optimal-power-settings-on-Surface-devices.md)

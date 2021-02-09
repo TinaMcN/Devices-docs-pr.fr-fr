@@ -14,12 +14,12 @@ ms.date: 02/01/2021
 ms.localizationpriority: medium
 appliesto:
 - Surface Hub
-ms.openlocfilehash: 09d600efbf07bb58de1b5ebffcb6731e4125a62d
-ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
+ms.openlocfilehash: 73c028357849cd660d3b8720aaaa28aade12fea1
+ms.sourcegitcommit: 32b6c25698479fa289f642c5b5761ff3be15b686
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "11314427"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "11317978"
 ---
 # PowerShell pour Surface Hub (v1)
 
@@ -68,11 +68,11 @@ Quels sont les éléments nécessaires à l’exécution des scripts?
 
 Les scripts de création de compte permettent d’effectuer les actions suivantes:
 
--   Demander les informations d’identification de l’administrateur
--   Créer des comptes d’appareil sur votre domaine/client
--   Créer ou affecter une stratégie ActiveSync compatible avec Surface Hub sur le(s) compte(s) d’appareil
+-   Demandez des informations d’identification d’administrateur.
+-   Créez des comptes d’appareil dans votre domaine/client.
+-   Créez ou affectez une stratégie ActiveSync compatible surface Hub au ou aux comptes d’appareil.
 -   Définir des attributs différents pour le(s) compte(s) créé(s) dans Exchange et Skype Entreprise.
--   Attribuer des licences et des autorisations au(x) compte(s) créé(s)
+-   Attribuer des licences et des autorisations aux comptes créés.
 
 Voici les attributs définis par les scripts:
 
@@ -551,7 +551,7 @@ else
 
 ### <a href="" id="create-os356-ps-scripts"></a>Créer un compte d’appareil à l’aide d’Office 365
 
-Crée un compte, comme décrit dans [Créer un compte d’appareil à l’aide d’Office365](create-a-device-account-using-office-365.md)
+Crée un compte comme décrit dans [Créer un compte d’appareil à l’aide d’Office 365.](create-a-device-account-using-office-365.md)
 
 ```PowerShell
 # SHAccountCreateO365.ps1
@@ -998,7 +998,7 @@ else
 
 Ce script valide le compte d’appareil créé précédemment sur Surface Hub et Surface Hub 2S, quelle que soit la méthode utilisée pour le créer. Ce script est de type réussite/échec. En cas d’erreur à l’un des tests, un message d’erreur s’affiche, tandis que si tous les tests réussissent, le résultat final obtenu est un rapport de synthèse. Par exemple, voici ce que vous pouvez voir:
 
-``` syntax
+```console
 15 tests executed
 0 failures
 2 warnings
