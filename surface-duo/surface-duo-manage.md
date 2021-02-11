@@ -25,7 +25,7 @@ ms.locfileid: "11326159"
 ---
 # Aperçu de la gestion Surface Duo
 
-Les clients commerciaux peuvent gérer Surface Duo à l’aide de l’une des différentes solutions de gestion de la mobilité d’entreprise (EMM) qui fournissent chacune un ensemble cohérent de fonctionnalités de gestion des appareils basées sur le cloud, que ce soit pour la gestion des appareils des employés ou de l’entreprise.
+Les clients commerciaux peuvent gérer Surface Duo à l’aide de l’une des différentes solutions de gestion de la mobilité d’entreprise (EMM) qui fournissent chacune un ensemble cohérent de fonctionnalités de gestion des appareils basées sur le cloud, que ce soit pour la gestion des appareils des employés ou de l’entreprise. 
 
 Vous pouvez gérer Duo via l’emm [Microsoft qui](https://androidenterprisepartners.withgoogle.com/provider/#!/75) utilise une console unifiée (Microsoft Endpoint Manager) et des composants extensibles tels que Microsoft Intune. Vous pouvez également utiliser n’importe quel fournisseur EMM dans l’écosystème Android de Google. Dans certains cas, les solutions EMM tierces fournissent une prise en charge supplémentaire pour répondre à des scénarios spécifiques qui peuvent être utiles en fonction de votre environnement.
 
