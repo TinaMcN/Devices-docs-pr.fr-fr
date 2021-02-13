@@ -10,27 +10,27 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 12/18/2020
+ms.date: 02/11/2020
 ms.localizationpriority: medium
-ms.openlocfilehash: 9df9de731ac5c8f8acb393db3d4b16e9d1c98a9e
-ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
+ms.openlocfilehash: 34a05eeabd284e0ad43317577b8e7ff9348ffe21
+ms.sourcegitcommit: 7e028c1e66fb393dc0e8917dac257ce95e5e9ce7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "11312030"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "11327338"
 ---
 # Utilisation de l’outil de récupération de SurfaceHub
 
 L’outil de récupération [Microsoft Surface Hub](https://www.microsoft.com/download/details.aspx?id=52210) vous permet de ré-imager votre SSD (Solid State Drive) Surface Hub à l’aide d’un appareil de bureau Windows 10, sans appeler la prise en charge ni remplacer le SSD. Avec cet outil, vous pouvez réimager un SSD qui a un mot de passe administrateur inconnu, des erreurs de démarrage, n’a pas pu effectuer une récupération cloud ou pour un appareil qui dispose d’une version antérieure du système d’exploitation. L’outil ne corrige pas les SSD physiquement endommagés.
 
-Pour ré-imager le SSD Surface Hub à l’aide de l’outil de récupération, vous devez supprimer le SSD du Surface Hub, connecter le lecteur au câble USB à SATA, puis connecter le câble au PC de bureau sur lequel l’outil de récupération est installé. Pour plus d’informations sur la suppression du lecteur existant de votre Surface Hub, voir remplacement du [SSD Surface Hub.](surface-hub-ssd-replacement.md)
+Pour ré-imager le SSD Surface Hub à l’aide de l’outil de récupération, vous devez supprimer le SSD du Surface Hub, connecter le lecteur au câble USB à SATA, puis connecter le câble au PC de bureau sur lequel l’outil de récupération est installé. Pour plus d’informations sur la suppression du lecteur existant de votre Surface Hub, voir remplacement du [disque SSD Surface Hub.](surface-hub-ssd-replacement.md)
 
 > [!IMPORTANT]
 > Ne laissez pas l’appareil se mettre en veille ou interrompre le téléchargement du fichier image.
 
 Si l’outil n’a pas réussi à réinventer votre lecteur, contactez le support [Surface Hub.](https://support.microsoft.com/help/4037644/surface-contact-surface-warranty-and-software-support)
 
-## Conditions préalables
+## Prérequis
 
 ### Mandatory
 
@@ -45,7 +45,7 @@ Si l’outil n’a pas réussi à réinventer votre lecteur, contactez le suppor
 
 - Connexion Internet haut débit
 - Ouvrir le port USB 3.0
-- Câble USB 3.0 ou supérieur USB vers SATA
+- Câble USB 3.0 ou un câble USB-SATA supérieur
 - L’outil d’imagerie a été testé avec la création et le modèle de câbles suivants :
     - Startech USB312SAT3CB
     - Rosewill RCUC16001
@@ -53,9 +53,12 @@ Si l’outil n’a pas réussi à réinventer votre lecteur, contactez le suppor
 
 ## Télécharger l’outil de récupération Surface Hub
 
-L’outil de récupération Surface Hub est disponible en téléchargement à partir des outils [Surface Hub](https://www.microsoft.com/download/details.aspx?id=52210)  pour les services informatiques sous le nom de ** fichierSurfaceHub_Recovery_v2.0.139.0.msi**.
+L’outil de récupération Surface Hub est disponible en téléchargement à partir des outils [Surface Hub](https://www.microsoft.com/download/details.aspx?id=52210)  pour les services informatiques sous le nom de ** fichierSurfaceHub_Recovery_v2.7.139.0.msi**.
 
-Pour démarrer le téléchargement, cliquez sur **Télécharger,** choisissez **SurfaceHub_Recovery_v2.0.139.0.msi** dans la liste, puis cliquez sur **Suivant**. Dans la fenêtre pop-up, choisissez l’une des touches suivantes :
+> [!IMPORTANT]
+> Cette version, publiée le 11 février 2021, remplace la version antérieure, qui n’est plus fonctionnelle. Si vous avez téléchargé cet outil précédemment, veuillez ignorer et utiliser la version actuelle.
+
+Pour démarrer le téléchargement, cliquez sur **Télécharger,** choisissez **SurfaceHub_Recovery_v2.7.139.0.msi**  dans la liste, puis cliquez sur **Suivant**. Dans la fenêtre pop-up, choisissez l’une des touches suivantes :
 
 - Cliquez **sur Exécuter** pour démarrer l’installation immédiatement.
 - Cliquez **sur Enregistrer** pour copier le téléchargement sur votre ordinateur pour une installation ultérieure.
@@ -91,7 +94,7 @@ Installez l’outil de récupération Surface Hub sur le PC hôte.
 
     ![Connect SSD](images/shrt-drive.png)
 
-6. Lorsque le lecteur est reconnu, cliquez sur **Démarrer** pour commencer le processus de ré-imagerie. Dans l’avertissement signalant que toutes les données du lecteur seront effacées, cliquez sur **OK.**
+6. Lorsque le lecteur est reconnu, cliquez sur **Démarrer** pour commencer le processus de ré-imagerie. Dans l’avertissement signalant que toutes les données du lecteur seront effacées, cliquez sur **OK**.
 
 
 
@@ -112,7 +115,19 @@ Si l’outil n’a pas réussi à réinventer votre lecteur, contactez le suppor
 
 ## Historique des versions
 
+
+### Version v2.7.139.0
+
+*Date de publication : 11 février 2021*<br>
+Cette version de l’outil de récupération Surface Hub ajoute la prise en charge des opérations suivantes :
+
+- Mise à jour de sécurité
+
+
 ### Version v2.0.139.0
+
+> [!IMPORTANT]
+> Cette version n’est plus fonctionnelle. Veuillez télécharger la version actuelle, répertoriée ci-dessus. 
 
 *Date de publication : 18 décembre 2020*<br>
 Cette version de l’outil de récupération Surface Hub ajoute la prise en charge des opérations suivantes :
