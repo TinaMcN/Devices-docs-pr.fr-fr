@@ -7,7 +7,7 @@
 ### [Surface Pro7+ Entreprise](https://www.microsoft.com/surface/business/surface-pro-7-plus)
 ### [Surface Go2 Entreprise](https://www.microsoft.com/surface/business/surface-go-2)
 ### [Surface ProX Entreprise](https://www.microsoft.com/surface/business/surface-pro-x)
-### [Surface Laptop3 Entreprise](https://www.microsoft.com/surface/business/surface-laptop-3)
+### [Surface Laptop 3 Entreprise](https://www.microsoft.com/surface/business/surface-laptop-3)
 ### [Surface Studio2 Entreprise](https://www.microsoft.com/surface/business/surface-studio-2)
 ### [Surface Book3 Entreprise](https://www.microsoft.com/surface/business/surface-book-3)
 ### [Maximiser le retour sur investissement avec Microsoft Surface](forrester-tei-study.md)
@@ -19,28 +19,28 @@
 
 ## Planifier
 
-### [Compatibilité des appareils Surface avec Windows10 Long-Term Servicing Branch](surface-device-compatibility-with-windows-10-ltsc.md)
-### [Long-Term Servicing Branch des appareilsSurface](ltsb-for-surface.md)
+### [Compatibilité des appareils Surface avec Windows 10 Long-Term Servicing Branch](surface-device-compatibility-with-windows-10-ltsc.md)
+### [Long-Term Servicing Branch des appareils Surface](ltsb-for-surface.md)
 ### [Wake On LAN pour les appareils Surface](wake-on-lan-for-surface-devices.md)
 ### [Considérations relatives à Endpoint dans Configuration Manager](considerations-for-surface-and-system-center-configuration-manager.md)
-### [Déployer une applicationSurface avec MicrosoftStore pour Entreprises](deploy-surface-app-with-windows-store-for-business.md)
-### [Activer les protocolesPEAP, EAP-FAST et CiscoLEAP sur des appareilsSurface](enable-peap-eap-fast-and-cisco-leap-on-surface-devices.md)
-### [AdaptateursEthernet et déploiement d’appareilsSurface](ethernet-adapters-and-surface-device-deployment.md)
+### [Déployer une application Surface avec Microsoft Store pour Entreprises](deploy-surface-app-with-windows-store-for-business.md)
+### [Activer les protocoles PEAP, EAP-FAST et Cisco LEAP sur des appareils Surface](enable-peap-eap-fast-and-cisco-leap-on-surface-devices.md)
+### [Adaptateurs Ethernet et déploiement d’appareils Surface](ethernet-adapters-and-surface-device-deployment.md)
 
 ## Déployer
 
-### [Déployer des appareilsSurface](deploy.md)
+### [Déployer des appareils Surface](deploy.md)
 ### [Windows Autopilot et appareils Surface](windows-autopilot-and-surface-devices.md)
 ### [Prise en charge de l’inscription en surface pour Windows AutoPilot](surface-autopilot-registration-support.md)
 ### [Windows Virtual Desktop sur Surface](windows-virtual-desktop-surface.md)
-### [Déploiement, gestion et maintenance de SurfaceProX](surface-pro-arm-app-management.md)
-### [Compatibilité des applications Surface ProX](surface-pro-arm-app-performance.md)
+### [Déploiement, gestion et maintenance de Surface Pro X](surface-pro-arm-app-management.md)
+### [Compatibilité des applications Surface Pro X](surface-pro-arm-app-performance.md)
 ### [Gérer et déployer les mises à jour du microprogramme et des pilotes Surface](manage-surface-driver-and-firmware-updates.md)
-### [SurfaceDeploymentAccelerator](microsoft-surface-deployment-accelerator.md)
-### [Déployer Windows10 sur des appareilsSurface avec MDT](deploy-windows-10-to-surface-devices-with-mdt.md)
+### [Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md)
+### [Déployer Windows 10 sur des appareils Surface avec MDT](deploy-windows-10-to-surface-devices-with-mdt.md)
 ### [Activer le clavier de Surface Laptop pendant le déploiement de MDT](enable-surface-keyboard-for-windows-pe-deployment.md)
-### [Mettre à niveau les appareilsSurface vers Windows10 avec MDT](upgrade-surface-devices-to-windows-10-with-mdt.md)
-### [Personnaliser le modeOOBE pour les déploiements d’appareilsSurface](customize-the-oobe-for-surface-deployments.md)
+### [Mettre à niveau les appareils Surface vers Windows 10 avec MDT](upgrade-surface-devices-to-windows-10-with-mdt.md)
+### [Personnaliser le mode OOBE pour les déploiements d’appareils Surface](customize-the-oobe-for-surface-deployments.md)
 ### [Référence SKU du système Surface](surface-system-sku-reference.md)
 
 ## Manage
@@ -60,13 +60,13 @@
 
 ### [Gestion Intune des paramètres de surface UEFI](surface-manage-dfci-guide.md)
 ### [Gérer les paramètres UEFI Surface](manage-surface-uefi-settings.md)
-### [Fonctionnalités de sécuritéUEFI avancées pour SurfacePro3](advanced-uefi-security-features-for-surface-pro-3.md)
-### [Mode de gestion SurfaceEnterprise](surface-enterprise-management-mode.md)
-### [Inscrire et configurer les appareilsSurface auprès de SEMM](enroll-and-configure-surface-devices-with-semm.md)
+### [Fonctionnalités de sécurité UEFI avancées pour Surface Pro 3](advanced-uefi-security-features-for-surface-pro-3.md)
+### [Mode de gestion Surface Enterprise](surface-enterprise-management-mode.md)
+### [Inscrire et configurer les appareils Surface auprès de SEMM](enroll-and-configure-surface-devices-with-semm.md)
 ### [Désinscrire les appareils Surface de SEMM](unenroll-surface-devices-from-semm.md)
 ### [Sécuriser les ports de Surface Dock 2 avec SEMM](secure-surface-dock-ports-semm.md)
 ### [Utilisez Microsoft Endpoint Configuration Manager pour gérer les appareils avec SEMM](use-system-center-configuration-manager-to-manage-devices-with-semm.md)
-### [SurfaceDataEraser](microsoft-surface-data-eraser.md)
+### [Surface Data Eraser](microsoft-surface-data-eraser.md)
 ### [Protection d’accès direct à la mémoire (DMA) surface](dma-protect.md)
 
 ## Résoudre les problèmes
@@ -79,10 +79,10 @@
 #### [Utiliser le Kit de ressources de diagnostic pour Surface Entreprise en mode bureau](surface-diagnostic-toolkit-desktop-mode.md)
 #### [Exécuter le Kit de ressources de diagnostic pour Surface Entreprise à l’aide de commandes](surface-diagnostic-toolkit-command-line.md)
 ### [Aide pour les utilisateurs finaux](https://support.microsoft.com/products/surface-devices)
-### [Pilote Surface et cycle de vie du microprogramme pour les appareils Windows](surface-driver-firmware-lifecycle-support.md)
+### [Cycle de vie du microprogramme et du pilote Surface pour les appareils Windows](surface-driver-firmware-lifecycle-support.md)
 
-## Garantie et offres de service étendues
-### [Garantie et plans étendus pour Surface pour les entreprises](https://www.microsoft.com/surface/business/warranty-service-offerings-and-support)
+## Offres de garantie et de protection
+### [Garantie et offres de protection de Surface pour les entreprises](https://www.microsoft.com/surface/business/warranty-service-offerings-and-support)
 ### [Conditions générales](https://support.microsoft.com/help/4493926/warranties-extended-service-plans-and-terms-conditions-for-your-device)
 ### [Vérifier le statut de la garantie des appareils](https://mybusinessservice.surface.com/)
 ### [Protection des données lors de l’envoi de Surface pour un service](https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service)
