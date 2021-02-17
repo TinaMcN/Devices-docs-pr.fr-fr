@@ -1,5 +1,5 @@
 ---
-title: Configurer Microsoft Lanceur surface Duo
+title: Configurer Microsoft Launcher pour Surface Duo
 description: Cet article récapitule la configuration de Microsoft Lanceur pour les appareils gérés dans les environnements commerciaux.
 ms.technology: windows
 ms.prod: surface
@@ -23,9 +23,9 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 02/10/2021
 ms.locfileid: "11326285"
 ---
-# Configurer Microsoft Lanceur surface Duo
+# Configurer Microsoft Launcher pour Surface Duo
 
-Surface Duo prend en charge Microsoft Lanceur pour entreprise, une application Android qui permet aux utilisateurs de personnaliser leur téléphone, de rester organisés en libre-service et de synchroniser leurs calendriers, tâches, notes et bien plus encore entre les appareils mobiles et leurs PC. En fait, le lanceur Surface Duo est une version personnalisée à deux écrans de Microsoft Lanceur que vous pouvez ajuster pour définir les expériences préférées sur les appareils entièrement gérés pour votre organisation et permettre aux utilisateurs de personnaliser leurs expériences sur ces appareils d’entreprise. Par exemple, vous pouvez sélectionner les applications que vous souhaitez épingler à l’écran d’accueil, déployer un papier peint de marque ou masquer une barre de recherche tout en permettant aux utilisateurs d’activer la barre de recherche si vous le souhaitez. 
+Surface Duo prend en charge Microsoft Lanceur pour entreprise, une application Android qui permet aux utilisateurs de personnaliser leur téléphone, de rester organisés en ligne et de synchroniser leurs calendriers, tâches, notes et bien plus encore entre les appareils mobiles et leurs PC. En fait, le lanceur Surface Duo est une version personnalisée à deux écrans de Microsoft Lanceur que vous pouvez ajuster pour définir les expériences préférées sur les appareils entièrement gérés pour votre organisation et permettre aux utilisateurs de personnaliser leurs expériences sur ces appareils d’entreprise. Par exemple, vous pouvez sélectionner les applications que vous souhaitez épingler à l’écran d’accueil, déployer un papier peint de marque ou masquer une barre de recherche tout en permettant aux utilisateurs d’activer la barre de recherche si vous le souhaitez.
 
 ## Paramètres Lanceur Microsoft
 
