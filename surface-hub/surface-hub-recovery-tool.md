@@ -12,18 +12,18 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 02/11/2020
 ms.localizationpriority: medium
-ms.openlocfilehash: 34a05eeabd284e0ad43317577b8e7ff9348ffe21
-ms.sourcegitcommit: 7e028c1e66fb393dc0e8917dac257ce95e5e9ce7
+ms.openlocfilehash: 0cc444eab51e9c3cc0bf2f9c2f0c36ac491906b1
+ms.sourcegitcommit: 7b09b4bc757c5385c4f5560713cb03448afde9ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "11327338"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "11339365"
 ---
 # Utilisation de l’outil de récupération de SurfaceHub
 
 L’outil de récupération [Microsoft Surface Hub](https://www.microsoft.com/download/details.aspx?id=52210) vous permet de ré-imager votre SSD (Solid State Drive) Surface Hub à l’aide d’un appareil de bureau Windows 10, sans appeler la prise en charge ni remplacer le SSD. Avec cet outil, vous pouvez réimager un SSD qui a un mot de passe administrateur inconnu, des erreurs de démarrage, n’a pas pu effectuer une récupération cloud ou pour un appareil qui dispose d’une version antérieure du système d’exploitation. L’outil ne corrige pas les SSD physiquement endommagés.
 
-Pour ré-imager le SSD Surface Hub à l’aide de l’outil de récupération, vous devez supprimer le SSD du Surface Hub, connecter le lecteur au câble USB à SATA, puis connecter le câble au PC de bureau sur lequel l’outil de récupération est installé. Pour plus d’informations sur la suppression du lecteur existant de votre Surface Hub, voir remplacement du [disque SSD Surface Hub.](surface-hub-ssd-replacement.md)
+Pour ré-imager le SSD Surface Hub à l’aide de l’outil de récupération, vous devez supprimer le SSD du Surface Hub, connecter le lecteur au câble USB à SATA, puis connecter le câble au PC de bureau sur lequel l’outil de récupération est installé. Pour plus d’informations sur la suppression du lecteur existant de votre Surface Hub, voir remplacement du [SSD Surface Hub.](surface-hub-ssd-replacement.md)
 
 > [!IMPORTANT]
 > Ne laissez pas l’appareil se mettre en veille ou interrompre le téléchargement du fichier image.
@@ -56,7 +56,7 @@ Si l’outil n’a pas réussi à réinventer votre lecteur, contactez le suppor
 L’outil de récupération Surface Hub est disponible en téléchargement à partir des outils [Surface Hub](https://www.microsoft.com/download/details.aspx?id=52210)  pour les services informatiques sous le nom de ** fichierSurfaceHub_Recovery_v2.7.139.0.msi**.
 
 > [!IMPORTANT]
-> Cette version, publiée le 11 février 2021, remplace la version antérieure, qui n’est plus fonctionnelle. Si vous avez téléchargé cet outil précédemment, veuillez ignorer et utiliser la version actuelle.
+> Cette version, publiée le 11 février 2021, remplace la version antérieure, qui n’est plus fonctionnelle. Si vous avez téléchargé cet outil précédemment, désinstallez-le et installez la version actuelle.
 
 Pour démarrer le téléchargement, cliquez sur **Télécharger,** choisissez **SurfaceHub_Recovery_v2.7.139.0.msi**  dans la liste, puis cliquez sur **Suivant**. Dans la fenêtre pop-up, choisissez l’une des touches suivantes :
 
@@ -78,7 +78,7 @@ Installez l’outil de récupération Surface Hub sur le PC hôte.
 
 3. Dans la **fenêtre Recommandations,** cliquez sur **Suivant.**
 
-    ![Ne laissez pas votre ordinateur passer aux instructions de veille](images/shrt-guidance.png)
+    ![Ne laissez pas votre ordinateur passer à l’aide de la veille](images/shrt-guidance.png)
 
 4. Dans la fenêtre Sélectionner une image, cliquez sur **RS2** ou son successeur **20H2,** sélectionnez **Continuer,** puis sélectionnez **Télécharger l’image.**
 
@@ -90,7 +90,7 @@ Installez l’outil de récupération Surface Hub sur le PC hôte.
 
 
 
-5. Une fois le téléchargement terminé, l’outil vous demande de connecter un lecteur SSD. Si l’outil ne parvient pas à localiser le lecteur attaché, il est possible que le câble utilisé ne rapporte pas le nom du SSD à Windows.  L’outil d’imagerie doit trouver le nom du lecteur comme « Périphérique USB LITEON L CH-128V2S » avant de pouvoir continuer.  Pour plus d’informations sur la suppression du lecteur existant de votre Surface Hub, voir remplacement du [disque SSD Surface Hub.](surface-hub-ssd-replacement.md)
+5. Une fois le téléchargement terminé, l’outil vous demande de connecter un lecteur SSD. Si l’outil ne parvient pas à localiser le lecteur attaché, il est possible que le câble utilisé ne rapporte pas le nom du SSD à Windows.  L’outil d’imagerie doit trouver le nom du lecteur comme « Périphérique USB LITEON L CH-128V2S » avant de pouvoir continuer.  Pour plus d’informations sur la suppression du lecteur existant de votre Surface Hub, voir remplacement du [SSD Surface Hub.](surface-hub-ssd-replacement.md)
 
     ![Connect SSD](images/shrt-drive.png)
 
